@@ -1,0 +1,772 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AEE_TONE_RING_A5	fibo_opencpu.h	/^    AEE_TONE_RING_A5 = 880,\/*880.0Hz*\/$/;"	e	enum:__anon4
+AEE_TONE_RING_E5	fibo_opencpu.h	/^    AEE_TONE_RING_E5 = 1318,\/*1318.5Hz*\/$/;"	e	enum:__anon4
+AEE_TONE_RING_G5	fibo_opencpu.h	/^    AEE_TONE_RING_G5 = 1568,\/*1568.0Hz*\/$/;"	e	enum:__anon4
+AUDIO_PLAY_VOLUME	fibo_opencpu.h	/^    AUDIO_PLAY_VOLUME,$/;"	e	enum:__anon2
+AUDIO_TONE_EX_T	fibo_opencpu.h	/^} AUDIO_TONE_EX_T;$/;"	t	typeref:enum:__anon4
+AUDIO_TONE_VOLUME	fibo_opencpu.h	/^    AUDIO_TONE_VOLUME,$/;"	e	enum:__anon2
+AUDIO_VOICE_VOLUME	fibo_opencpu.h	/^    AUDIO_VOICE_VOLUME,$/;"	e	enum:__anon2
+AUDIO_VOLUME_MODE_T	fibo_opencpu.h	/^} AUDIO_VOLUME_MODE_T;$/;"	t	typeref:enum:__anon2
+BOOL	fibo_opencpu_comm.h	/^typedef bool BOOL;$/;"	t
+BOOL	oc_fota.h	/^typedef bool BOOL;$/;"	t
+BOOTCAUSE_BY_ALARM	fibo_opencpu.h	/^    BOOTCAUSE_BY_ALARM,$/;"	e	enum:__anon5
+BOOTCAUSE_BY_CHARGE	fibo_opencpu.h	/^    BOOTCAUSE_BY_CHARGE,$/;"	e	enum:__anon5
+BOOTCAUSE_BY_PIN_PWR	fibo_opencpu.h	/^    BOOTCAUSE_BY_PIN_PWR,$/;"	e	enum:__anon5
+BOOTCAUSE_BY_PIN_RST	fibo_opencpu.h	/^    BOOTCAUSE_BY_PIN_RST,$/;"	e	enum:__anon5
+BOOTCAUSE_BY_SOFT	fibo_opencpu.h	/^    BOOTCAUSE_BY_SOFT,$/;"	e	enum:__anon5
+BOOTCAUSE_BY_WDG	fibo_opencpu.h	/^    BOOTCAUSE_BY_WDG,$/;"	e	enum:__anon5
+COMPONENTS_FIBOCOM_OPENCPU_FIBO_OPENCPU_COMM_H	fibo_opencpu_comm.h	2;"	d
+COMPONENTS_FIBOCOM_OPENCPU_OC_ADC_H	oc_adc.h	2;"	d
+COMPONENTS_FIBOCOM_OPENCPU_OC_CHARGE_H	oc_charge.h	2;"	d
+COMPONENTS_FIBOCOM_OPENCPU_OC_SDC_H	oc_sdc.h	2;"	d
+COMPONENTS_FIBOCOM_OPENCPU_OC_UART_H	oc_uart.h	2;"	d
+CTTS_STRING_ENCODE_TYPE_GB2312	fibo_opencpu.h	93;"	d
+CTTS_STRING_ENCODE_TYPE_UNICODE	fibo_opencpu.h	96;"	d
+CTTS_STRING_ENCODE_TYPE_UTF8	fibo_opencpu.h	90;"	d
+CTTS_TEXT_MAX_LEN	fibo_opencpu.h	99;"	d
+CUSTOM_CALLBACK_TYPE	fibo_opencpu.h	/^}CUSTOM_CALLBACK_TYPE;$/;"	t	typeref:struct:__anon24
+CamDev	fibo_opencpu.h	/^    CAM_DEV_T CamDev;$/;"	m	struct:__anon11
+CommandValue	fibo_opencpu.h	/^    uint8_t *CommandValue;$/;"	m	struct:__anon10
+Decodestat	fibo_opencpu.h	/^    uint8_t Decodestat;$/;"	m	struct:__anon11
+E_FIBO_SMS_FORMAT_BINARY_DATA	oc_sms.h	/^    E_FIBO_SMS_FORMAT_BINARY_DATA       = 1,$/;"	e	enum:__anon31
+E_FIBO_SMS_FORMAT_GSM_7BIT	oc_sms.h	/^    E_FIBO_SMS_FORMAT_GSM_7BIT          = 0,$/;"	e	enum:__anon31
+E_FIBO_SMS_FORMAT_IRA	oc_sms.h	/^    E_FIBO_SMS_FORMAT_IRA               = 3$/;"	e	enum:__anon31
+E_FIBO_SMS_FORMAT_UCS2	oc_sms.h	/^    E_FIBO_SMS_FORMAT_UCS2              = 2,$/;"	e	enum:__anon31
+E_FIBO_SMS_MESSAGE_MODE_CDMA	oc_sms.h	/^    E_FIBO_SMS_MESSAGE_MODE_CDMA      = 0,    \/**<  Message type CDMA *\/$/;"	e	enum:__anon42
+E_FIBO_SMS_MESSAGE_MODE_GW	oc_sms.h	/^    E_FIBO_SMS_MESSAGE_MODE_GW        = 1,    \/**<  Message type GW. *\/$/;"	e	enum:__anon42
+E_FIBO_SMS_MESSAGE_MODE_UNKNOWN	oc_sms.h	/^    E_FIBO_SMS_MESSAGE_MODE_UNKNOWN   = -1,   \/**<  Message type CDMA *\/$/;"	e	enum:__anon42
+E_FIBO_SMS_STORAGE_TYPE_NONE	oc_sms.h	/^    E_FIBO_SMS_STORAGE_TYPE_NONE      = -1,   \/**<  Message no need to store. *\/$/;"	e	enum:__anon41
+E_FIBO_SMS_STORAGE_TYPE_NV	oc_sms.h	/^    E_FIBO_SMS_STORAGE_TYPE_NV        = 1,    \/**<  Message store to NV. *\/$/;"	e	enum:__anon41
+E_FIBO_SMS_STORAGE_TYPE_UIM	oc_sms.h	/^    E_FIBO_SMS_STORAGE_TYPE_UIM       = 0,    \/**<  Message store to UIM. *\/$/;"	e	enum:__anon41
+E_FIBO_SMS_TAG_TYPE_MO_NOT_SENT_V01	oc_sms.h	/^    E_FIBO_SMS_TAG_TYPE_MO_NOT_SENT_V01 = 3,$/;"	e	enum:__anon38
+E_FIBO_SMS_TAG_TYPE_MO_SENT_V01	oc_sms.h	/^    E_FIBO_SMS_TAG_TYPE_MO_SENT_V01 = 2,$/;"	e	enum:__anon38
+E_FIBO_SMS_TAG_TYPE_MT_NOT_READ_V01	oc_sms.h	/^    E_FIBO_SMS_TAG_TYPE_MT_NOT_READ_V01 = 1,$/;"	e	enum:__anon38
+E_FIBO_SMS_TAG_TYPE_MT_READ_V01	oc_sms.h	/^    E_FIBO_SMS_TAG_TYPE_MT_READ_V01 = 0,$/;"	e	enum:__anon38
+E_FIBO_SMS_TL_CAUSE_CODE_ADDR_TRANSLATION_FAILURE	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_ADDR_TRANSLATION_FAILURE     = 0x01,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_ADDR_VACANT	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_ADDR_VACANT                    = 0x00,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_DEST_BUSY	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_DEST_BUSY                          = 0x21,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_DEST_NOT_AT_ADDR	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_DEST_NOT_AT_ADDR                  = 0x26,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_DEST_OTHER	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_DEST_OTHER                         = 0x27,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_DEST_OUT_OF_SERV	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_DEST_OUT_OF_SERV                  = 0x25,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_DEST_RESOURCE_SHORTAGE	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_DEST_RESOURCE_SHORTAGE        = 0x23,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_ENCODING	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_ENCODING                           = 0x60,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_GENERAL_OTHER	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_GENERAL_OTHER                     = 0x6A,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_INVALID_TELESERVICE_ID	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_INVALID_TELESERVICE_ID            = 0x04,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_MISSING_EXPECTED_PARAM	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_MISSING_EXPECTED_PARAM          = 0x65,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_MISSING_MAND_PARAM	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_MISSING_MAND_PARAM               = 0x66,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_NETWORK_FAILURE	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_NETWORK_FAILURE                  = 0x03,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_NETWORK_OTHER	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_NETWORK_OTHER                   = 0x05,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_NETWORK_RESOURCE_SHORTAGE	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_NETWORK_RESOURCE_SHORTAGE   = 0x02,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_NO_ACK	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_NO_ACK                              = 0x22,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_NO_PAGE_RESPONSE	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_NO_PAGE_RESPONSE                = 0x20,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_RADIO_IF_INCOMPATABILITY	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_RADIO_IF_INCOMPATABILITY           = 0x41,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_RADIO_IF_OTHER	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_RADIO_IF_OTHER                     = 0x42,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_RADIO_IF_RESOURCE_SHORTAGE	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_RADIO_IF_RESOURCE_SHORTAGE     = 0x40,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_SMS_DELIVERY_POSTPONED	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_SMS_DELIVERY_POSTPONED          = 0x24,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_SMS_NOT_SUPP	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_SMS_NOT_SUPP                      = 0x64,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_SMS_ORIG_DENIED	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_SMS_ORIG_DENIED                   = 0x61,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_SMS_TERM_DENIED	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_SMS_TERM_DENIED                   = 0x62,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_SUPP_SERV_NOT_SUPP	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_SUPP_SERV_NOT_SUPP               = 0x63,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_UNEXPECTED_PARAM_VAL	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_UNEXPECTED_PARAM_VAL            = 0x68,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_UNRECOGNIZED_PARAM_VAL	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_UNRECOGNIZED_PARAM_VAL          = 0x67,$/;"	e	enum:__anon46
+E_FIBO_SMS_TL_CAUSE_CODE_USER_DATA_SIZE_ERR	oc_sms.h	/^    E_FIBO_SMS_TL_CAUSE_CODE_USER_DATA_SIZE_ERR                = 0x69,$/;"	e	enum:__anon46
+FIBO_APN_MAX_LEN	oc_gprs.h	14;"	d
+FIBO_APN_PWD_MAX_LEN	oc_gprs.h	16;"	d
+FIBO_APN_USER_MAX_LEN	oc_gprs.h	15;"	d
+FIBO_CALLBACK_S	fibo_opencpu_comm.h	/^struct FIBO_CALLBACK_S$/;"	s
+FIBO_CALLBACK_T	fibo_opencpu_comm.h	/^typedef struct FIBO_CALLBACK_S FIBO_CALLBACK_T;$/;"	t	typeref:struct:FIBO_CALLBACK_S
+FIBO_CHARGE_CAP_IND	oc_charge.h	/^    FIBO_CHARGE_CAP_IND = 0x1, \/\/ Notify the battery's capacity$/;"	e	enum:__anon55
+FIBO_CHARGE_CHARGE_DISCONNECT	oc_charge.h	/^    FIBO_CHARGE_CHARGE_DISCONNECT, \/\/ the charge be disconnect$/;"	e	enum:__anon55
+FIBO_CHARGE_CHARGE_FAULT	oc_charge.h	/^    FIBO_CHARGE_CHARGE_FAULT,      \/\/ the charge fault, maybe the voltage of charge is too low.$/;"	e	enum:__anon55
+FIBO_CHARGE_CHARGE_FINISH	oc_charge.h	/^    FIBO_CHARGE_CHARGE_FINISH,     \/\/ the charge has been completed.$/;"	e	enum:__anon55
+FIBO_CHARGE_END_IND	oc_charge.h	/^    FIBO_CHARGE_END_IND,   \/\/ the charge ended.$/;"	e	enum:__anon55
+FIBO_CHARGE_MSG_E	oc_charge.h	/^} FIBO_CHARGE_MSG_E;$/;"	t	typeref:enum:__anon55
+FIBO_CHARGE_MSG_MAX_NUM	oc_charge.h	/^    FIBO_CHARGE_MSG_MAX_NUM$/;"	e	enum:__anon55
+FIBO_CHARGE_SHUTDOWN_IND	oc_charge.h	/^    FIBO_CHARGE_SHUTDOWN_IND, \/\/ the capacity is very low and must shutdown.$/;"	e	enum:__anon55
+FIBO_CHARGE_START_IND	oc_charge.h	/^    FIBO_CHARGE_START_IND, \/\/ start the charge process.$/;"	e	enum:__anon55
+FIBO_CHARGE_WARNING_IND	oc_charge.h	/^    FIBO_CHARGE_WARNING_IND,  \/\/ the capacity is low, should charge.$/;"	e	enum:__anon55
+FIBO_CHECK	fibo_opencpu_comm.h	172;"	d
+FIBO_E_CONNECT_ID1	oc_gprs.h	/^    FIBO_E_CONNECT_ID1,$/;"	e	enum:__anon61
+FIBO_E_CONNECT_ID2	oc_gprs.h	/^    FIBO_E_CONNECT_ID2,$/;"	e	enum:__anon61
+FIBO_E_CONNECT_ID3	oc_gprs.h	/^    FIBO_E_CONNECT_ID3,$/;"	e	enum:__anon61
+FIBO_E_CONNECT_ID4	oc_gprs.h	/^    FIBO_E_CONNECT_ID4,$/;"	e	enum:__anon61
+FIBO_E_CONNECT_ID5	oc_gprs.h	/^    FIBO_E_CONNECT_ID5 = 5,$/;"	e	enum:__anon61
+FIBO_E_CONNECT_ID6	oc_gprs.h	/^    FIBO_E_CONNECT_ID6,$/;"	e	enum:__anon61
+FIBO_E_DEFAULT	oc_gprs.h	/^    FIBO_E_DEFAULT = 0,$/;"	e	enum:__anon61
+FIBO_E_DNS	oc_gprs.h	/^    FIBO_E_DNS,$/;"	e	enum:__anon61
+FIBO_E_FTP	oc_gprs.h	/^    FIBO_E_FTP,$/;"	e	enum:__anon61
+FIBO_E_HTTP	oc_gprs.h	/^    FIBO_E_HTTP,$/;"	e	enum:__anon61
+FIBO_E_LBS	oc_gprs.h	/^    FIBO_E_LBS,$/;"	e	enum:__anon61
+FIBO_E_MQTT1	oc_gprs.h	/^    FIBO_E_MQTT1,$/;"	e	enum:__anon61
+FIBO_E_MQTT2	oc_gprs.h	/^    FIBO_E_MQTT2 = 10,$/;"	e	enum:__anon61
+FIBO_E_NTP	oc_gprs.h	/^    FIBO_E_NTP,$/;"	e	enum:__anon61
+FIBO_E_PING	oc_gprs.h	/^    FIBO_E_PING,$/;"	e	enum:__anon61
+FIBO_E_PRO_MAX	oc_gprs.h	/^    FIBO_E_PRO_MAX$/;"	e	enum:__anon61
+FIBO_LOCREL_LEVEL_EXE	fibo_opencpu.h	445;"	d
+FIBO_LOG	fibo_opencpu_comm.h	166;"	d
+FIBO_NW_LTE_SIGNAL_QUALITY_URC	oc_nw.h	16;"	d
+FIBO_NW_LTE_TIMING_ADVANCE	oc_nw.h	12;"	d
+FIBO_NW_NITZ_BUF_LEN	fibo_opencpu.h	394;"	d
+FIBO_NW_ROAMING_STATUS	oc_nw.h	11;"	d
+FIBO_OPENCPU_TTS_GET	fibo_opencpu.h	/^    FIBO_OPENCPU_TTS_GET,$/;"	e	enum:fibo_tts_cfg_operation
+FIBO_OPENCPU_TTS_PLAYMODE	fibo_opencpu.h	/^    FIBO_OPENCPU_TTS_PLAYMODE$/;"	e	enum:fibo_tts_cfg_param
+FIBO_OPENCPU_TTS_SET	fibo_opencpu.h	/^    FIBO_OPENCPU_TTS_SET$/;"	e	enum:fibo_tts_cfg_operation
+FIBO_OPENCPU_TTS_VOLUME	fibo_opencpu.h	/^    FIBO_OPENCPU_TTS_VOLUME,$/;"	e	enum:fibo_tts_cfg_param
+FIBO_PDPTYPE_MAX_LEN	oc_gprs.h	13;"	d
+FIBO_PDP_ADDR_MAX_LEN	oc_gprs.h	18;"	d
+FIBO_PDP_DNS_NUM	oc_gprs.h	17;"	d
+FIBO_PIN_MODE	fibo_opencpu.h	/^typedef ffw_pin_mode FIBO_PIN_MODE;$/;"	t
+FIBO_PKT_DEFAULT_SIZE	oc_sms.h	27;"	d
+FIBO_PROTOCOL_E_ID	oc_gprs.h	/^} FIBO_PROTOCOL_E_ID;$/;"	t	typeref:enum:__anon61
+FIBO_RECV_BUFF_LEN	oc_sms.h	28;"	d
+FIBO_R_FAILED	fibo_opencpu_comm.h	/^    FIBO_R_FAILED = -1,$/;"	e	enum:fibo_result_s
+FIBO_R_SUCCESS	fibo_opencpu_comm.h	/^    FIBO_R_SUCCESS = 0,$/;"	e	enum:fibo_result_s
+FIBO_SIGNAL_QUALITY_URC_CONFIG1	oc_nw.h	/^    FIBO_SIGNAL_QUALITY_URC_CONFIG1 = 0x01,   \/\/only use rsrp_range urc$/;"	e	enum:__anon62
+FIBO_SIGNAL_QUALITY_URC_CONFIG2	oc_nw.h	/^    FIBO_SIGNAL_QUALITY_URC_CONFIG2 = 0x02,   \/\/only use sinr_range urc$/;"	e	enum:__anon62
+FIBO_SIGNAL_QUALITY_URC_CONFIG3	oc_nw.h	/^    FIBO_SIGNAL_QUALITY_URC_CONFIG3 = 0x03,   \/\/both use rsrp_range and sinr_range urc$/;"	e	enum:__anon62
+FIBO_SIGNAL_QUALITY_URC_DEFAULT	oc_nw.h	/^    FIBO_SIGNAL_QUALITY_URC_DEFAULT = 0xFF,   \/\/use default urc$/;"	e	enum:__anon62
+FIBO_SIGNAL_QUALITY_URC_INIT	oc_nw.h	/^    FIBO_SIGNAL_QUALITY_URC_INIT    = 0x00,   \/\/dont urc$/;"	e	enum:__anon62
+FIBO_SMS_INIT_OK_IND	oc_sms.h	/^    FIBO_SMS_INIT_OK_IND = 1,$/;"	e	enum:__anon34
+FIBO_SMS_LIST_END_IND	oc_sms.h	/^    FIBO_SMS_LIST_END_IND,$/;"	e	enum:__anon34
+FIBO_SMS_LIST_EX_IND	oc_sms.h	/^    FIBO_SMS_LIST_EX_IND,$/;"	e	enum:__anon34
+FIBO_SMS_LIST_IND	oc_sms.h	/^    FIBO_SMS_LIST_IND,$/;"	e	enum:__anon34
+FIBO_SMS_MAX_ADDR_LENGTH_V01	oc_sms.h	15;"	d
+FIBO_SMS_MAX_MO_MSG_LENGTH_V01	oc_sms.h	18;"	d
+FIBO_SMS_MAX_MT_MSG_LENGTH_V01	oc_sms.h	21;"	d
+FIBO_SMS_MAX_SCA_ADDR_LENGTH	oc_sms.h	11;"	d
+FIBO_SMS_MEM_FULL_IND	oc_sms.h	/^    FIBO_SMS_MEM_FULL_IND,$/;"	e	enum:__anon34
+FIBO_SMS_MESSAGE_CLASS_0_V01	oc_sms.h	/^    FIBO_SMS_MESSAGE_CLASS_0_V01 = 0, \/**<  Class 0. *\/$/;"	e	enum:__anon33
+FIBO_SMS_MESSAGE_CLASS_1_V01	oc_sms.h	/^    FIBO_SMS_MESSAGE_CLASS_1_V01 = 1, \/**<  Class 1. *\/$/;"	e	enum:__anon33
+FIBO_SMS_MESSAGE_CLASS_2_V01	oc_sms.h	/^    FIBO_SMS_MESSAGE_CLASS_2_V01 = 2, \/**<  Class 2. *\/$/;"	e	enum:__anon33
+FIBO_SMS_MESSAGE_CLASS_3_V01	oc_sms.h	/^    FIBO_SMS_MESSAGE_CLASS_3_V01 = 3, \/**<  Class 3. *\/$/;"	e	enum:__anon33
+FIBO_SMS_MESSAGE_CLASS_NONE_V01	oc_sms.h	/^    FIBO_SMS_MESSAGE_CLASS_NONE_V01 = 4, \/**<  None. *\/$/;"	e	enum:__anon33
+FIBO_SMS_MESSAGE_LENGTH_MAX	oc_sms.h	23;"	d
+FIBO_SMS_MESSAGE_TUPLE_MAX_V01	oc_sms.h	25;"	d
+FIBO_SMS_MSG_FORMAT_CDMA_V01	oc_sms.h	/^    FIBO_SMS_MSG_FORMAT_CDMA_V01 = 0x00, \/**<  Message format CDMA text. *\/$/;"	e	enum:__anon32
+FIBO_SMS_MSG_FORMAT_GW_BC_V01	oc_sms.h	/^    FIBO_SMS_MSG_FORMAT_GW_BC_V01 = 0x07, \/**<  Message format GW_BC text. *\/$/;"	e	enum:__anon32
+FIBO_SMS_MSG_FORMAT_GW_PP_V01	oc_sms.h	/^    FIBO_SMS_MSG_FORMAT_GW_PP_V01 = 0x06, \/**<  Message format GW_PP text. *\/$/;"	e	enum:__anon32
+FIBO_SMS_NEW_MSG_IND	oc_sms.h	/^    FIBO_SMS_NEW_MSG_IND,$/;"	e	enum:__anon34
+FIBO_SMS_REPORT_IND	oc_sms.h	/^    FIBO_SMS_REPORT_IND,$/;"	e	enum:__anon34
+FIBO_SUPPORT_PROTOCOL_MAX_COUNT	oc_gprs.h	105;"	d
+FIBO_UNUSED	fibo_opencpu_comm.h	164;"	d
+FS_O_APPEND	fibo_opencpu.h	78;"	d
+FS_O_CREAT	fibo_opencpu.h	79;"	d
+FS_O_EXCL	fibo_opencpu.h	81;"	d
+FS_O_RDONLY	fibo_opencpu.h	75;"	d
+FS_O_RDWR	fibo_opencpu.h	77;"	d
+FS_O_SYNC	fibo_opencpu.h	82;"	d
+FS_O_TRUNC	fibo_opencpu.h	80;"	d
+FS_O_WRONLY	fibo_opencpu.h	76;"	d
+FS_SEEK_CUR	fibo_opencpu.h	85;"	d
+FS_SEEK_END	fibo_opencpu.h	86;"	d
+FS_SEEK_SET	fibo_opencpu.h	84;"	d
+GAPP_RET_FILE_ALREADY_OPEN_ERROR	fibo_opencpu.h	70;"	d
+GAPP_RET_MEMORY_ERROR	fibo_opencpu.h	66;"	d
+GAPP_RET_NOT_ENOUGH_SPACE_ERROR	fibo_opencpu.h	71;"	d
+GAPP_RET_NOT_INIT	fibo_opencpu.h	65;"	d
+GAPP_RET_NOT_VALID_STATE_ERROR	fibo_opencpu.h	72;"	d
+GAPP_RET_OK	fibo_opencpu.h	63;"	d
+GAPP_RET_OPTION_NOT_SUPPORT	fibo_opencpu.h	67;"	d
+GAPP_RET_PARAMS_ERROR	fibo_opencpu.h	64;"	d
+GAPP_RET_TIMEOUT	fibo_opencpu.h	68;"	d
+GAPP_RET_UNKNOW_ERROR	fibo_opencpu.h	69;"	d
+GAPP_SIGNAL_ID_T	fibo_opencpu_comm.h	/^} GAPP_SIGNAL_ID_T;$/;"	t	typeref:enum:__anon28
+GAPP_SIG_AUDIO_LIST_PLAY_END	fibo_opencpu_comm.h	/^    GAPP_SIG_AUDIO_LIST_PLAY_END,$/;"	e	enum:__anon28
+GAPP_SIG_AUDIO_PLAY_ERROR	fibo_opencpu_comm.h	/^    GAPP_SIG_AUDIO_PLAY_ERROR,$/;"	e	enum:__anon28
+GAPP_SIG_AUDREC_END	fibo_opencpu_comm.h	/^    GAPP_SIG_AUDREC_END,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_ADD_CLEAR_WHITELIST_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_ADD_CLEAR_WHITELIST_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_CONNECT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_CONNECT_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_DISCONNECT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_DISCONNECT_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_READ_REQ_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_READ_REQ_IND = 400,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_RECV_DATA_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_RECV_DATA_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_REMOTE_MTU_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_REMOTE_MTU_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_SCAN_REPORT	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_SCAN_REPORT,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_SET_ADDR_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_SET_ADDR_IND = 350,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_SET_ADV_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_SET_ADV_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_SET_SCAN_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_SET_SCAN_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_UPDATA_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_UPDATA_FAILED,$/;"	e	enum:__anon28
+GAPP_SIG_BLE_UPDATA_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_BLE_UPDATA_SUCCESS,$/;"	e	enum:__anon28
+GAPP_SIG_BT_CONNECT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_CONNECT_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_DATA_RECIEVE_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_DATA_RECIEVE_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_DELETE_DEV_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_DELETE_DEV_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_DISCONNECT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_DISCONNECT_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_HIDDEN_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_HIDDEN_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_INQUIRY_CANCEL_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_INQUIRY_CANCEL_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_OFF_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_OFF_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_ON_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_ON_IND = 300,$/;"	e	enum:__anon28
+GAPP_SIG_BT_PAIR_COMPLETE_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_PAIR_COMPLETE_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_SCAN_COMP_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_SCAN_COMP_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_SCAN_DEV_REPORT	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_SCAN_DEV_REPORT,$/;"	e	enum:__anon28
+GAPP_SIG_BT_SET_LOCAL_ADDR_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_SET_LOCAL_ADDR_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_SET_LOCAL_NAME_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_SET_LOCAL_NAME_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_SSP_NUM_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_SSP_NUM_IND,$/;"	e	enum:__anon28
+GAPP_SIG_BT_VISIBILE_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_BT_VISIBILE_IND,$/;"	e	enum:__anon28
+GAPP_SIG_CC_CONNECT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_CC_CONNECT_IND,\/\/call setup$/;"	e	enum:__anon28
+GAPP_SIG_CC_ERROR_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_CC_ERROR_IND,\/\/call abnormality$/;"	e	enum:__anon28
+GAPP_SIG_CC_NOCARRIER_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_CC_NOCARRIER_IND,\/\/disconnct call$/;"	e	enum:__anon28
+GAPP_SIG_CC_RING_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_CC_RING_IND, \/\/Incoming call$/;"	e	enum:__anon28
+GAPP_SIG_CDRX_NWSUPPORT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_CDRX_NWSUPPORT_IND,$/;"	e	enum:__anon28
+GAPP_SIG_CLOSE_RSP	fibo_opencpu_comm.h	/^    GAPP_SIG_CLOSE_RSP = 64,$/;"	e	enum:__anon28
+GAPP_SIG_CLOSE_RSP1	fibo_opencpu_comm.h	/^    GAPP_SIG_CLOSE_RSP1,$/;"	e	enum:__anon28
+GAPP_SIG_CONNECT_RSP	fibo_opencpu_comm.h	/^    GAPP_SIG_CONNECT_RSP = 63,$/;"	e	enum:__anon28
+GAPP_SIG_CONNECT_RSP1	fibo_opencpu_comm.h	/^    GAPP_SIG_CONNECT_RSP1,$/;"	e	enum:__anon28
+GAPP_SIG_DNS_QUERY_IP_ADDRESS	fibo_opencpu_comm.h	/^    GAPP_SIG_DNS_QUERY_IP_ADDRESS = 70,$/;"	e	enum:__anon28
+GAPP_SIG_FTPCLOSE_FAIL	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPCLOSE_FAIL,$/;"	e	enum:__anon28
+GAPP_SIG_FTPCLOSE_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPCLOSE_SUCCESS,$/;"	e	enum:__anon28
+GAPP_SIG_FTPOPEN_FAIL	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPOPEN_FAIL,$/;"	e	enum:__anon28
+GAPP_SIG_FTPOPEN_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPOPEN_SUCCESS,$/;"	e	enum:__anon28
+GAPP_SIG_FTPREAD_FALI	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPREAD_FALI,$/;"	e	enum:__anon28
+GAPP_SIG_FTPREAD_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPREAD_SUCCESS,$/;"	e	enum:__anon28
+GAPP_SIG_FTPWRITE_FAIL	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPWRITE_FAIL,$/;"	e	enum:__anon28
+GAPP_SIG_FTPWRITE_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_FTPWRITE_SUCCESS,$/;"	e	enum:__anon28
+GAPP_SIG_GNSSOPEN_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_GNSSOPEN_SUCCESS,$/;"	e	enum:__anon28
+GAPP_SIG_HDBD_CMD	fibo_opencpu_comm.h	/^    GAPP_SIG_HDBD_CMD,$/;"	e	enum:__anon28
+GAPP_SIG_HTTP_REQUEST_CONNECT	fibo_opencpu_comm.h	/^    GAPP_SIG_HTTP_REQUEST_CONNECT,$/;"	e	enum:__anon28
+GAPP_SIG_HTTP_REQUEST_END	fibo_opencpu_comm.h	/^    GAPP_SIG_HTTP_REQUEST_END,$/;"	e	enum:__anon28
+GAPP_SIG_HTTP_REQUEST_ERROR	fibo_opencpu_comm.h	/^    GAPP_SIG_HTTP_REQUEST_ERROR,$/;"	e	enum:__anon28
+GAPP_SIG_HTTP_REQUEST_RES	fibo_opencpu_comm.h	/^    GAPP_SIG_HTTP_REQUEST_RES,$/;"	e	enum:__anon28
+GAPP_SIG_INCOMING_DATA_RSP	fibo_opencpu_comm.h	/^    GAPP_SIG_INCOMING_DATA_RSP = 68,$/;"	e	enum:__anon28
+GAPP_SIG_INCOMING_DATA_RSP1	fibo_opencpu_comm.h	/^    GAPP_SIG_INCOMING_DATA_RSP1,$/;"	e	enum:__anon28
+GAPP_SIG_KEYPAD_VALUE	fibo_opencpu_comm.h	/^    GAPP_SIG_KEYPAD_VALUE,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_DEREG_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_DEREG_SUCCESS = 19,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_NOTIFY_FAIL	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_NOTIFY_FAIL = 23,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_NOTIFY_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_NOTIFY_SUCCESS = 21,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_OBSERVE_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_OBSERVE_SUCCESS = 17,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_RCV_DATA	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_RCV_DATA = 22,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_REG_FAIL	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_REG_FAIL = 20,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_REG_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_REG_SUCCESS = 16,$/;"	e	enum:__anon28
+GAPP_SIG_LWM2M_TIANYI_UPDATE_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_LWM2M_TIANYI_UPDATE_SUCCESS = 18,$/;"	e	enum:__anon28
+GAPP_SIG_MAX	fibo_opencpu_comm.h	/^    GAPP_SIG_MAX,$/;"	e	enum:__anon28
+GAPP_SIG_MPINGSTAT_RECV	fibo_opencpu_comm.h	/^    GAPP_SIG_MPINGSTAT_RECV = 72,$/;"	e	enum:__anon28
+GAPP_SIG_MPING_RECV	fibo_opencpu_comm.h	/^    GAPP_SIG_MPING_RECV = 71,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_AEP	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_AEP,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_ALI	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_ALI,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_BAIDU	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_BAIDU,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_HUAWEI	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_HUAWEI,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_ONENET	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_ONENET,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_TENCENT	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_TENCENT,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_AUTH_TUYA	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_AUTH_TUYA,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_DYN_ALI	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_DYN_ALI,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_DYN_TENCENT	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_DYN_TENCENT,$/;"	e	enum:__anon28
+GAPP_SIG_MQTT_CLOUD_TUYA_EVENT	fibo_opencpu_comm.h	/^    GAPP_SIG_MQTT_CLOUD_TUYA_EVENT,$/;"	e	enum:__anon28
+GAPP_SIG_NW_SIGNAL_QUALITY_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_NW_SIGNAL_QUALITY_IND,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_BASE	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_BASE = 30,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_BOOTSTRAP_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_BOOTSTRAP_FAILED = 33,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_BOOTSTRAP_START	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_BOOTSTRAP_START = 31,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_BOOTSTRAP_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_BOOTSTRAP_SUCCESS = 32,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_CONNECT_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_CONNECT_FAILED = 35,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_CONNECT_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_CONNECT_SUCCESS = 34,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_DISCOVER_REQUEST	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_DISCOVER_REQUEST = 58,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_EXECUTE_REQUEST	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_EXECUTE_REQUEST = 61,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_LIFETIME_TIMEOUT	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_LIFETIME_TIMEOUT = 39,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_NOTIFY_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_NOTIFY_FAILED = 55,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_NOTIFY_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_NOTIFY_SUCCESS = 56,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_OBSERVER_REQUEST	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_OBSERVER_REQUEST = 57,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_READ_REQUEST	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_READ_REQUEST = 59,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_REG_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_REG_FAILED = 37,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_REG_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_REG_SUCCESS = 36,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_REG_TIMEOUT	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_REG_TIMEOUT = 38,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_RESPONSE_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_RESPONSE_FAILED = 50,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_RESPONSE_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_RESPONSE_SUCCESS = 51,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_SET_PARAM_REQUEST	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_SET_PARAM_REQUEST = 62,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_STATUS_HALT	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_STATUS_HALT = 40,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_UNREG_DONE	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_UNREG_DONE = 45,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_UPDATE_FAILED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_UPDATE_FAILED = 42,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_UPDATE_NEED	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_UPDATE_NEED = 44,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_UPDATE_SUCCESS	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_UPDATE_SUCCESS = 41,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_UPDATE_TIMEOUT	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_UPDATE_TIMEOUT = 43,$/;"	e	enum:__anon28
+GAPP_SIG_ONENET_EVENT_WRITE_REQUEST	fibo_opencpu_comm.h	/^    GAPP_SIG_ONENET_EVENT_WRITE_REQUEST = 60,$/;"	e	enum:__anon28
+GAPP_SIG_OPENCPU_API_TEST	fibo_opencpu_comm.h	/^    GAPP_SIG_OPENCPU_API_TEST = 200,$/;"	e	enum:__anon28
+GAPP_SIG_PDP_ACTIVE_ADDRESS	fibo_opencpu_comm.h	/^    GAPP_SIG_PDP_ACTIVE_ADDRESS = 69,$/;"	e	enum:__anon28
+GAPP_SIG_PDP_ACTIVE_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_PDP_ACTIVE_IND = 10,$/;"	e	enum:__anon28
+GAPP_SIG_PDP_ACTIVE_OR_DEACTIVE_FAIL_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_PDP_ACTIVE_OR_DEACTIVE_FAIL_IND = 11,$/;"	e	enum:__anon28
+GAPP_SIG_PDP_DEACTIVE_ABNORMALLY_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_PDP_DEACTIVE_ABNORMALLY_IND = 12,$/;"	e	enum:__anon28
+GAPP_SIG_PDP_RELEASE_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_PDP_RELEASE_IND = 0,$/;"	e	enum:__anon28
+GAPP_SIG_PSM_STATUS_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_PSM_STATUS_IND,$/;"	e	enum:__anon28
+GAPP_SIG_PUB_RSP	fibo_opencpu_comm.h	/^    GAPP_SIG_PUB_RSP = 67,$/;"	e	enum:__anon28
+GAPP_SIG_PUB_RSP1	fibo_opencpu_comm.h	/^    GAPP_SIG_PUB_RSP1,$/;"	e	enum:__anon28
+GAPP_SIG_PWRKEY_VALUE	fibo_opencpu_comm.h	/^    GAPP_SIG_PWRKEY_VALUE,$/;"	e	enum:__anon28
+GAPP_SIG_REG_REJECT_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_REG_REJECT_IND,$/;"	e	enum:__anon28
+GAPP_SIG_REG_STATUS_IND	fibo_opencpu_comm.h	/^    GAPP_SIG_REG_STATUS_IND,$/;"	e	enum:__anon28
+GAPP_SIG_REPORT_SIM1_HOTPLUG	fibo_opencpu_comm.h	/^    GAPP_SIG_REPORT_SIM1_HOTPLUG=202,$/;"	e	enum:__anon28
+GAPP_SIG_REPORT_URC_TEXT	fibo_opencpu_comm.h	/^    GAPP_SIG_REPORT_URC_TEXT = 201,$/;"	e	enum:__anon28
+GAPP_SIG_RRC_STATUS_REPORT	fibo_opencpu_comm.h	/^    GAPP_SIG_RRC_STATUS_REPORT,$/;"	e	enum:__anon28
+GAPP_SIG_RTC_ALARM	fibo_opencpu_comm.h	/^    GAPP_SIG_RTC_ALARM,$/;"	e	enum:__anon28
+GAPP_SIG_SUB_RSP	fibo_opencpu_comm.h	/^    GAPP_SIG_SUB_RSP = 65,$/;"	e	enum:__anon28
+GAPP_SIG_SUB_RSP1	fibo_opencpu_comm.h	/^    GAPP_SIG_SUB_RSP1,$/;"	e	enum:__anon28
+GAPP_SIG_TTS_END	fibo_opencpu_comm.h	/^    GAPP_SIG_TTS_END = 73,$/;"	e	enum:__anon28
+GAPP_SIG_UNSUB_RSP	fibo_opencpu_comm.h	/^    GAPP_SIG_UNSUB_RSP = 66,$/;"	e	enum:__anon28
+GAPP_SIG_UNSUB_RSP1	fibo_opencpu_comm.h	/^    GAPP_SIG_UNSUB_RSP1,$/;"	e	enum:__anon28
+GAPP_TTS_BUSY	fibo_opencpu.h	/^    GAPP_TTS_BUSY = -2,$/;"	e	enum:__anon1
+GAPP_TTS_ERROR	fibo_opencpu.h	/^    GAPP_TTS_ERROR = 1,$/;"	e	enum:__anon1
+GAPP_TTS_MEMORY_ERROR	fibo_opencpu.h	/^    GAPP_TTS_MEMORY_ERROR = -3$/;"	e	enum:__anon1
+GAPP_TTS_PARAMS_ERROR	fibo_opencpu.h	/^    GAPP_TTS_PARAMS_ERROR = -1,$/;"	e	enum:__anon1
+GAPP_TTS_SUCCESS	fibo_opencpu.h	/^    GAPP_TTS_SUCCESS = 0,$/;"	e	enum:__anon1
+HAL_UART_DATA_BITS_7	oc_uart.h	/^    HAL_UART_DATA_BITS_7 = 7,$/;"	e	enum:hal_uart_data_bits_s
+HAL_UART_DATA_BITS_8	oc_uart.h	/^    HAL_UART_DATA_BITS_8 = 8$/;"	e	enum:hal_uart_data_bits_s
+HAL_UART_EVEN_PARITY	oc_uart.h	/^    HAL_UART_EVEN_PARITY, \/\/\/< Parity check is even$/;"	e	enum:__anon27
+HAL_UART_NO_PARITY	oc_uart.h	/^    HAL_UART_NO_PARITY,   \/\/\/< No parity check$/;"	e	enum:__anon27
+HAL_UART_ODD_PARITY	oc_uart.h	/^    HAL_UART_ODD_PARITY,  \/\/\/< Parity check is odd$/;"	e	enum:__anon27
+HAL_UART_STOP_BITS_1	oc_uart.h	/^    HAL_UART_STOP_BITS_1 = 1,$/;"	e	enum:hal_uart_stop_bits_s
+HAL_UART_STOP_BITS_2	oc_uart.h	/^    HAL_UART_STOP_BITS_2 = 2$/;"	e	enum:hal_uart_stop_bits_s
+INT16	basic_type.h	/^typedef short           INT16;$/;"	t
+INT16	fibo_opencpu_comm.h	/^typedef short INT16;$/;"	t
+INT16	oc_fota.h	/^typedef short INT16;$/;"	t
+INT32	basic_type.h	/^typedef int             INT32;$/;"	t
+INT32	fibo_opencpu_comm.h	/^typedef int INT32;$/;"	t
+INT32	oc_fota.h	/^typedef int INT32;$/;"	t
+INT8	basic_type.h	/^typedef signed char     INT8;$/;"	t
+INT8	fibo_opencpu_comm.h	/^typedef char INT8;$/;"	t
+INT8	oc_fota.h	/^typedef char INT8;$/;"	t
+ISR_CB	fibo_opencpu.h	/^typedef void (*ISR_CB)(void* param);$/;"	t
+KEY_PRESS	fibo_opencpu.h	/^    KEY_PRESS,$/;"	e	enum:__anon12
+KEY_RELEASE	fibo_opencpu.h	/^    KEY_RELEASE,$/;"	e	enum:__anon12
+LBS_DESC_MAX_LEN	fibo_opencpu.h	212;"	d
+LBS_LOC_MAX_LEN	fibo_opencpu.h	213;"	d
+LBS_RAWDATA_MAX_LEN	fibo_opencpu.h	211;"	d
+LONG_TIME_PRESS	fibo_opencpu.h	/^    LONG_TIME_PRESS,$/;"	e	enum:__anon12
+MAX	fibo_opencpu_comm.h	191;"	d
+MAX_AP_ADDR_LEN	fibo_opencpu.h	196;"	d
+MAX_AP_NAME_LEN	fibo_opencpu.h	195;"	d
+MAX_AP_NUM	fibo_opencpu.h	197;"	d
+MAX_CODE_TYPE	fibo_opencpu.h	139;"	d
+MAX_CODE_TYPE_LEN	fibo_opencpu.h	138;"	d
+MIN	fibo_opencpu_comm.h	183;"	d
+MemoryState	fibo_opencpu.h	/^    bool MemoryState;$/;"	m	struct:__anon11
+Mode_DRX	fibo_opencpu.h	/^Mode_DRX, \/\/DRX 模式$/;"	e	enum:__anon16
+Mode_NoSet	fibo_opencpu.h	/^Mode_NoSet = 0, \/\/不使用省电模式$/;"	e	enum:__anon16
+Mode_PSM	fibo_opencpu.h	/^Mode_PSM = 1, \/\/PSM 模式$/;"	e	enum:__anon16
+Mode_eDRX	fibo_opencpu.h	/^Mode_eDRX, \/\/eDRX 模式$/;"	e	enum:__anon16
+OTA_ERRCODE_APPFOTA_CHECKFAIL	fibo_opencpu.h	55;"	d
+OTA_ERRCODE_APP_CHECKFAIL	fibo_opencpu.h	53;"	d
+OTA_ERRCODE_BLE_CHECKFAIL	fibo_opencpu.h	57;"	d
+OTA_ERRCODE_BLE_FS_FULL	fibo_opencpu.h	58;"	d
+OTA_ERRCODE_DL_FAIL	fibo_opencpu.h	56;"	d
+OTA_ERRCODE_FM_CHECKFAIL	fibo_opencpu.h	54;"	d
+OTA_ERRCODE_FSREAD	fibo_opencpu.h	51;"	d
+OTA_ERRCODE_FSWRITE	fibo_opencpu.h	52;"	d
+OTA_ERRCODE_MEMLEAK	fibo_opencpu.h	50;"	d
+OTA_ERRCODE_SPACE_NOT_ENOUGH	fibo_opencpu.h	59;"	d
+Openstat	fibo_opencpu.h	/^    bool Openstat;$/;"	m	struct:__anon11
+PORT_MAX	fibo_opencpu.h	356;"	d
+POWER_ON_CAUSE	fibo_opencpu.h	/^} POWER_ON_CAUSE;$/;"	t	typeref:enum:__anon5
+Report_UsbDev_Event	fibo_opencpu.h	/^typedef int (*Report_UsbDev_Event) (int msg);$/;"	t
+SAPP_GPIO_CFG_T	fibo_opencpu.h	222;"	d
+SAPP_IO_ID_T	fibo_opencpu.h	221;"	d
+SAPP_IO_ID_T	fibo_opencpu_comm.h	16;"	d
+SHORT_TIME_PRESS	fibo_opencpu.h	/^    SHORT_TIME_PRESS,$/;"	e	enum:__anon12
+SMS_BUF_LEN	oc_sms.h	30;"	d
+TTS_PITCH_MAX	fibo_opencpu.h	107;"	d
+TTS_PITCH_MIN	fibo_opencpu.h	105;"	d
+TTS_PITCH_NORMAL	fibo_opencpu.h	106;"	d
+TTS_SPEED_MAX	fibo_opencpu.h	103;"	d
+TTS_SPEED_MIN	fibo_opencpu.h	101;"	d
+TTS_SPEED_NORMAL	fibo_opencpu.h	102;"	d
+T_CellInfo	fibo_opencpu.h	/^}T_CellInfo;$/;"	t	typeref:struct:__anon15
+T_MemInfo	fibo_opencpu.h	/^}T_MemInfo;$/;"	t	typeref:struct:__anon17
+T_PowerMode	fibo_opencpu.h	/^}T_PowerMode;$/;"	t	typeref:enum:__anon16
+UART_RX_BUF_SIZE	oc_uart.h	18;"	d
+UART_TX_BUF_SIZE	oc_uart.h	19;"	d
+UINT16	basic_type.h	/^typedef unsigned short  UINT16;$/;"	t
+UINT16	fibo_opencpu_comm.h	/^typedef unsigned short UINT16;$/;"	t
+UINT16	oc_fota.h	/^typedef unsigned short UINT16;$/;"	t
+UINT32	basic_type.h	/^typedef unsigned int    UINT32;$/;"	t
+UINT32	fibo_opencpu_comm.h	/^typedef unsigned int UINT32;$/;"	t
+UINT32	oc_fota.h	/^typedef unsigned int UINT32;$/;"	t
+UINT64	fibo_opencpu_comm.h	/^typedef unsigned long long  UINT64;$/;"	t
+UINT64	oc_fota.h	/^typedef unsigned long long  UINT64;$/;"	t
+UINT8	basic_type.h	/^typedef unsigned char   UINT8;$/;"	t
+UINT8	fibo_opencpu_comm.h	/^typedef unsigned char UINT8;$/;"	t
+UINT8	oc_fota.h	/^typedef unsigned char UINT8;$/;"	t
+VSIM_COMMAND	fibo_opencpu.h	/^typedef int (*VSIM_COMMAND)(uint8_t *apdu_req, uint16_t apdu_req_len, uint8_t *apdu_rsp, uint16_t *apdu_rsp_len, uint8_t slot);$/;"	t
+WAKEUP_BY_DATA	fibo_opencpu.h	/^    WAKEUP_BY_DATA,$/;"	e	enum:__anon25
+WAKEUP_BY_INCALL	fibo_opencpu.h	/^    WAKEUP_BY_INCALL = 0,$/;"	e	enum:__anon25
+WAKEUP_BY_SMS	fibo_opencpu.h	/^    WAKEUP_BY_SMS,$/;"	e	enum:__anon25
+WAKEUP_TYPE_E	fibo_opencpu.h	/^} WAKEUP_TYPE_E;$/;"	t	typeref:enum:__anon25
+_BASIC_TYPE_H_	basic_type.h	3;"	d
+_FIBO_OPENCPU_H_	fibo_opencpu.h	2;"	d
+_OC_CALL_H_	oc_call.h	2;"	d
+_OC_FIBO_NW_H_	oc_nw.h	2;"	d
+_OC_GPRS_H_	oc_gprs.h	2;"	d
+_OC_SMS_H	oc_sms.h	2;"	d
+_close	fibo_opencpu.h	/^    void (*_close)(void);$/;"	m	struct:__anon14
+_init	fibo_opencpu.h	/^    void (*_init)(void);$/;"	m	struct:__anon14
+_open	fibo_opencpu.h	/^    void (*_open)(void);$/;"	m	struct:__anon14
+abs_time	fibo_opencpu.h	/^    uint64_t     abs_time;   \/\/ 0 means invalid$/;"	m	struct:__anon23
+active_state	oc_gprs.h	/^    INT8 active_state;$/;"	m	struct:pdp_profile
+ap_addr	fibo_opencpu.h	/^    uint8_t ap_addr[MAX_AP_ADDR_LEN];$/;"	m	struct:fibo_wifiscan_info
+ap_info	fibo_opencpu.h	/^    fibo_wifiscan_ap_info_t ap_info[MAX_AP_NUM];$/;"	m	struct:fibo_wifiscan_res
+ap_name	fibo_opencpu.h	/^    uint8_t ap_name[MAX_AP_NAME_LEN];$/;"	m	struct:fibo_wifiscan_info
+ap_num	fibo_opencpu.h	/^    int8_t  ap_num;$/;"	m	struct:fibo_wifiscan_res
+ap_rssi	fibo_opencpu.h	/^    int8_t  ap_rssi;$/;"	m	struct:fibo_wifiscan_info
+apn	oc_gprs.h	/^    UINT8 apn[FIBO_APN_MAX_LEN];$/;"	m	struct:pdp_profile
+apn	oc_gprs.h	/^    UINT8 apn[FIBO_APN_MAX_LEN];$/;"	m	struct:pdp_profile_s
+apnPwd	oc_gprs.h	/^    UINT8 apnPwd[FIBO_APN_PWD_MAX_LEN];$/;"	m	struct:pdp_profile
+apnPwd	oc_gprs.h	/^    UINT8 apnPwd[FIBO_APN_PWD_MAX_LEN];$/;"	m	struct:pdp_profile_s
+apnPwdSize	oc_gprs.h	/^    UINT8 apnPwdSize;$/;"	m	struct:pdp_profile
+apnPwdSize	oc_gprs.h	/^    UINT8 apnPwdSize;$/;"	m	struct:pdp_profile_s
+apnUser	oc_gprs.h	/^    UINT8 apnUser[FIBO_APN_USER_MAX_LEN];$/;"	m	struct:pdp_profile
+apnUser	oc_gprs.h	/^    UINT8 apnUser[FIBO_APN_USER_MAX_LEN];$/;"	m	struct:pdp_profile_s
+apnUserSize	oc_gprs.h	/^    UINT8 apnUserSize;$/;"	m	struct:pdp_profile
+apnUserSize	oc_gprs.h	/^    UINT8 apnUserSize;$/;"	m	struct:pdp_profile_s
+app_delta_reboot	fibo_opencpu.h	/^    bool app_delta_reboot; \/\/whether to reboot after app delta upgrade$/;"	m	struct:__anon21
+app_whole_reboot	fibo_opencpu.h	/^    bool app_whole_reboot; \/\/whether to reboot after app whole upgrade$/;"	m	struct:__anon21
+appimg_flash_address	fibo_opencpu.h	/^    int appimg_flash_address;$/;"	m	struct:__anon19
+appimg_flash_size	fibo_opencpu.h	/^    int appimg_flash_size;$/;"	m	struct:__anon19
+arg	oc_charge.h	/^    void *arg;$/;"	m	struct:__anon53
+at_record_callback	fibo_opencpu.h	/^typedef void (*at_record_callback)(char *atcmd,unsigned int ret,unsigned short err,char *resp);$/;"	t
+at_resp	fibo_opencpu_comm.h	/^    fibo_at_resp_t at_resp;$/;"	m	struct:FIBO_CALLBACK_S
+at_urc_callback	fibo_opencpu.h	/^typedef void (*at_urc_callback)(char *urc);$/;"	t
+auPlayerCallback_t	fibo_opencpu.h	/^typedef void (*auPlayerCallback_t)(void);$/;"	t
+barCodeEx_t	fibo_opencpu.h	/^}barCodeEx_t;$/;"	t	typeref:struct:__anon3
+baud	oc_uart.h	/^    uint32_t baud;                  \/\/\/< baudrate, 0 for auto baud$/;"	m	struct:hal_uart_config_ex_s
+baud	oc_uart.h	/^    uint32_t baud;                  \/\/\/< baudrate, 0 for auto baud$/;"	m	struct:hal_uart_config_s
+ble_data_recv_callback	fibo_opencpu.h	/^typedef INT32 (*ble_data_recv_callback) (int data_len,char *data);$/;"	t
+boot_address	fibo_opencpu.h	/^    int boot_address;$/;"	m	struct:__anon19
+boot_size	fibo_opencpu.h	/^    int boot_size;$/;"	m	struct:__anon19
+callBackFunc	fibo_opencpu.h	/^typedef int32_t (*callBackFunc)(void *arg);$/;"	t
+callback	fibo_opencpu.h	/^    ISR_CB callback;    \/\/interrupt callback$/;"	m	struct:__anon8
+camTask	fibo_opencpu.h	/^    osiThread_t *camTask;$/;"	m	struct:__anon11
+camastae_t	fibo_opencpu.h	/^} camastae_t;$/;"	t	typeref:struct:__anon11
+camera_reg_t	fibo_opencpu.h	/^}camera_reg_t;$/;"	t	typeref:struct:__anon9
+cause_code	oc_sms.h	/^    e_fibo_sms_tl_cause_code_type           cause_code;$/;"	m	struct:__anon47
+cause_code_valid	oc_sms.h	/^    uint8_t                               cause_code_valid;$/;"	m	struct:__anon47
+cell_id	oc_gprs.h	/^    uint32_t cell_id;$/;"	m	struct:__anon57
+cell_id	oc_gprs.h	/^    uint32_t cell_id;$/;"	m	struct:__anon58
+charge_handler_t	oc_charge.h	/^typedef void (*charge_handler_t)(void *arg);$/;"	t
+chg_cur	oc_charge.h	/^    UINT32 chg_cur;   \/\/ max charger current$/;"	m	struct:__anon54
+cid	oc_gprs.h	/^    INT8 cid;$/;"	m	struct:pdp_profile
+cid	oc_gprs.h	/^    INT8 cid;$/;"	m	struct:pdp_profile_s
+codeType	fibo_opencpu.h	/^    char codeType[MAX_CODE_TYPE_LEN];$/;"	m	struct:__anon3
+codeValue	fibo_opencpu.h	/^    uint8_t codeValue;$/;"	m	struct:__anon3
+codec_Spec_t	fibo_opencpu.h	/^}codec_Spec_t;$/;"	t	typeref:struct:__anon18
+codec_close	fibo_opencpu.h	/^    void (*codec_close)(void); \/\/给带i2c芯片预留的关闭配置函数$/;"	m	struct:__anon18
+codec_init	fibo_opencpu.h	/^    void (*codec_init)(void); \/\/给带i2c芯片预留的初始化配置函数$/;"	m	struct:__anon18
+codec_input	fibo_opencpu.h	/^    void (*codec_input)(void); \/\/给带i2c芯片预留的音频输入配置函数$/;"	m	struct:__anon18
+codec_output	fibo_opencpu.h	/^    void (*codec_output)(void); \/\/给带i2c芯片预留的音频输出配置函数$/;"	m	struct:__anon18
+codecen_mode	fibo_opencpu.h	/^    UINT8 codecen_mode; \/\/codecen_pinid 拉高使能或拉低使能 1 拉高使能,2拉低使能$/;"	m	struct:__anon18
+codecen_pinid	fibo_opencpu.h	/^    INT32 codecen_pinid; \/\/codec使能管脚 0:不需要配置 非0使能管脚pin  必须配置$/;"	m	struct:__anon18
+codeci2c_en	fibo_opencpu.h	/^    bool codeci2c_en; \/\/i2c使能 赋值0,1$/;"	m	struct:__anon18
+command	fibo_opencpu.h	/^    uint8_t command;$/;"	m	struct:__anon10
+config	oc_nw.h	/^    signal_quality_urc_config_type_t config;$/;"	m	struct:nw_config_signal_quality_urc_s
+cts_enable	oc_uart.h	/^    bool cts_enable;                \/\/\/< enable cts or not$/;"	m	struct:hal_uart_config_ex_s
+cts_enable	oc_uart.h	/^    bool cts_enable;                \/\/\/< enable cts or not$/;"	m	struct:hal_uart_config_s
+ctzu_en	fibo_opencpu.h	/^    bool ctzu_en;$/;"	m	struct:__anon21
+curr_rat	fibo_opencpu.h	/^    uint8_t curr_rat;$/;"	m	struct:__anon6
+curr_rat	oc_gprs.h	/^    uint8_t curr_rat;$/;"	m	struct:__anon59
+d_comp	oc_gprs.h	/^    INT8 d_comp;$/;"	m	struct:pdp_profile
+data_bits	oc_uart.h	/^    hal_uart_data_bits_t data_bits; \/\/\/< data bits$/;"	m	struct:hal_uart_config_ex_s
+data_bits	oc_uart.h	/^    hal_uart_data_bits_t data_bits; \/\/\/< data bits$/;"	m	struct:hal_uart_config_s
+data_head	oc_sms.h	/^    fibo_sms_user_data_head_t data_head;$/;"	m	struct:__anon40
+data_head_valid	oc_sms.h	/^    uint8_t data_head_valid;$/;"	m	struct:__anon40
+day	fibo_opencpu.h	/^    uint8_t day;   \/\/\/< Day$/;"	m	struct:__anon7
+day	oc_sms.h	/^    int8_t day;     \/*!< Indicate the day (1-31). *\/$/;"	m	struct:__anon29
+day	oc_sms.h	/^    uint8_t day;$/;"	m	struct:__anon36
+dcs	oc_sms.h	/^    uint8_t dcs;$/;"	m	struct:__anon30
+desc	fibo_opencpu.h	/^    char *desc;$/;"	m	struct:fibo_lbs_res
+dialnum	oc_call.h	/^    char dialnum[23];$/;"	m	struct:__anon26
+direction	oc_call.h	/^    uint8_t direction;$/;"	m	struct:__anon26
+dumpCallBack	fibo_opencpu.h	/^        callBackFunc dumpCallBack; $/;"	m	struct:__anon24
+e_fibo_sms_format_type_t	oc_sms.h	/^}e_fibo_sms_format_type_t;$/;"	t	typeref:enum:__anon31
+e_fibo_sms_message_class_type_t	oc_sms.h	/^}e_fibo_sms_message_class_type_t;$/;"	t	typeref:enum:__anon33
+e_fibo_sms_mode_type_t	oc_sms.h	/^}e_fibo_sms_mode_type_t;$/;"	t	typeref:enum:__anon42
+e_fibo_sms_storage_type_t	oc_sms.h	/^}e_fibo_sms_storage_type_t;$/;"	t	typeref:enum:__anon41
+e_fibo_sms_tag_type_t	oc_sms.h	/^}e_fibo_sms_tag_type_t;$/;"	t	typeref:enum:__anon38
+e_fibo_sms_tl_cause_code_type	oc_sms.h	/^} e_fibo_sms_tl_cause_code_type;$/;"	t	typeref:enum:__anon46
+e_mode	oc_sms.h	/^    e_fibo_sms_mode_type_t    e_mode;$/;"	m	struct:__anon44
+e_mode	oc_sms.h	/^    e_fibo_sms_mode_type_t    e_mode;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon51
+e_mode_valid	oc_sms.h	/^    uint8_t e_mode_valid;$/;"	m	struct:__anon44
+e_mode_valid	oc_sms.h	/^    uint8_t e_mode_valid;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon51
+e_storage	oc_sms.h	/^    e_fibo_sms_storage_type_t e_storage;$/;"	m	struct:__anon44
+e_storage	oc_sms.h	/^    e_fibo_sms_storage_type_t e_storage;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon51
+ecl	fibo_opencpu.h	/^int ecl; \/\/信号覆盖等级,0 - 常规覆盖 1 - 扩展覆盖 2 - 极端覆盖$/;"	m	struct:__anon15
+ecm_auto_dial	fibo_opencpu.h	/^    uint8_t ecm_auto_dial;$/;"	m	struct:__anon21
+ecm_host_detect	fibo_opencpu.h	/^    uint8_t ecm_host_detect;$/;"	m	struct:__anon21
+enable_keypad	fibo_opencpu.h	/^    bool enable_keypad; \/\/Whether to enable the keypad function, default value: false, not enabled$/;"	m	struct:__anon22
+end_vol	oc_charge.h	/^    UINT32 end_vol;   \/\/ charger end_vol$/;"	m	struct:__anon54
+fiboChargeNoticeCB_t	oc_charge.h	/^typedef void (*fiboChargeNoticeCB_t)(UINT32 msg);$/;"	t
+fiboChargeParams_t	oc_charge.h	/^} fiboChargeParams_t;$/;"	t	typeref:struct:__anon54
+fiboVolDetectParams_t	oc_charge.h	/^} fiboVolDetectParams_t;$/;"	t	typeref:struct:__anon53
+fibo_app_handle_at_cb	fibo_opencpu.h	/^typedef void(*fibo_app_handle_at_cb)(UINT8*, UINT16);$/;"	t
+fibo_at_resp_t	fibo_opencpu_comm.h	/^typedef void (*fibo_at_resp_t)(UINT8 *rsp, UINT16 rsplen);$/;"	t
+fibo_call_info	oc_call.h	/^}fibo_call_info;$/;"	t	typeref:struct:__anon26
+fibo_config_t	fibo_opencpu.h	/^}fibo_config_t;$/;"	t	typeref:struct:__anon21
+fibo_flash_partinfo_t	fibo_opencpu.h	/^}fibo_flash_partinfo_t;$/;"	t	typeref:struct:__anon19
+fibo_keypad_info_t	fibo_opencpu.h	/^} fibo_keypad_info_t;$/;"	t	typeref:struct:__anon22
+fibo_lbs_res	fibo_opencpu.h	/^typedef struct fibo_lbs_res{$/;"	s
+fibo_lbs_res_t	fibo_opencpu.h	/^}fibo_lbs_res_t;$/;"	t	typeref:struct:fibo_lbs_res
+fibo_nw_config_rrcrel_t	oc_nw.h	/^} fibo_nw_config_rrcrel_t;$/;"	t	typeref:struct:nw_config_rrcrel_s
+fibo_nw_config_signal_quality_urc_t	oc_nw.h	/^} fibo_nw_config_signal_quality_urc_t;$/;"	t	typeref:struct:nw_config_signal_quality_urc_s
+fibo_nw_nitz_time_info_t	fibo_opencpu.h	/^} fibo_nw_nitz_time_info_t;$/;"	t	typeref:struct:__anon23
+fibo_pdp_profile_t	oc_gprs.h	/^} fibo_pdp_profile_t;$/;"	t	typeref:struct:pdp_profile_s
+fibo_result_s	fibo_opencpu_comm.h	/^enum fibo_result_s$/;"	g
+fibo_result_t	fibo_opencpu_comm.h	/^typedef enum fibo_result_s fibo_result_t;$/;"	t	typeref:enum:fibo_result_s
+fibo_signal	fibo_opencpu_comm.h	/^    fibo_signal_t fibo_signal;$/;"	m	struct:FIBO_CALLBACK_S
+fibo_signal_t	fibo_opencpu_comm.h	/^typedef void (*fibo_signal_t)(GAPP_SIGNAL_ID_T sig, va_list arg);$/;"	t
+fibo_sms_event_id_e	oc_sms.h	/^}fibo_sms_event_id_e;$/;"	t	typeref:enum:__anon34
+fibo_sms_get_store_max_size_info_t	oc_sms.h	/^} fibo_sms_get_store_max_size_info_t;$/;"	t	typeref:struct:__anon51
+fibo_sms_msg_format_t_v01	oc_sms.h	/^}fibo_sms_msg_format_t_v01;$/;"	t	typeref:enum:__anon32
+fibo_sms_msg_list_data_info_t	oc_sms.h	/^}fibo_sms_msg_list_data_info_t;$/;"	t	typeref:struct:__anon49
+fibo_sms_msg_list_info_t	oc_sms.h	/^} fibo_sms_msg_list_info_t;$/;"	t	typeref:struct:__anon50
+fibo_sms_msg_list_req_info_t	oc_sms.h	/^} fibo_sms_msg_list_req_info_t;$/;"	t	typeref:struct:__anon48
+fibo_sms_msg_t	oc_sms.h	/^}fibo_sms_msg_t;$/;"	t	typeref:struct:__anon30
+fibo_sms_raw_send_resp_t	oc_sms.h	/^} fibo_sms_raw_send_resp_t;$/;"	t	typeref:struct:__anon47
+fibo_sms_read_message_info_t	oc_sms.h	/^}fibo_sms_read_message_info_t;$/;"	t	typeref:struct:__anon40
+fibo_sms_read_message_req_info_t	oc_sms.h	/^}fibo_sms_read_message_req_info_t;$/;"	t	typeref:struct:__anon43
+fibo_sms_rxmsg_handler_func_t	oc_sms.h	/^typedef void (*fibo_sms_rxmsg_handler_func_t)($/;"	t
+fibo_sms_send_msg_info_t	oc_sms.h	/^}fibo_sms_send_msg_info_t;  \/* Message *\/$/;"	t	typeref:struct:__anon35
+fibo_sms_send_raw_message_data_t	oc_sms.h	/^} fibo_sms_send_raw_message_data_t;$/;"	t	typeref:struct:__anon45
+fibo_sms_service_center_cfg_t	oc_sms.h	/^}fibo_sms_service_center_cfg_t;$/;"	t	typeref:struct:__anon37
+fibo_sms_storage_info_t	oc_sms.h	/^} fibo_sms_storage_info_t;$/;"	t	typeref:struct:__anon44
+fibo_sms_store_max_size_info_t	oc_sms.h	/^} fibo_sms_store_max_size_info_t;$/;"	t	typeref:struct:__anon52
+fibo_sms_time_t	oc_sms.h	/^}fibo_sms_time_t;$/;"	t	typeref:struct:__anon29
+fibo_sms_timestamp	oc_sms.h	/^}fibo_sms_timestamp;$/;"	t	typeref:struct:__anon36
+fibo_sms_user_data_head_t	oc_sms.h	/^}fibo_sms_user_data_head_t;$/;"	t	typeref:struct:__anon39
+fibo_tts_cfg_operation	fibo_opencpu.h	/^enum fibo_tts_cfg_operation$/;"	g
+fibo_tts_cfg_param	fibo_opencpu.h	/^enum fibo_tts_cfg_param$/;"	g
+fibo_usb_buffcfg_t	fibo_opencpu.h	/^}fibo_usb_buffcfg_t;$/;"	t	typeref:struct:__anon20
+fibo_wifiscan_ap_info_t	fibo_opencpu.h	/^}fibo_wifiscan_ap_info_t;$/;"	t	typeref:struct:fibo_wifiscan_info
+fibo_wifiscan_info	fibo_opencpu.h	/^typedef struct fibo_wifiscan_info{$/;"	s
+fibo_wifiscan_res	fibo_opencpu.h	/^typedef struct fibo_wifiscan_res{$/;"	s
+fibo_wifiscan_res_t	fibo_opencpu.h	/^}fibo_wifiscan_res_t;$/;"	t	typeref:struct:fibo_wifiscan_res
+flash_address	fibo_opencpu.h	/^    int flash_address;$/;"	m	struct:__anon19
+flash_size	fibo_opencpu.h	/^    int flash_size;$/;"	m	struct:__anon19
+fo	oc_sms.h	/^    uint8_t fo;$/;"	m	struct:__anon30
+format	oc_sms.h	/^    e_fibo_sms_format_type_t format;$/;"	m	struct:__anon35
+format	oc_sms.h	/^    e_fibo_sms_format_type_t format;$/;"	m	struct:__anon40
+format	oc_sms.h	/^    fibo_sms_msg_format_t_v01 format;$/;"	m	struct:__anon45
+fota_download_cb_t	fibo_opencpu.h	/^typedef void (*fota_download_cb_t)(UINT32 size, UINT32 total);$/;"	t
+fota_download_cb_t	fibo_opencpu_comm.h	/^typedef void (*fota_download_cb_t)(UINT32 size, UINT32 total);$/;"	t
+free_slots	oc_sms.h	/^    uint32_t free_slots;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon52
+free_slots_valid	oc_sms.h	/^    uint8_t free_slots_valid;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon52
+frequency	oc_nw.h	/^    UINT8 frequency;$/;"	m	struct:nw_config_rrcrel_s
+fs_factory_address	fibo_opencpu.h	/^    int fs_factory_address;$/;"	m	struct:__anon19
+fs_factory_size	fibo_opencpu.h	/^    int fs_factory_size;$/;"	m	struct:__anon19
+fs_modem_address	fibo_opencpu.h	/^    int fs_modem_address;$/;"	m	struct:__anon19
+fs_modem_size	fibo_opencpu.h	/^    int fs_modem_size;$/;"	m	struct:__anon19
+fs_sys_address	fibo_opencpu.h	/^    int fs_sys_address;$/;"	m	struct:__anon19
+fs_sys_address_size	fibo_opencpu.h	/^    int fs_sys_address_size;$/;"	m	struct:__anon19
+gCamPowerOnFlag	fibo_opencpu.h	/^    bool gCamPowerOnFlag;$/;"	m	struct:__anon11
+gSysnvUsbWorkMode	fibo_opencpu.h	/^    int gSysnvUsbWorkMode;$/;"	m	struct:__anon21
+getCurbatVol	fibo_opencpu.h	/^    bool getCurbatVol;$/;"	m	struct:__anon21
+gsm_scell_info	oc_gprs.h	/^    gsm_scell_info_t gsm_scell_info;$/;"	m	struct:__anon59
+gsm_scell_info_t	oc_gprs.h	/^} gsm_scell_info_t;$/;"	t	typeref:struct:__anon58
+h_comp	oc_gprs.h	/^    INT8 h_comp;$/;"	m	struct:pdp_profile
+hal_rtc_time_t	fibo_opencpu.h	/^} hal_rtc_time_t;$/;"	t	typeref:struct:__anon7
+hal_uart_config_ex_s	oc_uart.h	/^struct hal_uart_config_ex_s$/;"	s
+hal_uart_config_s	oc_uart.h	/^struct hal_uart_config_s$/;"	s
+hal_uart_config_t	oc_uart.h	/^typedef struct hal_uart_config_s hal_uart_config_t;$/;"	t	typeref:struct:hal_uart_config_s
+hal_uart_data_bits_s	oc_uart.h	/^enum hal_uart_data_bits_s$/;"	g
+hal_uart_data_bits_t	oc_uart.h	/^typedef enum hal_uart_data_bits_s hal_uart_data_bits_t;$/;"	t	typeref:enum:hal_uart_data_bits_s
+hal_uart_parity_t	oc_uart.h	/^}hal_uart_parity_t;$/;"	t	typeref:enum:__anon27
+hal_uart_port_t	oc_uart.h	/^typedef int hal_uart_port_t;$/;"	t
+hal_uart_stop_bits_s	oc_uart.h	/^enum hal_uart_stop_bits_s$/;"	g
+hal_uart_stop_bits_t	oc_uart.h	/^typedef enum hal_uart_stop_bits_s hal_uart_stop_bits_t;$/;"	t	typeref:enum:hal_uart_stop_bits_s
+handler	oc_charge.h	/^    charge_handler_t handler;$/;"	m	struct:__anon53
+height	fibo_opencpu.h	/^    uint32_t height;$/;"	m	struct:__anon11
+hour	fibo_opencpu.h	/^    uint8_t hour;  \/\/\/< Hour$/;"	m	struct:__anon7
+hour	oc_sms.h	/^    int8_t hour;    \/*!< Indicate the hours (0-23). *\/$/;"	m	struct:__anon29
+hours	oc_sms.h	/^    uint8_t hours;$/;"	m	struct:__anon36
+i2s_sel	fibo_opencpu.h	/^    UINT8 i2s_sel; \/\/i2s 序列号1,2$/;"	m	struct:__anon18
+i2sin_en	fibo_opencpu.h	/^    bool i2sin_en; \/\/sdati_pi 使能配置 :0 不使用i2s输入脚  1:使用ii2s输入脚$/;"	m	struct:__anon18
+idleCallBack	fibo_opencpu.h	/^        callBackFunc idleCallBack; $/;"	m	struct:__anon24
+idx	oc_call.h	/^    uint8_t idx;$/;"	m	struct:__anon26
+imm_release	oc_nw.h	/^    UINT8 imm_release;$/;"	m	struct:nw_config_rrcrel_s
+inte_rising	fibo_opencpu.h	/^    bool inte_rising;   \/\/rising edge or level high interrupt enabled$/;"	m	struct:__anon8
+intr_enable	fibo_opencpu.h	/^    bool intr_enable;   \/\/interrupt enabled, only for GPIO input$/;"	m	struct:__anon8
+intr_falling	fibo_opencpu.h	/^    bool intr_falling;    \/\/falling edge or level low interrupt enabled$/;"	m	struct:__anon8
+intr_level	fibo_opencpu.h	/^    bool intr_level;    \/\/ true for level interrupt, false for edge interrupt$/;"	m	struct:__anon8
+is_debounce	fibo_opencpu.h	/^    bool is_debounce;   \/\/ debounce enabled$/;"	m	struct:__anon8
+issnapshot	fibo_opencpu.h	/^    bool issnapshot;$/;"	m	struct:__anon11
+ivTTS_READDIGIT_AS_NUMBER	fibo_opencpu.h	114;"	d
+ivTTS_READDIGIT_AS_VALUE	fibo_opencpu.h	115;"	d
+ivTTS_READDIGIT_AUTO	fibo_opencpu.h	113;"	d
+ivTTS_VOLUME_MAX	fibo_opencpu.h	111;"	d
+ivTTS_VOLUME_MIN	fibo_opencpu.h	109;"	d
+ivTTS_VOLUME_NORMAL	fibo_opencpu.h	110;"	d
+key_callback	fibo_opencpu.h	/^typedef void (*key_callback)(void* param);$/;"	t
+key_cb_t	fibo_opencpu.h	/^typedef void (*key_cb_t)(INT32 keyid, INT32 state, void *ctx);$/;"	t
+key_id	fibo_opencpu.h	/^    int32_t key_id;$/;"	m	struct:__anon13
+keypad_info_t	fibo_opencpu.h	/^}keypad_info_t;$/;"	t	typeref:struct:__anon13
+keypad_status	fibo_opencpu.h	/^}keypad_status;$/;"	t	typeref:enum:__anon12
+lac	oc_gprs.h	/^    uint32_t lac;$/;"	m	struct:__anon58
+lcd_reg_t	fibo_opencpu.h	/^}lcd_reg_t;$/;"	t	typeref:struct:__anon10
+lcddev	fibo_opencpu.h	/^    lcdSpec_t lcddev;$/;"	m	struct:__anon11
+leap_sec	fibo_opencpu.h	/^    int8_t       leap_sec;   \/\/ 0 means invalid$/;"	m	struct:__anon23
+length	fibo_opencpu.h	/^    uint8_t length;$/;"	m	struct:__anon10
+length	oc_sms.h	/^    uint32_t length;$/;"	m	struct:__anon35
+length	oc_sms.h	/^    uint32_t length;$/;"	m	struct:__anon40
+loc	fibo_opencpu.h	/^    char *loc;$/;"	m	struct:fibo_lbs_res
+long_or_short_press	fibo_opencpu.h	/^    int8_t long_or_short_press;$/;"	m	struct:__anon13
+lpg_onoff	fibo_opencpu.h	/^    int lpg_onoff;  \/\/lpg switch,On is 1, off is 0$/;"	m	struct:__anon21
+lte_cellinfo	fibo_opencpu.h	/^    cfw_nwCapLte_t lte_cellinfo;$/;"	m	struct:__anon6
+lte_scell_info	oc_gprs.h	/^    lte_scell_info_t lte_scell_info;$/;"	m	struct:__anon59
+lte_scell_info_t	oc_gprs.h	/^} lte_scell_info_t;$/;"	t	typeref:struct:__anon57
+manufacturer	fibo_opencpu.h	/^    char *manufacturer;$/;"	m	struct:__anon21
+message	oc_sms.h	/^    char *message;          \/*!< SMS message sent from lower layer. *\/$/;"	m	struct:__anon30
+message_class	oc_sms.h	/^    e_fibo_sms_message_class_type_t message_class;$/;"	m	struct:__anon35
+message_class_valid	oc_sms.h	/^    uint8_t message_class_valid;$/;"	m	struct:__anon35
+message_id	oc_sms.h	/^    uint16_t                              message_id;$/;"	m	struct:__anon47
+message_index	oc_sms.h	/^    uint32_t message_index;$/;"	m	struct:__anon49
+message_list	oc_sms.h	/^    fibo_sms_msg_list_data_info_t message_list [FIBO_SMS_MESSAGE_TUPLE_MAX_V01];$/;"	m	struct:__anon50
+message_list_length	oc_sms.h	/^    uint32_t message_list_length;$/;"	m	struct:__anon50
+message_mode	oc_sms.h	/^    e_fibo_sms_mode_type_t message_mode;$/;"	m	struct:__anon43
+message_mode	oc_sms.h	/^    e_fibo_sms_mode_type_t message_mode;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon48
+message_mode_valid	oc_sms.h	/^    uint8_t message_mode_valid;$/;"	m	struct:__anon43
+message_mode_valid	oc_sms.h	/^    uint8_t message_mode_valid;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon48
+message_text	oc_sms.h	/^    int8_t message_text[FIBO_SMS_MAX_MO_MSG_LENGTH_V01+1];$/;"	m	struct:__anon35
+message_text	oc_sms.h	/^    int8_t message_text[FIBO_SMS_MAX_MT_MSG_LENGTH_V01+1];$/;"	m	struct:__anon40
+min	fibo_opencpu.h	/^    uint8_t min;   \/\/\/< Minute$/;"	m	struct:__anon7
+min	oc_sms.h	/^    int8_t min;     \/*!< Indicate the minutes (0-59). *\/$/;"	m	struct:__anon29
+minutes	oc_sms.h	/^    uint8_t minutes;$/;"	m	struct:__anon36
+mobile_number	oc_sms.h	/^    int8_t mobile_number[FIBO_SMS_MAX_ADDR_LENGTH_V01+1];$/;"	m	struct:__anon35
+mobile_number	oc_sms.h	/^    int8_t mobile_number[FIBO_SMS_MAX_ADDR_LENGTH_V01+1];$/;"	m	struct:__anon40
+mode	fibo_opencpu.h	/^    INT32 mode;$/;"	m	struct:__anon14
+mode	oc_nw.h	/^    UINT8 mode;$/;"	m	struct:nw_config_rrcrel_s
+mode	oc_sms.h	/^    fibo_sms_msg_format_t_v01    mode;$/;"	m	struct:__anon35
+month	fibo_opencpu.h	/^    uint8_t month; \/\/\/< Month$/;"	m	struct:__anon7
+month	oc_sms.h	/^    int8_t month;   \/*!< Indicate the month (0-11). *\/$/;"	m	struct:__anon29
+month	oc_sms.h	/^    uint8_t month;$/;"	m	struct:__anon36
+mqtt_num	fibo_opencpu.h	/^    int mqtt_num;$/;"	m	struct:__anon21
+msglen	oc_sms.h	/^    uint16_t msglen;        \/*!< SMS message length in bytes. *\/$/;"	m	struct:__anon30
+multiparty	oc_call.h	/^    uint8_t multiparty;$/;"	m	struct:__anon26
+nAuthProt	oc_gprs.h	/^    UINT8 nAuthProt;$/;"	m	struct:pdp_profile
+nAuthProt	oc_gprs.h	/^    UINT8 nAuthProt;$/;"	m	struct:pdp_profile_s
+nIndex	oc_sms.h	/^    uint16_t nIndex;$/;"	m	struct:__anon30
+nPdpType	oc_gprs.h	/^    UINT8 nPdpType[FIBO_APN_MAX_LEN];$/;"	m	struct:pdp_profile
+nPdpType	oc_gprs.h	/^    UINT8 nPdpType[FIBO_PDPTYPE_MAX_LEN];$/;"	m	struct:pdp_profile_s
+nStatus	oc_gprs.h	/^    uint8_t nStatus;$/;"	m	struct:__anon59
+nitz_time	fibo_opencpu.h	/^    char         nitz_time[FIBO_NW_NITZ_BUF_LEN + 1];$/;"	m	struct:__anon23
+nw_config_rrcrel_s	oc_nw.h	/^typedef struct nw_config_rrcrel_s$/;"	s
+nw_config_signal_quality_urc_s	oc_nw.h	/^typedef struct nw_config_signal_quality_urc_s$/;"	s
+oc_isr_t	fibo_opencpu.h	/^}oc_isr_t;$/;"	t	typeref:struct:__anon8
+opencpuValueStrMap_t	oc_gprs.h	/^} opencpuValueStrMap_t;$/;"	t	typeref:struct:__anon56
+opencpu_cellinfo_t	fibo_opencpu.h	/^}opencpu_cellinfo_t;$/;"	t	typeref:struct:__anon6
+oper_short_name	oc_gprs.h	/^    uint8_t *oper_short_name;$/;"	m	struct:__anon60
+operator_id	oc_gprs.h	/^    uint8_t operator_id[6];$/;"	m	struct:__anon60
+operator_info_t	oc_gprs.h	/^} operator_info_t;$/;"	t	typeref:struct:__anon60
+operator_name	oc_gprs.h	/^    uint8_t *operator_name;$/;"	m	struct:__anon60
+paSpec_t	fibo_opencpu.h	/^}paSpec_t;$/;"	t	typeref:struct:__anon14
+parity	oc_uart.h	/^    hal_uart_parity_t parity;$/;"	m	struct:hal_uart_config_ex_s
+parity	oc_uart.h	/^    hal_uart_parity_t parity;$/;"	m	struct:hal_uart_config_s
+pdpAddr	oc_gprs.h	/^    UINT8 pdpAddr[FIBO_PDP_ADDR_MAX_LEN];$/;"	m	struct:pdp_profile
+pdpAddrSize	oc_gprs.h	/^    UINT8 pdpAddrSize;$/;"	m	struct:pdp_profile
+pdpDns	oc_gprs.h	/^    INT8 pdpDns[FIBO_APN_MAX_LEN * FIBO_PDP_DNS_NUM];$/;"	m	struct:pdp_profile
+pdp_profile	oc_gprs.h	/^typedef struct pdp_profile$/;"	s
+pdp_profile_s	oc_gprs.h	/^typedef struct pdp_profile_s$/;"	s
+pdp_profile_t	oc_gprs.h	/^} pdp_profile_t;$/;"	t	typeref:struct:pdp_profile
+phoneNum	oc_sms.h	/^    char *phoneNum;         \/*!< SMS Originating source. *\/$/;"	m	struct:__anon30
+phoneNumLen	oc_sms.h	/^    uint32_t phoneNumLen;   \/*!< SMS Originating source length in bytes. *\/$/;"	m	struct:__anon30
+pid	oc_sms.h	/^    uint8_t pid;$/;"	m	struct:__anon30
+pin_id	fibo_opencpu.h	/^    INT32 pin_id;$/;"	m	struct:__anon14
+press_or_release	fibo_opencpu.h	/^    int8_t press_or_release;$/;"	m	struct:__anon13
+printer_buffcfg	fibo_opencpu.h	/^    fibo_usb_buffcfg_t printer_buffcfg;$/;"	m	struct:__anon21
+product	fibo_opencpu.h	/^    char *product;$/;"	m	struct:__anon21
+raw	fibo_opencpu.h	/^    char *raw;$/;"	m	struct:fibo_lbs_res
+raw_message	oc_sms.h	/^    uint8_t raw_message [FIBO_SMS_MESSAGE_LENGTH_MAX];$/;"	m	struct:__anon45
+raw_message_len	oc_sms.h	/^    uint32_t raw_message_len;$/;"	m	struct:__anon45
+rechg_vol	oc_charge.h	/^    UINT32 rechg_vol; \/\/ re_charger start vol$/;"	m	struct:__anon54
+recv_timeout	oc_uart.h	/^    uint32_t recv_timeout;          \/\/ms    $/;"	m	struct:hal_uart_config_ex_s
+recv_timeout	oc_uart.h	/^    uint32_t recv_timeout;          \/\/ms$/;"	m	struct:hal_uart_config_s
+reference_number	oc_sms.h	/^    uint8_t reference_number;   \/**< reference_number.*\/$/;"	m	struct:__anon39
+reg	fibo_opencpu.h	/^    uint8_t reg;$/;"	m	struct:__anon9
+reg_info_t	oc_gprs.h	/^} reg_info_t;$/;"	t	typeref:struct:__anon59
+reserve	oc_nw.h	/^    UINT16 reserve;$/;"	m	struct:nw_config_signal_quality_urc_s
+result	fibo_opencpu.h	/^    int8_t  result;$/;"	m	struct:fibo_wifiscan_res
+rsrp	fibo_opencpu.h	/^int rsrp; \/\/参考信号接收功率， 取值范围 0-255$/;"	m	struct:__anon15
+rsrp_range	oc_nw.h	/^    UINT8 rsrp_range;$/;"	m	struct:nw_config_signal_quality_urc_s
+rsrq	fibo_opencpu.h	/^int rsrq; \/\/参考信号接收质量， 取值范围 0-255$/;"	m	struct:__anon15
+rts_enable	oc_uart.h	/^    bool rts_enable;                \/\/\/< enable rts or not$/;"	m	struct:hal_uart_config_ex_s
+rts_enable	oc_uart.h	/^    bool rts_enable;                \/\/\/< enable rts or not$/;"	m	struct:hal_uart_config_s
+rx_buf_size	fibo_opencpu.h	/^    uint32_t rx_buf_size;        \/\/\/< rx buffer size$/;"	m	struct:__anon20
+rx_buf_size	oc_uart.h	/^    size_t rx_buf_size;             \/\/\/< rx buffer size$/;"	m	struct:hal_uart_config_ex_s
+rx_buf_size	oc_uart.h	/^    size_t rx_buf_size;             \/\/\/< rx buffer size$/;"	m	struct:hal_uart_config_s
+rx_dma_size	fibo_opencpu.h	/^    uint32_t rx_dma_size;        \/\/\/< rx dma buffer size$/;"	m	struct:__anon20
+save_dumpinfo_en	fibo_opencpu.h	/^    bool save_dumpinfo_en;$/;"	m	struct:__anon21
+sca	oc_sms.h	/^    uint8_t sca[TEL_NUMBER_MAX_LEN];$/;"	m	struct:__anon30
+sca_size	oc_sms.h	/^    uint8_t sca_size;$/;"	m	struct:__anon30
+sec	fibo_opencpu.h	/^    uint8_t sec;   \/\/\/< Second$/;"	m	struct:__anon7
+sec	oc_sms.h	/^    int8_t sec;     \/*!< Indicate the seconds (0-60). *\/$/;"	m	struct:__anon29
+seconds	oc_sms.h	/^    uint8_t seconds;$/;"	m	struct:__anon36
+seg_number	oc_sms.h	/^    uint8_t seg_number;         \/**<     Current number.*\/$/;"	m	struct:__anon39
+serialnum	fibo_opencpu.h	/^    char *serialnum;$/;"	m	struct:__anon21
+service_center_addr	oc_sms.h	/^    int8_t service_center_addr[FIBO_SMS_MAX_ADDR_LENGTH_V01 + 1];$/;"	m	struct:__anon37
+service_center_addr_type	oc_sms.h	/^    int8_t service_center_addr_type[FIBO_SMS_MAX_SCA_ADDR_LENGTH + 1];$/;"	m	struct:__anon37
+service_center_addr_type_valid	oc_sms.h	/^    uint8_t service_center_addr_type_valid;$/;"	m	struct:__anon37
+shut_vol	oc_charge.h	/^    UINT32 shut_vol;  \/\/ shut_down vol$/;"	m	struct:__anon54
+signal_quality_urc_config_type_t	oc_nw.h	/^}signal_quality_urc_config_type_t;$/;"	t	typeref:enum:__anon62
+sim1_dect	fibo_opencpu.h	/^    int sim1_dect; \/\/sim1 dect gpio num$/;"	m	struct:__anon21
+sim1_pin	fibo_opencpu.h	/^    int sim1_pin;   \/\/sim1 dect FIBO pin number,if this number is not 0 or 0xff,sim_dect is vaild rather than sim1_dect$/;"	m	struct:__anon21
+sinr_range	oc_nw.h	/^    UINT8 sinr_range;$/;"	m	struct:nw_config_signal_quality_urc_s
+skip_vbatsense	fibo_opencpu.h	/^    bool skip_vbatsense;$/;"	m	struct:__anon21
+sms_client_handle_type	oc_sms.h	/^typedef uint32_t sms_client_handle_type;$/;"	t
+snr	fibo_opencpu.h	/^int snr; \/\/信号与干扰加噪声比$/;"	m	struct:__anon15
+spl_address	fibo_opencpu.h	/^    int spl_address;$/;"	m	struct:__anon19
+spl_size	fibo_opencpu.h	/^    int spl_size;$/;"	m	struct:__anon19
+status	oc_call.h	/^    uint8_t status;$/;"	m	struct:__anon26
+stop_bits	oc_uart.h	/^    hal_uart_stop_bits_t stop_bits; \/\/\/< stop bits$/;"	m	struct:hal_uart_config_ex_s
+stop_bits	oc_uart.h	/^    hal_uart_stop_bits_t stop_bits; \/\/\/< stop bits$/;"	m	struct:hal_uart_config_s
+storage_idx	oc_sms.h	/^    uint32_t                storage_idx;$/;"	m	struct:__anon44
+storage_idx_valid	oc_sms.h	/^    uint8_t storage_idx_valid;$/;"	m	struct:__anon44
+storage_index	oc_sms.h	/^    uint32_t storage_index;$/;"	m	struct:__anon43
+storage_type	oc_sms.h	/^    e_fibo_sms_storage_type_t storage_type;$/;"	m	struct:__anon43
+storage_type	oc_sms.h	/^    e_fibo_sms_storage_type_t storage_type;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon48
+store_max_size	oc_sms.h	/^    uint32_t store_max_size; \/\/最大存储空间$/;"	m	struct:__anon52
+str	oc_gprs.h	/^    char *str;  \/\/\/< string value$/;"	m	struct:__anon56
+sweepsize	fibo_opencpu.h	/^    uint32_t sweepsize;$/;"	m	struct:__anon11
+tac	oc_gprs.h	/^    uint32_t tac;$/;"	m	struct:__anon57
+tag_type	oc_sms.h	/^    e_fibo_sms_tag_type_t tag_type;$/;"	m	struct:__anon40
+tag_type	oc_sms.h	/^    e_fibo_sms_tag_type_t tag_type;$/;"	m	struct:__anon49
+tag_type	oc_sms.h	/^    e_fibo_sms_tag_type_t tag_type;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon48
+tag_type_valid	oc_sms.h	/^    uint8_t tag_type_valid;\/\/无效参数，兼容前面版本$/;"	m	struct:__anon48
+threshold_vol	oc_charge.h	/^    int threshold_vol;$/;"	m	struct:__anon53
+time	oc_sms.h	/^    fibo_sms_time_t time;   \/*!< SMS message arrival time in IST format. *\/$/;"	m	struct:__anon30
+timeout	fibo_opencpu.h	/^    UINT32 timeout;     \/\/If keypad is enabled, timeout is used to distinguish between long press and short press. The default value is 0$/;"	m	struct:__anon22
+times	fibo_opencpu.h	/^    uint32_t times;$/;"	m	struct:__anon11
+timestamp	oc_sms.h	/^    fibo_sms_timestamp timestamp;$/;"	m	struct:__anon40
+timestamp_valid	oc_sms.h	/^    uint8_t timestamp_valid;$/;"	m	struct:__anon40
+timezone	oc_sms.h	/^    int8_t timezone;$/;"	m	struct:__anon36
+tosca	oc_sms.h	/^    uint8_t tosca;$/;"	m	struct:__anon30
+totalFLash	fibo_opencpu.h	/^long totalFLash; \/\/FLASH 总大小$/;"	m	struct:__anon17
+totalFree	fibo_opencpu.h	/^long totalFree; \/\/当前剩余内存$/;"	m	struct:__anon17
+totalRam	fibo_opencpu.h	/^long totalRam; \/\/RAM 总大小$/;"	m	struct:__anon17
+total_segments	oc_sms.h	/^    uint8_t total_segments;     \/**<     The number of long  short message*\/$/;"	m	struct:__anon39
+tts_status_e	fibo_opencpu.h	/^}tts_status_e;$/;"	t	typeref:enum:__anon1
+tx_buf_size	fibo_opencpu.h	/^    uint32_t tx_buf_size;        \/\/\/< tx buffer size$/;"	m	struct:__anon20
+tx_buf_size	oc_uart.h	/^    size_t tx_buf_size;             \/\/\/< tx buffer size$/;"	m	struct:hal_uart_config_ex_s
+tx_buf_size	oc_uart.h	/^    size_t tx_buf_size;             \/\/\/< tx buffer size$/;"	m	struct:hal_uart_config_s
+tx_dma_size	fibo_opencpu.h	/^    uint32_t tx_dma_size;        \/\/\/< tx dma buffer size$/;"	m	struct:__anon20
+tx_wait_timeout	fibo_opencpu.h	/^    uint32_t tx_wait_timeout;    \/\/\/< tx wait timeout ms$/;"	m	struct:__anon20
+uart_input_callback_t	oc_uart.h	/^typedef void (*uart_input_callback_t)(hal_uart_port_t uart_port, UINT8 *data, UINT16 len, void *arg);$/;"	t
+uart_timer	fibo_opencpu.h	/^    int uart_timer[PORT_MAX];$/;"	m	struct:__anon21
+uart_usr_callback_t	oc_uart.h	/^typedef INT32 (*uart_usr_callback_t)(void *arg);$/;"	t
+usb_bcd	fibo_opencpu.h	/^    uint16_t usb_bcd;$/;"	m	struct:__anon21
+usb_buffcfg	fibo_opencpu.h	/^    fibo_usb_buffcfg_t usb_buffcfg;$/;"	m	struct:__anon21
+usb_custom_en	fibo_opencpu.h	/^    int usb_custom_en;$/;"	m	struct:__anon21
+usb_hid_acm_en	fibo_opencpu.h	/^    bool usb_hid_acm_en;  \/\/hid acm mode enable$/;"	m	struct:__anon21
+usb_hid_at_en	fibo_opencpu.h	/^    bool usb_hid_at_en;$/;"	m	struct:__anon21
+usb_input_callback_t	fibo_opencpu.h	/^typedef void (*usb_input_callback_t)(atDevice_t *th, void *buf, size_t size, void *arg);$/;"	t
+usb_pid	fibo_opencpu.h	/^    uint16_t usb_pid;$/;"	m	struct:__anon21
+usb_printer_en	fibo_opencpu.h	/^    bool usb_printer_en;$/;"	m	struct:__anon21
+usb_vid	fibo_opencpu.h	/^    uint16_t usb_vid;$/;"	m	struct:__anon21
+user_callback_t	fibo_opencpu.h	/^typedef void (*user_callback_t)(void* param);$/;"	t
+usr_cb	oc_uart.h	/^    uart_usr_callback_t usr_cb;$/;"	m	struct:hal_uart_config_ex_s
+usr_cb	oc_uart.h	/^    uart_usr_callback_t usr_cb;$/;"	m	struct:hal_uart_config_s
+usr_ctx	oc_uart.h	/^    void *usr_ctx;$/;"	m	struct:hal_uart_config_ex_s
+usr_ctx	oc_uart.h	/^    void *usr_ctx;$/;"	m	struct:hal_uart_config_s
+value	fibo_opencpu.h	/^    uint8_t value;$/;"	m	struct:__anon9
+value	oc_gprs.h	/^    INT8 value; \/\/\/< integer value$/;"	m	struct:__anon56
+value	oc_nw.h	/^    UINT8 value;$/;"	m	struct:nw_config_rrcrel_s
+vol_type	oc_charge.h	/^    int vol_type;$/;"	m	struct:__anon53
+wDay	fibo_opencpu.h	/^    uint8_t wDay;  \/\/\/< Week Day$/;"	m	struct:__anon7
+wakeup_callback_t	fibo_opencpu.h	/^typedef void (*wakeup_callback_t)(WAKEUP_TYPE_E type);$/;"	t
+warn_vol	oc_charge.h	/^    UINT32 warn_vol;  \/\/ low power warning vol$/;"	m	struct:__anon54
+width	fibo_opencpu.h	/^    uint32_t width;$/;"	m	struct:__anon11
+year	fibo_opencpu.h	/^    uint16_t year;  \/\/\/< Year$/;"	m	struct:__anon7
+year	oc_sms.h	/^    int16_t year;   \/*!< Indicate the year. *\/$/;"	m	struct:__anon29
+year	oc_sms.h	/^    uint16_t year;$/;"	m	struct:__anon36

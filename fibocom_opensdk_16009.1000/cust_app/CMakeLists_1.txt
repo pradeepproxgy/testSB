@@ -1,0 +1,186 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+configure_file(include/cust_app.h.in ${out_inc_dir}/cust_app.h)
+#configure_file(src/service/oc_mqtt_demo.h ${out_inc_dir}/oc_mqtt_demo.h)
+#configure_file(src/eng/mqtt/mqtt_api.h ${out_inc_dir}/mqtt_api.h)
+#configure_file(src/service/event_signal.h ${out_inc_dir}/event_signal.h)
+#configure_file(src/service/network_service.h ${out_inc_dir}/network_service.h)
+
+
+set(target appimg)
+
+if(CONFIG_SOC_8850)
+	add_library(${target} STATIC
+	 soundbox/soundbox.c
+	 src/app_codes.c
+	 src/app_at_cmd.c
+	 src/flash_partinfo.c
+	 src/fibo_config.c
+	 src/fibo_logo_config.c
+	 src/fibo_vendor_config.c
+         soundbox/service/oc_mqtt_demo.c
+      	 soundbox/service/network_service.c
+	 soundbox/service/event_signal.c
+	 soundbox/service/sequeue.c
+	 #	 soundbox/service/oc_earphone_custom.c
+	 soundbox/service/voice_play.c)
+
+set(LIBRARY_OUTPUT_PATH ${out_lib_dir})
+
+set_target_properties(${target} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${out_lib_dir})
+
+set(dbg_lib_file ${out_lib_dir}/lib${target}.a)
+set(realse_lib_file ${SOURCE_TOP_DIR}/../lib)
+
+set(origin_lib ${dbg_lib_file})
+set(destination_lib ${realse_lib_file})
+add_custom_command(TARGET ${target}
+	POST_BUILD
+	COMMAND ${CMAKE_COMMAND} -E copy_if_different
+	${origin_lib} ${destination_lib}
+)
+
+    target_compile_definitions(${target} PRIVATE OSI_LOG_TAG=LOG_TAG_APPSTART)
+    set_target_properties(${target} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${out_lib_dir})
+    target_include_targets(${target} PRIVATE
+    atr ats kernel hal driver ml fs sffs fsmount mal service
+    cfw net nvm diag audio apploader fibocom)
+    target_include_directories(${target} PRIVATE ../components/tts/include)
+    target_include_directories(${target} PRIVATE ../fibocom/opencpu)
+    target_include_directories(${target} PRIVATE ../fibocom/api)
+    target_include_directories(${target} PRIVATE ./include)
+    target_include_directories(${target} PRIVATE ./soundbox)
+    target_include_directories(${target} PRIVATE ./soundbox/user)
+    target_include_directories(${target} PRIVATE ./soundbox/devices)
+    target_include_directories(${target} PRIVATE ./soundbox/service)
+    target_include_directories(${target} PRIVATE ./soundbox/platform)
+    target_include_directories(${target} PRIVATE ./soundbox/eng)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/dev_model)
+    target_include_directories(${target} PRIVATE ./soundboxeng/dev_sign)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/http)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/infra)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/mqtt)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/ota)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/wrappers)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/wrappers/external_libs)
+    target_include_directories(${target} PRIVATE ../components/firmwareupdate/include)
+    target_include_directories(${target} PRIVATE ../components/calclib/include)
+    target_include_directories(${target} PUBLIC  ../components/net/lwip/src/include/lwip)
+    target_include_directories(${target} PUBLIC  ../components/net/lwip/src/include)
+    target_include_directories(${target} PUBLIC  ../components/net/lwip/include)
+    target_include_directories(${target} PUBLIC  ../components/net/libexpat/include)
+    target_include_directories(${target} PUBLIC  ../components/net/json/cJSON)
+    target_include_directories(${target} PRIVATE ../fibocom/ble/inc)
+    target_include_directories(${target} PRIVATE ../fibocom/fibo-framework/lib/include)
+    target_include_directories(${target} PRIVATE ../fibocom/fibo-framework/plateform/unisoc/include)
+    target_include_directories(${target} PRIVATE ../components/atr/src)
+    target_include_directories(${target} PRIVATE ../components/atr/include)
+    target_include_directories(${target} PRIVATE ../components/fibo_logo)
+    target_include_directories(${target} PRIVATE ../components/driver/include)
+    target_include_directories(${target} PRIVATE ../components/driver/include/usb)
+
+if(CONFIG_FIBOCOM_XIAONIU_FEATURE)
+    target_include_directories(${target} PRIVATE ../components/fibocustom/NIU/)
+endif()
+    target_link_libraries(${BUILD_TARGET} PRIVATE all_libs ${target} all_libs)
+    if(CONFIG_FIBOCOM_POWERON_LOGO_SUPPORT)
+        target_link_libraries(${target} PRIVATE fibo_logo)
+    endif()
+    endif()
+
+add_subdirectory_if_exist(didi)
+
+if(CONFIG_APPIMG_LOAD_FLASH)
+    if(CONFIG_APPIMG_APP_TEST)
+        set(target testapi)
+        add_appimg_flash_example(${target} src/app_ver.c)
+        target_link_libraries(${target} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../target/${BUILD_TARGET}/libs/libtestcase.a ${libc_file_name} ${libm_file_name} ${libgcc_file_name})
+    else()
+        set(target soundbox_mc661)
+        add_appimg_flash_example(${target} soundbox/soundbox.c src/app_ver.c)
+    endif()
+
+    target_include_targets(${target} PRIVATE
+    atr ats kernel hal driver ml fs sffs fsmount mal service
+    cfw net nvm diag audio apploader fibocom)
+    target_include_directories(${target} PRIVATE ../components/tts/include)
+    target_include_directories(${target} PRIVATE ../fibocom/opencpu)
+    target_include_directories(${target} PRIVATE ../fibocom/api)
+    target_include_directories(${target} PRIVATE ./include)
+    target_include_directories(${target} PRIVATE ./soundbox)
+    target_include_directories(${target} PRIVATE ./soundbox/user)
+    target_include_directories(${target} PRIVATE ./soundbox/devices)
+    target_include_directories(${target} PRIVATE ./soundbox/service)
+    target_include_directories(${target} PRIVATE ./soundbox/platform)
+    target_include_directories(${target} PRIVATE ./soundbox/eng)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/dev_model)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/dev_sign)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/http)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/infra)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/mqtt)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/ota)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/wrappers)
+    target_include_directories(${target} PRIVATE ./soundbox/eng/wrappers/external_libs)
+    target_include_directories(${target} PRIVATE ../components/firmwareupdate/include)
+    target_include_directories(${target} PRIVATE ../components/calclib/include)
+    target_include_directories(${target} PUBLIC  ../components/net/lwip/src/include/lwip)
+    target_include_directories(${target} PUBLIC  ../components/net/lwip/src/include)
+    target_include_directories(${target} PUBLIC  ../components/net/lwip/include)
+    target_include_directories(${target} PUBLIC  ../components/net/libexpat/include)
+    target_include_directories(${target} PUBLIC  ../components/net/json/cJSON)
+    target_include_directories(${target} PRIVATE ../fibocom/ble/inc)
+    target_include_directories(${target} PRIVATE ../fibocom/fibo-framework/lib/include)
+    target_include_directories(${target} PRIVATE ../fibocom/fibo-framework/plateform/unisoc/include)
+    target_include_directories(${target} PRIVATE ../components/atr/src)
+    target_include_directories(${target} PRIVATE ../components/atr/include)
+    if(CONFIG_FIBOCOM_XIAONIU_FEATURE)
+        target_include_directories(${target} PRIVATE ../components/fibocustom/NIU/)
+    endif()
+endif()
+
+if(CONFIG_APPIMG_LOAD_FILE)
+    set(target appimg_file)
+    add_appimg_file_example(${target} soundbox/soundbox.c)
+    target_include_targets(${target} PRIVATE kernel)
+endif()
+
+
+
+relative_glob(srcs include/*.h src/*.c src/*.h *.c 
+	soundbox/*.c
+        soundbox/devices/*.c
+        soundbox/devices/*.h
+        soundbox/user/*.c
+        soundbox/user/key.h
+        soundbox/service/*.c
+        soundbox/service/*.h
+        soundbox/platform/*.c
+        soundbox/platform/*.h
+        soundbox/eng/*.c
+        soundbox/eng/*.h
+        soundbox/eng/certs/*.c
+        soundbox/eng/certs/*.h
+        soundbox/eng/dev_model/*.c
+        soundbox/eng/dev_model/*.h
+        soundbox/eng/dev_sign/*.c
+        soundbox/eng/dev_sign/*.h
+        soundbox/eng/infra/*.c
+        soundbox/eng/infra/*.h
+        soundbox/eng/mqtt/*.c
+        soundbox/eng/mqtt/mqtt_api.h
+        soundbox/eng/ota/*.c
+        soundbox/eng/ota/*.h
+        soundbox/eng/wrappers/*.c
+        soundbox/eng/wrappers/*.h
+        soundbox/eng/wrappers/external_libs/*.c
+        soundbox/eng/wrappers/external_libs/*.h)
+beautify_c_code(${target} ${srcs})

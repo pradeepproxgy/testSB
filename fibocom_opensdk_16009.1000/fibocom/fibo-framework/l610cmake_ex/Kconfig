@@ -1,0 +1,98 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "ffw"
+
+config FFW_MQTT_ENABLE
+    bool "enable ffw mqtt"
+    default y
+    help
+        Racoon macro defination.
+
+config FFW_MQTTSN_ENABLE
+    bool "enable ffw mqttsn"
+    default y
+    help
+        Racoon macro defination.
+
+config FFW_HTTP_ENABLE
+    bool "enable ffw http"
+    default y
+    help
+        Racoon macro defination.
+
+config FFW_LBS_ENABLE
+    bool "enable ffw lbs"
+    default y
+    help
+        Racoon macro defination.
+
+config FFW_FTP_ENABLE
+    bool "enable ffw ftp"
+    default y
+    help
+        Racoon macro defination.
+
+config FFW_COAP_ENABLE
+    bool "enable ffw coap"
+    default n
+    help
+        Racoon macro defination.
+
+config FFW_TLS_ENABLE
+    bool "enable ffw tls"
+    default y
+    help
+        Racoon macro defination.
+
+config FFW_MBEDTLS_ENABLE
+    bool "enable ffw mbedtls"
+    default n
+    help
+        Racoon macro defination.
+
+config FFW_WS_ENABLE
+    bool "enable ffw websocket"
+    default n
+    help
+        Racoon macro defination.
+
+config FFW_ZIP_ENABLE
+    bool "enable ffw zip"
+    default n
+    help
+        Racoon macro defination.
+
+config FFW_SSH2_ENABLE
+    bool "enable ffw ssh2"
+    default y
+    help
+        Racoon macro defination.
+
+config FIBOCOM_IOTFOTA_ENABLE
+    bool "enable ffw IOT fota control, also enable basic-fota-controller"
+    default n
+    help
+        Racoon macro defination.
+
+config FFW_GNSS_ENABLE
+    bool "enable ffw_gnss for external&internal gnss module"
+    default n
+    help 
+        FFW macro defination
+
+config FFW_GNSS_INTERNAL_ENABLE
+    bool "enable internal gnss module"
+    default n
+    help 
+        FFW macro defination
+
+endmenu

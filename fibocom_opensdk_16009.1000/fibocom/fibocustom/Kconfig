@@ -1,0 +1,661 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "fibocustom"
+
+config FIBOCUSTOM_BASE
+    bool "enable FIBOCUSTOM_BASE"
+    default n
+    help
+        Fibocom FIBOCUSTOM project
+
+config MC660_CN_12_12
+    bool "enable haluo project"
+    default n
+    help
+        Fibocom haluo project
+
+config MC669_CN_32_12_D65H
+    bool "enable haluo project"
+    default n
+    help
+        Fibocom haluo project
+
+config MC660_CN_19_00_HAIKANG
+    bool "enable haikang project"
+    default n
+    help
+        Fibocom haikang project
+
+config MC660_CN_19_00_QHLT
+    bool "enable QHLT project"
+    default n
+    help
+        Fibocom  project
+
+config MC660_CN_19_00_RILI
+    bool "enable RILI project"
+    default n
+    help
+        Fibocom  project
+
+
+config MC660_CN_19_83_HAIKANG
+    bool "enable haikang project"
+    default n
+    help
+        Fibocom haikang project
+
+config MC661_CN_19_20_HAIKANG
+    bool "enable haikang project"
+    default n
+    help
+        Fibocom haikang project
+config MG661_LA_19_20_HAIKANG
+    bool "enable haikang project"
+    default n
+    help
+        Fibocom haikang project
+
+config MG661_EU_19_20_HAIKANG
+    bool "enable haikang project"
+    default n
+    help
+        Fibocom haikang project
+
+config MC661_CN_19_10_IPC
+    bool "enable MC661_CN_19_10_IPC project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_10_TUOKUO
+    bool "enable MC661_CN_19_10_TUOKUO project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_99_10_TUOKUO
+    bool "enable MC661_CN_99_10_TUOKUO project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_99_20_TUOKUO
+    bool "enable MC661_CN_99_20_TUOKUO project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_20_IPC
+    bool "enable MC661_CN_19_20_IPC project"
+    default n
+    help
+        Fibocom ipc project
+
+config MC661_CN_19_20_IPC_KUOTUO
+    bool "enable kuotuo project"
+    default n
+    help
+        Fibocom ipc project
+
+config MC661_CN_19_20_NITE
+    bool "enable nite project"
+    default n
+    help
+        Fibocom nite project
+
+config MC661_CN_19_09_CU
+    bool "enable MC661_CN_19_09_CU project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MG662_CN_16_10_NLD_OPEN
+    bool "enable newland project"
+    default n
+    help
+        Fibocom newland project
+
+config MC661_CN_19_20_HZJICCX
+    bool "enable hangzhoujichuchuangxin project"
+    default n
+    help
+        Fibocom jichuchaungxin project
+
+config MC669_CN_19_00_HZJICCX
+    bool "enable hangzhoujichuchuangxin project"
+    default n
+    help
+        Fibocom jichuchaungxin project
+
+config MC661_CN_19_70_YINGSHI
+    bool "enable yingshi project"
+    default n
+    help
+        Fibocom yingshi project
+
+config MC661_CN_19_70_JIEKE
+    bool "enable JIEKE project"
+    default n
+    help
+        Fibocom JIEKE project
+
+config MC661_CN_19_86_JIEKE
+    bool "enable JIEKE project"
+    default n
+    help
+        Fibocom JIEKE project
+
+config MC661_CN_19_70_AUDIO
+    bool "enable ext codec project"
+    default n
+    help
+        Fibocom ext codec project
+
+config MC661_CN_19_70_MEITUANZFB
+    bool "enable MEITUAN project"
+    default n
+    help
+        Fibocom MEITUAN project
+
+config MC661_CN_19_70_CUDMP
+    bool "enable cu dmp project"
+    default n
+    help
+        Fibocom cu dmp project
+
+config MC661_CN_19_70_NIU
+    bool "enable xiaoniu project"
+    default n
+    help
+        Fibocom xiaoniu project
+
+config MC661_CN_19_70_CUST01
+    bool "enable CUST project"
+    default n
+    help
+        Fibocom CUST project
+
+config MC661_CN_19_70_VODAFU
+    bool "enable MC661_CN_19_70_VODAFU project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_80_HENGKE
+    bool "enable hengke project"
+    default n
+    help
+        Fibocom hengke project
+
+config MC661_CN_39_20_TAOMI_VOLTE
+    bool "enable MC661_CN_39_20_TAOMI_VOLTE project"
+    default n
+    help
+        Fibocom taomi project
+
+config MC661_CN_39_20_BCLD
+    bool "enable MC661_CN_39_20_BCLD project"
+    default n
+    help
+        Fibocom  project
+
+config MC669_CN_12_12
+    bool "enable haluo project"
+    default n
+    help
+        Fibocom haluo project
+
+config MC669_CN_12_12_D59H
+    bool "enable haluo d59h project"
+    default n
+    help
+        Fibocom haluo d59h project
+
+config MC669_CN_22_12_P20
+    bool "enable haluo p20 project"
+    default n
+    help
+        Fibocom haluo p20 project
+
+config MC665_CN_16_00_SZLINGHT
+    bool "enable MC665_CN_16_00_SZLINGHT project"
+    default n
+    help
+        Fibocom shenzhenlinghangtong project
+
+config MC665_CN_16_00_WDUYD
+    bool "enable WUHANDAXUE project"
+    default n
+    help
+        Fibocom wuhandaxue yadi project
+
+
+
+config MC665_CN_22_00_SZLINGHT
+    bool "enable MC665_CN_22_00_SZLINGHT project"
+    default n
+    help
+        Fibocom shenzhenlinghangtong project
+
+config MC665_CN_16_90_HENGKE
+    bool "enable MC665_CN_16_90_HENGKE project"
+    default n
+    help
+        Fibocom hengke project
+
+config MC665_CN_16_90_LEYY
+    bool "enable LEYAOYAO project"
+    default n
+    help
+        Fibocom LEYAOYAO project
+
+config MC665_CN_16_90_RRSHENG
+    bool "enable ririsheng project"
+    default n
+    help
+        Fibocom ririsheng project
+
+config MC665_CN_19_00_LEYY
+    bool "enable LEYAOYAO project"
+    default n
+    help
+        Fibocom LEYAOYAO project
+
+config MC665_CN_19_00_XPH
+    bool "enable xin puhui project"
+    default n
+    help
+        Fibocom xin puhui project
+
+config MC665_CN_19_00_JINGRUI
+    bool "enable JINGRUI project"
+    default n
+    help
+        Fibocom JINGRUI project
+
+config MC665_EU_19_00_QIYUE
+    bool "enable QIYUE project"
+    default n
+    help
+        Fibocom LEYAOYAO project
+
+config MC665_EU_19_90_TY
+    bool "enable TY project"
+    default n
+    help
+        Fibocom tuya project
+
+config MC665_CN_19_70_HZHC
+    bool "enable MC665_CN_19_70_HZHC project"
+    default n
+    help
+        Fibocom HANG ZHOU HUA CHENG project
+
+config MC665_EU_19_90_HZHC
+    bool "enable MC665_EU_19_90_HZHC project"
+    default n
+    help
+        Fibocom HANG ZHOU HUA CHENG project
+
+config MC665_CN_19_90_SIKEERTE
+    bool "enable MC665_CN_19_90_SIKEERTE project"
+    default n
+    help
+        Fibocom sikeerte project
+
+config MC665_CN_19_90_HANHUIWS
+    bool "enable hanhuiweishi project"
+    default n
+    help
+        Fibocom hanhuiweishi project
+
+config MC665_EU_19_90_HANHUIWS
+    bool "enable hanhuiweishi project"
+    default n
+    help
+        Fibocom hanhuiweishi project
+
+config MC665_EU_19_00_TUOKUO
+    bool "enable TUOKUO project"
+    default n
+    help
+        Fibocom TUOKUO project
+
+config MC665_CN_19_90_WANJIAAN
+    bool "enable WANJIAAN project"
+    default n
+    help
+        Fibocom WANJIAAN project
+
+config MC665_CN_18_80_HENGKE
+    bool "enable MC665_CN_18_80_HENGKE project"
+    default n
+    help
+        Fibocom hengke project
+
+
+
+config MC665_CN_31_00_ZYKC
+    bool "enable MC665_CN_31_00_ZYKC project"
+    default n
+    help
+        Fibocom ZI YOU KUAI CHE project
+
+config MC665_CN_31_00_FYKJ
+    bool "enable MC665_CN_31_00_FYKJ project"
+    default n
+    help
+        Fibocom fengyikeji project
+
+config MC665_CN_30_OPENCPU
+    bool "enable opencpu project"
+    default n
+    help
+        Fibocom opencpu project
+
+config MC669_CN_13_90_TAIBITE
+    bool "enable MC669_CN_13_90_TAIBITE project"
+    default n
+    help
+        Fibocom TAIBITE project
+
+config MC669_CN_13_90_XIAOAN
+    bool "enable MC669_CN_13_90_XIAOAN project"
+    default n
+    help
+        Fibocom xiaoan project
+
+config MC669_CN_13_90_AITI
+    bool "enable MC669_CN_13_90_AITI project"
+    default n
+    help
+        Fibocom AITI project
+
+config MC669_CN_13_90_AITI_TTSEN
+    bool "enable MC669_CN_13_90_AITI_TTSEN project"
+    default n
+    help
+        Fibocom AITI project
+
+config MC669_CN_25_99_XIAOAN
+    bool "enable MC669_CN_25_99_XIAOAN project"
+    default n
+    help
+        Fibocom xiaoan project
+
+config MC669_CN_25_70_AITI
+    bool "enable AITI project"
+    default n
+    help
+        Fibocom AITI project
+
+config MC669_CN_36_00_CUWULIAN
+    bool "enable MC669_CN_36_00_CUWULIAN project"
+    default n
+    help
+        Fibocom liantongwulian project
+
+config MC665_CN_36_90_HENGKE
+    bool "enable MC665_CN_36_90_HENGKE project"
+    default n
+    help
+        Fibocom hengke project
+
+config MC665_CN_36_90_SITE_VOLTE
+    bool "enable SITE project"
+    default n
+    help
+        Fibocom SITE project
+
+
+config MC665_CN_36_90_VOLTE
+    bool "enable MC665_CN_36_90_VOLTE project"
+    default n
+    help
+        Fibocom volte project
+
+config MC665_CN_19_90_JIEKE
+    bool "enable MC665_CN_19_90_JIEKE project"
+    default n
+    help
+        Fibocom haluo project
+
+config MC669_CN_18_00_SDHK
+    bool "enable MC669_CN_18_00_SDHK project"
+    default n
+    help
+        Fibocom shandonghongka project
+
+config MC669_CN_19_00_XINDALU
+    bool "enable MC669_CN_19_00_XINDALU project"
+    default n
+    help
+        Fibocom xindalu project
+
+config MC669_CN_19_97_XIAMENSIXIN
+    bool "enable MC669_CN_19_97_XIAMENSIXIN project"
+    default n
+    help
+        Fibocom xiamensixin project
+
+config MC665_CN_19_00_IPC
+    bool "enable MC665_CN_19_00_IPC project"
+    default n
+    help
+        Fibocom ipc project
+
+config MC669_CN_19_00_TELAIDIAN
+    bool "enable MC669_CN_19_00_TELAIDIAN project"
+    default n
+    help
+        Fibocom telaidian project
+
+config MC669_CN_19_00_IPC
+    bool "enable MC669_CN_19_00_IPC project"
+    default n
+    help
+        Fibocom ipc project
+
+config MC669_CN_19_02_CHUANSHENYU
+    bool "enable MC669_CN_19_02_CHUANSHENYU project"
+    default n
+    help
+        Fibocom chuanshenyu project
+
+config MC669_CN_16_00_IPC
+    bool "enable MC669_CN_16_00_IPC project"
+    default n
+    help
+        Fibocom ipc project
+
+config MC669_CN_16_90_HUIERFENG
+    bool "enable MC669_CN_16_90_HUIERFENG project"
+    default n
+    help
+        Fibocom huierfeng project
+
+config MC669_CN_16_90_AITIWEIER
+    bool "enable MC669_CN_16_90_AITIWEIER project"
+    default n
+    help
+        Fibocom aitiweier project
+
+config MC669_CN_16_90_XIAOAN
+    bool "enable MC669_CN_16_90_XIAOAN project"
+    default n
+    help
+        Fibocom xiaoan project
+
+config MC669_CN_16_00_DIDI
+    bool "enable MC669_CN_16_00_DIDI project"
+    default n
+    help
+        Fibocom didi project
+
+config MC665_CN_36_90_QDTIANYAN
+    bool "enable MC665_CN_36_90_QDTIANYAN project"
+    default n
+    help
+        Fibocom qingdao tianyan customer  project
+
+config MC661_CN_39_70_MAOWANG
+    bool "enable MC661_CN_39_70_MAOWANG project"
+    default n
+    help
+        Fibocom maowang customer  project
+
+config MC661_CN_39_70_HAIKANG
+    bool "enable MC661_CN_39_70_HAIKANG project"
+    default n
+    help
+        Fibocom haikang customer  project
+
+config FIBOCOM_HALUO_AT
+    bool "enable haluo standard at commands"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_QUE_FEATURE
+    bool "enable que standard at commands"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_17_90_POC
+    bool "enable MC669_CN_17_90_POC"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_UNIMQTT_SUPPORT
+    bool "enable FIBOCOM_AT_UNIMQTT_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_UNI_MQTT_ENABLE
+    bool "enable FIBOCOM_UNI_MQTT_ENABLE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_SZLINGHT_FEATURE
+    bool "enable FIBOCUS_SZLINGHT_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_HENGKE_FEATURE
+    bool "enable FIBOCUS_HENGKE_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_SIKEERTE_FEATURE
+    bool "enable FIBOCUS_HENGKE_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_XIAMENSIXIN_FEATURE
+    bool "enable FIBOCUS_XIAMENSIXIN_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_HUAZHIRONG_FEATURE
+    bool "enable FIBOCUS_XIAMENSIXIN_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_TAIBITE_FEATURE
+    bool "enable CONFIG_FIBOCUS_TAIBITE_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_DIDI_FEATURE
+    bool "enable FIBOCUS_DIDI_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_HAIKANG_FEATURE
+    bool "enable FIBOCUS_HAIKANG_FEATURE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_XIAONIU_FEATURE
+    bool "enable xiaoniu function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_MEITUANZFB_FEATURE
+    bool "enable MEITUAN function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_XIAOAN_FEATURE
+    bool "enable XIAOAN function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_LEYY_FEATURE
+    bool "enable leyaoyao function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_JIEKE_FEATURE
+    bool "enable JIEKE function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_VODAFU_FEATURE
+    bool "enable VODAFU function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_HZJICCX_FEATURE
+    bool "enable VODAFU function"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_19_00_TCOS
+    bool "enable tecent colud project"
+    default n
+    help
+        Fibocom tecent cloud defination.
+
+config FIBOCUS_TUOKUO_FEATURE
+    bool "enable tuokuo function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCUS_1081_FEATURE
+    bool "Functional features of customer No. 1081."
+    default n
+    help
+        Fibocom macro defination.
+
+endmenu

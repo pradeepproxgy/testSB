@@ -1,0 +1,1255 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP_HTTP_HEADER_MAX_SIZE	app_demo/app_http.c	3;"	d	file:
+APP_HTTP_METHOD_GET	app_demo/app_http.c	/^    APP_HTTP_METHOD_GET,$/;"	e	enum:__anon10	file:
+APP_HTTP_METHOD_HEAD	app_demo/app_http.c	/^    APP_HTTP_METHOD_HEAD,$/;"	e	enum:__anon10	file:
+APP_HTTP_METHOD_POST	app_demo/app_http.c	/^    APP_HTTP_METHOD_POST,$/;"	e	enum:__anon10	file:
+APP_HTTP_REQUEST_ERROR	app_demo/app_http.c	/^    APP_HTTP_REQUEST_ERROR$/;"	e	enum:__anon9	file:
+APP_HTTP_REQUEST_IDLE	app_demo/app_http.c	/^    APP_HTTP_REQUEST_IDLE,$/;"	e	enum:__anon9	file:
+APP_HTTP_REQUEST_ING	app_demo/app_http.c	/^    APP_HTTP_REQUEST_ING,$/;"	e	enum:__anon9	file:
+APP_HTTP_REQUEST_OK	app_demo/app_http.c	/^    APP_HTTP_REQUEST_OK,$/;"	e	enum:__anon9	file:
+APP_LOG_INFO	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	34;"	d	file:
+APP_MAX_CID	app_demo/app_pdp.c	4;"	d	file:
+APP_MAX_CID	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	5;"	d	file:
+APP_MQTT_CHANNEL_MAX	app_demo/app_mqtt.c	4;"	d	file:
+APP_MQTT_MSG_NUM_MAX	app_demo/app_mqtt.c	5;"	d	file:
+APP_PDP_STATUS_ACTIVED	app_demo/app_pdp.c	/^    APP_PDP_STATUS_ACTIVED,$/;"	e	enum:__anon7	file:
+APP_PDP_STATUS_ACTIVED	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    APP_PDP_STATUS_ACTIVED,$/;"	e	enum:__anon14	file:
+APP_PDP_STATUS_ACTIVED_BUT_DEATTACHED	app_demo/app_pdp.c	/^    APP_PDP_STATUS_ACTIVED_BUT_DEATTACHED$/;"	e	enum:__anon7	file:
+APP_PDP_STATUS_ACTIVED_BUT_DEATTACHED	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    APP_PDP_STATUS_ACTIVED_BUT_DEATTACHED$/;"	e	enum:__anon14	file:
+APP_PDP_STATUS_ACTIVING	app_demo/app_pdp.c	/^    APP_PDP_STATUS_ACTIVING,$/;"	e	enum:__anon7	file:
+APP_PDP_STATUS_ACTIVING	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    APP_PDP_STATUS_ACTIVING,$/;"	e	enum:__anon14	file:
+APP_PDP_STATUS_DEACTIVED	app_demo/app_pdp.c	/^    APP_PDP_STATUS_DEACTIVED,$/;"	e	enum:__anon7	file:
+APP_PDP_STATUS_DEACTIVED	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    APP_PDP_STATUS_DEACTIVED,$/;"	e	enum:__anon14	file:
+APP_PDP_STATUS_DEACTIVING	app_demo/app_pdp.c	/^    APP_PDP_STATUS_DEACTIVING,$/;"	e	enum:__anon7	file:
+APP_PDP_STATUS_DEACTIVING	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    APP_PDP_STATUS_DEACTIVING,$/;"	e	enum:__anon14	file:
+AUSTREAM_FORMAT_AMRNB	oc_audio_demo.c	/^    AUSTREAM_FORMAT_AMRNB,   \/\/\/< AMR-NB$/;"	e	enum:__anon12	file:
+AUSTREAM_FORMAT_AMRWB	oc_audio_demo.c	/^    AUSTREAM_FORMAT_AMRWB,   \/\/\/< AMR_WB$/;"	e	enum:__anon12	file:
+AUSTREAM_FORMAT_MP3	oc_audio_demo.c	/^    AUSTREAM_FORMAT_MP3,     \/\/\/< MP3$/;"	e	enum:__anon12	file:
+AUSTREAM_FORMAT_PCM	oc_audio_demo.c	/^    AUSTREAM_FORMAT_PCM,     \/\/\/< raw PCM data$/;"	e	enum:__anon12	file:
+AUSTREAM_FORMAT_UNKNOWN	oc_audio_demo.c	/^    AUSTREAM_FORMAT_UNKNOWN, \/\/\/< placeholder for unknown format$/;"	e	enum:__anon12	file:
+AUSTREAM_FORMAT_WAVPCM	oc_audio_demo.c	/^    AUSTREAM_FORMAT_WAVPCM,  \/\/\/< WAV, PCM inside$/;"	e	enum:__anon12	file:
+AudioPlay	oc_audio_stream_play_demo.c	/^static void AudioPlay(void *param)$/;"	f	file:
+BACKUP_OBJECT_COUNT	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	81;"	d	file:
+BLACK	oc_lcd_demo.c	26;"	d	file:
+BLUE	oc_lcd_demo.c	27;"	d	file:
+BRED	oc_lcd_demo.c	28;"	d	file:
+BROWN	oc_lcd_demo.c	36;"	d	file:
+BRRED	oc_lcd_demo.c	37;"	d	file:
+BUFFER_MAX_LEN	lwm2m_client_demo/src/app_at_cmd.c	17;"	d	file:
+CHECK_EX	oc_socket_demo.c	61;"	d	file:
+CHECK_ONLY	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	24;"	d	file:
+COAPS_PORT	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	30;"	d	file:
+COAP_PORT	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	29;"	d	file:
+CYAN	oc_lcd_demo.c	34;"	d	file:
+Callplayend	oc_audio_demo.c	/^void Callplayend(void)$/;"	f
+Callplayend	oc_codec_demo.c	/^static void Callplayend(void)$/;"	f	file:
+DEFAULT_SERVER_IPV4	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	72;"	d	file:
+DEFAULT_SERVER_IPV6	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	71;"	d	file:
+DEMO_LOG	oc_gb2312_utf16_demo.c	25;"	d	file:
+DISP_SQUARE_SIZE	oc_key_register_callback_demo.c	21;"	d	file:
+DRV_SERIAL_EVENT_BROKEN	oc_usb_demo.c	/^    DRV_SERIAL_EVENT_BROKEN = (1 << 3),      \/\/\/< usb port broken$/;"	e	enum:__anon23	file:
+DRV_SERIAL_EVENT_CLOSE	oc_usb_demo.c	/^    DRV_SERIAL_EVENT_CLOSE = (1 << 6),       \/\/\/< close by host$/;"	e	enum:__anon23	file:
+DRV_SERIAL_EVENT_OPEN	oc_usb_demo.c	/^    DRV_SERIAL_EVENT_OPEN = (1 << 5),        \/\/\/< open by host$/;"	e	enum:__anon23	file:
+DRV_SERIAL_EVENT_READY	oc_usb_demo.c	/^    DRV_SERIAL_EVENT_READY = (1 << 4),       \/\/\/< usb port ready$/;"	e	enum:__anon23	file:
+ES8311_I2C_ADDR	oc_codec_es8311_demo.c	20;"	d	file:
+E_RES_FAILED	oc_gb2312_utf16_demo.c	23;"	d	file:
+E_RES_SUCCESS	oc_gb2312_utf16_demo.c	22;"	d	file:
+FFW_SSL_VER_TLS1_2	oc_ssl_demo.c	24;"	d	file:
+FIBO_DEMO_R_FAILED	oc_socket_demo.c	43;"	d	file:
+FIBO_DEMO_R_SUCCESS	oc_socket_demo.c	44;"	d	file:
+FIBO_FFS_DIR	oc_ffs_demo.c	29;"	d	file:
+FIBO_STATUS_CONNECTTING	oc_socket_demo.c	/^    FIBO_STATUS_CONNECTTING,$/;"	e	enum:fibo_connection_status_s	file:
+FIBO_STATUS_CONNECT_DISCONNECTTD	oc_socket_demo.c	/^    FIBO_STATUS_CONNECT_DISCONNECTTD$/;"	e	enum:fibo_connection_status_s	file:
+FIBO_STATUS_CONNECT_FAIL	oc_socket_demo.c	/^    FIBO_STATUS_CONNECT_FAIL,$/;"	e	enum:fibo_connection_status_s	file:
+FIBO_STATUS_CONNECT_OK	oc_socket_demo.c	/^    FIBO_STATUS_CONNECT_OK,$/;"	e	enum:fibo_connection_status_s	file:
+FIBO_STATUS_IDLE	oc_socket_demo.c	/^    FIBO_STATUS_IDLE = 0,$/;"	e	enum:fibo_connection_status_s	file:
+FILE_DIR_PATH	oc_sftp_demo.c	19;"	d	file:
+FIRMWARE_UPDATE_RES_ID_3	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	189;"	d	file:
+FOTA_RESULT_CHECKFAIL	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_CHECKFAIL,           \/\/5 validate fail$/;"	e	enum:__anon17	file:
+FOTA_RESULT_DISCONNECT	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_DISCONNECT,          \/\/4 downloading disconnect$/;"	e	enum:__anon17	file:
+FOTA_RESULT_INIT	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_INIT,                \/\/0 init$/;"	e	enum:__anon17	file:
+FOTA_RESULT_NOFREE	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_NOFREE,              \/\/2 no space$/;"	e	enum:__anon17	file:
+FOTA_RESULT_NOSUPPORT	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_NOSUPPORT,           \/\/6 unsupport package$/;"	e	enum:__anon17	file:
+FOTA_RESULT_OVERFLOW	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_OVERFLOW,            \/\/3 downloading overflow$/;"	e	enum:__anon17	file:
+FOTA_RESULT_PROTOCOLFAIL	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_PROTOCOLFAIL        \/\/9 unsupport protocol$/;"	e	enum:__anon17	file:
+FOTA_RESULT_SUCCESS	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_SUCCESS,             \/\/1 success$/;"	e	enum:__anon17	file:
+FOTA_RESULT_UPDATEFAIL	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_UPDATEFAIL,          \/\/8 update fail$/;"	e	enum:__anon17	file:
+FOTA_RESULT_URIINVALID	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^	FOTA_RESULT_URIINVALID,          \/\/7 invalid uri$/;"	e	enum:__anon17	file:
+FTP_R_FAILED	oc_ftp_demo.c	33;"	d	file:
+FTP_R_SUCCESS	oc_ftp_demo.c	32;"	d	file:
+FTP_STATUS_ABNORMAL	oc_ftp_demo.c	/^    FTP_STATUS_ABNORMAL = 7$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_CONNECTED	app_demo/app_ftp.c	/^    FTP_STATUS_CONNECTED = 2,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_CONNECTED	oc_ftp_demo.c	/^    FTP_STATUS_CONNECTED = 2,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_CONNECTING	app_demo/app_ftp.c	/^    FTP_STATUS_CONNECTING = 1,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_CONNECTING	oc_ftp_demo.c	/^    FTP_STATUS_CONNECTING = 1,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_IDLE	app_demo/app_ftp.c	/^    FTP_STATUS_IDLE = 0,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_IDLE	oc_ftp_demo.c	/^    FTP_STATUS_IDLE = 0,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_READING	oc_ftp_demo.c	/^    FTP_STATUS_READING = 3,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_READ_FINISH	oc_ftp_demo.c	/^    FTP_STATUS_READ_FINISH = 4,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_RW_IDLE	app_demo/app_ftp.c	/^    FTP_STATUS_RW_IDLE = 0,$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_RW_READING	app_demo/app_ftp.c	/^    FTP_STATUS_RW_READING,$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_RW_READ_FAIL	app_demo/app_ftp.c	/^    FTP_STATUS_RW_READ_FAIL,$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_RW_READ_FINISH	app_demo/app_ftp.c	/^    FTP_STATUS_RW_READ_FINISH,$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_RW_WRITE_FAIL	app_demo/app_ftp.c	/^    FTP_STATUS_RW_WRITE_FAIL$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_RW_WRITE_FINISH	app_demo/app_ftp.c	/^    FTP_STATUS_RW_WRITE_FINISH,$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_RW_WRITING	app_demo/app_ftp.c	/^    FTP_STATUS_RW_WRITING,$/;"	e	enum:ftp_client_rw_status_s	file:
+FTP_STATUS_WRITE_FINISH	oc_ftp_demo.c	/^    FTP_STATUS_WRITE_FINISH = 6,$/;"	e	enum:ftp_client_status_s	file:
+FTP_STATUS_WRITING	oc_ftp_demo.c	/^    FTP_STATUS_WRITING = 5,$/;"	e	enum:ftp_client_status_s	file:
+FlashId	oc_spi_demo.c	/^uint8_t FlashId[4] = {0};$/;"	v
+GBLUE	oc_lcd_demo.c	30;"	d	file:
+GRAY	oc_lcd_demo.c	38;"	d	file:
+GRED	oc_lcd_demo.c	29;"	d	file:
+GREEN	oc_lcd_demo.c	33;"	d	file:
+HMAC_SHA1_LEN	oc_hmacsha1_hmacsha256_test_demo.c	38;"	d	file:
+HMAC_SHA256_LEN	oc_hmacsha1_hmacsha256_test_demo.c	39;"	d	file:
+ISNONBLOCK	oc_ssl_demo.c	26;"	d	file:
+ITEM_INT_VAL	lwm2m_client_demo/src/fibo_config.c	7;"	d	file:
+LOCAL_PATH	oc_ftp_demo.c	36;"	d	file:
+LWM2M_ADDRESS_FAMILY_DEFAULT	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	448;"	d	file:
+LWM2M_DOWNLOADED	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    LWM2M_DOWNLOADED$/;"	e	enum:__anon16	file:
+LWM2M_DOWNLOADING	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    LWM2M_DOWNLOADING,$/;"	e	enum:__anon16	file:
+LWM2M_DOWNLOAD_FAIL	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    LWM2M_DOWNLOAD_FAIL,$/;"	e	enum:__anon16	file:
+LWM2M_DOWNLOAD_IDLE	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    LWM2M_DOWNLOAD_IDLE = 0,$/;"	e	enum:__anon16	file:
+LWM2M_DOWNLOAD_START	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    LWM2M_DOWNLOAD_START,$/;"	e	enum:__anon16	file:
+LWM2M_ENDPOINT_NAME	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	450;"	d	file:
+LWM2M_INSTANCE_ID_0	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	190;"	d	file:
+LWM2M_LIFETIME_DEFAULT	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	449;"	d	file:
+LWM2M_OLD_VERSION	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	15;"	d	file:
+LWM2M_PSK	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	446;"	d	file:
+LWM2M_PSK_ID	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	447;"	d	file:
+LWM2M_SERVER_PORT	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	443;"	d	file:
+LWM2M_SERVER_URL	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	442;"	d	file:
+LWM2M_URI_FLAG_INSTANCE_ID	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	18;"	d	file:
+LWM2M_URI_FLAG_OBJECT_ID	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	17;"	d	file:
+LWM2M_URI_FLAG_RESOURCE_ID	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	19;"	d	file:
+MAGENTA	oc_lcd_demo.c	32;"	d	file:
+MAX_CID_SUPPORT	oc_pdp_demo.c	23;"	d	file:
+MAX_IP_LENGTH	oc_pdp_demo.c	24;"	d	file:
+MAX_PACKET_SIZE	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	70;"	d	file:
+MAX_PACKET_SIZE	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	33;"	d	file:
+MAX_URL_LENGTH	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	12;"	d	file:
+MC66X	app_demo/app_wifiscan.c	4;"	d	file:
+MQTT_STATUS_CONNECTED	app_demo/app_mqtt.c	/^    MQTT_STATUS_CONNECTED = 2,$/;"	e	enum:ftp_client_status_s	file:
+MQTT_STATUS_CONNECTING	app_demo/app_mqtt.c	/^    MQTT_STATUS_CONNECTING = 1,$/;"	e	enum:ftp_client_status_s	file:
+MQTT_STATUS_IDLE	app_demo/app_mqtt.c	/^    MQTT_STATUS_IDLE = 0,$/;"	e	enum:ftp_client_status_s	file:
+MQTT_STATUS_RW_IDLE	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_IDLE = 0,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_PUBTING	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_PUBTING,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_PUB_FAIL	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_PUB_FAIL$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_PUB_FINISH	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_PUB_FINISH,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_SUBING	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_SUBING,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_SUB_FAIL	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_SUB_FAIL,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_SUB_FINISH	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_SUB_FINISH,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_UNSUBING	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_UNSUBING,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_UNSUB_FAIL	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_UNSUB_FAIL,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_STATUS_RW_UNSUB_FINISH	app_demo/app_mqtt.c	/^    MQTT_STATUS_RW_UNSUB_FINISH,$/;"	e	enum:ftp_client_rw_status_s	file:
+MQTT_TASK_STATUS_RUNNING	app_demo/app_mqtt.c	446;"	d	file:
+MQTT_TASK_STATUS_STOPPED	app_demo/app_mqtt.c	447;"	d	file:
+OBJ_COUNT	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	77;"	d	file:
+OC_SOC_LOG	oc_socket_demo.c	20;"	d	file:
+OSI_LOG_TAG	mutil_app/oc_mutil_app1_demo.c	14;"	d	file:
+OSI_LOG_TAG	mutil_app/oc_mutil_app2_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_alarm.c	14;"	d	file:
+OSI_LOG_TAG	oc_alarm_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_appcmd_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_at_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_audio_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_audio_list_play_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_ble_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_ble_new_service_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_call_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_camera_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_cell_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_charger_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_chipid_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_codec_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_codec_es8311_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_extflash_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_ffs_demo.c	27;"	d	file:
+OSI_LOG_TAG	oc_fota_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_ftp_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_gb2312_utf16_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_gnss_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_gpio_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_heartbeat_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_hmacsha1_hmacsha256_test_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_http_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_i2c_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_inner_flash_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_key_register_callback_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_lbs_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_lcd_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_localtime_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_mqtt_cloud_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_mqtt_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_mqtt_demo1.c	14;"	d	file:
+OSI_LOG_TAG	oc_nonsignalling_test_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_pdp_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_pmu_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_psm_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_pwm_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_recorder_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_socket_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_spi_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_ssl_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_sweep_code_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_tts_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_uart_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_uart_to_rs485_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_usb_demo.c	14;"	d	file:
+OSI_LOG_TAG	oc_wifiscan_demo.c	13;"	d	file:
+OSI_LOG_TAG	oc_xml_demo.c	14;"	d	file:
+OSI_LOG_TAG	osi_demo.c	14;"	d	file:
+OtaParaTypeDef	oc_fota_demo.c	/^}OtaParaTypeDef;$/;"	t	typeref:struct:__anon2	file:
+PDP_ACTIVE	oc_pdp_demo.c	25;"	d	file:
+PDP_ACTIVING	oc_pdp_demo.c	27;"	d	file:
+PDP_DEACTIVING	oc_pdp_demo.c	28;"	d	file:
+PDP_INACTIVE	oc_pdp_demo.c	26;"	d	file:
+PROTOCOL_LENGTH	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	13;"	d	file:
+PRV_BATTERY_LEVEL	lwm2m_client_demo/src/lwm2m_client/object_device.c	80;"	d	file:
+PRV_BINDING_MODE	lwm2m_client_demo/src/lwm2m_client/object_device.c	84;"	d	file:
+PRV_ERROR_CODE	lwm2m_client_demo/src/lwm2m_client/object_device.c	82;"	d	file:
+PRV_FIRMWARE_VERSION	lwm2m_client_demo/src/lwm2m_client/object_device.c	73;"	d	file:
+PRV_MANUFACTURER	lwm2m_client_demo/src/lwm2m_client/object_device.c	70;"	d	file:
+PRV_MEMORY_FREE	lwm2m_client_demo/src/lwm2m_client/object_device.c	81;"	d	file:
+PRV_MODEL_NUMBER	lwm2m_client_demo/src/lwm2m_client/object_device.c	71;"	d	file:
+PRV_OFFSET_MAXLEN	lwm2m_client_demo/src/lwm2m_client/object_device.c	86;"	d	file:
+PRV_POWER_CURRENT_1	lwm2m_client_demo/src/lwm2m_client/object_device.c	78;"	d	file:
+PRV_POWER_CURRENT_2	lwm2m_client_demo/src/lwm2m_client/object_device.c	79;"	d	file:
+PRV_POWER_SOURCE_1	lwm2m_client_demo/src/lwm2m_client/object_device.c	74;"	d	file:
+PRV_POWER_SOURCE_2	lwm2m_client_demo/src/lwm2m_client/object_device.c	75;"	d	file:
+PRV_POWER_VOLTAGE_1	lwm2m_client_demo/src/lwm2m_client/object_device.c	76;"	d	file:
+PRV_POWER_VOLTAGE_2	lwm2m_client_demo/src/lwm2m_client/object_device.c	77;"	d	file:
+PRV_SERIAL_NUMBER	lwm2m_client_demo/src/lwm2m_client/object_device.c	72;"	d	file:
+PRV_TIME_ZONE	lwm2m_client_demo/src/lwm2m_client/object_device.c	83;"	d	file:
+PRV_TLV_BUFFER_SIZE	lwm2m_client_demo/src/lwm2m_client/object_device.c	87;"	d	file:
+RED	oc_lcd_demo.c	31;"	d	file:
+RES_M_BINDING_MODES	lwm2m_client_demo/src/lwm2m_client/object_device.c	106;"	d	file:
+RES_M_ERROR_CODE	lwm2m_client_demo/src/lwm2m_client/object_device.c	101;"	d	file:
+RES_M_PACKAGE	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	36;"	d	file:
+RES_M_PACKAGE_URI	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	37;"	d	file:
+RES_M_REBOOT	lwm2m_client_demo/src/lwm2m_client/object_device.c	94;"	d	file:
+RES_M_STATE	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	20;"	d	file:
+RES_M_STATE	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	39;"	d	file:
+RES_M_UPDATE	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	38;"	d	file:
+RES_M_UPDATE_RESULT	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	41;"	d	file:
+RES_O_AVL_POWER_SOURCES	lwm2m_client_demo/src/lwm2m_client/object_device.c	96;"	d	file:
+RES_O_BATTERY_LEVEL	lwm2m_client_demo/src/lwm2m_client/object_device.c	99;"	d	file:
+RES_O_BATTERY_STATUS	lwm2m_client_demo/src/lwm2m_client/object_device.c	111;"	d	file:
+RES_O_CURRENT_TIME	lwm2m_client_demo/src/lwm2m_client/object_device.c	103;"	d	file:
+RES_O_DEVICE_TYPE	lwm2m_client_demo/src/lwm2m_client/object_device.c	108;"	d	file:
+RES_O_FACTORY_RESET	lwm2m_client_demo/src/lwm2m_client/object_device.c	95;"	d	file:
+RES_O_FIRMWARE_UPDATE_DELIVER_METHOD	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	45;"	d	file:
+RES_O_FIRMWARE_UPDATE_PROTOCOL_SUPPORT	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	44;"	d	file:
+RES_O_FIRMWARE_VERSION	lwm2m_client_demo/src/lwm2m_client/object_device.c	93;"	d	file:
+RES_O_HARDWARE_VERSION	lwm2m_client_demo/src/lwm2m_client/object_device.c	109;"	d	file:
+RES_O_MANUFACTURER	lwm2m_client_demo/src/lwm2m_client/object_device.c	90;"	d	file:
+RES_O_MEMORY_FREE	lwm2m_client_demo/src/lwm2m_client/object_device.c	100;"	d	file:
+RES_O_MEMORY_TOTAL	lwm2m_client_demo/src/lwm2m_client/object_device.c	112;"	d	file:
+RES_O_MODEL_NUMBER	lwm2m_client_demo/src/lwm2m_client/object_device.c	91;"	d	file:
+RES_O_PKG_NAME	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	42;"	d	file:
+RES_O_PKG_VERSION	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	43;"	d	file:
+RES_O_POWER_SOURCE_CURRENT	lwm2m_client_demo/src/lwm2m_client/object_device.c	98;"	d	file:
+RES_O_POWER_SOURCE_VOLTAGE	lwm2m_client_demo/src/lwm2m_client/object_device.c	97;"	d	file:
+RES_O_RESET_ERROR_CODE	lwm2m_client_demo/src/lwm2m_client/object_device.c	102;"	d	file:
+RES_O_SERIAL_NUMBER	lwm2m_client_demo/src/lwm2m_client/object_device.c	92;"	d	file:
+RES_O_SOFTWARE_VERSION	lwm2m_client_demo/src/lwm2m_client/object_device.c	110;"	d	file:
+RES_O_TIMEZONE	lwm2m_client_demo/src/lwm2m_client/object_device.c	105;"	d	file:
+RES_O_UPDATE_SUPPORTED_OBJECTS	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	40;"	d	file:
+RES_O_UTC_OFFSET	lwm2m_client_demo/src/lwm2m_client/object_device.c	104;"	d	file:
+RecordContext_t	oc_recorder_demo.c	/^}RecordContext_t;$/;"	t	typeref:struct:__anon3	file:
+RmAudiofile	oc_recorder_demo.c	/^static int RmAudiofile(const char *filename)$/;"	f	file:
+Rp	oc_audio_stream_play_demo.c	/^uint32_t Rp = 0;$/;"	v
+SERVER_PATH	oc_ftp_demo.c	35;"	d	file:
+SERVER_PATH2	oc_ftp_demo.c	37;"	d	file:
+ServerAdr	oc_fota_demo.c	/^        uint8_t ServerAdr[def_max_ServerAdrLen];$/;"	m	struct:__anon2	file:
+ServerAdrLen	oc_fota_demo.c	/^        uint8_t ServerAdrLen;$/;"	m	struct:__anon2	file:
+StreamPlayTask	oc_audio_demo.c	/^static void StreamPlayTask(void *ctx)$/;"	f	file:
+TEST_CA_FILE	app_demo/app_mqtt.c	376;"	d	file:
+TEST_CA_FILE	oc_ssl_demo.c	40;"	d	file:
+TEST_CLIENT_FILE	app_demo/app_mqtt.c	397;"	d	file:
+TEST_CLIENT_KEY_FILE	app_demo/app_mqtt.c	418;"	d	file:
+TEST_CLIENT_KEY_FILE	oc_ssl_demo.c	61;"	d	file:
+TEST_FILE_NAME	oc_audio_demo.c	42;"	d	file:
+TEST_TYPE	oc_fota_demo.c	30;"	d	file:
+THREAD_STACK_SIZE	oc_ffs_demo.c	24;"	d	file:
+THREAD_STACK_SIZE	oc_ftp_demo.c	30;"	d	file:
+THREAD_STACK_SIZE	oc_gb2312_utf16_demo.c	20;"	d	file:
+Testbuff	oc_audio_demo.c	/^static uint8_t *Testbuff=NULL;$/;"	v	file:
+URI_LENGTH	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	31;"	d	file:
+UpdateAudio	oc_audio_stream_play_demo.c	/^static void UpdateAudio(void *param)$/;"	f	file:
+UsbDev_Event	oc_usb_demo.c	/^int UsbDev_Event (int arg)$/;"	f
+UseTls	oc_mqtt_demo.c	/^UINT8 UseTls = false;$/;"	v
+UseTls	oc_mqtt_demo1.c	/^UINT8 UseTls = false;$/;"	v
+Version	oc_fota_demo.c	/^        uint8_t Version[def_max_VersionLen];$/;"	m	struct:__anon2	file:
+VersionLen	oc_fota_demo.c	/^        uint8_t VersionLen;$/;"	m	struct:__anon2	file:
+WHITE	oc_lcd_demo.c	25;"	d	file:
+Wp	oc_audio_stream_play_demo.c	/^uint32_t Wp = 0;$/;"	v
+Wp	oc_recorder_demo.c	/^    uint32_t Wp;$/;"	m	struct:__anon3	file:
+YELLOW	oc_lcd_demo.c	35;"	d	file:
+_BL_LIGHT_ONE_STEP_NUM	oc_key_register_callback_demo.c	20;"	d	file:
+__assert_func	lwm2m_client_demo/src/fibo_config.c	/^void __assert_func(const char *file, int line, const char *func, const char *failedexpr)$/;"	f
+_lwm2m_data_cfg_t	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^typedef struct _lwm2m_data_cfg_t$/;"	s	file:
+_prv_bl_keep_add_timer_func	oc_key_register_callback_demo.c	/^static void _prv_bl_keep_add_timer_func(void *arg)$/;"	f	file:
+_prv_init_lcd_and_show_something	oc_key_register_callback_demo.c	/^static int32_t _prv_init_lcd_and_show_something(void)$/;"	f	file:
+_prv_key_callback_func	oc_key_register_callback_demo.c	/^static void _prv_key_callback_func(int keyid, int state, void *ctx)$/;"	f	file:
+_security_instance_	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^typedef struct _security_instance_$/;"	s	file:
+_server_instance_	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^typedef struct _server_instance_$/;"	s	file:
+active_cid	oc_pdp_demo.c	/^    UINT8 active_cid;$/;"	m	struct:__anon5	file:
+addr	oc_codec_es8311_demo.c	/^    uint8_t addr;$/;"	m	struct:__anon11	file:
+addressFamily	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    int addressFamily;$/;"	m	struct:__anon22	file:
+answer_call_demo	oc_call_demo.c	/^static void answer_call_demo(void *param)$/;"	f	file:
+api_for_3rd_app	mutil_app/oc_mutil_app1_demo.c	/^static APP_SERRICES_T api_for_3rd_app = {$/;"	v	file:
+app_download_test	oc_fota_demo.c	/^void app_download_test()$/;"	f
+app_enter_task	app_demo/app.c	/^static void app_enter_task(void (*cb)())$/;"	f	file:
+app_ftp_close	app_demo/app_ftp.c	/^int app_ftp_close()$/;"	f
+app_ftp_demo	app_demo/app_ftp.c	/^void app_ftp_demo()$/;"	f
+app_ftp_download	app_demo/app_ftp.c	/^int app_ftp_download(char *server_path, char *local_path)$/;"	f
+app_ftp_init	app_demo/app_ftp.c	/^int app_ftp_init()$/;"	f
+app_ftp_open	app_demo/app_ftp.c	/^int app_ftp_open(char *server_addr, char *username, char *passwd)$/;"	f
+app_ftp_uploadload	app_demo/app_ftp.c	/^int app_ftp_uploadload(char *server_path, char *local_path)$/;"	f
+app_http_demo	app_demo/app_http.c	/^void app_http_demo()$/;"	f
+app_http_init	app_demo/app_http.c	/^int app_http_init()$/;"	f
+app_http_method_t	app_demo/app_http.c	/^} app_http_method_t;$/;"	t	typeref:enum:__anon10	file:
+app_http_request	app_demo/app_http.c	/^static int app_http_request(app_http_method_t method, const char *filename, const char *url, const app_http_header_t *headers, int headers_cnt, int timeout, const char *data, UINT32 datalen, void **dataout, UINT32 *dataoutlen)$/;"	f	file:
+app_http_request_get	app_demo/app_http.c	/^int app_http_request_get(const char *url, const app_http_header_t *headers, int headers_cnt, int timeout, void **dataout, UINT32 *dataoutlen)$/;"	f
+app_http_request_get_file	app_demo/app_http.c	/^int app_http_request_get_file(const char *url, const app_http_header_t *headers, int headers_cnt, int timeout, const char *filename)$/;"	f
+app_http_request_post	app_demo/app_http.c	/^int app_http_request_post(const char *url, const app_http_header_t *headers, int headers_cnt, int timeout, const char *data, UINT32 datalen, void **dataout, UINT32 *dataoutlen)$/;"	f
+app_http_status_t	app_demo/app_http.c	/^} app_http_status_t;$/;"	t	typeref:enum:__anon9	file:
+app_image_start	lwm2m_client_demo/src/app_lwm2m.c	/^void *app_image_start(void)$/;"	f
+app_init	app_demo/app.c	/^FIBO_CALLBACK_T *app_init(void (*cb)())$/;"	f
+app_lbs_demo	app_demo/app_lbs.c	/^void app_lbs_demo()$/;"	f
+app_lbs_freegisinfo	app_demo/app_lbs.c	/^int app_lbs_freegisinfo(fibo_lbs_res_t *lbsinfo)$/;"	f
+app_lbs_getgisinfo	app_demo/app_lbs.c	/^int app_lbs_getgisinfo(app_lbs_type_t lbstype, fibo_lbs_res_t **lbsinfo, int timeout)$/;"	f
+app_lwm2m_demo	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^int app_lwm2m_demo()$/;"	f
+app_method_str	app_demo/app_http.c	/^static char *app_method_str[] = {"GET", "POST", "HEAD"};$/;"	v	file:
+app_mqtt_close	app_demo/app_mqtt.c	/^int app_mqtt_close(int id)$/;"	f
+app_mqtt_demo	app_demo/app_mqtt.c	/^int app_mqtt_demo()$/;"	f
+app_mqtt_free_msg	app_demo/app_mqtt.c	/^int app_mqtt_free_msg(app_mqtt_msg_t *msg)$/;"	f
+app_mqtt_init	app_demo/app_mqtt.c	/^int app_mqtt_init()$/;"	f
+app_mqtt_is_connectted	app_demo/app_mqtt.c	/^int app_mqtt_is_connectted(UINT8 id)$/;"	f
+app_mqtt_open	app_demo/app_mqtt.c	/^int app_mqtt_open(UINT8 id, INT8 *usr, INT8 *pwd, INT8 *ClientID, INT8 *DestAddr, UINT16 DestPort, UINT8 CLeanSession, UINT16 keepalive, UINT8 UseTls)$/;"	f
+app_mqtt_pub	app_demo/app_mqtt.c	/^int app_mqtt_pub(UINT8 id, INT8 *topic, UINT8 qos, BOOL retain, INT8 *message, UINT16 msglen)$/;"	f
+app_mqtt_read_msg	app_demo/app_mqtt.c	/^int app_mqtt_read_msg(app_mqtt_msg_t *msg, uint32_t timeout)$/;"	f
+app_mqtt_set_will	app_demo/app_mqtt.c	/^int app_mqtt_set_will(UINT8 id, INT8 *topic, UINT8 qos, BOOL retain, INT8 *message)$/;"	f
+app_mqtt_start_demo	app_demo/app_mqtt.c	/^int app_mqtt_start_demo()$/;"	f
+app_mqtt_stop_demo	app_demo/app_mqtt.c	/^int app_mqtt_stop_demo()$/;"	f
+app_mqtt_sub	app_demo/app_mqtt.c	/^int app_mqtt_sub(UINT8 id, INT8 *topic, UINT8 qos)$/;"	f
+app_mqtt_unsub	app_demo/app_mqtt.c	/^int app_mqtt_unsub(UINT8 id, INT8 *topic)$/;"	f
+app_pdp_active	app_demo/app_pdp.c	/^int app_pdp_active(int simid, int cid, app_pdp_iptype_t iptype, char *apn, char *apnuser, char *apnpasswd, app_pdp_authproto_t auth_proto)$/;"	f
+app_pdp_active	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_active(int simid, int cid, app_pdp_iptype_t iptype, char *apn, char *apnuser, char *apnpasswd, app_pdp_authproto_t auth_proto)$/;"	f
+app_pdp_check_pdp_release	app_demo/app_pdp.c	/^int app_pdp_check_pdp_release(int cid)$/;"	f
+app_pdp_check_pdp_release	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_check_pdp_release(int cid)$/;"	f
+app_pdp_deactive	app_demo/app_pdp.c	/^int app_pdp_deactive(int cid)$/;"	f
+app_pdp_deactive	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_deactive(int cid)$/;"	f
+app_pdp_get_ipaddress	app_demo/app_pdp.c	/^int app_pdp_get_ipaddress(int cid, char **ipv4, char **ipv6)$/;"	f
+app_pdp_get_ipaddress	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_get_ipaddress(int cid, char **ipv4, char **ipv6)$/;"	f
+app_pdp_get_rrc_status	app_demo/app_pdp.c	/^int app_pdp_get_rrc_status()$/;"	f
+app_pdp_get_rrc_status	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_get_rrc_status()$/;"	f
+app_pdp_info_t	app_demo/app_pdp.c	/^} app_pdp_info_t;$/;"	t	typeref:struct:__anon8	file:
+app_pdp_info_t	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^} app_pdp_info_t;$/;"	t	typeref:struct:__anon15	file:
+app_pdp_init	app_demo/app_pdp.c	/^int app_pdp_init()$/;"	f
+app_pdp_init	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_init()$/;"	f
+app_pdp_is_active	app_demo/app_pdp.c	/^int app_pdp_is_active(int cid)$/;"	f
+app_pdp_is_active	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_is_active(int cid)$/;"	f
+app_pdp_status_t	app_demo/app_pdp.c	/^} app_pdp_status_t;$/;"	t	typeref:enum:__anon7	file:
+app_pdp_status_t	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^} app_pdp_status_t;$/;"	t	typeref:enum:__anon14	file:
+app_pdp_wait_rrc_idle	app_demo/app_pdp.c	/^int app_pdp_wait_rrc_idle()$/;"	f
+app_pdp_wait_rrc_idle	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^int app_pdp_wait_rrc_idle()$/;"	f
+app_register_sig_callback	app_demo/app.c	/^int app_register_sig_callback(GAPP_SIGNAL_ID_T sig, fibo_signal_t cb)$/;"	f
+app_register_sig_callback	lwm2m_client_demo/src/app_lwm2m.c	/^int app_register_sig_callback(GAPP_SIGNAL_ID_T sig, fibo_signal_t cb)$/;"	f
+app_socket_connect	app_demo/app_socket.c	/^int app_socket_connect(int cid, app_socket_type_t sock_type, char *hostname, uint16_t port, uint32_t timeout)$/;"	f
+app_socket_demo	app_demo/app_socket.c	/^void app_socket_demo()$/;"	f
+app_socket_init	app_demo/app_socket.c	/^int app_socket_init()$/;"	f
+app_socket_ntp	app_demo/app_socket.c	/^int app_socket_ntp(int cid, char *ntpserver, uint16_t port, uint64_t *timestamp)$/;"	f
+app_socket_recv	app_demo/app_socket.c	/^int app_socket_recv(int sock, uint8_t *data, uint32_t size, uint32_t *len)$/;"	f
+app_socket_recv_fixed	app_demo/app_socket.c	/^int app_socket_recv_fixed(int sock, uint8_t *data, uint32_t size, uint32_t *len, int32_t timeout)$/;"	f
+app_socket_send	app_demo/app_socket.c	/^int app_socket_send(int sock, const uint8_t *data, uint32_t len)$/;"	f
+app_socket_socketpair	app_demo/app_socket.c	/^int app_socket_socketpair(app_socket_type_t sock_type, int sv[2])$/;"	f
+app_update_test	oc_fota_demo.c	/^void app_update_test()$/;"	f
+app_wifiscan	app_demo/app_wifiscan.c	/^int app_wifiscan(fibo_wifiscan_res_t *ap_info)$/;"	f
+app_wifiscan_demo	app_demo/app_wifiscan.c	/^void app_wifiscan_demo()$/;"	f
+app_wifiscan_init	app_demo/app_wifiscan.c	/^int app_wifiscan_init()$/;"	f
+append_data	app_demo/app_http.c	/^static void append_data(void *data, int len)$/;"	f	file:
+appfota_update_test	oc_fota_demo.c	/^void appfota_update_test()$/;"	f
+appfw_update_test	oc_fota_demo.c	/^void appfw_update_test()$/;"	f
+appimg_enter	lwm2m_client_demo/src/app_image.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	mutil_app/oc_mutil_app1_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	mutil_app/oc_mutil_app2_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_alarm.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_alarm_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_appcmd_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_at_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_audio_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_audio_list_play_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_ble_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_ble_new_service_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_call_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_camera_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_cell_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_charger_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_chipid_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_codec_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_codec_es8311_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_extflash_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_ffs_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_fota_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_ftp_demo.c	/^int appimg_enter(void *arg)$/;"	f
+appimg_enter	oc_gb2312_utf16_demo.c	/^int appimg_enter(void *arg)$/;"	f
+appimg_enter	oc_gnss_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_gpio_demo.c	/^void* appimg_enter(void *param)$/;"	f
+appimg_enter	oc_heartbeat_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_hmacsha1_hmacsha256_test_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_http_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_i2c_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_inner_flash_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_key_register_callback_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_lbs_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_lcd_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_localtime_demo.c	/^void* appimg_enter(void *param)$/;"	f
+appimg_enter	oc_mqtt_cloud_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_mqtt_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_mqtt_demo1.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_nonsignalling_test_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_nw_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_pdp_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_pmu_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_psm_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_pwm_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_recorder_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_sftp_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_sms_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_socket_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_spi_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_ssl_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_sweep_code_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_tts_demo.c	/^void *appimg_enter(void *param)$/;"	f
+appimg_enter	oc_uart_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_uart_to_rs485_demo.c	/^void* appimg_enter(void *param)$/;"	f
+appimg_enter	oc_usb_demo.c	/^int appimg_enter(void *param)$/;"	f
+appimg_enter	oc_wifiscan_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	oc_xml_demo.c	/^void * appimg_enter(void *param)$/;"	f
+appimg_enter	osi_demo.c	/^void* appimg_enter(void *param)$/;"	f
+appimg_exit	lwm2m_client_demo/src/app_image.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	mutil_app/oc_mutil_app1_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	mutil_app/oc_mutil_app2_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_alarm.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_alarm_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_appcmd_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_at_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_audio_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_audio_list_play_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_ble_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_ble_new_service_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_call_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_camera_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_cell_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_charger_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_chipid_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_codec_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_codec_es8311_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_extflash_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_ffs_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_fota_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_ftp_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_gb2312_utf16_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_gnss_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_gpio_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_heartbeat_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_hmacsha1_hmacsha256_test_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_http_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_i2c_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_inner_flash_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_key_register_callback_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_lbs_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_lcd_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_localtime_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_mqtt_cloud_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_mqtt_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_mqtt_demo1.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_nonsignalling_test_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_nw_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_pdp_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_pmu_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_psm_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_pwm_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_recorder_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_sftp_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_sms_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_socket_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_spi_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_ssl_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_sweep_code_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_tts_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_uart_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_uart_to_rs485_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_usb_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_wifiscan_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	oc_xml_demo.c	/^void appimg_exit(void)$/;"	f
+appimg_exit	osi_demo.c	/^void appimg_exit(void)$/;"	f
+arg	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    void *arg;$/;"	m	struct:__anon20	file:
+assert_this	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	22;"	d	file:
+atCmdHandleAPPIMGVER	lwm2m_client_demo/src/app_at_cmd.c	/^void atCmdHandleAPPIMGVER(atCommand_t *cmd)$/;"	f
+atCmdHandleGTCUSTDATAVER	lwm2m_client_demo/src/app_at_cmd.c	/^void atCmdHandleGTCUSTDATAVER(atCommand_t *cmd)$/;"	f
+atCmdHandleTESTCUS	lwm2m_client_demo/src/app_at_cmd.c	/^void atCmdHandleTESTCUS(atCommand_t *cmd)$/;"	f
+at_res_callback	app_demo/app.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	lwm2m_client_demo/src/app_image.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	lwm2m_client_demo/src/app_lwm2m.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	mutil_app/oc_mutil_app1_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_appcmd_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_at_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_call_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_cell_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_lbs_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_nw_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_pdp_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_psm_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_sftp_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_sms_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_res_callback	oc_wifiscan_demo.c	/^static void at_res_callback(UINT8 *buf, UINT16 len)$/;"	f	file:
+at_thread_entry	oc_at_demo.c	/^static void at_thread_entry(void *param)$/;"	f	file:
+auStreamFormat_t	oc_audio_demo.c	/^} auStreamFormat_t;$/;"	t	typeref:enum:__anon12	file:
+audio_buff	oc_recorder_demo.c	/^    uint8_t *audio_buff;$/;"	m	struct:__anon3	file:
+audio_test	oc_audio_demo.c	/^int audio_test(void *param)$/;"	f
+audio_tone_test	oc_audio_demo.c	/^void audio_tone_test(void)$/;"	f
+backupObjectArray	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^lwm2m_object_t * backupObjectArray[BACKUP_OBJECT_COUNT];$/;"	v
+basic_file_handle1	oc_sftp_demo.c	/^static INT32 basic_file_handle1 = -1;$/;"	v	file:
+battery_level	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^    uint8_t battery_level;$/;"	m	struct:__anon21	file:
+binding	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    char        binding[4];$/;"	m	struct:_server_instance_	file:
+ble_thread_entry	oc_ble_demo.c	/^static void ble_thread_entry(void *param)$/;"	f	file:
+ble_thread_entry	oc_ble_new_service_demo.c	/^static void ble_thread_entry(void *param)$/;"	f	file:
+bootstrapOnRegistrationFailure	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int8_t      bootstrapOnRegistrationFailure; \/\/ <0 when it doesn't exist, 0 for false, > 0 for true$/;"	m	struct:_server_instance_	file:
+bootstrapServerAccountTimeout	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint32_t                     bootstrapServerAccountTimeout;$/;"	m	struct:_security_instance_	file:
+bsp1_1	oc_i2c_demo.c	/^static HAL_I2C_BPS_T bsp1_1 = {2, 1};$/;"	v	file:
+buffer	lwm2m_client_demo/src/app_at_cmd.c	/^char buffer[20];$/;"	m	struct:__anon13	file:
+callback	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    lwm2m_data_process callback;$/;"	m	struct:_lwm2m_data_cfg_t	file:
+camPrev	oc_camera_demo.c	/^static camprevExample_t camPrev;$/;"	v	file:
+camctx	oc_sweep_code_demo.c	/^static camastae_t camctx = {0};$/;"	v	file:
+camdev	oc_camera_demo.c	/^    CAM_DEV_T camdev;$/;"	m	struct:__anon1	file:
+camera_thread_entry	oc_camera_demo.c	/^static void camera_thread_entry(void *param)$/;"	f	file:
+camprevExample_t	oc_camera_demo.c	/^} camprevExample_t;$/;"	t	typeref:struct:__anon1	file:
+cb	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    lwm2m_fota_download_callback cb;$/;"	m	struct:__anon20	file:
+charger_thread_entry	oc_charger_demo.c	/^static void charger_thread_entry(void *param)$/;"	f	file:
+check_http_is_busy	app_demo/app_http.c	/^static void check_http_is_busy()$/;"	f	file:
+chipid	lwm2m_client_demo/src/app_at_cmd.c	/^char chipid[32];$/;"	v
+cid	app_demo/app_pdp.c	/^    int cid;$/;"	m	struct:__anon8	file:
+cid	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    int cid;$/;"	m	struct:__anon15	file:
+clean_security_object	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^void clean_security_object(lwm2m_object_t * objectP)$/;"	f
+clean_server_object	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^void clean_server_object(lwm2m_object_t * object)$/;"	f
+clear_session	oc_mqtt_demo.c	/^UINT8 clear_session = 0;$/;"	v
+clear_session	oc_mqtt_demo1.c	/^UINT8 clear_session = 0;$/;"	v
+clientHoldOffTime	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint32_t                     clientHoldOffTime;$/;"	m	struct:_security_instance_	file:
+client_data_t	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^} client_data_t;$/;"	t	typeref:struct:__anon22	file:
+client_id	oc_mqtt_demo.c	/^INT8 client_id[] = "lens_0ptfvqWWCzblt9phGtddgOdO3z3";$/;"	v
+client_id	oc_mqtt_demo1.c	/^INT8 client_id[] = "lens_0ptfvqWWCzblt9phGtddgOdO3z3";$/;"	v
+close_backup_object	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static void close_backup_object()$/;"	f	file:
+codec_thread_entry	oc_codec_demo.c	/^static void codec_thread_entry(void *param)$/;"	f	file:
+codec_thread_entry	oc_codec_es8311_demo.c	/^static void codec_thread_entry(void *param)$/;"	f	file:
+communicationRetryCount	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int         communicationRetryCount; \/\/ <0 when it doesn't exist$/;"	m	struct:_server_instance_	file:
+communicationRetryTimer	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int         communicationRetryTimer; \/\/ <0 when it doesn't exist$/;"	m	struct:_server_instance_	file:
+communicationSequenceDelayTimer	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int         communicationSequenceDelayTimer; \/\/ <0 when it doesn't exist$/;"	m	struct:_server_instance_	file:
+communicationSequenceRetryCount	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int         communicationSequenceRetryCount; \/\/ <0 when it doesn't exist$/;"	m	struct:_server_instance_	file:
+connList	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    connection_t * connList;$/;"	m	struct:__anon22	file:
+connList	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    dtls_connection_t * connList;$/;"	m	struct:__anon22	file:
+connect_res_result	oc_mqtt_demo.c	/^int connect_res_result = 0;$/;"	v
+connect_res_result	oc_mqtt_demo1.c	/^int connect_res_result = 0;$/;"	v
+connect_timeout	oc_socket_demo.c	/^static int connect_timeout(fibo_demo_connection_t *client, struct sockaddr *addr, int addr_len, int timeout)$/;"	f	file:
+connection_create	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^connection_t * connection_create(connection_t * connList,$/;"	f
+connection_create	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^dtls_connection_t *connection_create(dtls_connection_t *connList,$/;"	f
+connection_find	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^connection_t * connection_find(connection_t * connList,$/;"	f
+connection_find	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^dtls_connection_t *connection_find(dtls_connection_t *connList,$/;"	f
+connection_free	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^void connection_free(connection_t * connList)$/;"	f
+connection_free	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^void connection_free(dtls_connection_t *connList)$/;"	f
+connection_handle_packet	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int connection_handle_packet(dtls_connection_t *connP, uint8_t *buffer, size_t numBytes)$/;"	f
+connection_new_incoming	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^connection_t * connection_new_incoming(connection_t * connList,$/;"	f
+connection_new_incoming	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^dtls_connection_t *connection_new_incoming(dtls_connection_t *connList,$/;"	f
+connection_send	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^int connection_send(connection_t *connP,$/;"	f
+connection_send	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int connection_send(dtls_connection_t *connP, uint8_t *buffer, size_t length)$/;"	f
+cookie	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    int cookie;$/;"	m	struct:_lwm2m_data_cfg_t	file:
+copy_security_object	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^void copy_security_object(lwm2m_object_t * objectDest, lwm2m_object_t * objectSrc)$/;"	f
+copy_server_object	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^void copy_server_object(lwm2m_object_t * objectDest, lwm2m_object_t * objectSrc)$/;"	f
+count	oc_audio_list_play_demo.c	/^int count = 0;$/;"	v
+counter	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    uint32_t counter;$/;"	m	struct:__anon18	file:
+counter	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    unsigned int counter;$/;"	m	struct:__anon19	file:
+create_connect_task	oc_socket_demo.c	/^static void create_connect_task(void *param)$/;"	f	file:
+create_mqtt_connect	oc_mqtt_demo.c	/^static void create_mqtt_connect()$/;"	f	file:
+create_mqtt_connect	oc_mqtt_demo1.c	/^static void create_mqtt_connect()$/;"	f	file:
+create_socket	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^int create_socket(const char * portStr, int addressFamily)$/;"	f
+create_socket	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int create_socket(const char *portStr, int ai_family)$/;"	f
+create_tcp_server	app_demo/app_socket.c	/^static void create_tcp_server(struct sockaddr *addr, int len)$/;"	f	file:
+data	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    unsigned char data[8]; \/\/ 8 is data length$/;"	m	struct:__anon19	file:
+data	oc_ble_new_service_demo.c	/^    char *data; $/;"	m	struct:__anon4	file:
+data	oc_codec_es8311_demo.c	/^    uint8_t data;$/;"	m	struct:__anon11	file:
+data	oc_i2c_demo.c	/^UINT8 data[6];$/;"	v
+data1	oc_i2c_demo.c	/^UINT8 data1[2] = {0x21, 0x30};$/;"	v
+data2	oc_i2c_demo.c	/^UINT8 data2[1] ={0x00};$/;"	v
+data_thread_entry	oc_pdp_demo.c	/^static void data_thread_entry(void *param)$/;"	f	file:
+deal_data	oc_xml_demo.c	/^void deal_data(void *userData, const XML_Char *s, int len)$/;"	f
+def_max_ServerAdrLen	oc_fota_demo.c	32;"	d	file:
+def_max_VersionLen	oc_fota_demo.c	33;"	d	file:
+defaultMaxPeriod	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    uint32_t    defaultMaxPeriod;$/;"	m	struct:_server_instance_	file:
+defaultMinPeriod	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    uint32_t    defaultMinPeriod;$/;"	m	struct:_server_instance_	file:
+demo_1filerename	oc_ffs_demo.c	39;"	d	file:
+demo_2filename	oc_ffs_demo.c	38;"	d	file:
+demo_2filepath	oc_ffs_demo.c	36;"	d	file:
+demo_2filerename	oc_ffs_demo.c	40;"	d	file:
+demo_comp_err	oc_ffs_demo.c	46;"	d	file:
+demo_comp_unfinished	oc_ffs_demo.c	50;"	d	file:
+demo_dir_err	oc_ffs_demo.c	44;"	d	file:
+demo_dir_unfinished	oc_ffs_demo.c	48;"	d	file:
+demo_file_err	oc_ffs_demo.c	45;"	d	file:
+demo_file_unfinished	oc_ffs_demo.c	49;"	d	file:
+demo_filename	oc_ffs_demo.c	37;"	d	file:
+demo_filepath	oc_ffs_demo.c	35;"	d	file:
+demo_non_error	oc_ffs_demo.c	42;"	d	file:
+demo_sys_err	oc_ffs_demo.c	43;"	d	file:
+demo_sys_unfinished	oc_ffs_demo.c	47;"	d	file:
+device_change	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^uint8_t device_change(lwm2m_data_t * dataArray,$/;"	f
+device_data_t	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^} device_data_t;$/;"	t	typeref:struct:__anon21	file:
+disableTimeout	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    uint32_t    disableTimeout;$/;"	m	struct:_server_instance_	file:
+display_device_object	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^void display_device_object(lwm2m_object_t * object)$/;"	f
+display_security_object	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^void display_security_object(lwm2m_object_t * object)$/;"	f
+display_server_object	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^void display_server_object(lwm2m_object_t * object)$/;"	f
+download_event_cb	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static void download_event_cb(int evid, int reason, void *arg)$/;"	f	file:
+download_flag	oc_fota_demo.c	/^        bool download_flag;$/;"	m	struct:__anon2	file:
+download_start_cb	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static int download_start_cb(void* thi, uint8_t* url, int len)$/;"	f	file:
+drvChargerNoticeCBProc	oc_charger_demo.c	/^void drvChargerNoticeCBProc(UINT32 msg)$/;"	f
+drv_i2c	oc_i2c_demo.c	/^drvI2cSlave_t drv_i2c= {0x7E, 0, 0, true, true};$/;"	v
+dummydata	oc_spi_demo.c	/^uint8_t dummydata [4] = {0};  \/\/ JedecdeviceID+ 3 dummydata$/;"	v
+end_func	oc_xml_demo.c	/^void end_func(void *userData, const XML_Char *name)$/;"	f
+error	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^    int64_t error;$/;"	m	struct:__anon21	file:
+es8311_WriteRegList	oc_codec_es8311_demo.c	/^static bool es8311_WriteRegList(const extDevReg_t *regList, uint16_t len)$/;"	f	file:
+es8311_cfg_close	oc_codec_es8311_demo.c	/^void es8311_cfg_close()$/;"	f
+es8311_cfg_init	oc_codec_es8311_demo.c	/^void es8311_cfg_init()$/;"	f
+es8311_cfg_input	oc_codec_es8311_demo.c	/^void es8311_cfg_input()$/;"	f
+es8311_cfg_output	oc_codec_es8311_demo.c	/^void es8311_cfg_output()$/;"	f
+extDevReg_t	oc_codec_es8311_demo.c	/^} extDevReg_t;$/;"	t	typeref:struct:__anon11	file:
+extflash_thread_entry	oc_extflash_demo.c	/^static void extflash_thread_entry(void *param)$/;"	f	file:
+f_1_name	oc_audio_list_play_demo.c	/^const char f_1_name[][128]  = {$/;"	v
+f_2_name	oc_audio_list_play_demo.c	/^const char f_2_name[][128]  = {$/;"	v
+f_3_name	oc_audio_list_play_demo.c	/^const char f_3_name[][128]  = {$/;"	v
+fd	oc_recorder_demo.c	/^    int32_t fd;$/;"	m	struct:__anon3	file:
+ff_i2c_close	oc_codec_es8311_demo.c	/^static void ff_i2c_close()$/;"	f	file:
+ff_i2c_init	oc_codec_es8311_demo.c	/^static void ff_i2c_init()$/;"	f	file:
+ffs_thread_entry	oc_ffs_demo.c	/^static void ffs_thread_entry(void *param)$/;"	f	file:
+fibo_app_get_mcc_mnc_from_plmn	oc_nw_demo.c	/^static uint8_t fibo_app_get_mcc_mnc_from_plmn(uint8_t *plmn, uint8_t *mcc, uint8_t *mnc)$/;"	f	file:
+fibo_app_get_nw_lte_ta	oc_nw_demo.c	/^int fibo_app_get_nw_lte_ta(uint8_t simId, int16_t *lte_ta)$/;"	f
+fibo_app_get_nw_roaming_status	oc_nw_demo.c	/^int fibo_app_get_nw_roaming_status(uint8_t simId, uint8_t *roaming_status)$/;"	f
+fibo_app_handle_at_callback	oc_appcmd_demo.c	/^void fibo_app_handle_at_callback(UINT8*data, UINT16 len)$/;"	f
+fibo_app_thread_handle	oc_appcmd_demo.c	/^static void fibo_app_thread_handle(void *param)$/;"	f	file:
+fibo_ble_q_t	oc_ble_new_service_demo.c	/^}fibo_ble_q_t;$/;"	t	typeref:struct:__anon4	file:
+fibo_ble_task	oc_ble_new_service_demo.c	/^static void fibo_ble_task(void *param)$/;"	f	file:
+fibo_config	lwm2m_client_demo/src/fibo_config.c	/^fibo_config_t fibo_config;$/;"	v
+fibo_connection_status_s	oc_socket_demo.c	/^typedef enum fibo_connection_status_s$/;"	g	file:
+fibo_connection_status_t	oc_socket_demo.c	/^} fibo_connection_status_t;$/;"	t	typeref:enum:fibo_connection_status_s	file:
+fibo_demo_connect	oc_socket_demo.c	/^int fibo_demo_connect(fibo_demo_connection_t *client, const char *hostname, uint16_t port, int family, int proto, int timeout)$/;"	f
+fibo_demo_connection_s	oc_socket_demo.c	/^typedef struct fibo_demo_connection_s$/;"	s	file:
+fibo_demo_connection_t	oc_socket_demo.c	/^} fibo_demo_connection_t;$/;"	t	typeref:struct:fibo_demo_connection_s	file:
+fibo_demo_send	oc_socket_demo.c	/^int fibo_demo_send(fibo_demo_connection_t *c, const void *data, int len)$/;"	f
+fibo_get_chip_unique_id	lwm2m_client_demo/src/app_at_cmd.c	/^char * fibo_get_chip_unique_id(uint32_t *len)$/;"	f
+fibo_get_config	lwm2m_client_demo/src/fibo_config.c	/^fibo_config_t *fibo_get_config(void)$/;"	f
+fibo_get_flash_partinfo	lwm2m_client_demo/src/flash_partinfo.c	/^fibo_flash_partinfo_t *fibo_get_flash_partinfo(void)$/;"	f
+fibo_get_nmea_data_and_gnss_status	oc_gnss_demo.c	/^static void fibo_get_nmea_data_and_gnss_status(void)$/;"	f	file:
+fibo_get_share_ip_enable	lwm2m_client_demo/src/fibo_config.c	/^bool fibo_get_share_ip_enable(void)$/;"	f
+fibo_get_usb_buffcfg	lwm2m_client_demo/src/fibo_config.c	/^fibo_usb_buffcfg_t *fibo_get_usb_buffcfg(void)$/;"	f
+fibo_get_usb_custom_enable	lwm2m_client_demo/src/fibo_config.c	/^bool fibo_get_usb_custom_enable(void)$/;"	f
+fibo_get_usb_printer_enable	lwm2m_client_demo/src/fibo_config.c	/^bool fibo_get_usb_printer_enable(void)$/;"	f
+fibo_set_config	lwm2m_client_demo/src/fibo_config.c	/^void fibo_set_config(fibo_config_t *fibo_config)$/;"	f
+fibo_spp_data_recv	oc_ble_demo.c	/^void fibo_spp_data_recv(int data_len,char *data)$/;"	f
+fibo_spp_data_recv	oc_ble_new_service_demo.c	/^void fibo_spp_data_recv(int data_len,char *data)$/;"	f
+fibo_test_demo_get_scellinfo	oc_nw_demo.c	/^void fibo_test_demo_get_scellinfo(void)$/;"	f
+fibo_test_demo_lte_timing_advance	oc_nw_demo.c	/^void fibo_test_demo_lte_timing_advance(void)$/;"	f
+fibo_test_demo_roaming_status	oc_nw_demo.c	/^void fibo_test_demo_roaming_status(void)$/;"	f
+fibo_textTrace	oc_ftp_demo.c	39;"	d	file:
+fill_word_buff	oc_lcd_demo.c	/^void fill_word_buff(UINT16 *p, int w, int h)$/;"	f
+find_503_resource_observed	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^lwm2m_observed_t* find_503_resource_observed(lwm2m_context_t* context)$/;"	f
+firmware_ftp_download_test	oc_fota_demo.c	/^void firmware_ftp_download_test()$/;"	f
+firmware_http_download_test	oc_fota_demo.c	/^void firmware_http_download_test()$/;"	f
+firmware_update_test	oc_fota_demo.c	/^void firmware_update_test()$/;"	f
+flash_partinfo	lwm2m_client_demo/src/flash_partinfo.c	/^static fibo_flash_partinfo_t flash_partinfo;$/;"	v	file:
+format	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    uint32_t format;$/;"	m	struct:__anon18	file:
+format	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    unsigned int format;$/;"	m	struct:__anon19	file:
+format	oc_recorder_demo.c	/^    auStreamFormat_t format;$/;"	m	struct:__anon3	file:
+fota_deliver_method_read	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_deliver_method_read(lwm2m_data_t* data_array)$/;"	f	file:
+fota_download	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static void fota_download(void *arg)$/;"	f	file:
+fota_package_write	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_package_write(lwm2m_data_t* data_array, int item)$/;"	f	file:
+fota_state_read	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_state_read(lwm2m_context_t * contextP, lwm2m_data_t* data_array)$/;"	f	file:
+fota_update	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static void fota_update(void *arg)$/;"	f	file:
+fota_update_execute	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_update_execute(lwm2m_context_t *contextP)$/;"	f	file:
+fota_update_result_read	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_update_result_read(lwm2m_context_t * contextP, lwm2m_data_t* data_array)$/;"	f	file:
+fota_uri_read	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_uri_read(lwm2m_data_t** data_array, int item)$/;"	f	file:
+fota_uri_write	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t fota_uri_write(lwm2m_context_t *contextP, lwm2m_data_t* data_array)$/;"	f	file:
+free_memory	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^    int64_t free_memory;$/;"	m	struct:__anon21	file:
+free_object_device	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^void free_object_device(lwm2m_object_t * objectP)$/;"	f
+free_object_firmware	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^void free_object_firmware(lwm2m_object_t* objectP)$/;"	f
+ftp_client_rw_status_s	app_demo/app_ftp.c	/^enum ftp_client_rw_status_s$/;"	g	file:
+ftp_client_rw_status_s	app_demo/app_mqtt.c	/^enum ftp_client_rw_status_s$/;"	g	file:
+ftp_client_rw_status_t	app_demo/app_ftp.c	/^typedef enum ftp_client_rw_status_s ftp_client_rw_status_t;$/;"	t	typeref:enum:ftp_client_rw_status_s	file:
+ftp_client_rw_status_t	app_demo/app_mqtt.c	/^typedef enum ftp_client_rw_status_s ftp_client_rw_status_t;$/;"	t	typeref:enum:ftp_client_rw_status_s	file:
+ftp_client_status_s	app_demo/app_ftp.c	/^enum ftp_client_status_s$/;"	g	file:
+ftp_client_status_s	app_demo/app_mqtt.c	/^enum ftp_client_status_s$/;"	g	file:
+ftp_client_status_s	oc_ftp_demo.c	/^enum ftp_client_status_s$/;"	g	file:
+ftp_client_status_t	app_demo/app_ftp.c	/^typedef enum ftp_client_status_s ftp_client_status_t;$/;"	t	typeref:enum:ftp_client_status_s	file:
+ftp_client_status_t	app_demo/app_mqtt.c	/^typedef enum ftp_client_status_s ftp_client_status_t;$/;"	t	typeref:enum:ftp_client_status_s	file:
+ftp_client_status_t	oc_ftp_demo.c	/^typedef enum ftp_client_status_s ftp_client_status_t;$/;"	t	typeref:enum:ftp_client_status_s	file:
+ftp_login_fail_callback	app_demo/app_ftp.c	/^static void ftp_login_fail_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+ftp_login_ok_callback	app_demo/app_ftp.c	/^static void ftp_login_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+ftp_read_fail_callback	app_demo/app_ftp.c	/^static void ftp_read_fail_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+ftp_read_ok_callback	app_demo/app_ftp.c	/^static void ftp_read_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+ftp_signal_progress	oc_ftp_demo.c	/^static void ftp_signal_progress(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+ftp_write_fail_callback	app_demo/app_ftp.c	/^static void ftp_write_fail_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+ftp_write_ok_callback	app_demo/app_ftp.c	/^static void ftp_write_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+g_Databuf	oc_sweep_code_demo.c	/^uint8_t *g_Databuf = NULL;$/;"	v
+g_TestBuffer	oc_lcd_demo.c	/^UINT16 g_TestBuffer[320 * 240];$/;"	v
+g_app_iptypestr	app_demo/app_pdp.c	/^static const char *g_app_iptypestr[] = {"", "IP", "IPV6", "IPV4V6"};$/;"	v	file:
+g_app_iptypestr	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static const char *g_app_iptypestr[] = {"", "IP", "IPV6", "IPV4V6"};$/;"	v	file:
+g_app_pdp_info	app_demo/app_pdp.c	/^static app_pdp_info_t g_app_pdp_info[APP_MAX_CID] = {0};$/;"	v	file:
+g_app_pdp_info	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static app_pdp_info_t g_app_pdp_info[APP_MAX_CID] = {0};$/;"	v	file:
+g_aud11kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud11kRegList[] =$/;"	v	file:
+g_aud12kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud12kRegList[] =$/;"	v	file:
+g_aud16kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud16kRegList[] =$/;"	v	file:
+g_aud22kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud22kRegList[] =$/;"	v	file:
+g_aud24kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud24kRegList[] =$/;"	v	file:
+g_aud32kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud32kRegList[] =$/;"	v	file:
+g_aud44kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud44kRegList[] =$/;"	v	file:
+g_aud48kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud48kRegList[] =$/;"	v	file:
+g_aud8kRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_aud8kRegList[] =$/;"	v	file:
+g_audInitRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_audInitRegList[] =$/;"	v	file:
+g_audstandbyRegList	oc_codec_es8311_demo.c	/^static const extDevReg_t g_audstandbyRegList[] =$/;"	v	file:
+g_avail_size	osi_demo.c	/^uint32_t g_avail_size;$/;"	v
+g_bl_light	oc_key_register_callback_demo.c	/^static uint8_t g_bl_light = 0;$/;"	v	file:
+g_cust_remove_at1	lwm2m_client_demo/src/fibo_config.c	/^int g_cust_remove_at1 = 0;$/;"	v
+g_fibo_ble_q	oc_ble_new_service_demo.c	/^fibo_ble_q_t g_fibo_ble_q;$/;"	v
+g_fibo_ble_queue	oc_ble_new_service_demo.c	/^static UINT32 g_fibo_ble_queue = 0; $/;"	v	file:
+g_firmware_ver	lwm2m_client_demo/src/app_at_cmd.c	/^char g_firmware_ver[BUFFER_MAX_LEN] = "1.00.00.00.001";$/;"	v
+g_fota_manager	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^lwm2m_fota_manager* g_fota_manager = NULL;$/;"	v
+g_ftp_client_rw_status	app_demo/app_ftp.c	/^static ftp_client_rw_status_t g_ftp_client_rw_status = FTP_STATUS_RW_IDLE;$/;"	v	file:
+g_ftp_client_status	app_demo/app_ftp.c	/^static ftp_client_status_t g_ftp_client_status = FTP_STATUS_IDLE;$/;"	v	file:
+g_ftp_client_status	oc_ftp_demo.c	/^static ftp_client_status_t g_ftp_client_status = FTP_STATUS_IDLE;$/;"	v	file:
+g_ftp_user_callback	oc_ftp_demo.c	/^static FIBO_CALLBACK_T g_ftp_user_callback =$/;"	v	file:
+g_http_file_fd	app_demo/app_http.c	/^static INT32 g_http_file_fd = -1;$/;"	v	file:
+g_http_status	app_demo/app_http.c	/^static app_http_status_t g_http_status = APP_HTTP_REQUEST_IDLE;$/;"	v	file:
+g_httpres_data	app_demo/app_http.c	/^static UINT8 *g_httpres_data = NULL;$/;"	v	file:
+g_httpres_datalen	app_demo/app_http.c	/^static UINT32 g_httpres_datalen = 0;$/;"	v	file:
+g_httpres_datasize	app_demo/app_http.c	/^static UINT32 g_httpres_datasize = 0;$/;"	v	file:
+g_lock	oc_mqtt_demo.c	/^static UINT32 g_lock = 0;$/;"	v	file:
+g_lock	oc_mqtt_demo1.c	/^static UINT32 g_lock = 0;$/;"	v	file:
+g_lwm2m_download	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^lwm2m_fota_download_t g_lwm2m_download = {0};$/;"	v
+g_max_block_size	osi_demo.c	/^uint32_t g_max_block_size;$/;"	v
+g_mqtt_client_rw_status	app_demo/app_mqtt.c	/^static ftp_client_rw_status_t g_mqtt_client_rw_status[APP_MQTT_CHANNEL_MAX] = {MQTT_STATUS_RW_IDLE};$/;"	v	file:
+g_mqtt_client_status	app_demo/app_mqtt.c	/^static ftp_client_status_t g_mqtt_client_status[APP_MQTT_CHANNEL_MAX] = {MQTT_STATUS_IDLE};$/;"	v	file:
+g_mqtt_queue	app_demo/app_mqtt.c	/^static UINT32 g_mqtt_queue = 0;$/;"	v	file:
+g_mqtt_task_status	app_demo/app_mqtt.c	/^static int g_mqtt_task_status = MQTT_TASK_STATUS_STOPPED;$/;"	v	file:
+g_network_status	app_demo/app_pdp.c	/^static bool g_network_status = false; \/\/ false: 没驻网 true： 驻网成功$/;"	v	file:
+g_network_status	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static bool g_network_status = false; \/\/ false: not registered true: registration successful$/;"	v	file:
+g_ntp_is_busy	app_demo/app_socket.c	/^static bool g_ntp_is_busy = false;$/;"	v	file:
+g_ntp_result	app_demo/app_socket.c	/^static int g_ntp_result = 0;$/;"	v	file:
+g_pcm_buff	oc_audio_stream_play_demo.c	/^uint8_t g_pcm_buff[320*55*2] = {0};$/;"	v
+g_pdp_active_sem	oc_lbs_demo.c	/^static UINT32 g_pdp_active_sem = 0;$/;"	v	file:
+g_pdp_active_sem	oc_sftp_demo.c	/^static UINT32 g_pdp_active_sem = 0;$/;"	v	file:
+g_pdp_handle	oc_fota_demo.c	/^struct pdphandle g_pdp_handle;$/;"	v	typeref:struct:pdphandle
+g_period_timer	osi_demo.c	/^void *g_period_timer = NULL;$/;"	v
+g_period_timer2	osi_demo.c	/^void *g_period_timer2 = NULL;$/;"	v
+g_pstHttpParam	app_demo/app_http.c	/^static oc_http_param_t *g_pstHttpParam = NULL;$/;"	v	file:
+g_queue_id	osi_demo.c	/^UINT32 g_queue_id = 0;$/;"	v
+g_queue_id2	osi_demo.c	/^UINT32 g_queue_id2 = 0;$/;"	v
+g_quit	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static int g_quit = 0;$/;"	v	file:
+g_reboot	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^int g_reboot = 0;$/;"	v
+g_rrc_status	app_demo/app_pdp.c	/^static bool g_rrc_status = false; \/\/\/ false: rrc断开 true: rrc连接$/;"	v	file:
+g_rrc_status	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static bool g_rrc_status = false; \/\/\/ false: RRC disconnected true: RRC connected$/;"	v	file:
+g_sem	oc_ftp_demo.c	/^static UINT32 g_sem = 0;$/;"	v	file:
+g_send_test	oc_pdp_demo.c	/^char g_send_test[1024] = {0};$/;"	v
+g_server_listen_addr	app_demo/app_socket.c	/^static struct sockaddr_in g_server_listen_addr;$/;"	v	typeref:struct:sockaddr_in	file:
+g_server_listen_addrlen	app_demo/app_socket.c	/^static uint32_t g_server_listen_addrlen = sizeof(g_server_listen_addr);$/;"	v	file:
+g_sig_ftp_lock	app_demo/app_ftp.c	/^static UINT32 g_sig_ftp_lock = 0;$/;"	v	file:
+g_sig_ftp_sem	app_demo/app_ftp.c	/^static UINT32 g_sig_ftp_sem = 0;$/;"	v	file:
+g_sig_http_lock	app_demo/app_http.c	/^static UINT32 g_sig_http_lock = 0;$/;"	v	file:
+g_sig_http_sem	app_demo/app_http.c	/^static UINT32 g_sig_http_sem = 0;$/;"	v	file:
+g_sig_mqtt_lock	app_demo/app_mqtt.c	/^static UINT32 g_sig_mqtt_lock = 0;$/;"	v	file:
+g_sig_mqtt_sem	app_demo/app_mqtt.c	/^static UINT32 g_sig_mqtt_sem = 0;$/;"	v	file:
+g_sig_reg_lock	app_demo/app_pdp.c	/^static UINT32 g_sig_reg_lock = 0;$/;"	v	file:
+g_sig_reg_lock	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static UINT32 g_sig_reg_lock = 0;$/;"	v	file:
+g_sig_reg_sem	app_demo/app_pdp.c	/^static UINT32 g_sig_reg_sem = 0;$/;"	v	file:
+g_sig_reg_sem	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static UINT32 g_sig_reg_sem = 0;$/;"	v	file:
+g_sig_wifi_lock	app_demo/app_wifiscan.c	/^static UINT32 g_sig_wifi_lock = 0;$/;"	v	file:
+g_sig_wifi_sem	app_demo/app_wifiscan.c	/^static UINT32 g_sig_wifi_sem = 0;$/;"	v	file:
+g_signal_callback	app_demo/app.c	/^static fibo_signal_t g_signal_callback[GAPP_SIG_MAX] = {NULL};$/;"	v	file:
+g_signal_callback	lwm2m_client_demo/src/app_lwm2m.c	/^static fibo_signal_t g_signal_callback[GAPP_SIG_MAX] = {NULL};$/;"	v	file:
+g_sim_id	oc_nw_demo.c	/^uint8_t g_sim_id = 0;$/;"	v
+g_size	osi_demo.c	/^uint32_t g_size;$/;"	v
+g_sock_listen	app_demo/app_socket.c	/^static int g_sock_listen = -1;$/;"	v	file:
+g_socket_lock	app_demo/app_socket.c	/^static UINT32 g_socket_lock = 0;$/;"	v	file:
+g_socket_sem	app_demo/app_socket.c	/^static UINT32 g_socket_sem = 0;$/;"	v	file:
+g_sslContext	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^mbedtls_ssl_context * g_sslContext = NULL;$/;"	v
+g_testBuff_128_160	oc_lcd_demo.c	/^UINT16 g_testBuff_128_160[10 * 40];$/;"	v
+g_test_mutex	osi_demo.c	/^UINT32 g_test_mutex;$/;"	v
+g_test_sem	oc_http_demo.c	/^static UINT32 g_test_sem;$/;"	v	file:
+g_test_sem	osi_demo.c	/^UINT32 g_test_sem;$/;"	v
+g_test_timer	osi_demo.c	/^void *g_test_timer = NULL;$/;"	v
+g_test_timer2	osi_demo.c	/^void *g_test_timer2 = NULL;$/;"	v
+g_testcus	lwm2m_client_demo/src/app_at_cmd.c	/^testcus_t g_testcus;$/;"	v
+g_timestamp	app_demo/app_socket.c	/^static uint64_t *g_timestamp = NULL;$/;"	v	file:
+g_wifi_status	app_demo/app_wifiscan.c	/^static int g_wifi_status = 0; \/\/\/ 0:busy 1:idle$/;"	v	file:
+g_wifiscan_result	app_demo/app_wifiscan.c	/^static fibo_wifiscan_res_t *g_wifiscan_result = NULL;$/;"	v	file:
+gbuff	oc_codec_demo.c	/^static uint8_t *gbuff = NULL;$/;"	v	file:
+gbuff	oc_codec_es8311_demo.c	/^static uint8_t *gbuff = NULL;$/;"	v	file:
+get_cellinfo_cb	oc_cell_demo.c	/^key_callback get_cellinfo_cb(void *param)$/;"	f
+get_dtls_context	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int get_dtls_context(lwm2m_context_t *lwm2mH, dtls_connection_t *connList)$/;"	f
+get_mcc_mnc_from_plmn	oc_cell_demo.c	/^static uint8_t get_mcc_mnc_from_plmn(uint8_t *plmn, uint8_t *mcc, uint8_t *mnc)$/;"	f	file:
+get_mcc_mnc_from_plmn	oc_pdp_demo.c	/^static uint8_t get_mcc_mnc_from_plmn(uint8_t *plmn, uint8_t *mcc, uint8_t *mnc)$/;"	f	file:
+get_object_device	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^lwm2m_object_t * get_object_device()$/;"	f
+get_object_firmware	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^lwm2m_object_t* get_object_firmware()$/;"	f
+get_port	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^static int get_port(struct sockaddr *x)$/;"	f	file:
+get_port	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^static int get_port(struct sockaddr *x)$/;"	f	file:
+get_security_object	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^lwm2m_object_t * get_security_object(int serverId,$/;"	f
+get_server_object	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^lwm2m_object_t * get_server_object(int serverId,$/;"	f
+get_server_uri	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^char * get_server_uri(lwm2m_object_t * objectP,$/;"	f
+getrandom	oc_sftp_demo.c	/^void getrandom(char *test,int len){$/;"	f
+gnss_thread_entry	oc_gnss_demo.c	/^static void gnss_thread_entry(void *param)$/;"	f	file:
+gp_bl_keep_add_timer	oc_key_register_callback_demo.c	/^static void *gp_bl_keep_add_timer = NULL;$/;"	v	file:
+gpio_thread_entry	oc_gpio_demo.c	/^static void gpio_thread_entry(void *param)$/;"	f	file:
+grecordctx	oc_recorder_demo.c	/^static RecordContext_t grecordctx = {};$/;"	v	file:
+handle_sigint	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^void handle_sigint(int signum)$/;"	f
+handle_value_changed	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^void handle_value_changed(lwm2m_context_t * lwm2mH,$/;"	f
+heartbeat_thread_entry	oc_heartbeat_demo.c	/^static void heartbeat_thread_entry(void *param)$/;"	f	file:
+hello_world_demo	lwm2m_client_demo/src/app_image.c	/^static void hello_world_demo()$/;"	f	file:
+hello_world_demo	oc_alarm.c	/^static void hello_world_demo(void *param)$/;"	f	file:
+hello_world_demo	oc_alarm_demo.c	/^static void hello_world_demo(void *param)$/;"	f	file:
+hello_world_demo	oc_chipid_demo.c	/^static void hello_world_demo(void *param)$/;"	f	file:
+hello_world_demo	oc_key_register_callback_demo.c	/^static void hello_world_demo(void *param)$/;"	f	file:
+hello_world_demo	oc_nw_demo.c	/^static void hello_world_demo()$/;"	f	file:
+hello_world_demo	oc_sms_demo.c	/^static void hello_world_demo()$/;"	f	file:
+hello_world_demo	oc_spi_demo.c	/^static void hello_world_demo(void *param)$/;"	f	file:
+hmac_sha_test	oc_hmacsha1_hmacsha256_test_demo.c	/^void hmac_sha_test(int md_type, const char *api_secret, int key_len, const char *payload, int payload_len, UINT8 *encrypt_result, int len)$/;"	f
+hmac_test_thread	oc_hmacsha1_hmacsha256_test_demo.c	/^static void hmac_test_thread(void *param)$/;"	f	file:
+host	oc_mqtt_demo.c	/^INT8 host[] = "47.110.234.36";$/;"	v
+host	oc_mqtt_demo1.c	/^INT8 host[] = "47.110.234.36";$/;"	v
+hpFlag	oc_codec_es8311_demo.c	/^uint16_t hpFlag = 0; \/\/spk$/;"	v
+htons	oc_pdp_demo.c	/^unsigned short htons(unsigned short n)$/;"	f
+http_body_callback	app_demo/app_http.c	/^static void http_body_callback(void *pstHttpParam, int8_t *data, int32_t len)$/;"	f	file:
+http_file_print	oc_http_demo.c	/^INT32 http_file_print(const INT8 *pPath)$/;"	f
+http_header_dump	app_demo/app_http.c	/^static char *http_header_dump(app_http_method_t method, const char *url, const app_http_header_t *headers, int headers_cnt)$/;"	f	file:
+http_savefile_callback	app_demo/app_http.c	/^static void http_savefile_callback(void *pstHttpParam, int8_t *data, int32_t len)$/;"	f	file:
+http_sig_request_fail_callback	app_demo/app_http.c	/^static void http_sig_request_fail_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+http_sig_request_ok_callback	app_demo/app_http.c	/^static void http_sig_request_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+http_sig_request_res_callback	app_demo/app_http.c	/^static void http_sig_request_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+i2c_handle	oc_codec_es8311_demo.c	/^i2c_Handle i2c_handle = 0;$/;"	v
+i2c_handle	oc_i2c_demo.c	/^i2c_Handle i2c_handle = 0;$/;"	v
+i2c_thread_entry	oc_i2c_demo.c	/^static void i2c_thread_entry(void *param)$/;"	f	file:
+id	oc_mqtt_demo1.c	/^UINT8 id = 1;$/;"	v
+init	app_demo/app.c	/^static int init()$/;"	f	file:
+init_connect_client	oc_socket_demo.c	/^static int init_connect_client(fibo_demo_connection_t *c)$/;"	f	file:
+initialRegistrationDelayTimer	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int         initialRegistrationDelayTimer; \/\/ <0 when it doesn't exist$/;"	m	struct:_server_instance_	file:
+inner_thread_entry	oc_inner_flash_demo.c	/^static void inner_thread_entry(void *param)$/;"	f	file:
+instanceId	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     instanceId;  \/\/ matches lwm2m_list_t::id$/;"	m	struct:_security_instance_	file:
+instanceId	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    uint16_t    instanceId;            \/\/ matches lwm2m_list_t::id$/;"	m	struct:_server_instance_	file:
+ip	oc_pdp_demo.c	/^    UINT8 ip[MAX_IP_LENGTH];$/;"	m	struct:__anon5	file:
+iptype	app_demo/app_pdp.c	/^    int iptype;$/;"	m	struct:__anon8	file:
+iptype	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    int iptype;$/;"	m	struct:__anon15	file:
+ipv4	app_demo/app_pdp.c	/^    char ipv4[32];$/;"	m	struct:__anon8	file:
+ipv4	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    char ipv4[32];$/;"	m	struct:__anon15	file:
+ipv6	app_demo/app_pdp.c	/^    char ipv6[32];$/;"	m	struct:__anon8	file:
+ipv6	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    char ipv6[32];$/;"	m	struct:__anon15	file:
+isBootstrap	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    bool                         isBootstrap;    $/;"	m	struct:_security_instance_	file:
+isSlave	oc_codec_es8311_demo.c	/^bool isSlave = 1;$/;"	v
+keepalive	oc_mqtt_demo.c	/^UINT16 keepalive = 10;$/;"	v
+keepalive	oc_mqtt_demo1.c	/^UINT16 keepalive = 10;$/;"	v
+lbs_thread_entry	oc_lbs_demo.c	/^static void lbs_thread_entry(void *param)$/;"	f	file:
+lcd_thread_entry	oc_lcd_demo.c	/^static void lcd_thread_entry(void *param)$/;"	f	file:
+lcddev	oc_camera_demo.c	/^    lcdSpec_t lcddev;$/;"	m	struct:__anon1	file:
+len	oc_ble_new_service_demo.c	/^    int len;$/;"	m	struct:__anon4	file:
+length	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    unsigned int length;$/;"	m	struct:__anon19	file:
+lifetime	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    uint32_t    lifetime;$/;"	m	struct:_server_instance_	file:
+log	oc_sftp_demo.c	29;"	d	file:
+lwm2mH	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    lwm2m_context_t * lwm2mH;$/;"	m	struct:__anon22	file:
+lwm2m_503_notify	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static int lwm2m_503_notify(lwm2m_fota_manager* thi)$/;"	f	file:
+lwm2m_buffer_send	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^uint8_t lwm2m_buffer_send(void * sessionH,$/;"	f
+lwm2m_buffer_send	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^uint8_t lwm2m_buffer_send(void *sessionH,$/;"	f
+lwm2m_ciphersuite_preference	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^static const int lwm2m_ciphersuite_preference[] =$/;"	v	file:
+lwm2m_client_demo	lwm2m_client_demo/src/app_lwm2m.c	/^static void lwm2m_client_demo()$/;"	f	file:
+lwm2m_close_connection	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^void lwm2m_close_connection(void * sessionH,$/;"	f
+lwm2m_connect_server	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^void * lwm2m_connect_server(uint16_t secObjInstID,$/;"	f
+lwm2m_data_cfg_t	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^} lwm2m_data_cfg_t;$/;"	t	typeref:struct:_lwm2m_data_cfg_t	file:
+lwm2m_data_process	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^typedef void (*lwm2m_data_process) (void*);$/;"	t	file:
+lwm2m_debug	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^static void lwm2m_debug(void *ctx, int level,$/;"	f	file:
+lwm2m_download_state_e	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^} lwm2m_download_state_e;$/;"	t	typeref:enum:__anon16	file:
+lwm2m_firmware_old_version_save	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_firmware_old_version_save()$/;"	f
+lwm2m_firmware_update_state	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_firmware_update_state()$/;"	f
+lwm2m_firmware_version_get	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^char *lwm2m_firmware_version_get()$/;"	f
+lwm2m_fota_destroy	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^void lwm2m_fota_destroy()$/;"	f
+lwm2m_fota_download_callback	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^typedef void (*lwm2m_fota_download_callback)(int evid, int reason, void* arg);$/;"	t	file:
+lwm2m_fota_download_event	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static int lwm2m_fota_download_event(lwm2m_fota_download_t *fdl, int event, int reason)$/;"	f	file:
+lwm2m_fota_download_t	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^}lwm2m_fota_download_t;$/;"	t	typeref:struct:__anon20	file:
+lwm2m_fota_execute_update	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_fota_execute_update(lwm2m_fota_manager* thi)$/;"	f
+lwm2m_fota_get_lwm2m_context	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^lwm2m_context_t* lwm2m_fota_get_lwm2m_context(lwm2m_fota_manager* thi)$/;"	f
+lwm2m_fota_get_state	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^lwm2m_fota_state_e lwm2m_fota_get_state(const lwm2m_fota_manager* thi)$/;"	f
+lwm2m_fota_get_update_result	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_fota_get_update_result(const lwm2m_fota_manager* thi)$/;"	f
+lwm2m_fota_http_download	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_fota_http_download(char* url, int len, lwm2m_fota_download_callback cb, void *arg)$/;"	f
+lwm2m_fota_manager_init	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static lwm2m_fota_manager* lwm2m_fota_manager_init(lwm2m_context_t *contextP)$/;"	f	file:
+lwm2m_fota_result	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^}lwm2m_fota_result;$/;"	t	typeref:enum:__anon17	file:
+lwm2m_fota_set_state	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_fota_set_state(lwm2m_fota_manager* thi, int state)$/;"	f
+lwm2m_fota_set_update_result	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^void lwm2m_fota_set_update_result(lwm2m_fota_manager* thi, int result)$/;"	f
+lwm2m_fota_start_download	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_fota_start_download(lwm2m_fota_manager* thi, const char* uri, uint32_t len)$/;"	f
+lwm2m_fota_str_token	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^} lwm2m_fota_str_token;$/;"	t	typeref:struct:__anon19	file:
+lwm2m_fota_update	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int lwm2m_fota_update(void *arg)$/;"	f
+lwm2m_free	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^void lwm2m_free(void * p)$/;"	f
+lwm2m_get_fota_manager	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^lwm2m_fota_manager* lwm2m_get_fota_manager(lwm2m_context_t * contextP)$/;"	f
+lwm2m_gettime	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^time_t lwm2m_gettime(void)$/;"	f
+lwm2m_malloc	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^void * lwm2m_malloc(size_t s)$/;"	f
+lwm2m_observe_info_t	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^}lwm2m_observe_info_t;$/;"	t	typeref:struct:__anon18	file:
+lwm2m_printf	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^void lwm2m_printf(const char * format, ...)$/;"	f
+lwm2m_seed	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^int lwm2m_seed(void) {$/;"	f
+lwm2m_send_notify	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^uint8_t lwm2m_send_notify(lwm2m_context_t *contextP, lwm2m_observe_info_t *observe_info, int firmware_update_state)$/;"	f
+lwm2m_session_is_equal	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^bool lwm2m_session_is_equal(void * session1,$/;"	f
+lwm2m_session_is_equal	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^bool lwm2m_session_is_equal(void *session1,$/;"	f
+lwm2m_strcasecmp	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^int lwm2m_strcasecmp(const char * str1, const char * str2) {$/;"	f
+lwm2m_strdup	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^char * lwm2m_strdup(const char * str)$/;"	f
+lwm2m_strncmp	lwm2m_client_demo/src/lwm2m_client/shared/platform.c	/^int lwm2m_strncmp(const char * s1,$/;"	f
+make_call_demo	oc_call_demo.c	/^static void make_call_demo(void *param)$/;"	f	file:
+mbeddtls_lwm2m_recv	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int mbeddtls_lwm2m_recv(void *ctx, unsigned char *buffer, size_t len)$/;"	f
+mbeddtls_lwm2m_recv_timeout	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int mbeddtls_lwm2m_recv_timeout(void *ctx, unsigned char *buf, size_t len,$/;"	f
+mbeddtls_lwm2m_send	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int mbeddtls_lwm2m_send(void *connP, const unsigned char *buf, size_t len)$/;"	f
+mbedtls_md_init	oc_hmacsha1_hmacsha256_test_demo.c	/^void mbedtls_md_init( mbedtls_md_context_t *ctx )$/;"	f
+md5	oc_fota_demo.c	/^        uint8_t md5[33];$/;"	m	struct:__anon2	file:
+memory_destory	oc_codec_demo.c	/^static void memory_destory(uint8_t **ptr)$/;"	f	file:
+memory_destory	oc_codec_es8311_demo.c	/^static void memory_destory(uint8_t **ptr)$/;"	f	file:
+message	oc_mqtt_demo.c	/^INT8* message = "hello";$/;"	v
+mode	oc_codec_es8311_demo.c	/^uint32_t mode = 1;\/\/play$/;"	v
+mqtt_break_callback	app_demo/app_mqtt.c	/^static void mqtt_break_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+mqtt_cloud_thread_entry	oc_mqtt_cloud_demo.c	/^static void mqtt_cloud_thread_entry(void *param)$/;"	f	file:
+mqtt_incoming_callback	app_demo/app_mqtt.c	/^static void mqtt_incoming_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+mqtt_login_ok_callback	app_demo/app_mqtt.c	/^static void mqtt_login_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+mqtt_pub_resp_callback	app_demo/app_mqtt.c	/^static void mqtt_pub_resp_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+mqtt_sub_resp_callback	app_demo/app_mqtt.c	/^static void mqtt_sub_resp_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+mqtt_task	app_demo/app_mqtt.c	/^static void mqtt_task(void *arg)$/;"	f	file:
+mqtt_thread_entry	oc_mqtt_demo.c	/^static void mqtt_thread_entry(void *param)$/;"	f	file:
+mqtt_unsub_resp_callback	app_demo/app_mqtt.c	/^static void mqtt_unsub_resp_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+msg_id	oc_ble_new_service_demo.c	/^    int msg_id;$/;"	m	struct:__anon4	file:
+mutil_app1_thread_entry	mutil_app/oc_mutil_app1_demo.c	/^static void mutil_app1_thread_entry(void *param)$/;"	f	file:
+net_info	oc_pdp_demo.c	/^static net_info_cus_t net_info;$/;"	v	file:
+net_info_cus_t	oc_pdp_demo.c	/^}net_info_cus_t;$/;"	t	typeref:struct:__anon6	file:
+net_would_block	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^static int net_would_block(const mbedtls_net_context *ctx)$/;"	f	file:
+next	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    struct _security_instance_ * next;        \/\/ matches lwm2m_list_t::next$/;"	m	struct:_security_instance_	typeref:struct:_security_instance_::_security_instance_	file:
+next	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    struct _server_instance_ * next;   \/\/ matches lwm2m_list_t::next$/;"	m	struct:_server_instance_	typeref:struct:_server_instance_::_server_instance_	file:
+nonsignalling_test_thread_entry	oc_nonsignalling_test_demo.c	/^static void nonsignalling_test_thread_entry(void *param)$/;"	f	file:
+ntp_callback	app_demo/app_socket.c	/^static void ntp_callback(void *param)$/;"	f	file:
+nullThread	osi_demo.c	/^static void nullThread(void *param)$/;"	f	file:
+num_1	oc_audio_list_play_demo.c	/^int num_1 = 0;$/;"	v
+num_2	oc_audio_list_play_demo.c	/^int num_2 = 0;$/;"	v
+num_3	oc_audio_list_play_demo.c	/^int num_3 = 0;$/;"	v
+objArray	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^lwm2m_object_t * objArray[OBJ_COUNT];$/;"	v
+observe_call_back	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static void observe_call_back(lwm2m_context_t * contextP, lwm2m_transaction_t * transacP, void * message)$/;"	f	file:
+observe_send_transaction	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^int observe_send_transaction(lwm2m_context_t *contextP, lwm2m_data_cfg_t  *cfg, lwm2m_watcher_t *watcherP,$/;"	f
+oc_cell_demo_thread	oc_cell_demo.c	/^static void oc_cell_demo_thread(void *param)$/;"	f	file:
+oc_get_operator_info_demo	oc_cell_demo.c	/^static void oc_get_operator_info_demo(void)$/;"	f	file:
+oc_get_operator_info_demo2	oc_cell_demo.c	/^static void oc_get_operator_info_demo2(void)$/;"	f	file:
+oc_gpioisrcallback	oc_gpio_demo.c	/^void oc_gpioisrcallback(void *param)$/;"	f
+oc_ntp_callback_test	oc_socket_demo.c	/^void oc_ntp_callback_test(void* param)$/;"	f
+oc_osi_demo	osi_demo.c	/^static void oc_osi_demo(void *param)$/;"	f	file:
+oc_ping_callback_test	oc_socket_demo.c	/^void oc_ping_callback_test(void* param)$/;"	f
+oc_plmn_lock_demo	oc_cell_demo.c	/^static void oc_plmn_lock_demo(void)$/;"	f	file:
+oc_psm_demo	oc_psm_demo.c	/^static void oc_psm_demo(void *param)$/;"	f	file:
+otaData	oc_fota_demo.c	/^OtaParaTypeDef otaData;$/;"	v
+otaThreadEntry_firmware	oc_fota_demo.c	/^void otaThreadEntry_firmware(void *param)$/;"	f
+ota_update_token_handle	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^static int ota_update_token_handle(lwm2m_context_t* context, lwm2m_fota_str_token* update_token)$/;"	f	file:
+pcm_len	oc_audio_stream_play_demo.c	/^uint32_t pcm_len = 0;$/;"	v
+pdp_active	oc_sftp_demo.c	/^UINT8 pdp_active(void)$/;"	f
+pdp_cus	oc_pdp_demo.c	/^    pdp_cus_t  pdp_cus[MAX_CID_SUPPORT];$/;"	m	struct:__anon6	file:
+pdp_cus_t	oc_pdp_demo.c	/^}pdp_cus_t;$/;"	t	typeref:struct:__anon5	file:
+pdp_profile	oc_pdp_demo.c	/^    fibo_pdp_profile_t pdp_profile;$/;"	m	struct:__anon5	file:
+pdp_sig_active_callback	app_demo/app_pdp.c	/^static void pdp_sig_active_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_active_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_active_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_active_or_deactive_fail_callback	app_demo/app_pdp.c	/^static void pdp_sig_active_or_deactive_fail_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_active_or_deactive_fail_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_active_or_deactive_fail_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_deactive_callback	app_demo/app_pdp.c	/^static void pdp_sig_deactive_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_deactive_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_deactive_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_release_callback	app_demo/app_pdp.c	/^static void pdp_sig_release_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_release_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_release_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_res_ok_callback	app_demo/app_pdp.c	/^static void pdp_sig_res_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_res_ok_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_res_ok_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_res_reg_callback	app_demo/app_pdp.c	/^static void pdp_sig_res_reg_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_res_reg_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_res_reg_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_rrc_report_callback	app_demo/app_pdp.c	/^static void pdp_sig_rrc_report_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_sig_rrc_report_callback	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^static void pdp_sig_rrc_report_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+pdp_status	oc_pdp_demo.c	/^    UINT8 pdp_status;$/;"	m	struct:__anon5	file:
+pdp_thread_entry	oc_ftp_demo.c	/^static void pdp_thread_entry(void *arg)$/;"	f	file:
+pdp_thread_entry	oc_http_demo.c	/^static void pdp_thread_entry(void *param)$/;"	f	file:
+pdp_thread_entry	oc_pdp_demo.c	/^static void pdp_thread_entry(void *param)$/;"	f	file:
+pdphandle	oc_fota_demo.c	/^struct pdphandle{$/;"	s	file:
+pmu_thread_entry	oc_pmu_demo.c	/^static void pmu_thread_entry(void *param)$/;"	f	file:
+port	oc_mqtt_demo.c	/^UINT16 port = 1883;$/;"	v
+port	oc_mqtt_demo1.c	/^UINT16 port = 1883;$/;"	v
+prvAudWriteOneReg	oc_codec_es8311_demo.c	/^static void prvAudWriteOneReg(uint8_t addr, uint8_t data)$/;"	f	file:
+prvBlackPrint	oc_camera_demo.c	/^static void prvBlackPrint(void)$/;"	f	file:
+prvCameraPrint	oc_camera_demo.c	/^static void prvCameraPrint(void *buff)$/;"	f	file:
+prvInvokeGlobalCtors	mutil_app/oc_mutil_app1_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_alarm.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_alarm_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_audio_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_ble_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_ble_new_service_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_camera_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_cell_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_charger_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_chipid_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_extflash_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_ffs_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_fota_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_ftp_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_gb2312_utf16_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_gnss_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_hmacsha1_hmacsha256_test_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_http_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_inner_flash_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_lcd_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_localtime_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_nonsignalling_test_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_pdp_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_psm_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_recorder_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_sftp_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_socket_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_ssl_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_sweep_code_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_tts_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_usb_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_wifiscan_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	oc_xml_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvInvokeGlobalCtors	osi_demo.c	/^static void prvInvokeGlobalCtors(void)$/;"	f	file:
+prvLcdInit	oc_camera_demo.c	/^static void prvLcdInit(void)$/;"	f	file:
+prvThreadEntry	oc_audio_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_audio_list_play_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_fota_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_gb2312_utf16_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_localtime_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_mqtt_demo1.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_sftp_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prvThreadEntry	oc_xml_demo.c	/^static void prvThreadEntry(void *param)$/;"	f	file:
+prv_backup_objects	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static void prv_backup_objects(lwm2m_context_t * context)$/;"	f	file:
+prv_check_time_offset	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^static int prv_check_time_offset(char * buffer,$/;"	f	file:
+prv_device_discover	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^static uint8_t prv_device_discover(lwm2m_context_t *contextP,$/;"	f	file:
+prv_device_execute	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^static uint8_t prv_device_execute(lwm2m_context_t *contextP,$/;"	f	file:
+prv_device_read	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^static uint8_t prv_device_read(lwm2m_context_t *contextP,$/;"	f	file:
+prv_device_write	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^static uint8_t prv_device_write(lwm2m_context_t *contextP,$/;"	f	file:
+prv_firmware_discover	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^uint8_t prv_firmware_discover(lwm2m_context_t * contextP, uint16_t instance_id, int* num_data, lwm2m_data_t** data_array, lwm2m_object_t* object)$/;"	f
+prv_firmware_execute	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t prv_firmware_execute(lwm2m_context_t *contextP,$/;"	f	file:
+prv_firmware_read	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^uint8_t prv_firmware_read(lwm2m_context_t * contextP, uint16_t instanceId, int * numDataP, lwm2m_data_t ** dataArrayP, lwm2m_object_t * objectP)$/;"	f
+prv_firmware_read_resources	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t prv_firmware_read_resources(int* num_data, lwm2m_data_t** data_array)$/;"	f	file:
+prv_firmware_write	lwm2m_client_demo/src/lwm2m_client/object_firmware.c	/^static uint8_t prv_firmware_write(lwm2m_context_t *contextP,$/;"	f	file:
+prv_get_value	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^static uint8_t prv_get_value(lwm2m_data_t * dataP,$/;"	f	file:
+prv_get_value	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_get_value(lwm2m_data_t * dataP,$/;"	f	file:
+prv_restore_objects	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static void prv_restore_objects(lwm2m_context_t * context)$/;"	f	file:
+prv_security_create	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^static uint8_t prv_security_create(lwm2m_context_t *contextP,$/;"	f	file:
+prv_security_delete	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^static uint8_t prv_security_delete(lwm2m_context_t *contextP,$/;"	f	file:
+prv_security_read	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^static uint8_t prv_security_read(lwm2m_context_t *contextP,$/;"	f	file:
+prv_security_write	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^static uint8_t prv_security_write(lwm2m_context_t *contextP,$/;"	f	file:
+prv_server_create	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_server_create(lwm2m_context_t *contextP,$/;"	f	file:
+prv_server_delete	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_server_delete(lwm2m_context_t *contextP,$/;"	f	file:
+prv_server_discover	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_server_discover(lwm2m_context_t *contextP,$/;"	f	file:
+prv_server_execute	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_server_execute(lwm2m_context_t *contextP,$/;"	f	file:
+prv_server_read	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_server_read(lwm2m_context_t *contextP,$/;"	f	file:
+prv_server_write	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_server_write(lwm2m_context_t *contextP,$/;"	f	file:
+prv_set_int_value	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^static uint8_t prv_set_int_value(lwm2m_data_t * dataArray, uint32_t * data) {$/;"	f	file:
+prv_set_value	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^static uint8_t prv_set_value(lwm2m_data_t * dataP,$/;"	f	file:
+prvcamctx_init	oc_sweep_code_demo.c	/^static void prvcamctx_init(camastae_t *st)$/;"	f	file:
+publicIdLen	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     publicIdLen;$/;"	m	struct:_security_instance_	file:
+publicIdentity	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    char *                       publicIdentity;$/;"	m	struct:_security_instance_	file:
+pwm_thread_entry	oc_pwm_demo.c	/^static void pwm_thread_entry(void *param)$/;"	f	file:
+qos	oc_mqtt_demo.c	/^UINT8 qos = 0;$/;"	v
+qos	oc_mqtt_demo1.c	/^UINT8 qos = 0;$/;"	v
+quit	oc_mqtt_demo.c	/^BOOL quit = true;$/;"	v
+quit	oc_mqtt_demo1.c	/^BOOL quit = true;$/;"	v
+read_body_cb	oc_http_demo.c	/^void read_body_cb(void *pHttpParam, int8_t *data, int32_t len)$/;"	f
+read_header_cb	oc_http_demo.c	/^void read_header_cb(const int8_t *name, const int8_t *value)$/;"	f
+recorder_thread_entry	oc_recorder_demo.c	/^static void recorder_thread_entry(void *param)$/;"	f	file:
+recv_cb	oc_usb_demo.c	/^void recv_cb(atDevice_t *th, void *buf, size_t size, void *arg)$/;"	f
+recv_task	oc_socket_demo.c	/^static void recv_task(void *param)$/;"	f	file:
+reg_status	oc_pdp_demo.c	/^    UINT8 reg_status;$/;"	m	struct:__anon6	file:
+registrationFailureBlock	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int8_t      registrationFailureBlock; \/\/ <0 when it doesn't exist, 0 for false, > 0 for true$/;"	m	struct:_server_instance_	file:
+registrationPriorityOrder	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    int         registrationPriorityOrder; \/\/ <0 when it doesn't exist$/;"	m	struct:_server_instance_	file:
+result	oc_gpio_demo.c	/^static INT32 result = -1;$/;"	v	file:
+result	oc_i2c_demo.c	/^int result = 0;$/;"	v
+retain	oc_mqtt_demo.c	/^BOOL retain = 0;$/;"	v
+rrc_status	oc_wifiscan_demo.c	/^UINT8 rrc_status = 0;$/;"	v
+rs485Task	oc_uart_to_rs485_demo.c	/^static void rs485Task(void *ctx)$/;"	f	file:
+run	oc_mqtt_demo.c	/^BOOL run = false;$/;"	v
+run	oc_mqtt_demo1.c	/^BOOL run = false;$/;"	v
+sampleRate	oc_codec_es8311_demo.c	/^uint32_t sampleRate = 8000; \/\/采样率$/;"	v
+savetoSD	oc_sweep_code_demo.c	/^static void savetoSD(char *filename, uint8_t *in_buff, uint32_t len)$/;"	f	file:
+secretKey	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    char *                       secretKey;$/;"	m	struct:_security_instance_	file:
+secretKeyLen	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     secretKeyLen;$/;"	m	struct:_security_instance_	file:
+securityMode	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint8_t                      securityMode;$/;"	m	struct:_security_instance_	file:
+securityObjP	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    lwm2m_object_t * securityObjP;$/;"	m	struct:__anon22	file:
+security_get_mode	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int64_t security_get_mode(lwm2m_context_t * lwm2mH, lwm2m_object_t *obj, int instanceId)$/;"	f
+security_get_public_id	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^char *security_get_public_id(lwm2m_context_t *lwm2mH, lwm2m_object_t *obj, int instanceId, int *length)$/;"	f
+security_get_secret_key	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^char *security_get_secret_key(lwm2m_context_t *lwm2mH, lwm2m_object_t *obj, int instanceId, int *length)$/;"	f
+security_get_uri	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^char *security_get_uri(lwm2m_context_t *lwm2mH, lwm2m_object_t *obj, int instanceId, char *uriBuffer, int bufferSize)$/;"	f
+security_instance_t	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^} security_instance_t;$/;"	t	typeref:struct:_security_instance_	file:
+sem	app_demo/app_pdp.c	/^    UINT32 sem;$/;"	m	struct:__anon8	file:
+sem	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    UINT32 sem;$/;"	m	struct:__anon15	file:
+sem	oc_fota_demo.c	/^    UINT32 sem;$/;"	m	struct:pdphandle	file:
+send_data	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^int send_data(dtls_connection_t *connP,$/;"	f
+send_recv_test	oc_ffs_demo.c	33;"	d	file:
+serverObject	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    lwm2m_object_t * serverObject;$/;"	m	struct:__anon22	file:
+serverPublicKey	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    char *                       serverPublicKey;$/;"	m	struct:_security_instance_	file:
+serverPublicKeyLen	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     serverPublicKeyLen;$/;"	m	struct:_security_instance_	file:
+server_instance_t	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^} server_instance_t;$/;"	t	typeref:struct:_server_instance_	file:
+set_app_ver	lwm2m_client_demo/src/app_ver.c	/^void set_app_ver(char *ver)$/;"	f
+sftp_test	oc_sftp_demo.c	/^INT32 sftp_test()$/;"	f
+sftpdomainremoteaddr	oc_sftp_demo.c	/^char sftpdomainremoteaddr[]="xa.fibocom.com";$/;"	v
+sftppassword	oc_sftp_demo.c	/^const char sftppassword[] = "test";$/;"	v
+sftppublicremoteaddr	oc_sftp_demo.c	/^char sftppublicremoteaddr[]="117.22.252.78";$/;"	v
+sftpuRemotePort	oc_sftp_demo.c	/^INT32 sftpuRemotePort = 30103;$/;"	v
+sftpusername	oc_sftp_demo.c	/^const char sftpusername[] = "ftpuser";$/;"	v
+share_ip_flag	lwm2m_client_demo/src/fibo_config.c	/^static bool share_ip_flag = false;$/;"	v	file:
+shortID	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     shortID;$/;"	m	struct:_security_instance_	file:
+shortServerId	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    uint16_t    shortServerId;$/;"	m	struct:_server_instance_	file:
+sig_recv_callback	mutil_app/oc_mutil_app2_demo.c	/^static void sig_recv_callback(THIRD_APP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_recv_callback	oc_audio_list_play_demo.c	/^static void sig_recv_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	app_demo/app.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	lwm2m_client_demo/src/app_image.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	lwm2m_client_demo/src/app_lwm2m.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	mutil_app/oc_mutil_app1_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_ble_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_ble_new_service_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_call_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_cell_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_http_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_lbs_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_mqtt_cloud_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_nw_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_pdp_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_psm_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_sftp_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_sms_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_tts_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+sig_res_callback	oc_wifiscan_demo.c	/^static void sig_res_callback(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f	file:
+size	oc_recorder_demo.c	/^    int32_t size;$/;"	m	struct:__anon3	file:
+smsParams	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    char *                       smsParams; \/\/ SMS binding key parameters$/;"	m	struct:_security_instance_	file:
+smsParamsLen	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     smsParamsLen;$/;"	m	struct:_security_instance_	file:
+smsSecret	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    char *                       smsSecret; \/\/ SMS binding secret key$/;"	m	struct:_security_instance_	file:
+smsSecretLen	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint16_t                     smsSecretLen;$/;"	m	struct:_security_instance_	file:
+smsSecurityMode	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    uint8_t                      smsSecurityMode;$/;"	m	struct:_security_instance_	file:
+sock	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^    int sock;$/;"	m	struct:__anon22	file:
+sock	oc_socket_demo.c	/^    int sock;$/;"	m	struct:fibo_demo_connection_s	file:
+sockaddr_cmp	lwm2m_client_demo/src/lwm2m_client/shared/connection.c	/^static int sockaddr_cmp(struct sockaddr *x, struct sockaddr *y)$/;"	f	file:
+sockaddr_cmp	lwm2m_client_demo/src/lwm2m_client/shared/mbedconnection.c	/^static int sockaddr_cmp(struct sockaddr *x, struct sockaddr *y)$/;"	f	file:
+socket_thread_entry	oc_socket_demo.c	/^static void socket_thread_entry(void *param)$/;"	f	file:
+spiFd	oc_spi_demo.c	/^SPIHANDLE spiFd;$/;"	v
+spi_ioc	oc_spi_demo.c	/^SPI_IOC spi_ioc = {8, 1000000, SPI_I2C_CS0, SPI_CS_ACTIVE_LOW};$/;"	v
+ssl_recv_unblock	oc_ssl_demo.c	/^static int ssl_recv_unblock(INT32 sock, void *buf, INT32 size, INT32 timeout)$/;"	f	file:
+ssl_thread_entry	oc_ssl_demo.c	/^static void ssl_thread_entry(void *param)$/;"	f	file:
+ssl_thread_entry_ssl_unblock	oc_ssl_demo.c	/^static void ssl_thread_entry_ssl_unblock(void *param)$/;"	f	file:
+st_test	oc_ffs_demo.c	32;"	d	file:
+start_func	oc_xml_demo.c	/^void start_func(void *userData, const XML_Char *name, const XML_Char **atts)$/;"	f
+status	app_demo/app_pdp.c	/^    app_pdp_status_t status;$/;"	m	struct:__anon8	file:
+status	lwm2m_client_demo/src/lwm2m_client/app_pdp.c	/^    app_pdp_status_t status;$/;"	m	struct:__anon15	file:
+status	oc_socket_demo.c	/^    fibo_connection_status_t status;$/;"	m	struct:fibo_demo_connection_s	file:
+storing	lwm2m_client_demo/src/lwm2m_client/object_server.c	/^    bool        storing;$/;"	m	struct:_server_instance_	file:
+stoupper	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static int stoupper(int ch) {$/;"	f	file:
+stream_play	oc_audio_stream_play_demo.c	/^int stream_play(void *param)$/;"	f
+success	oc_fota_demo.c	/^    char success;$/;"	m	struct:pdphandle	file:
+sweep_code_thread_entry	oc_sweep_code_demo.c	/^static void sweep_code_thread_entry(void *param)$/;"	f	file:
+sys_free	mutil_app/oc_mutil_app1_demo.c	/^INT32 sys_free(void *buffer)$/;"	f
+sys_malloc	mutil_app/oc_mutil_app1_demo.c	/^void *sys_malloc(UINT32 size)$/;"	f
+sys_taskSleep	mutil_app/oc_mutil_app1_demo.c	/^void sys_taskSleep(UINT32 msec)$/;"	f
+sys_test_201	mutil_app/oc_mutil_app1_demo.c	/^INT32 sys_test_201(void)$/;"	f
+sys_thread_create	mutil_app/oc_mutil_app1_demo.c	/^INT32 sys_thread_create(void *pvTaskCode, INT8 *pcName, UINT32 usStackDepth, void *pvParameters, UINT32 uxPriority)$/;"	f
+sys_thread_delete	mutil_app/oc_mutil_app1_demo.c	/^void sys_thread_delete(void)$/;"	f
+tag	oc_fota_demo.c	/^        uint8_t tag[def_max_VersionLen];$/;"	m	struct:__anon2	file:
+tcp_main	oc_socket_demo.c	/^int tcp_main(void *param)$/;"	f
+testQueueThread	osi_demo.c	/^static void testQueueThread(void *param)$/;"	f	file:
+testQueueThread2	osi_demo.c	/^static void testQueueThread2(void *param)$/;"	f	file:
+testSemThread	osi_demo.c	/^static void testSemThread(void *param)$/;"	f	file:
+test_colorbar_buffer	oc_lcd_demo.c	/^void test_colorbar_buffer(UINT16 *p, int w, int h)$/;"	f
+test_connect_1	oc_socket_demo.c	/^void test_connect_1()$/;"	f
+test_connect_2	oc_socket_demo.c	/^void test_connect_2()$/;"	f
+test_connect_3	oc_socket_demo.c	/^void test_connect_3()$/;"	f
+test_dns_get	oc_socket_demo.c	/^void test_dns_get()$/;"	f
+test_fibo_getHostByName	oc_socket_demo.c	/^void test_fibo_getHostByName()$/;"	f
+test_mem	osi_demo.c	/^static void test_mem()$/;"	f	file:
+test_mutex	osi_demo.c	/^static void test_mutex()$/;"	f	file:
+test_netinfo_api	oc_socket_demo.c	/^void test_netinfo_api()$/;"	f
+test_ntp_api	oc_socket_demo.c	/^void test_ntp_api()$/;"	f
+test_ping_api	oc_socket_demo.c	/^void test_ping_api()$/;"	f
+test_printf	oc_lcd_demo.c	/^void test_printf(void)$/;"	f
+test_queue	osi_demo.c	/^void test_queue()$/;"	f
+test_queue2	osi_demo.c	/^void test_queue2()$/;"	f
+test_rand	osi_demo.c	/^void test_rand()$/;"	f
+test_reset	osi_demo.c	/^static void test_reset(int mode)$/;"	f	file:
+test_sem	osi_demo.c	/^static void test_sem()$/;"	f	file:
+test_sock_tcp	oc_socket_demo.c	/^void test_sock_tcp()$/;"	f
+test_ticks	osi_demo.c	/^static void test_ticks()$/;"	f	file:
+test_timer	osi_demo.c	/^void test_timer()$/;"	f
+test_timer2	osi_demo.c	/^void test_timer2()$/;"	f
+test_timer_period	osi_demo.c	/^void test_timer_period()$/;"	f
+test_timer_period2	osi_demo.c	/^void test_timer_period2()$/;"	f
+testcus	lwm2m_client_demo/src/app_at_cmd.c	/^int testcus;$/;"	m	struct:__anon13	file:
+testcus_t	lwm2m_client_demo/src/app_at_cmd.c	/^}testcus_t;$/;"	t	typeref:struct:__anon13	file:
+third_app_dispatch	mutil_app/oc_mutil_app1_demo.c	/^void third_app_dispatch(THIRD_APP_SIGNAL_ID_T sig, ...)$/;"	f
+third_app_signal_ind	mutil_app/oc_mutil_app1_demo.c	/^static THIRD_APP_RECV_SIG_CALLBACK_T *third_app_signal_ind = NULL;$/;"	v	file:
+thrid_app_recv_sig_callback	mutil_app/oc_mutil_app2_demo.c	/^static THIRD_APP_RECV_SIG_CALLBACK_T thrid_app_recv_sig_callback = {$/;"	v	file:
+time	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^    int64_t time;$/;"	m	struct:__anon21	file:
+time_offset	lwm2m_client_demo/src/lwm2m_client/object_device.c	/^    char time_offset[PRV_OFFSET_MAXLEN];$/;"	m	struct:__anon21	file:
+timeout	oc_mqtt_demo.c	/^INT32 timeout = 60 * 1000;$/;"	v
+timer_function	osi_demo.c	/^void timer_function(void *arg)$/;"	f
+timer_function2	osi_demo.c	/^void timer_function2(void *arg)$/;"	f
+timer_function_period	osi_demo.c	/^void timer_function_period(void *arg)$/;"	f
+timer_function_period2	osi_demo.c	/^void timer_function_period2(void *arg)$/;"	f
+token	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    uint8_t token[8];$/;"	m	struct:__anon18	file:
+tokenLen	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    uint32_t tokenLen;$/;"	m	struct:__anon18	file:
+topic	oc_mqtt_demo.c	/^INT8 *topic = "topic";$/;"	v
+topic	oc_mqtt_demo1.c	/^INT8 *topic = "topic";$/;"	v
+tts_thread_entry	oc_tts_demo.c	/^static void tts_thread_entry(void *param)$/;"	f	file:
+tx_buff	oc_uart_to_rs485_demo.c	/^static uint8_t *tx_buff = NULL;$/;"	v	file:
+type	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    int type;$/;"	m	struct:_lwm2m_data_cfg_t	file:
+uart_recv	oc_uart_demo.c	/^void uart_recv(hal_uart_port_t uart_port, UINT8 *data, UINT16 len, void *arg)$/;"	f
+uart_recv	oc_uart_to_rs485_demo.c	/^void uart_recv(hal_uart_port_t uart_port, UINT8 *data, UINT16 len, void *arg)$/;"	f
+uart_thread_entry	oc_uart_demo.c	/^static void uart_thread_entry(void *param)$/;"	f	file:
+uint32_t	osi_demo.c	/^typedef __uint32_t uint32_t ;$/;"	t	file:
+update_battery_level	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static void update_battery_level(lwm2m_context_t * context)$/;"	f	file:
+update_bootstrap_info	lwm2m_client_demo/src/lwm2m_client/lwm2mclient.c	/^static void update_bootstrap_info(lwm2m_client_state_t * previousBootstrapState,$/;"	f	file:
+uri	lwm2m_client_demo/src/lwm2m_client/object_security.c	/^    char *                       uri;$/;"	m	struct:_security_instance_	file:
+url	lwm2m_client_demo/src/lwm2m_client/lwm2m_fota.c	/^    char url[MAX_URL_LENGTH + 1];$/;"	m	struct:__anon20	file:
+usbEvent	oc_usb_demo.c	/^}usbEvent;$/;"	t	typeref:enum:__anon23	file:
+usbState	oc_usb_demo.c	/^int usbState = 0;$/;"	v
+usb_thread_entry	oc_usb_demo.c	/^static void usb_thread_entry(void *param)$/;"	f	file:
+usbdev_daemon_sem	oc_usb_demo.c	/^UINT32 usbdev_daemon_sem = 0;$/;"	v
+user_callback	app_demo/app.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	lwm2m_client_demo/src/app_image.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	lwm2m_client_demo/src/app_lwm2m.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	mutil_app/oc_mutil_app1_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_appcmd_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_at_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_audio_list_play_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_ble_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_ble_new_service_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_call_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_cell_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_http_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_lbs_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_mqtt_cloud_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_mqtt_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_mqtt_demo1.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_nw_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_pdp_demo.c	/^FIBO_CALLBACK_T user_callback = {$/;"	v
+user_callback	oc_psm_demo.c	/^FIBO_CALLBACK_T user_callback = {$/;"	v
+user_callback	oc_sftp_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_sms_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_tts_demo.c	/^static FIBO_CALLBACK_T user_callback = {$/;"	v	file:
+user_callback	oc_wifiscan_demo.c	/^FIBO_CALLBACK_T user_callback = {$/;"	v
+user_signal_process	oc_mqtt_demo.c	/^void user_signal_process(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f
+user_signal_process	oc_mqtt_demo1.c	/^void user_signal_process(GAPP_SIGNAL_ID_T sig, va_list arg)$/;"	f
+user_sms_event_callback	oc_sms_demo.c	/^static void user_sms_event_callback(uint32_t ind_flag, void *ind_msg_buf, uint32_t ind_msg_len)$/;"	f	file:
+uuid_index	oc_ble_new_service_demo.c	/^    int uuid_index;$/;"	m	struct:__anon4	file:
+wifiscan_cus	oc_wifiscan_demo.c	/^void wifiscan_cus(void *p)$/;"	f
+wifiscan_refponse_cb	oc_wifiscan_demo.c	/^void wifiscan_refponse_cb(void *param)$/;"	f
+wifiscan_res_cb	app_demo/app_wifiscan.c	/^static void wifiscan_res_cb(void *param)$/;"	f	file:
+wifiscan_thread_entry	oc_wifiscan_demo.c	/^static void wifiscan_thread_entry(void *param)$/;"	f	file:
+xmal_value	oc_xml_demo.c	/^char xmal_value[200] = {0};$/;"	v
+xml_file	oc_xml_demo.c	/^char xml_file[]={"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?><root><dev nPclType=\\"IEC104\\" nByteOrder=\\"2\\" nDevModel=\\"EM000\\"><point nDevIndex=\\"1\\" nDevType=\\"25\\" nDevModel=\\"NEWSIV\\"\/><fast>testx<\/fast><\/dev><\/root>"};$/;"	v
+xml_test	oc_xml_demo.c	/^void xml_test()$/;"	f

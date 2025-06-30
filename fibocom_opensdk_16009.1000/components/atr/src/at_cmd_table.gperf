@@ -1,0 +1,1599 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+%{
+// NOTE:
+// * Don't change the options
+// * Don't add space around keywords
+// * Each command should be located in a single line
+#include "cfw_config.h"
+#include "atr_config.h"
+#include "ats_config.h"
+#include "kernel_config.h"
+#include "nvm_config.h"
+#ifdef CONFIG_SOC_8850
+#include "pam_config.h"
+#endif
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
+#include "lpa_config.h"
+#endif
+#include "fibocom.h"
+#include "drv_config.h"
+#if defined (CONFIG_FIBOCOM_BASE)
+#include "didi_app.h"
+#include "audio_config.h"
+#endif
+%}
+struct atCmdDesc
+%language=ANSI-C
+%ignore-case
+%struct-type
+%omit-struct-type
+%readonly-tables
+%global-table
+%omit-cmp-function
+%omit-lookup-function
+%hash-index
+%switch=1
+%define hash-function-name atCmdNameHash
+%define word-array-name gAtCmdTable
+%define hash-index-name gAtCmdNameHashIndex
+%%
+#ifdef CONFIG_AT_TCPCTWING_SUPPORT
++TRANSPORT,          AT_TCPCTWING_CmdFunc_TRANSPORT, 0
++AUTOCONN,           AT_TCPCTWING_CmdFunc_AUTOCONN, 0
++SETURL,                AT_TCPCTWING_CmdFunc_URL, 0
++VERSIONINFO,        AT_TCPCTWING_CmdFunc_VERSIONINFO, 0
++GETIDPASS,           AT_TCPCTWING_CmdFunc_DEVICEID, 0
++SREGISTER,     AT_TCPCTWING_CmdFunc_REGISTER, 0
++SSEND,           AT_TCPCTWING_CmdFunc_SndUlData, 0
++RESPSEND,      AT_TCPCTWING_CmdFunc_RESPDATA, 0
++SCLOSE,         AT_TCPCTWING_CmdFunc_CLOSE, 0
+#endif
+
+#ifdef CONFIG_AT_CMD_SUPPORT
+// V.250
+I,              atCmdHandleI, 0             // (6.1.3) Request identification information
+E,              atCmdHandleE, 0             // (6.2.4) Command echo
+V,              atCmdHandleV, 0             // (6.2.6) DCE response format
+&W,             atCmdHandleAndW, 0          // Store current profile
++GMM,           atCmdHandleGMM, 0           // (6.1.5) Request model identification
++GMR,           atCmdHandleGMR, 0           // (6.1.6) Request revision identification
++IPR,           atCmdHandleIPR, 0           // (6.2.10) Fixed DTE rate
+&F,             atCmdHandleAndF, 0          // (6.1.2) Set to factory defined configuration
+
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
+Z,              atCmdHandleZ, 0             // (6.1.1) Reset to default configuration
++GMI,           atCmdHandleGMI, 0           // (6.1.4) Request manufacturer identification
+S3,             atCmdHandleS3, 0            // (6.2.1) Command line termination character
+S4,             atCmdHandleS4, 0            // (6.2.2) Response formatting character
+S5,             atCmdHandleS5, 0            // (6.2.3) Command line editing character
+Q,              atCmdHandleQ, 0             // (6.2.5) Result code suppression
+X,              atCmdHandleX, 0             // (6.2.7) Result code selection and call progress monitoring control
+&D,             atCmdHandleAndD, 0          // (6.2.9) Circuit 108/2 (DTR) behavior
++ICF,           atCmdHandleICF, 0           // (6.2.11) DTE-DCE character framing
++IFC,           atCmdHandleIFC, 0           // (6.2.12) DTE-DCE local flow control
+#endif
+
+#ifndef CONFIG_AT_CC_REDUCE_MEMORY
+#if defined (CONFIG_AT_CC_COMMAND_DAILUP_SUPPORT) || defined(LTE_NBIOT_SUPPORT)
+D,              atCmdHandleD, 0             // (6.3.1) Dial
++CDU,           atCmdHandleCDU, 0           // 13.2.3 Hangup of current calls
+H,              atCmdHandleH, 0             // (6.3.6) Hook control
+#else
+H,              atCmdHandleH, AT_CON_NOT_CLAC             // (6.3.6) Hook control
+D,              atCmdHandleD, AT_CON_NOT_CLAC             // (6.3.1) Dial
+#endif
+#endif
+
+#ifdef CONFIG_AT_CC_COMMAND_SUPPORT
+A,              atCmdHandleA, 0             // (6.3.5) Answer
++CMOD,          atCmdHandleCMOD, 0          // 6.4 Call mode
++CHUP,          atCmdHandleCHUP, 0          // 6.5 Hangup call
++CHLD,          atCmdHandleCHLD, 0          // 7.13 Call related supplementary services
++CHCCS,         atCmdHandleCHCCS, 0         // 13.2.3 Hangup of current calls
++CPAS,          atCmdHandleCPAS, 0          // 8.1 Phone activity status
++DLST,          atCmdHandleDLST, 0
++MHUP,          atCmdHandleMHUP, 0
++MDC,           atCmdHandleMDC, 0
+#endif
+
+#ifdef CONFIG_AT_GC_COMMAND_SUPPORT
+S0,             atCmdHandleS0, 0            // (6.3.8) Automatic answer
+#endif
+
+#ifdef CONFIG_DTMF_KEY_DETECT_SUPPORT
++DVT,           atCmdHandleDVT, 0           // Detect Voice Tone
+#endif
+
+#if defined (CFW_VOLTE_SUPPORT) || defined (CONFIG_GSM_SUPPORT)
+#ifdef CONFIG_AT_CC_COMMAND_SUPPORT
++VTS,           atCmdHandleVTS, 0           // C.2.11 DTMF and tone generation
++VTD,           atCmdHandleVTD, 0           // C.2.12 Tone duration
++CR,            atCmdHandleCR, 0            // 6.9 Service reporting control
++CRC,           atCmdHandleCRC, 0           // 6.11 Cellular result codes
++CSTA,          atCmdHandleCSTA, 0
+^ALERTTONE,                   atCmdHandleALERTTONE, 0
+#endif
+#endif
+
+#ifdef CFW_VOLTE_SUPPORT
++SETVOLTE,      atCmdHandleSETVOLTE, 0
++CIREG,         atCmdHandleCIREG, 0
++CEUS,          atCmdHandleCEUS, 0          // 10.1.34 UE's usage setting for EPS
++CEVDP,         atCmdHandleCEVDP, 0         // 10.1.35 UE's voice domain preference E-UTRAN
++CFGIMSPDN,     atCmdHandleCFGIMSPDN, 0
++CFGXCAP,       atCmdHandleCFGXCAP, 0
+#endif
+
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
+&Y,             atCmdHandleAndY, 0          // Set default reset profile
++CLAC,          atCmdHandleCLAC, 0          // List all command
++URC,           atCmdHandleURC, AT_CON_NOT_CLAC        // Set Urc Enable/disable
+#endif
++GSN,           atCmdHandleGSN, 0           // Request serial number
+O,              atCmdHandleO, 0             // (6.3.7) Return to online data state
+
+#ifdef CONFIG_CAMERA_SUPPORT
+#ifdef CONFIG_AT_CAMERA_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CAM,           atCmdHandleCAM, 0           //Camera Function
+#endif
+#ifdef CONFIG_SOC_8850
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++BACKLIGHT,     atCmdHandleBKLED, AT_CON_NOT_CLAC           //Backlight Function
+#endif
+#endif
+#endif
+#endif
+#if defined(CONFIG_SOC_8910)||defined(CONFIG_SOC_8850) && !defined(CONFIG_NET_SERVICE_REDUCE_MEMORY)
++TUEINFO,       atCmdHandleTUEINFO, 0       // Show Tue status info
+#endif
+#ifdef CONFIG_AT_SSIM_SUPPORT
++SCANRSSI,      atCmdHandleSCANRSSI, 0      // Scan RSSI according to band
+#endif
+//
+// 3GPP TS 27.005 (R14)
+//
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
+#ifdef CONFIG_AT_SMS_COMMAND_SUPPORT
++CSDH,          atCmdHandleCSDH, 0          // 3.3.3 Show Text Mode Parameters
++CMGC,          atCmdHandleCMGC, 0          // 3.5.5/4.5 Send Command
++CMMS,          atCmdHandleCMMS, 0          // 3.5.6 More Messages to Send
+#endif
+#endif
+#ifdef CONFIG_AT_SMS_COMMAND_SUPPORT
++CNMI,          atCmdHandleCNMI, 0          // 3.4.1 New Message Indications to TE
++CSMS,          atCmdHandleCSMS, 0          // 3.2.1 Select Message Service
++CPMS,          atCmdHandleCPMS, 0          // 3.2.2 Preferred Message Storage
++CMGF,          atCmdHandleCMGF, 0          // 3.2.3 Message Format
++CSCA,          atCmdHandleCSCA, 0          // 3.3.1 Service Centre Address
++CSMP,          atCmdHandleCSMP, 0          // 3.3.2 Set Text Mode Parameters
++CMGL,          atCmdHandleCMGL, 0          // 3.4.2/4.1 List Messages
++CMGR,          atCmdHandleCMGR, 0          // 3.4.3/4.2 Read Message
++CNMA,          atCmdHandleCNMA, 0          // 3.4.4 New Message Acknowledgement to ME/TA
++CMGS,          atCmdHandleCMGS, 0          // 3.5.1/4.3 Send Message
++CMSS,          atCmdHandleCMSS, 0          // 3.5.2/4.7 Send Message from Storage
++CMGW,          atCmdHandleCMGW, 0          // 3.5.3/4.4 Write Message to Memory
++CMGD,          atCmdHandleCMGD, 0          // 3.5.4 Delete Message
++USMSSSDCS,     atCmdHandleUSMSSSDCS, 0     // Unisoc SMS Support Special Dcs
+#endif
+
+#ifdef CONFIG_AT_SMS_CB_SUPPORT
++CSCB,          atCmdHandleCSCB, 0          // 3.3.4 Select Cell Broadcast Message Types
++CSAS,          atCmdHandleCSAS, 0          // 3.3.5 Save Settings
++CRES,          atCmdHandleCRES, 0          // 3.3.6 Restore Settings
+#endif
+#if !defined(CONFIG_ATR_NBONLY_API_SUPPORT) && !defined(CONFIG_AT_GENERAL_REDUCE_MEMORY)
++CGSEND,        atCmdHandleCGSEND, AT_CON_NOT_CLAC
+#endif
+//
+// 3GPP TS 27.007 (R14)
+//
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
++CGMI,          atCmdHandleCGMI, 0          // 5.1 Request manufacturer identification
++CGMR,          atCmdHandleCGMR, 0          // 5.3 Request revision identification
++CEID,          atCmdHandleEID, AT_CON_NOT_CLAC           // get eid
+#endif
++CGSN,          atCmdHandleCGSN, 0          // 5.4 Request product serial number identification
++CGMM,          atCmdHandleCGMM, 0          // 5.2 Request model identification
++CSCS,          atCmdHandleCSCS, 0          // 5.5 Select TE character set
++CIMI,          atCmdHandleCIMI, 0          // 5.6 Request international mobile subscriber identity
++CGBV,          atCmdHandleCGBV, 0
+
+#ifdef CONFIG_ATR_CMUX_SUPPORT
++CMUX,          atCmdHandleCMUX, 0          // 5.7 Multiplexing mode
+#endif
++SECBOOTEN,    atCmdHandleSECURE, 0    //secureboot enable
+
+#if defined (LTE_NBIOT_SUPPORT) || defined (LTE_SUPPORT)
+#if defined (CONFIG_AT_PSM_SUPPORT)
++CPSMS,         atCmdHandleCPSMS, 0         // 7.38 Power saving mode setting
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CEDRXS,        atCmdHandleCEDRXS, 0        // 7.40 eDRX setting
++CEDRXRDP,      atCmdHandleCEDRXRDP, 0      // 7.41 eDRX read dynamic parameters
++CFGEDRX,       atCmdHandleCFGEDRX, 0
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++PSME,          atCmdHandlePSME, AT_CON_NOT_CLAC
+#endif
+#endif
+#endif
+#endif
+
+// SIM && PBK related commands
+#ifndef CONFIG_AT_SIM_REDUCE_MEMORY
++CSIM,         atCmdHandleCSIM, 0
++CCHO,         atCmdHandleCCHO, 0
++CCHC,         atCmdHandleCCHC, 0
++CGLA,         atCmdHandleCGLA, 0
++CPIN2,         atCmdHandleCPIN2, 0         // Authentication(for Sim)
+^CPINC,         atCmdHandleCPINC, 0         // Total times of Access the Sim Card
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CRSML,         atCmdHandleCRSML, 0         // Read records of EF file on (U)SIM
+#endif
+#endif
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821) && !defined(CONFIG_AT_SIM_REDUCE_MEMORY)
+^SIMOPERTIMES,  atCmdHandleSIMOperationTimes,   0       //Get the total number of SIM card operations.
+#endif
+
++GTSIMCON,       atCmdHandleSIMCON,AT_CON_NOT_CLAC
++GTSIMCNT,       atCmdHandleSIMCNT,AT_CON_NOT_CLAC
+
+// Network service related commands
+//
++CREG,          atCmdHandleCREG, 0          // 7.2 Network registration
+#ifdef CONFIG_AT_CUS_SUPPORT
++COPS,          atCmdHandleCOPSCus, 0          // 7.3 PLMN selection
+#else
++COPS,          atCmdHandleCOPS, 0          // 7.3 PLMN selection
+#endif
+#ifdef CSG_SUPPORT
++COPSCSG,       atCmdHandleCOPSCSG, 0
++CSG,           atCmdHandleCSG, 0
+#endif
+
+#ifndef CONFIG_NET_SERVICE_REDUCE_MEMORY
++CPWD,          atCmdHandleCPWD, 0          // 7.5 Change password
++CPOL,          atCmdHandleCPOL, 0          // 7.19 Preferred PLMN list
++CPLS,          atCmdHandleCPLS, 0          // 7.20 Selection of preferred PLMN list
++COPN,          atCmdHandleCOPN, 0          // 7.21 Read operator names
+#endif
+
+#ifdef CONFIG_AT_SS_COMMAND_SUPPORT
++CLIP,          atCmdHandleCLIP, 0          // 7.6 Calling line identification presentation
++CLIR,          atCmdHandleCLIR, 0          // 7.7 Calling line identification restriction
++COLP,          atCmdHandleCOLP, 0          // 7.8 Connected line identification presentation
++CCFC,           atCmdHandleCCFC, 0          // 7.11 Call forwarding number and conditions
++CCWA,          atCmdHandleCCWA, 0          // 7.12 Call waiting
++CLCC,          atCmdHandleCLCC, 0          // 7.18 List current calls
++CSSN,           atCmdHandleCSSN, 0          // 7.17    Supplementary service notifications +CSSN
++CUSD,          atCmdHandleCUSD, 0          // 7.15    Unstructured supplementary service data +CUSD
++CCFCU,         atCmdHandleCCFCU, 0         // 7.35 Communication forwarding number and conditions with URI support
+#endif
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++SDMBS,        atCmdHandleSDMBS, 0         //Set Pseudo base station identification.
+
+#endif
+
+#if !defined(CONFIG_ATR_NBONLY_API_SUPPORT)
+#ifndef CONFIG_NET_SERVICE_REDUCE_MEMORY
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++MJDC,          atCmdHandleMJDC, 0          //Detect the jamming.
++MJRI,          atCmdHandleMJRI, 0          //jamming rssi info
+#endif
++CCED,          atCmdHandleCCED, 0
+#endif
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
+^BLACKLIST,     atCmdHandleBLACKLIST, 0
+#endif
+#endif
+
+#if defined(CONFIG_SOC_8910)||defined(CONFIG_SOC_8850)
+#ifndef CONFIG_NET_SERVICE_REDUCE_MEMORY
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++UJDC,          atCmdHandleUJDC, AT_CON_NOT_CALIB_MODE //Detect the jamming.
++UJDCP,         atCmdHandleUJDCP,AT_CON_NOT_CALIB_MODE //Detect the jamming parameters.
++UJRI,          atCmdHandleUJRI, AT_CON_NOT_CALIB_MODE //jamming rssi info.
++USINR,        atCmdHandleUSINR, AT_CON_NOT_CALIB_MODE //Get Sinr in time.
+#endif
+#endif
+#endif
+
+#if defined (LTE_NBIOT_SUPPORT) || defined (LTE_SUPPORT)
++CEREG,         atCmdHandleCEREG, 0         // 10.1.22 EPS network registration status
++CSCON,         atCmdHandleCSCON, 0         // 10.1.30 Signalling connection status +CSCON
+
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
+#ifdef CONFIG_AT_CUS_SUPPORT
++NPSMR,        atCmdHandleNPSMRCus, AT_CON_NOT_CLAC
+#else
++NPSMR,        atCmdHandleNPSMR, AT_CON_NOT_CLAC
+#endif
+#endif
+
+#endif
+
+#ifndef CONFIG_AT_SIM_REDUCE_MEMORY
++CSDF,          atCmdHandleCSDF, 0          // 6.22 Settings date format +CSDF
++CLCK,          atCmdHandleCLCK, 0          // 7.4 Facility lock
++CDIS,          atCmdHandleCDIS, 0          // 8.8 Display control
++CMER,          atCmdHandleCMER, 0          // 8.10 Mobile termination event reporting
++CEER,          atCmdHandleCEER, 0          // 6.10 Extended error report
+#endif
++CPIN,          atCmdHandleCPIN, 0          // 8.3 Enter PIN
+
+#ifdef CONFIG_AT_PBK_COMMAND_SUPPORT
++CPBS,          atCmdHandleCPBS, 0          // 8.11 Select phonebook memory storage +CPBS
++CPBR,          atCmdHandleCPBR, 0          // 8.12 Read phonebook entries +CPBR
++CPBF,          atCmdHandleCPBF, 0          // 8.13 Find phonebook entries +CPBF
++CPBW,          atCmdHandleCPBW, 0          // 8.14 Write phonebook entry +CPBW
+#endif
+
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821) && !defined(CONFIG_AT_SIM_REDUCE_MEMORY)
++CNUM,        atCmdHandleCNUM, 0        // 7.1 Subscriber number
+#endif
+
++CCLK,          atCmdHandleCCLK, 0          // 8.15 Clock +CCLK
++CRSM,          atCmdHandleCRSM, 0          // 8.18 Restricted SIM access
+
+#if !defined(CONFIG_ATR_NBONLY_API_SUPPORT) && !defined(CONFIG_SOC_8850)
++CACM,          atCmdHandleCACM, 0          // 8.25 Accumulated call meter
+#endif
+
+#ifndef CONFIG_NET_SERVICE_REDUCE_MEMORY
++CTZR,          atCmdHandleCTZR, 0          // 8.41 Time zone reporting +CTZR
+#endif
++CTZU,          atCmdHandleCTZU, 0          // 8.40 Automatic time zone update +CTZU
+
+#ifndef CONFIG_AT_SIM_REDUCE_MEMORY
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
++CPINR,         atCmdHandleCPINR, 0         // 8.65 Remaining PIN retries +CPINR
+#ifdef CONFIG_FIBOCOM_BASE
++TPIN,          atCmdHandleTPIN, 0         // same as +CPINR
+#else
++TPIN,          atCmdHandleCPINR, 0         // same as +CPINR
+#endif
+#endif
++CCID,          atCmdHandleCCID, 0          // Get Iccid
++SIM,           atCmdHandleSIM, 0
+^SIMIF,         atCmdHandleSIMIF, 0
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++QSPN,          atCmdHandleQSPN, 0
++QGID,          atCmdHandleQGID, 0
++PSIM,          atCmdHandlePSIM, 0
+#endif
+#endif
++SIMCROSS,      atCmdHandleSIMCROSS, 0      //Switch sim id
+
+#if !defined (CONFIG_ATR_NBONLY_API_SUPPORT) && !defined(CONFIG_NET_SERVICE_REDUCE_MEMORY)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
+#ifndef CONFIG_GSM_LTE_SWITCH_SUPPORT
++POC,           atCmdHandlePOC, AT_CON_NOT_CLAC
++PAS,           atCmdHandlePAS, 0
++PUSIM,         atCmdHandlePUSIM, 0
+#endif
+#endif
+#endif
+#ifdef CONFIG_AT_STK_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++STKTR,         atCmdHandleSTKTR, AT_CON_NOT_CLAC
++STKENV,        atCmdHandleSTKENV, AT_CON_NOT_CLAC
++STKEN,         atCmdHandleSTKEN, AT_CON_NOT_CLAC
++STKM,          atCmdHandleSTKM, AT_CON_NOT_CLAC
++STKPD,         atCmdHandleSTKPD, AT_CON_NOT_CLAC
+#endif
+#endif
+#ifdef CONFIG_ATS_ALARM_SUPPORT
++CALA,          atCmdHandleCALA, 0          // 8.16 Alarm +CALA
++CALD,          atCmdHandleCALD, 0          // 8.38 Delete alarm +CALD
+#endif
+
+
+
+#ifdef CONFIG_AT_IPERF_SUPPORT
++IPERF, AT_CmdFunc_IPERF, AT_CON_NOT_CLAC
++IPERFSTOP, AT_CmdFunc_IPERFSTOP, AT_CON_NOT_CLAC
+#endif
+
+
+
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU) || defined(CONFIG_MC661_CN_19_70_YINGSHI)
+^NETIF,         AT_NET_CmdFunc_NetInfo, 0
+#endif
+
+
+
+//
+// Mobile Termination control and status commands
+//
+#ifdef CONFIG_AT_CUS_SUPPORT
++CFUN,          atCmdHandleCFUNCus, 0          // 8.2 Set phone functionality
+#else
++CFUN,          atCmdHandleCFUN, 0          // 8.2 Set phone functionality
+#endif
+#ifdef CONFIG_FIBOCOM_XINGUODU
++CBC,           atCmdHandleCBC_XGD, 0
+#else
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
+//#ifdef CONFIG_SUPPORT_BATTERY_CHARGER //modify by fibocom at 20230525
++CBC,           atCmdHandleCBC, 0           // 8.4 Battery charge
+//#endif
+#endif
+#endif
+
+#ifdef CONFIG_AT_CUS_SUPPORT
++CSQ,           atCmdHandleCSQCus, 0           // 8.5 Signal quality
+#else
++CSQ,           atCmdHandleCSQ, 0           // 8.5 Signal quality
+#endif
+
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
++CIND,          atCmdHandleCIND, 0          // 8.9 Indicator control
++SPREBOOTCMD,   atCmdHandleSPREBOOT, 0
+#endif
+
++CESQ,          atCmdHandleCESQ, 0          // 8.69 Extended signal quality
++CALIBINFO,     atCmdHandleCALIBINFO, 0     // Check the calibration mark bit
++CMEE,          atCmdHandleCMEE, 0          // 9.1 Report mobile termination error
+
++CPOF,          atCmdHandleCPOF, 0
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++TRB,           atCmdHandleTRB, 0
+#endif
++EGMR,          atCmdHandleEGMR, 0
++CSCLK,         atCmdHandleCSCLK, 0
++CGATT,         atCmdHandleCGATT, 0         // 10.1.9 PS attach or detach
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGQMIN,        atCmdHandleCGQMIN, 0        // 10.1.5 Quality of service profile (minimum acceptable)
+#endif
++CGREG,         atCmdHandleCGREG, 0         // 10.1.20 GPRS network registration status
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGDEL,         atCmdHandleCGDEL, 0         // 10.1.29 Delete non-active PDP contexts
+#endif
+#endif
+
++CGPADDR,       atCmdHandleCGPADDR, 0       // 10.1.14 Show PDP address(es)
++CGDCONT,       atCmdHandleCGDCONT, 0       // 10.1.1 Define PDP context
+
+#if defined(CONFIG_SOC_8850) || defined(CONFIG_SOC_8910)
+^PDNACTINFO,    atCmdHandlePDNACTINFO, 0    // RW PDN act or deact retry timer and retry maxcount
+#endif
++CGAUTH,        atCmdHandleCGAUTH, 0        // 10.1.31 Define PDP context authentication parameters
+#ifndef LTE_NBIOT_SUPPORT
+#ifdef DEDICATED_BEARER_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGDSCONT,      atCmdHandleCGDSCONT, 0      // 10.1.2 Define secondary PDP context
+#endif
+#endif
+#endif
+#if defined(LTE_NBIOT_SUPPORT) || defined(LTE_SUPPORT)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGTFT,         atCmdHandleCGTFT, 0         // 10.1.3 Traffic flow
+#endif
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGTFTRDP,      atCmdHandleCGTFTRDP, 0      // 10.1.25 Traffic flow template read dynamic parameters
++CGEQREQ,       atCmdHandleCGEQREQ, 0       // 10.1.6 3G quality of service profile (requested)
++CGEQMIN,       atCmdHandleCGEQMIN, 0       // 10.1.7 3G quality of service profile (minimum acceptable)
+#endif
+#endif
+#endif
++CGACT,         atCmdHandleCGACT, 0         // 10.1.10 PDP context activate or deactivate
+
+#if defined(LTE_NBIOT_SUPPORT) || defined(LTE_SUPPORT)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGCMOD,        atCmdHandleCGCMOD, 0        // 10.1.11 PDP context modify
+#endif
+#endif
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGEREP,        atCmdHandleCGEREP, 0        // 10.1.19 Packet domain event reporting
+#endif
++CGCONTRDP,      atCmdHandleCGCONTRDP, 0    // 10.1.23 PDP context read dynamic parameters +CGCONTRDP
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
+
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGSCONTRDP,    atCmdHandleCGSCONTRDP, 0    // 10.1.24 Secondary PDP context read dynamic parameters
+#endif
+#endif
+
+#if defined(LTE_NBIOT_SUPPORT) || defined(LTE_SUPPORT)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGEQOS,        atCmdHandleCGEQOS, 0        // 10.1.26 Define EPS quality of service
+#endif
+#endif
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
++CEMODE,        atCmdHandleCEMODE, 0        // 10.1.28 UE modes of operation for EPS
+#if defined(LTE_NBIOT_SUPPORT) || defined(LTE_SUPPORT)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGEQOSRDP,     atCmdHandleCGEQOSRDP, 0     // 10.1.27 EPS quality of service read dynamic parameters
+#endif
+#endif
+#endif
+#if defined(LTE_NBIOT_SUPPORT) || defined(LTE_SUPPORT)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CSODCP,        atCmdHandleCSODCP, 0        // 10.1.43 Sending of originating data via the control plane +CSODCP
+#endif
+#endif
+#ifndef CONFIG_NET_SERVICE_REDUCE_MEMORY
++CGDATA,        atCmdHandleCGDATA, 0        // 10.1.12 Enter data state
+#endif
++CGAUTO,        atCmdHandleCGAUTO, 0        // 10.1.15 Automatic response to a network request for PDP context activation
+
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CGQREQ,        atCmdHandleCGQREQ, 0        // 10.1.4 Quality of service profile (requested)
++CGANS,         atCmdHandleCGANS, 0         // 10.1.16 Manual response to a network request for PDP context activation
+#endif
+#endif
++CGPDNSADDR,    atCmdHandleCGPDNSADDR, 0
+
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CRTDCP,        atCmdHandleCRTDCP, 0        // 10.1.44 Reporting of terminating data via the control plane +CRTDCP
+#endif
+
+
+#if defined(CONFIG_SUPPORT_INNER_DELTA_NV)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++DELTANV,       atCmdHandleMergeDeltaNV, 0     // read or write deltanv param
+#endif
+#endif
+
+#if defined(CONFIG_AT_QSCANF_SUPPORT)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++QSCANF,        atCmdHandleQSCANF, 0        // use to freq scan
+#endif
+#endif
+
+#ifndef CONFIG_SOC_8850
+#if defined(LTE_NBIOT_SUPPORT)
++NIPDATA, atCmdHandleNIPDATA, AT_CON_NOT_CLAC   // 17.7 send None-IP data
+#endif
+#endif
+
+#ifdef LTE_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++SETLOCK,       atCmdHandleSETLOCK, 0
++SETSTSEN,      atCmdHandleSETSTSEN,   0
++SETRATEPRIOR,  atCmdHandleSETRATEPRIOR, 0
+#endif
+#endif
+
+#if defined(CONFIG_SOC_8811) || defined(CONFIG_SOC_8821) || defined(CONFIG_CFW_DEBUG_IPFILTER)
++IPFLT,         atCmdHandleIPFLT, 0         // Filter IP packets inside CFW. DEBUG ONLY!!
+#endif
+
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++DPSD,          atCmdHandleDiscardPSData, AT_CON_NOT_CLAC
+#endif
+
+// filesystem
+#ifdef CONFIG_ATS_FS_SUPPORT
++FSDWNFILE,     atCmdHandleFSDWNFILE, 0     // Download file
++FSRDFILE,      atCmdHandleFSRDFILE, 0      // Read file
++FSRDBLOCK,     atCmdHandleFSRDBLOCK, 0     // Read file block
++FSDELFILE,     atCmdHandleFSDELFILE, 0     // Delete file
++FSMKDIR,       atCmdHandleFSMKDIR, 0       // Create directory
++FSRMDIR,       atCmdHandleFSRMDIR, 0       // Remove directory
++FSLSTFILE,     atCmdHandleFSLSTFILE, 0     // List file or directory
++FSLSTPART,     atCmdHandleFSLSTPART, 0     // List partition free space
++FSREMOUNT,     atCmdHandleFSREMOUNT, 0     // Remount as read-only or read-write
+#endif
+
+
+// debug
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
+^SWJTAG,        atCmdHandleSWJTAG, 0        // Switch JTAG pin mux
+^PMSTART,       atCmdHandlePMSTART, 0       // Start PM core
+^PMSTOP,        atCmdHandlePMSTOP, 0        // Stop PM core
+#endif
+^FORCEDNLD,     atCmdHandleFORCEDNLD, 0     // Reset to force download mode
++SPREF,         atCmdHandleSPREF, AT_CON_NOT_CLAC         // Reset to force download mode by Download tools
+#ifndef CONFIG_SOC_6760
+^TRACECTRL,     atCmdHandleTrace, 0         // Enable/disable trace
+^CALIBTRACECTRL,     atCmdHandleCalibTrace, 0         // Enable/disable trace when calib mode
++SYSNV,         atCmdHandleSYSNV, 0         // read/write sysnv
+#endif
+
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
+^SSIT,          atCmdHandleSSIT, 0
+#endif
+
+#ifndef CONFIG_SOC_6760
+^HEAPINFO,      atCmdHandleHEAPINFO, 0      // Show heap info
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
+^BLKDEVINFO,    atCmdHandleBLKDEVINFO, AT_CON_NOT_CLAC    // Show block device info
+#endif
+#endif
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
+^TIMEOUTABORT,  atCmdHandleTIMEOUTABORT, 0  // Trivial command to test timeout and abort
+^UPTIME,        atCmdHandleUpTime, 0        // Get up time
++UPTIME,        atCmdHandleUpTimePlus, 0    // Get up time
+#endif
+#if defined(CONFIG_SOC_8910)||defined(CONFIG_SOC_8850)
++SET7SRESET,    atCmdHandleSet7sReset, 0    // set powerkey 7s reset(1:true 0:false)
+#ifdef CONFIG_USB_DEVICE_SUPPORT
+//+USBSWITCH,     atCmdHandleUSBSWITCH, 0     // enable/disable usb function
+//+USBRMTWK,      atCmdHandleUSBRMTWK, 0      // usb remote wakeup
+#endif
+#endif
+#ifdef CONFIG_TWOLINE_WAKEUP_ENABLE
++SLEEPDELAY,    atCmdHandleMcuNotifySleep, 0,    //mcu notify module should into deepsleep
+#endif
+
+
+
+#ifdef CONFIG_FIBOCOM_SUPPORT_PWM_AUDIO
++PWMAUDIO, atcmd_pwmaudio, 0
+#endif
+
+#ifdef CONFIG_AT_EMMCDDRSIZE_SUPPORT
++EMMCDDRSIZE,     atCmdHandleEmmcDDRSize, 0    // read flash size and exram size
+#endif
++CMUXEND,       atCmdHandleCMUXEND, AT_CON_NOT_CLAC     // exit cmux mode forcedly
+
+#ifdef CONFIG_AT_AUDIO_SUPPORT
+#ifdef CONFIG_FIBOCOM_AT_AUDIO
++CRSL,          atCmdHandleCRSL, 0          // 8.21 Ringer sound level
++CLVL,          atCmdHandleCLVL, 0          // 8.23 Loudspeaker volume level
++CMUT,          atCmdHandleCMUT, 0          // 8.24 Mute control
++AUDCH,         atCmdHandleAUDCH, 0         // Set receiver, headset and loudspeaker channel
++CACCP,         atCmdHandleCACCP, 0         // Audio Codec Calibration Param
++CAVQE,         atCmdHandleCAVQE, 0         // Audio ZSP VQE Calibration Param
++CAPRE,         atCmdHandleCAPRE, 0         // Audio ZSP Pre -Processing Calibration Param
++CAPOST,        atCmdHandleCAPOST, 0        // Audio ZSP Post -Processing Calibration Param
++CAWTF,         atCmdHandleCAWTF, 0         // Write calibration param to flash
++CAIET,         atCmdHandleCAIET, 0         // Export calibration param from flash or import calibration param to flash
++CADTF,         atCmdHandleCADTF, 0         // dump PCM data to Tflash card
+#ifdef CONFIG_SOC_8850
++CADTL,         atCmdHandleCADTL, 0         // dump PCM data to log
+#endif
++CAVCT,         atCmdHandleCAVCT, 0         // version
++CANXP,         atCmdHandleCANXP, 0         //
++CAUDPLAY,      atCmdHandleCAUDPLAY, 0      // Play/stop/pause/resume audio file
+#ifdef CONFIG_AT_AUDIO_COMMAND_SUPPORT
++CAUDREC,       atCmdHandleCAUDREC, 0       // Voice call recording
++CDTMF,         atCmdHandleCDTMF, 0         // Local DTMF tone
+#endif
+#ifdef CONFIG_AT_AUDIO_POC_SUPPORT
++CAUDPOC,       atCmdHandleCAUDPOC, AT_CON_NOT_CLAC       // Poc test
+#endif
+#endif
+#ifdef CONFIG_AT_AUDIO_LB_SUPPORT
++LBTEST,        atCmdHandleLBTEST, 0        // Loopback test
+#endif
+
+#if defined(CONFIG_ATR_CREATE_DIAG) && defined(CONFIG_SOC_8850)
++SUPS,          atCmdHandleSUPS, AT_CON_NOT_CLAC
++SADM,          atCmdHandleSADM, AT_CON_NOT_CLAC
++PEINFO,        atCmdHandlePEINFO, AT_CON_NOT_CLAC
++SPADCVS,       atCmdHandleSPADCVS, AT_CON_NOT_CLAC
++SPENHA,        atCmdHandleSPENHA, AT_CON_NOT_CLAC
++SADMDSP,       atCmdHandleSADMDSP, AT_CON_NOT_CLAC
++CINGAIN,       atCmdHandleCINGAIN, AT_CON_NOT_CLAC
++COUTGAIN,      atCmdHandleCOUTGAIN, AT_CON_NOT_CLAC
++CRECSR,        atCmdHandleCRECSR, AT_CON_NOT_CLAC
+#endif
+#endif
+
+
+#ifdef CONFIG_ATS_UPDATE_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++UPDATE,            atCmdHandleUPDATE, 0            // Firmware update, data from AT
+#endif
+#endif
+
+#if defined(CONFIG_SOC_8910) || defined(CONFIG_SOC_8811) || defined(CONFIG_SOC_8821) || defined(CONFIG_SOC_8850)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CFGCIOT,           atCmdHandleCFGCIOT, 0           // NB static NVM
+#endif
+#endif
+#if defined(CONFIG_SOC_8910)||defined(CONFIG_SOC_8850)
+#if defined(CONFIG_SOC_8850)
++SPCLEANINFO,       atCmdHandleSPCLEANINFO, AT_CON_NOT_CALIB_MODE       // This command is used to clean history ba into for all rat.
++SPLTEDUMMYPARA,    atCmdHandleSPLTEDUMMYPARA, AT_CON_NOT_CALIB_MODE    // This command is used to dual-mode LTE parameters for LTE.
+#ifdef CONFIG_GSM_SUPPORT
++RRTMPARAM,         atCmdHandleRRTMPARAM, AT_CON_NOT_CALIB_MODE         // This command is used to dual-mode LTE parameters for GRR.
+#endif
+#else
++SPCLEANINFO,       atCmdHandleSPCLEANINFO, 0       // This command is used to clean history ba into for all rat.
+#ifdef CONFIG_GSM_SUPPORT
++SPLTEDUMMYPARA,    atCmdHandleSPLTEDUMMYPARA, 0    // This command is used to dual-mode LTE parameters for LTE.
++RRTMPARAM,         atCmdHandleRRTMPARAM, 0         // This command is used to dual-mode LTE parameters for GRR.
+#endif
+#endif
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CFGDFTPDN,         atCmdHandleCFGDFTPDN, 0
+#endif
+#endif
+
+#if defined(CONFIG_SOC_8910)|| defined(CONFIG_SOC_8811) || defined(CONFIG_SOC_8821) || defined(CONFIG_SOC_8850)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++VERCTRL,           atCmdHandleVERCTRL, 0
+#endif
+#endif
+
+
+#ifdef CONFIG_AT_DM_SUPPORT
++SELFREGISTER,      atCmdHandleSELFREGISTER, 0      // self-register flag
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
++SETDMADPPLATFORM,  atCmdHandleSETDMADPPLATFORM, 0  // set platform address
+#endif
+#elif defined(CONFIG_AT_DM_CUS_SUPPORT)
++QDMPCFG, AT_CmdFunc_QDMPCFG, 0
++QDMPCFGEX, AT_CmdFunc_QDMPCFGEX, 0
+#endif
+
+
+
+// NV
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++NVPC,          atCmdHandleNVPC, 0
++NVGV,          atCmdHandleNVGV, 0
+#endif
++RFCALIB,       atCmdHandleRFCALIB, 0
+#endif
+
+
+#ifdef CONFIG_AT_AP_CALL_CP_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++RFTEMPERATURE, atCmdHandleRFTEMPERATURE, 0
+#endif
+
+#if defined(CONFIG_SOC_8850)
++LED,           atCmdHandleLED, 0
+#endif
+#endif
+
+
+
+
+
+#ifdef CONFIG_AT_WIFISCAN_SUPPORT
+#ifdef CONFIG_AT_8850_WIFI_SENTEST_SUPPORT
++WIFION,      atCmdHandleWifiOpen,   0
++WIFIOFF,     atCmdHandleWifiClose,  0
++WIFISENTESTON, atCmdHandleWIFISENTESTON,  0
++WIFISENTESTOFF, atCmdHandleWIFISENTESTOFF,  0
++UWIFISENTEST,   atCmdHandleUWIFISENTEST, 0
++WIFISCAN,    atCmdHandleWIFISCAN,   0
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++GWIFISCAN, atCmdHandleGWIFISCAN, 0
+#endif
+#else
+//+WIFION,      atCmdHandleWifiOpen,   AT_CON_NOT_CLAC
+//+WIFIOFF,     atCmdHandleWifiClose,  AT_CON_NOT_CLAC
+//+WIFISCAN,      atCmdHandleWifiScan,   AT_CON_NOT_CLAC
+#ifdef CONFIG_AT_WIFI_SENSITIVITY_TEST_SUPPORT
+//+WIFISENTEST,   atCmdHandleWifiSensitivityTest, 0
+#endif
+#endif
+#endif
+
++SIMHOTSWAP,    atCmdHandleSIMHOTSWAP, 0      //set sim hot-plug function
+#if defined(CONFIG_FIBOCOM_BASE)
++SIMPHASE,         atCmdHandleGTSET,      0      //set sim hot-plut trigger mode
+#else
++GTSET,         atCmdHandleGTSET,      0      //set sim hot-plut trigger mode
+#endif
+#if !defined(CONFIG_ATR_NBONLY_API_SUPPORT) && !defined(CONFIG_NET_SERVICE_REDUCE_MEMORY)
++NETMSG,        atCmdHandleNETMSG,     0      //Get netinfo
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++GTCCINFO,      atCmdHandleGTCCINFO,   0      //inqury GSM/LTE service cell and neighbor cell
+#endif
+#endif
+
+
+#ifndef CONFIG_AT_SIM_REDUCE_MEMORY
+#if !defined (CONFIG_SOC_8811) && !defined (CONFIG_SOC_8821)
+#ifdef CONFIG_FS_UNET_LOG_ENABLE
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++UNINETLOG,   atCmdHandleUNINETLOG, 0
+#endif
+#endif
+#endif
+#endif
+
+
+
+#ifdef CONFIG_NVM_BACKUP_ENABLE
++CALIBSTATUS,   atCmdHandleCalibStatus, 0     // check calibration nv status
+#endif
+
+#if defined(CONFIG_GSM_SUPPORT)&&!defined(CONFIG_AT_SIM_REDUCE_MEMORY)
++T3302,         atCmdHandleT3302, 0
+#endif
+
+#if defined(CONFIG_SOC_8910)||defined(CONFIG_SOC_8850)
+#ifndef CONFIG_AT_SIM_REDUCE_MEMORY
++NCESIM,        atCmdHandleNCESIM, 0          // close or open network card authentication
++T3245,         atCmdHandleT3245, 0
++NSTGETRSSI,    atCmdHandleNSTGETRSSI, AT_CON_NOT_CLAC
++LOCREL,        atCmdHandleLOCREL, 0
++UMRWLR,        atCmdHandleUMRWLR, AT_CON_NOT_CALIB_MODE|AT_CON_NOT_CALIB_MODE   // unisoc meas report while local release
++SETLTEFRP,       atCmdHandleSETLTEFRP, 0
++SETRFFRP,        atCmdHandleSETRFFRP, 0
+#endif
++NSTCFG,        atCmdHandleNSTCFG, 0
++NST,           atCmdHandleNST, 0
+#endif
+
+#if defined(CONFIG_SOC_8850) || defined(CONFIG_SOC_8811) || defined(CONFIG_SOC_8821)
++GETUID,              atCmdHandleGetUid, 0    //Get soc id
+#endif
+
+
+#ifndef CONFIG_ATR_NBONLY_API_SUPPORT
+#ifndef CONFIG_AT_SIM_REDUCE_MEMORY
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CSSUP,               atCmdHandleCSSUP, AT_CON_NOT_CLAC
++CSRES,               atCmdHandleCSRES, AT_CON_NOT_CLAC
+#endif
+#endif
++COCSIM,              atCmdHandleCOCSIM, 0
+#endif
+#ifdef CONFIG_AT_UTEST_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++UTEST,               atCmdHandleUTEST, AT_CON_NOT_CLAC
++SETSIGQUA,           atCmdHandleSETSIGQUA,   AT_CON_NOT_CLAC
+#endif
+#endif
+
+#ifdef CONFIG_LPA_SUPPORT
++LPA,       atCmdHandleLPA, 0
+#endif
+
+#if defined(CONFIG_AT_U_CREATE_AT_CHANNEL) && defined(CONFIG_USB_DEVICE_SUPPORT)
+#ifdef CONFIG_SOC_8850
++UCREATEATCH,         atCmdUCreateAtChannel, AT_CON_NOT_CLAC
+#else
++UCREATEATCH,         atCmdUCreateAtChannel, 0
+#endif
+#endif
+
+
+
+#ifdef CONFIG_WDT_ENABLE
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++UWDTCTL,      atCmdUWdtCtlHandle, 0
+#endif
+#endif
++SYSWDTCTL,           atCmdSysWdtCtlHandle, AT_CON_NOT_CALIB_MODE
+
+
+#ifdef CONFIG_AT_ARMLOG_SUPPORT
++ARMLOG, atCmdHandleARMLOG, AT_CON_NOT_CLAC
++SPLOGLEVEL, atCmdHandleAT, AT_CON_NOT_CLAC
++SPDSPOP, atCmdHandleAT, AT_CON_NOT_CLAC
++SPPHYLOG, atCmdHandleAT, AT_CON_NOT_CLAC
++SPCAPLOG, atCmdHandleAT, AT_CON_NOT_CLAC
++SPCAPLEN, atCmdHandleAT, AT_CON_NOT_CLAC
+#endif
+
+#if defined (CONFIG_SOC_8811) || defined (CONFIG_SOC_8821) || defined (CONFIG_SOC_8850) && !defined(CONFIG_AT_IC_REDUCE_MEMORY)
++INFRARED, atCmdHandleINFRARED, 0          // infrared communication function
+#endif
+
+#ifdef CONFIG_DUAL_SIM_SUPPORT
++SETSIM,        atCmdHandleSetSim,0
+#endif
+
+#ifdef AT_EXT_CONF_SUPPORT
++CGU,         atCmdHandleCGU, AT_CON_NOT_CALIB_MODE
+#endif
+
+#ifdef TEST_INTEGRATE_AP_AT
++OFF,     AT_GC_CmdFunc_OFF_test, 0
+#endif
+
+#ifdef CONFIG_PAM_LTE_GNSS_WIFISCAN_SUPPORT
++CGNSSON, atCmdHandleCGNSSON, 0
++CGNSSRESTART, atCmdHandleCGNSSRESTART, 0
++CGNSSOFF, atCmdHandleCGNSSOFF, 0
++CGNSSR, atCmdHandleCGNSSR, 0
++CGNSSDMH, atCmdHandleCGNSSDMH, 0
++CGNSSST, atCmdHandleCGNSSST, 0
++CGNSSOLIF, atCmdHandleCGNSSOLIF, 0
++CGNSSD, atCmdHandleCGNSSD, 0
++CGNSSEPHSAVE, atCmdHandleCGNSSEPHSAVE, 0
++SPGPSTEST, atCmdHandleSPGPSTEST, 0
++LOCPRIOR, atCmdHandleLOCPRIOR,  0
++LOCSLEEP, atCmdHandleLOCSLEEP,  0
++LOCUSEAGNSS, atCmdHandleLOCUSEAGNSS, 0
++LOCGNSSRESUME, atCmdHandleLOCGNSSRESUME, 0
+#endif //CONFIG_PAM_LTE_GNSS_WIFISCAN_SUPPORT
+
+#ifdef CONFIG_ECID_POSITION_SUPPORT
++CMOLR,               atCmdHandleCMOLR, 0
++CMOLRE,              atCmdHandleCMOLRE, 0
++CMTLR,               atCmdHandleCMTLR, 0
++CMTLRA,              atCmdHandleCMTLRA, 0
+#endif
+
+#if defined(CONFIG_SOC_8910)||defined(CONFIG_SOC_8850) && !defined(CONFIG_NET_SERVICE_REDUCE_MEMORY)
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
+#ifndef CONFIG_FIBOCOM_DIDI
++QENG,          atCmdHandleQENG, AT_CON_NOT_CALIB_MODE // Get cell info
+#endif
+#endif
+#endif
+
+#endif //CONFIG_AT_CMD_SUPPORT
+
+#if defined(CONFIG_AUDIO_SET_LOOPBACK_GAIN_SUPPORT) && defined(CONFIG_SOC_8910)
++AUDLBGAIN,        atCmdHandleAUDLBGAIN,AT_CON_NOT_CLAC
+#endif
+
+#ifdef CONFIG_CONCAT_SMS_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++CONCATMSG,    atCmdHandleCONCATMSG, AT_CON_NOT_CALIB_MODE
+#endif
+#endif
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
++ISIM,          atCmdhHandleISIM, AT_CON_NOT_CALIB_MODE|AT_CON_NOT_CLAC
+#endif
+
+#ifdef CONFIG_USB_HOST_SUPPORT
++UsbHost,       atCmdHandleUsbHost, 0
++MTP,           atCmdHandleMTP, 0
++MassStorage,   atCmdHandleMassStorage, 0
++VIDEO,         atCmdHandleVIDEO, 0
+#endif
+
+#if defined(CONFIG_SOC_8910) || defined(CONFIG_SOC_8850) && !defined(CONFIG_AT_GENERAL_REDUCE_MEMORY)
++MOSRC,         atCmdHandleMOSRC, 0 // MO SMS RETRY COUNT
++WGM,           atCmdHandleSetWeakSignalMode, 0
++PBOT,          atCmdHandleSetPowerBoost, 0
+#endif
+
+#if defined(CONFIG_SOC_8910) || defined(CONFIG_SOC_8850)
++ULBCI,         atCmdHandleULBCI, 0   //Unisoc Lte Band Calibration Information
++CUSPPSM,       atCmdHandleCUSPPSM,     // customer private PSM
++CUSDLPSM,      atCmdHandleCUSDLPSM,    // customer downlink PSM parameters
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++ULB,           atCmdHandleULB, AT_CON_NOT_CALIB_MODE|AT_CON_NOT_CALIB_MODE   //unisoc lte band
+#endif
++GEA,           atCmdHandleGEA, 0
++EPSNCE,        atCmdHandleEPSNCE, 0
++ADCVOLT,       atCmdHandleADCVOLT, AT_CON_NOT_CLAC
+
+#endif
+
+#ifdef CONFIG_SOC_8850
+^UCMEM,         atCmdHandleUCMEM    //unisoc CP memory info
+#endif
+
+#ifdef  CONFIG_AT_EFUSEID_SUPPORT
++EFUSEID,           atCmdHandleEFUSEID, 0
+#endif
+
+#if defined(CONFIG_SOC_8850) && defined(CONFIG_TRUSTZONE_SUPPORT)
++TZTEST,       atCmdHandleTrustZoneTest,0
+#endif
+
+#if defined(CONFIG_SOC_8910) || defined(CONFIG_SOC_8850) && !defined(CONFIG_AT_GENERAL_REDUCE_MEMORY)
+#ifndef CONFIG_FIBOCOM_BASE
++USIMP,         atCmdHandleUSIMP, 0
+#endif
++UDFHP,        atCmdHandleUDFHP, 0
++URFB,         atCmdHandleURFB, 0 // Unisoc Rach Fail Bar
+#endif
+
+#ifndef CONFIG_AT_GENERAL_REDUCE_MEMORY
++MTSMSCLASS0,           atCmdHandleMTSMSCLASS0, 0
+#endif
+
+#ifdef CONFIG_MODEM_LTE_LIB
+^TRACELM,       atCmdhandleModemTRALimit, 0
+#endif
+
+
+#ifdef CONFIG_CFW_SMS_ME_SUPPORT
++USMSSFFM,        atCmdHandleUSMSSFFM, 0 // UNISOC sms SM full forward ME
+#endif
+
+#ifdef CONFIG_FIBOCOM_BASE
++RLOGLEVEL,     atcmd_loglevel, 0
++GTSET,         atcmd_gtset, 0
++TLPG,          atCmdHandleTLPG,0
++GTLPG,          atCmdHandleGTLPG,0
++TKEYPAD,       atCmdHandleTKEYPAD, 0
++TUART,         atCmdHandleTUART, 0
+#if defined CONFIG_FIBOCUS_HAIKANG_FEATURE
++GTDEBOUNCE,    atCmdHandleGTDEBOUNCE, 0
++GTCELLINFO,    atcmd_hk_gtcellinfo, 0
++GTCELLSCAN,    atcmd_hk_gtcellscan, 0
++GTUSBSLEEPEN,  atCmdHandleGTUSBSLEEPEN,0
+#endif
++GTREJCAUSE,    atcmd_gtrejcause, 0
++GTRRCREL,    atcmd_gtrrcrelcfg,0  // locrel configure
++GTSETRRM,    atcmd_gtsetrrm,   0
+
++USIMP,         atCmdHandleUSIMP, 0
+
+
+/*OPENCPU test*/
+#ifdef CONFIG_FIBOCOM_OPENCPU
++OPENCPU,       atCmdHandleOPENCPU, 0
+#endif
+
+/* TCP */
+#if defined(CONFIG_FIBOCOM_AT_TCPIP_SUPPORT)
++MIPCALL,       atcmd_mipcall, 0
++MIPOPEN,       atcmd_mipopen, 0
++MIPCONF,       atcmd_mipconf, 0
++MIPKEEPCONF,   atcmd_mipkeepconf, 0
++MIPSEND,       atcmd_mipsend, 0
++MIPPUSH,       atcmd_mippush, 0
++MIPFLUSH,      atcmd_mipflush, 0
++MIPODM,        atcmd_mipodm, 0
++MIPSETS,       atcmd_sets, 0
++MIPDSETS,      atcmd_dsets, 0
++MIPREAD,       atcmd_mipread, 0
++MIPCLOSE,      atcmd_mipclose, 0
++MIPDCNT,       atcmd_mipdcnt, 0
+//+MIPSENDFILE,   atcmd_mipsendfile, 0
+//+PDNTIMERINFO,  atcmd_pdntimerinfo, 0
++MPING,           atcmd_miping, 0
++MSDNS,           atcmd_msdns, 0
++MSV6DNS,         atcmd_msdnsv6,0
++MIPDNS,          atcmd_mipdns, 0
++MIPNTP,          atcmd_mipntp, 0
++GTDNS,           atcmd_gtdns, 0
++MIPCFG,           atcmd_mipcfg, 0
+#endif
+
+/* HTTP */
+#ifdef CONFIG_FIBOCOM_AT_HTTP_SUPPORT
++HTTPSET,        atcmd_httpset,0
++HTTPACT,        atcmd_httpact,0
++HTTPREAD,       atcmd_httpread,0
++HTTPHEAD,       atcmd_httphead,0
++HTTPSEND,       atcmd_httpsend,0
++HTTPDATA,       atcmd_httpdata,0
++HTTPPLAY,       atcmd_httpplay,0
+#ifdef CONFIG_FIBOCOM_AEP_ENABLE
++GTHTTPPOST,        atcmd_gthttppost,0
++GTHTTPHEAD,        atcmd_gthttphead,0
++GTHTTPHEADATA,     atcmd_gthttpheaddata,0
++GTHTTPREQUESTDATA, atcmd_gthttprequestdata,0
+#endif
+#endif
+
+#ifdef CONFIG_DUAL_SIM_SUPPORT
+/* DSDS */
++GTDUALSIM,   atCmdHandleGTDUALSIM, 0
++GTDATASIM,   atCmdHandleGTDATASIM, 0
++GTSWITCHSIM, atCmdHandleGTSWITCHSIM, 0
+#else
++GTDUALSIM, atCmdHandleGTSETSIMSLOT, 0
++GTSWITCHSIM, atCmdHandleGTSWITCHSLOT, 0
+#endif
+
+/* SMS */
++SMMFULL,       atCmdHandleSMMFULL, 0
+
+/*Lock band or cell*/
++GTACT,        atCmdHandleGTACT, 0
++GTCELLLOCK,   atCmdHandleGTCELLLOCK, 0
+/* FOTA */
++GTFOAT,       atCmdHandleGTFOAT, 0
+
++GTOTA,        atcmd_gtota,  0
++GTAPPOTA,     atCmdHandleGTAPPOTA, 0
++GTUDSET,      atCmdHandleGTUDSET, 0
++GTUD,         atCmdHandleGTUD, 0
+
++GTBOOTDL,      atCmdHandleGTBOOTDL,  0
+#ifdef CONFIG_FIBOCOM_XINGUODU
++GTPKGVER,       atCmdHandleGTPKGVER_XGD,  0
+#else
++GTPKGVER,       atCmdHandleGTPKGVER,  0
+#endif
+
+
++WRIM,          atCmdHandleWRIM,        0
++GTWAKE,        atCmdHandleGTWAKE,      0
++GTLPMMODE,     atCmdHandleGTLPMMODE,   0
++GTPMTIME,      atCmdHandleGTPMTIME,    0
+#ifndef CONFIG_FIBOCOM_AT_QUE_FEATURE
+S24,            atCmdHandleATS24,       0
+#endif
++SLPMODE,       atCmdHandleSLPMODE,     0
++CHARGE,        atCmdHandleCHARGE,      0
++CHARGETEST,    atCmdHandleCHARGETEST,  0
++GTCHARGE,      atCmdHandleGTCHARGE,    0
+
+/* MQTT */
+#ifdef CONFIG_FIBOCOM_AT_MQTT_SUPPORT
+#ifdef CONFIG_FIBOCOM_AT_MQTT_CLOUD_SUPPORT
++MQTTAUTHCFG,        atcmd_mqttauthcfg, 0
++MQTTAUTHDYN,        atcmd_mqttauthdyn, 0
+#endif
++MQTTUSER,           atcmd_mqttuser, 0
++MQTTWILL,           atcmd_mqttwill, 0
++MQTTOPEN,           atcmd_mqttopen, 0
++MQTTPUB,            atcmd_mqttpub, 0
++MQTTSUB,            atcmd_mqttsub, 0
++MQTTUNSUB,          atcmd_mqttunsub, 0
++MQTTCLOSE,          atcmd_mqttclose, 0
++MQTTCONF,           atcmd_mqttconf,0
++MQTTREAD,           atcmd_mqttread, 0
+//+MQTTSNCID,        atcmd_mqttsncid, 0
+//+MQTTTOPICUD,      atcmd_mqttwtopicud, 0
+//+MQTTWMSGUD,       atcmd_mqttwmsgud, 0
+//+MQTTSNREG,        atcmd_mqttsnreg, 0
+#endif
+    
++TGPIO,             atCmdHandleTGPIO, 0
++MMAD,              atCmdHandleMMAD,  0
++GTWDTRST,           atCmdHandleGTWDTRST,0
++CFSN,              atCmdHandleCFSN,  0
++CFSN2,             atCmdHandleCFSN2, 0
++GTSN,              atCmdHandleGTSN,  0
+//+GTIMEI,            atCmdHandleGTIMEI,0
+//+GTWRSN,            atCmdHandleGTWRSN, 0
+/* USBMODE */
++GTUSBMODE,         atCmdHandleGTUSBMODE,  0
+
+//EXTFLASH
++EXTFLASH,           atCmdHandleExtSpiflashTest, 0
+/* EFS */
+#ifdef CONFIG_FIBOCOM_AT_EFS_SUPPORT
++GTBACKUPDUT,      atCmdHandleGTBACKUPDUT, 0      // Backup the EFS file
++SELFRECOVER,      atCmdHandleSELFRECOVER, 0     // Recovery the EFS file
++RECOVERCOUNT,     atCmdHandleRECOVERCOUNT, 0     // Query recovery count
+#endif
+
+/* FTP */
+#ifdef CONFIG_FIBOCOM_AT_FTP_SUPPORT
++FTPOPEN,       atcmd_ftpopen,   0
++FTPPUT,        atcmd_ftpput,    0
++FTPGET,        atcmd_ftpget,    0
++FTPRECV,       atcmd_ftprecv,   0
++FTPRETR,       atcmd_ftpretr,   0
++FTPSTOR,       atcmd_ftpstor,   0
++FTPLIST,       atcmd_ftplist,   0
++FTPCWD,        atcmd_ftpcwd,    0
++FTPDEL,        atcmd_ftpdel,    0
++FTPMKD,        atcmd_ftpmkd,    0
++FTPCDUP,       atcmd_ftpcdup,   0
++FTPSYST,       atcmd_ftpsyst,   0
++FTPRMD,        atcmd_ftprmd,    0
++FTPSTAT,       atcmd_ftpstat,   0
++FTPREN,        atcmd_ftpren,    0
++FTPPWD,        atcmd_ftppwd,    0
++FTPNOOP,       atcmd_ftpnoop,   0
++FTPINFO,       atcmd_ftpinfo,   0
++FTPREST,       atcmd_ftprest,   0
++FTPCLOSE,      atcmd_ftpclose,  0
++FTPMODE,       atcmd_ftpmode,   0
++FTPDL,         atcmd_ftpdl,     0
++FTPUPL,        atcmd_ftpupl,    0
++FTPCACHE,      atcmd_ftpcache,  0
++FTPSIZE,       atcmd_ftpsize,   0
+#endif
+
+#ifdef CONFIG_FIBOCOM_LBS_SUPPORT
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++GTGIS,           atcmd_gtgis, 0
++GTKEY,           atcmd_gtkey, 0
+#endif
+#endif
+
+#ifdef CONFIG_TTS_SUPPORT
++GTTS,     atCmdHandleGTTS, 0    // GTTS
++GTTSSP,   atCmdHandleGTTSSPEED,0 //GTTS speed
++GTTSPH,   atCmdHandleGTTSPITCH,0 //GTTS pitch
+#endif
+
+/* FFS */
+#ifdef CONFIG_FIBOCOM_AT_FFS_SUPPORT
++GTFOPEN,       atcmd_gtfopen,  0
++GTFCLOSE,      atcmd_gtfclose, 0
++GTFREAD,       atcmd_gtfread,  0
++GTFWRITE,      atcmd_gtfwrite, 0
++GTFSEEK,       atcmd_gtfseek,  0
++GTFSIZE,       atcmd_gtfsize,  0
++GTFDELETE,     atcmd_gtfdelete,0
++GTFLIST,       atcmd_gtflist,  0
++GTFRENAME,     atcmd_gtfrename,0
++GTFDLF,        atcmd_gtfdlf,   0
+#endif
+&V,             atCmdHandleAndV,0
++CPWROFF,       atCmdHandleCPWROFF,0
+
+#ifdef CONFIG_AT_AUDIO_SUPPORT
+#ifdef CONFIG_FIBOCOM_AT_AUDIO
++MAVOL,         atCmdHandleMAVOL, 0
++CALM,          atCmdHandleCALM, 0
++MMICG,         atCmdHandleMMICG, 0
+
+#ifdef CONFIG_AUDIO_VOICE_ENABLE
++MATONE,        atCmdHandleMATONE, 0
+#endif
+
++MAPATH,        atCmdHandleMAPATH
+#endif
+#endif
+
+/* SIM */
++MSMPD,         atCmdHandleMSMPD, 0
++GTUSIM,        atCmdHandleGTUSIM, 0
++GTMLV,          atCmdHandleGTMLV, 0
++QSIMDET,       atCmdHandleQSIMDET, 0
+#ifdef CONFIG_FIBOCOM_AT_SSL_SUPPORT
++GTSSLFILE,     atcmd_ssl_GTSSLFILE, 0
++GTSSLMODE,     atcmd_ssl_GTSSLMODE, 0
++GTSSLERR,      atcmd_ssl_GTSSLERR, 0
++GTSSLVER,      atcmd_ssl_GTSSLVER, 0
++GTSSLCIPHER,   atcmd_ssl_GTSSLCIPHER, 0
+#endif
+
+#ifndef CONFIG_FIBOCOM_AT_QUE_FEATURE
++CBAUD,         atCmdHandleCBAUD, 0
+#endif
+&K,             atCmdHandleAndK,  0
+&C,             atCmdHandleAndC,  0
+
+/* AUDIO */
+#ifdef CONFIG_AT_AUDIO_SUPPORT
+#ifdef CONFIG_FIBOCOM_AT_AUDIO
++AUDPLAY,       atCmdHandleAUDPLAY, 0
++AUDWR,         atCmdHandleAUDWR, 0
++AUDREC,        atCmdHandleAUDREC, 0
++AUDRM,         atCmdHandleAUDRM, 0
++AUDSTATUS, atCmdHandleGetAudStatus, 0
++AUDSTREAMPLAY, atCmdHandleAUDSTREAMPLAY,0
++MAI2SY,        atCmdHandleMAI2SY, 0        // Config external codec mode
+#endif
++FILELOAD,      atcmd_gtfdlf,0
+#endif
+
+#if defined(CONFIG_FIBOCOM_AT_ONENET_SUPPORT)
++MIPLCFG,           atcmd_miplcfg, 0
++MIPLCREATE,        atcmd_miplcreate, 0
++MIPLDELETE,        atcmd_mipldelete, 0
++MIPLOPEN,          atcmd_miplopen, 0
++MIPLCLOSE,         atcmd_miplclose, 0
++MIPLADDOBJ,        atcmd_mipladdobj, 0
++MIPLDELOBJ,        atcmd_mipldelobj, 0
++MIPLNOTIFY,        atcmd_miplnotify, 0
++MIPLREADRSP,       atcmd_miplreadresp, 0
++MIPLWRITERSP,      atcmd_miplwritersp, 0
++MIPLEXECUTERSP,    atcmd_miplexecutersp, 0
++MIPLOBSERVERSP,    atcmd_miplobserversp, 0
++MIPLDISCOVERRSP,   atcmd_mipldiscoverrsp, 0
++MIPLPARAMETERRSP,  atcmd_miplparameterrsp, 0
++MIPLUPDATE,        atcmd_miplupdate, 0
++MIPLVER,           atcmd_miplver, 0
+#endif
+
+
+#ifdef CONFIG_FIBOCOM_AT_E_CLOUD_SUPPORT
++GTLWCTOPEN,   atCmdHandleGTLWCTOPEN, 0
++GTLWCTUPDATE, atCmdHandleGTLWCTUPDATE, 0
++GTLWCTSEND,   atCmdHandleGTLWCTSEND, 0
++GTLWCTREAD,   atCmdHandleGTLWCTREAD, 0
++GTLWCTDEL,    atCmdHandleGTLWCTDEL, 0
+#endif
+
+
+#ifdef CONFIG_FIBOCOM_SWEEP_CODE
++CAMOPEN,    AT_CmdFunc_CAMOPEN, 0
++CAMCLOSE,   AT_CmdFunc_CAMCLOSE, 0
++CAMDECODE,  AT_CmdFunc_CAMDECODE, 0
++CODETYPE,   AT_CmdFunc_CODETYPE, 0
++AUTHCODE,   AT_CmdFunc_AUTHCODE, 0
++CAMLED,     AT_CmdFunc_CAMLED, 0
++CAMAPPVER,  AT_CmdFunc_CAMAPPVER, 0
++CAMREGS,    atCmdHandleCamReg, 0
++CAMGETLUMA, atCmdHandleCamGetLuma, 0
++GETLIBV,    atCmdHandleGetLibVer, 0
++SETBARCODE, atCmdHandleSetBarCode, 0
++CAMGETNAME, atCmdHandleCamGetName, 0
++SCAUTH, atCmdHandleAuthCode, 0
+#ifdef CONFIG_MC669_CN_19_02_CHUANSHENYU
++QCAMOPEN,    AT_CmdFunc_CAMOPEN, 0
++QCAMCLOSE,   AT_CmdFunc_CAMCLOSE, 0
++QCAMCFG,     atCmdHandleAT, 0
++QCAMIDFY,   AT_CmdFunc_CAMDECODE, 0
++QCAMAPPVER,  atCmdHandleGetLibVer, 0
+#endif
+#endif
+
+#ifdef CONFIG_FIBOCOM_AT_HT_SUPPORT
++GTHBEN,      atcmd_gthben,    0
++GTHBEAT,     atcmd_gthbeat,   0
++GTHBTIME,    atcmd_gthbtime,  0
+#endif
++MGAUTH,      atCmdHandleMGAUTH, 0
++RGBIB,       atCmdHandleRGBIB,  0
++GTFMODE,     atCmdHandleGTFMODE,    0
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++BIPOPENCH,   atCmdHandleBIPOPENCH, 0 
+#endif
+#ifdef CONFIG_FIBOCOM_AT_GNSS_SUPPORT
++GTGPSPOWER,  atcmd_gtgpspower,   0
++GTGPS, atcmd_gtgps,    0
++GTGPSCFG,  atcmd_gtgpscfg, 0
++GTGPSNMEACFG,atcmd_gtgpsnmeacfg, 0
++GTGPSNMEAFREQ, atcmd_gtgpsnmeafreq,    0
++GTGPSEPO,      atcmd_gtgpsepo, 0
+
+#ifdef CONFIG_PAM_LTE_GNSS_WIFISCAN_SUPPORT
++GTGPSPRIOR, atCmdHandleGTGPSPRIOR, 0
+#endif
+
+#ifdef CONFIG_FIBOCOM_EXTERNAL_GNSS_SUPPORT
++GTGPSSET,     atcmd_gtgpsset, 0
++GTAGPSSERV,   atcmd_gtagpsserv, 0
++GTGNSSOTA,    atcmd_gtgnssoat, 0
++GTGNSSVER,    atcmd_gtgnssver, 0
+#endif
+#endif
+
+#ifdef CONFIG_FIBOCOM_MULTI_PDN
++MIPPDNCFG, atcmd_mippdncfg, 0
+#endif
+
+#ifdef CONFIG_FIBOCOM_AT_RNDIS_SUPPORT
++GTRNDIS,       atCmdHandleGTRNDIS, 0
+#if defined CONFIG_FIBOCUS_HAIKANG_FEATURE
++GTLANIPCFG,        atCmdHandleGTLANIPCFG, 0
++GTPORTMODE,        atCmdHandleGTPORTMODE, 0
+#endif
+
+#endif
+
++GTAUTOCONNECT,        atCmdHandleGTAUTOCONNECT, 0
+
++MSTART,  atCmdHandleMSTART, 0
+
+
++GTCPIN,        atCmdHandleGTCPIN, 0
++MTSM,          atCmdHandleMTSM, 0
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++GTWIFISCAN, atCmdHandleGTWIFISCAN, 0
++GETAPINFO, atCmdHandleGETAPINFO, 0
+#endif
+#ifdef CONFIG_FIBOCOM_AEP_ENABLE
++AEPLOGIN, atcmd_aeplogin
++AEPADDR, atcmd_aepaddr
++AEPLOGOUT, atcmd_aeplogout
++AEPSEND, atcmd_aepsend
++AEPACK, atcmd_aepsend_ack
++AEPDEVICEINFO, atcmd_aepdeviceinfo
+#endif
+
+#ifdef CONFIG_FIBOCOM_SDMMC_SUPPORT
+#ifdef CONFIG_FIBOCOM_DRIVER_TEST_SUPPORT
++TSDMMC, atcmd_tsdmmc
+#endif
+#endif
+
+#ifdef CONFIG_FIBOCOM_CHARGE_SUPPORT
+#ifdef CONFIG_FIBOCOM_DRIVER_TEST_SUPPORT
++TCHARGE, atcmd_tcharge
+#endif
+#endif
+
+#if defined(CONFIG_FIBOCOM_AT_UNIMQTT_SUPPORT)
++UNIKEYINFOM, atcmd_unikeyinfom, 0
++UNIDELKEYINFOM, atcmd_unidelkeyinfom, 0
++UNIKEYINFO, atcmd_unikeyinfo, 0
++UNIDELKEYINFO, atcmd_unidelkeyinfo, 0
++UNICERTINFO, atcmd_unicertinfo, 0
++UNISHCERTINFO, atcmd_unishcertinfo, 0
++UNIDELCERTINFO, atcmd_unidelcertinfo, 0
++UNIMQTTCON, atcmd_unimqttcon, 0
++UNIMQTTDISCON, atcmd_unimqttdiscon, 0
++UNIMQTTSTATE, atcmd_unimqttstate, 0
++UNIMQTTSUB, atcmd_unimqttsub, 0
++UNIMQTTPUB, atcmd_unimqttpub, 0
++UNIMQTTBINDSUB, atcmd_unimqttbindsub, 0
++UNIMQTTBIND, atcmd_unimqttbind, 0
++UNIMQTTSHADOWSUB, atcmd_unimqttshadowsub, 0
++UNIMQTTSHADOWGET, atcmd_unimqttshadowget, 0
++UNIMQTTSHADOWPUB, atcmd_unimqttshadowpub, 0
++UNIPSMSET, atcmd_unipsmset, 0
+#endif
+
+
++ANTCMD,       atcmd_antcmd, 0
++ANT_INFO,     atcmd_ant_info, 0
++ALOG,         atcmd_alog, 0
++ADUMP,        atcmd_adump, 0
+#ifdef CONFIG_FIBOCOM_OPENCPU
++APP,          atcmd_app, 0
+#endif
+#if !defined(CONFIG_FIBOCOM_FLASH_4M) || !defined(CONFIG_FIBOCOM_OPENCPU)
++SECUREQUERY,  atcmd_securequery, 0
+#endif
+#ifndef CONFIG_FIBOCOM_OPENCPU
++CLOUDAUTH, atcmd_cloudauth, 0
++CLOUDCONN, atcmd_cloudconn, 0
++CLOUDSUB, atcmd_cloudsub, 0
++CLOUDPUB, atcmd_cloudpub, 0
++CLOUDUNSUB, atcmd_cloudunsub, 0
++CLOUDDISCONN, atcmd_clouddisconn, 0
++CLOUDTLSENABLE, atcmd_cloudtlsenable, 0
+#endif
+#ifdef CONFIG_FIBOCOM_AT_HT_XGAN_SUPPORT
++ENTERSLEEPHEX, atcmd_entersleephex, 0
++ENTERSLEEP, atcmd_entersleep, 0
++ENTERSLEEPCFG, atcmd_entersleepcfg, 0
++ENTERSLEEP2, atcmd_entersleep2, 0
++ENTERSLEEPCFG2, atcmd_entersleepcfg2, 0
+#endif
+
++MCELL,       atCmdHandleMCELL, 0
+
+#ifdef CONFIG_FIBOCOM_BLE_SUPPORT
++GTMAC,         atCmdHandleGTMAC,0
++GTBTEN,    atCmdHandleBLEEN,0
++GTBLEVER,    atCmdHandleBLEVER,0
++GTBLEPADD,    atCmdHandleBLEPADD,0
++GTBLERADD,    atCmdHandleBLERADD,0
++GTBLESETNM,    atCmdHandleBLENM,0
++GTBLEDISCON,    atCmdHandleBLEDISCON,0
++GTBLESTAT,    atCmdHandleBLESTAT,0
++GTBLEADVEN,    atCmdHandleBLEADVEN,0
++GTBLESETADV,    atCmdHandleBLESETADV,0
++GTBLEADVDATA,    atCmdHandleBLEADVDATA,0
++GTBLERSPDATA,    atCmdHandleBLERSPDATA,0
++GTBLESDDATA,    atCmdHandleBLESDDATA,0
++GTBLEMTU,      atCmdHandleBLEMTU,0
++GTBLEPRMTU,    atCmdHandleBLEPRMTU,0
++GTBLEUUID,     atCmdHandleBLEUUID,0
++GTBLESLEEP,    atCmdHandleBLESLEEP,0
++GTBTTEST,    atCmdHandleBTTEST,0
++GTECOTA,    atcmd_ecota,0
++GTBLETEST,    atCmdHandleBLETEST,0
++GTBLEAUTH,    atCmdHandleBLEAUTH,0
++GTBLEUUIDATTR,    atCmdHandleBLEUUIDATTR,0
++GTBLESEND,    atCmdHandleBLESEND,0
++GTBLEREADRSP,    atCmdHandleBLEREADRSP,0
++GTBLEBONDCTRL,	 atCmdHandleBLEBONDCTRL,0
+#endif
+
+#ifdef CONFIG_FIBOCOM_ALIPAY_SDK
++ALIPAYCFG, atcmd_alipay_cfg, 0
++ALIPAYOPEN, atcmd_alipay_open, 0
++ALIPAYSHUT, atcmd_alipay_close, 0
++ALIPAYDID, atcmd_alipay_did, 0
++ALIPAYSIGN, atcmd_alipay_sign, 0
++ALIPAYREP, atcmd_alipay_rep, 0
++ALIPAYPINFO, atcmd_alipay_pinfo, 0
++ALIPAYACT, atcmd_alipay_act, 0
++ALIPAYUTC, atcmd_alipay_utc, 0
++ALIPAYVER, atcmd_alipay_ver, 0
+#endif
+
+#ifdef CONFIG_FIBOCOM_BOARD_ID_ENABLE
++GTBDID, atCmdHandleGTBDID, 0
+#endif
+
++GTSTATIS, atCmdHandleGTSTATIS, 0
+
+#ifdef CFW_VOLTE_SUPPORT
+#if !defined(CONFIG_FIBOCOM_RILI_FEATURE)
++CAVIMS,      atCmdHandleCAVIMS, 0
+#endif
+#endif
+#ifdef CONFIG_FIBOCOM_UNICOM_LWM2M_SUPPORT
++UNILWCFG, atcmd_unilwcfg, 0
++UNILWREG, atcmd_unilwreg, 0
++UNILWUNREG, atcmd_unilwunreg, 0
++UNILWSEND, atcmd_unilwsend, 0
++UNILWUPDATE, atcmd_unilwupdate, 0
++UNILWSTATE, atcmd_unilwstate, 0
++UNILWVER, atcmd_unilwver, 0
+#endif
+
+#if defined(CONFIG_FIBOCOM_AT_WEBSOCKET_SUPPORT)
++GTWSOPEN, fibocom_websocket_WSOPEN, 0
++GTWSSEND, fibocom_websocket_WSSEND, 0
++GTWSCLOSE, fibocom_websocket_WSCLOSE, 0
++GTWSRSET, fibocom_websocket_WSRSET, 0
++GTWSREAD, fibocom_websocket_WSREAD, 0
++GTWSHEAD, fibocom_websocket_WSHEAD, 0
+#endif
+
++fiboEnterFTest, atCmdHandleFiboEnterFTest, 0
++GTOPENSDKVER, atCmdHandleGTOPENSDKVER,0
+
+#if defined(CONFIG_FIBOCOM_ADC_WAKEUP_HOST)
++QADC, atCmdHandleQADC, 0
++RICFG, atCmdHandleRICFG, 0
++ADCDET, atCmdHandleADCDET, 0
++GTVRICTR, atCmdHandleGTVRICTR, 0
++VRICTR, atCmdHandleGTVRICTR, 0
+#endif
+#if defined(CONFIG_FIBOCOM_PIR_WAKEUP_HOST)
++PIRCFG, atCmdHandlePIRCFG, 0
++TIME,  atCmdHandleTIME, 0
+#endif
+#endif /* CONFIG_FIBOCOM_BASE */
++TESTCUS,    atCmdHandleTESTCUS, 0
++APPIMGVER,   atCmdHandleAPPIMGVER, 0
++GTCUSTDATAVER,   atCmdHandleGTCUSTDATAVER, 0
+#if defined (CONFIG_FIBOCOM_BASE ) && defined (CONFIG_FIBOCOM_DIDI)
++QICSGP,       atCmdHandleQICSGP, 0
++QIACT,        atCmdHandleQIACT, 0
++QIDEACT,      atCmdHandleQIDEACT, 0
++QIOPEN,       atCmdHandleQIOPEN, 0
++QIRD,         atCmdHandleQIRD, 0
++QISEND,       atCmdHandleQISEND, 0
++QISENDEX,     atCmdHandleQISENDEX, 0
++QICLOSE,      atCmdHandleQICLOSE, 0
++QISTATE,      atCmdHandleQISTATE, 0
++QENG,         atCmdHandleQENGX, 0
+
++DIDIDUMP,     atCmdHandleDIDIDUMP, 0
++DIDIFSLSTFILE,     atCmdHandleDIDIFSLSTFILE, 0
+
++MEDCR,   atCmdHandleMEDCR, 0
+
+#if defined(CONFIG_FIBOCUSTOM_DIDI_TEST)
++GTTESTDIDIVER, atCmdHandleGTTESTDIDIVER, 0
++GTTESTCMSISFREQ, atCmdHandleCMSISFREQ, 0
++GTTESTCMSISDELAY, atCmdHandleCMSISDELAY, 0
++GTTESTCMSISTHREADNEW, atCmdHandleCMSISTHREADNEW, 0
++GTTESTCMSISTHREADNAME, atCmdHandleCMSISTHREADNAME, 0
++GTTESTCMSISTHREADEXIT, atCmdHandleCMSISTHREADEXIT, 0
++GTTESTCMSISMUTEXNEW, atCmdHandleCMSISMUTEXNEW, 0
++GTTESTCMSISMUTEXACQ, atCmdHandleCMSISMUTEXACQ, 0
++GTTESTCMSISMUTEXREL, atCmdHandleCMSISMUTEXREL, 0
++GTTESTCMSISMUTEXDEL, atCmdHandleCMSISMUTEXDEL, 0
++GTTESTCMSISSEMAPHORENEW, atCmdHandleCMSISSEMAPHORENEW, 0
++GTTESTCMSISSEMAPHOREACQ, atCmdHandleCMSISSEMAPHOREACQ, 0
++GTTESTCMSISSEMAPHOREREL, atCmdHandleCMSISSEMAPHOREREL, 0
++GTTESTCMSISSEMAPHOREDEL, atCmdHandleCMSISSEMAPHOREDEL, 0
++GTTESTCMSISQUEUENEW, atCmdHandleCMSISQUEUENEW, 0
++GTTESTCMSISQUEUEPUT, atCmdHandleCMSISQUEUEPUT, 0
++GTTESTCMSISQUEUEGET, atCmdHandleCMSISQUEUEGET, 0
++GTTESTCMSISQUEUEGETC, atCmdHandleCMSISQUEUEGETC, 0
++GTTESTCMSISQUEUEDEL, atCmdHandleCMSISQUEUEDEL, 0
++GTTESTDIDINTPSERVER, atCmdHandleDIDINTPSERVER, 0
++GTTESTDIDINTPSYNC, atCmdHandleDIDINTPSNYC, 0
++GTTESTDIDILOG, atCmdHandleDIDILOG, 0
++GTTESTDIDILOGUART, atCmdHandleDIDILOGUART, 0
++GTTESTDIDILOGTRACE, atCmdHandleDIDILOGTRACE, 0
++GTTESTDIDILOGALL, atCmdHandleDIDILOGALL, 0
++GTTESTDIDIREBOOT, atCmdHandleDIDIREBOOT, 0
++GTTESTDIDIWKUP, atCmdHandleGTTESTDIDIWKUP, 0
++GTTESTDIDIGPIO, atCmdHandleGTTESTDIDIGPIO, 0
++GTTESTDIDIAUDIO, atCmdHandleGTTESTDIDIAUDIO, 0
+//+GTTESTDIDITICK, atCmdHandleGTTESTDIDITICK, 0
++GTTESTDIDIPWR, atCmdHandleGTTESTDIDIPWR, 0
++GTTESTFS, atCmdHandleGTTESTFS, 0
++GTTESTDATACALL, atCmdHandleGTTESTDATACALL, 0
++GTTESTSIM, atCmdHandleGTTESTSIM, 0
++GTTESTFLASH, atCmdHandleGTTESTFLASH, 0
++GTTESTCPUUSAGE,     atCmdHandleGTTESTCPUUSAGE, 0
++DNETWORK, atCmdHandleDNETWORK, 0
++GTTESTSIM,   atCmdHandleGTTESTSIM, 0
+#endif
+#ifdef CONFIG_FIBOCOM_AT_LWM2M_SUPPORT
++GTLWCONF, atcmd_gtlwconf, 0
++GTLWDEL, atcmd_gtlwdel, 0
++GTLWREADRESP, atcmd_gtlwreadresp, 0
++GTLWWRITERESP, atcmd_gtlwwriteresp, 0
++GTLWCEXECUTERESP, atcmd_gtlwcexecuteresp, 0
++GTLWNOTIFY, atcmd_gtlwnotify, 0
++GTLWADDOBJ, atcmd_gtlwaddobj, 0
++GTLWDELOBJ, atcmd_gtlwdelobj, 0
+#endif
+
+#endif

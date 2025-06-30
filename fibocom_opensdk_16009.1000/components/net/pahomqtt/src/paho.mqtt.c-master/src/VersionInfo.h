@@ -1,0 +1,3 @@
+
+#define BUILD_TIMESTAMP "2021-08-06"
+#define CLIENT_VERSION  "1.3.9"

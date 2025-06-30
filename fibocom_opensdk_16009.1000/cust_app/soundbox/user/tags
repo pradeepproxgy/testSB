@@ -1,0 +1,320 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIYUN_PLATFORM_EN	fb_config.h	15;"	d
+APP_VERSION	fb_config.h	8;"	d
+APP_VERSIONS_INFO	fb_config.h	7;"	d
+AUDIO_PLAY_EN	fb_config.h	267;"	d
+AW87359_EN	fb_config.h	205;"	d
+BAT_CHARGEING_INIT	fb_config.h	58;"	d
+BAT_CHARGEING_STA	fb_config.h	62;"	d
+BAT_CHARGEING_UNINIT	fb_config.h	61;"	d
+BAT_CHARGE_STAT1_INIT	fb_config.h	67;"	d
+BAT_CHARGE_STAT1_STA	fb_config.h	70;"	d
+BAT_CHARGE_STAT1_UNINIT	fb_config.h	69;"	d
+BAT_CHECK_EN	fb_config.h	39;"	d
+CHARGE_EN	fb_config.h	41;"	d
+CHARGE_STAT1_PIN	fb_config.h	66;"	d
+CHARGE_STAT2_PIN	fb_config.h	57;"	d
+CLOUD_PLATFORM_EN	fb_config.h	14;"	d
+Create_key_timer	key.c	/^static void Create_key_timer(void)$/;"	f	file:
+Create_led_timer	led.c	/^static void Create_led_timer(void)$/;"	f	file:
+DAC_CTRL_INIT	fb_config.h	172;"	d
+DAC_CTRL_PIN	fb_config.h	171;"	d
+DEV_INFO_SAVE_FS	fb_config.h	345;"	d
+EXT_BLE_EN	fb_config.h	341;"	d
+EXT_FLASH_EN	fb_config.h	340;"	d
+EXT_SERSON_EN	fb_config.h	347;"	d
+FAKE_POWR_ON	fb_config.h	27;"	d
+Free_key_timer	key.c	/^static void Free_key_timer(void)$/;"	f	file:
+Free_led_timer	led.c	/^static void Free_led_timer(void)$/;"	f	file:
+GREENLED_INIT	fb_config.h	322;"	d
+GREENLED_OFF	fb_config.h	332;"	d
+GREENLED_ON	fb_config.h	330;"	d
+HTTP_EN	fb_config.h	43;"	d
+IO_KEY1_PIN	key.h	27;"	d
+IO_KEY_EN	fb_config.h	95;"	d
+Io_key_init	key.c	/^void Io_key_init(void)$/;"	f
+Io_key_scan	key.c	/^void Io_key_scan(void) \/\/ 10ms调用$/;"	f
+Io_key_uninit	key.c	/^void Io_key_uninit(void)$/;"	f
+KEY0_STA	key.h	31;"	d
+KEY2_STA	key.h	32;"	d
+KEY_HOLD_TIMES	key.h	38;"	d
+KEY_LONG_HOLD_TIMES	key.h	39;"	d
+KEY_LONG_TIMES	key.h	37;"	d
+KEY_MODE_INIT	fb_config.h	108;"	d
+KEY_MODE_PIN	fb_config.h	107;"	d
+KEY_MODE_STA	fb_config.h	111;"	d
+KEY_MODE_UNINIT	fb_config.h	110;"	d
+KEY_SCAN_TIMES	key.h	35;"	d
+KEY_UP_TIMES	key.h	36;"	d
+KEY_VOL_DOWN_INIT	fb_config.h	124;"	d
+KEY_VOL_DOWN_PIN	fb_config.h	123;"	d
+KEY_VOL_DOWN_STA	fb_config.h	128;"	d
+KEY_VOL_DOWN_UNINIT	fb_config.h	127;"	d
+KEY_VOL_UP_INIT	fb_config.h	115;"	d
+KEY_VOL_UP_PIN	fb_config.h	114;"	d
+KEY_VOL_UP_STA	fb_config.h	119;"	d
+KEY_VOL_UP_UNINIT	fb_config.h	118;"	d
+KH_MODE	key.h	141;"	d
+KH_NUM1	key.h	106;"	d
+KH_NUM2	key.h	112;"	d
+KH_POWER	key.h	120;"	d
+KH_VOL_DOWN	key.h	135;"	d
+KH_VOL_UP	key.h	129;"	d
+KLU_MODE	key.h	140;"	d
+KLU_NUM1	key.h	105;"	d
+KLU_NUM2	key.h	111;"	d
+KLU_POWER	key.h	119;"	d
+KLU_VOL_DOWN	key.h	134;"	d
+KLU_VOL_UP	key.h	128;"	d
+KL_MODE	key.h	139;"	d
+KL_NUM1	key.h	104;"	d
+KL_NUM2	key.h	110;"	d
+KL_POWER	key.h	118;"	d
+KL_VOL_DOWN	key.h	133;"	d
+KL_VOL_UP	key.h	127;"	d
+KU_MODE	key.h	138;"	d
+KU_NUM1	key.h	103;"	d
+KU_NUM2	key.h	109;"	d
+KU_POWER	key.h	117;"	d
+KU_VOL_DOWN	key.h	132;"	d
+KU_VOL_UP	key.h	126;"	d
+K_MODE	key.h	137;"	d
+K_NUM1	key.h	102;"	d
+K_NUM2	key.h	108;"	d
+K_POWER	key.h	116;"	d
+K_VOL_DOWN	key.h	131;"	d
+K_VOL_UP	key.h	125;"	d
+Key_set_cnt	key.c	/^UINT8 Key_set_cnt = 0;$/;"	v
+Key_set_flag	key.c	/^UINT8 Key_set_flag = 0;$/;"	v
+Key_set_out_time	key.c	/^UINT16 Key_set_out_time = 0;$/;"	v
+LCD_POWER_INIT	fb_config.h	275;"	d
+LCD_POWER_OFF	fb_config.h	280;"	d
+LCD_POWER_ON	fb_config.h	279;"	d
+LCD_POWER_PIN	fb_config.h	274;"	d
+LED_BLUE	led.h	/^    LED_BLUE$/;"	e	enum:__anon4
+LED_BLUE_EN	fb_config.h	155;"	d
+LED_B_INIT	fb_config.h	180;"	d
+LED_B_OFF	fb_config.h	185;"	d
+LED_B_ON	fb_config.h	184;"	d
+LED_B_PIN	fb_config.h	179;"	d
+LED_EN	fb_config.h	150;"	d
+LED_GREEN	led.h	/^    LED_GREEN,$/;"	e	enum:__anon4
+LED_GREEN_EN	fb_config.h	156;"	d
+LED_GREEN_PIN	fb_config.h	321;"	d
+LED_G_INIT	fb_config.h	191;"	d
+LED_G_OFF	fb_config.h	196;"	d
+LED_G_ON	fb_config.h	195;"	d
+LED_G_PIN	fb_config.h	190;"	d
+LED_RED	led.h	/^    LED_RED = 1,$/;"	e	enum:__anon4
+LED_RED_EN	fb_config.h	154;"	d
+LED_RED_PIN	fb_config.h	316;"	d
+LED_R_INIT	fb_config.h	161;"	d
+LED_R_OFF	fb_config.h	167;"	d
+LED_R_ON	fb_config.h	166;"	d
+LED_R_PIN	fb_config.h	160;"	d
+LEVEL_DEBUG	fb_uart.h	/^    LEVEL_DEBUG,$/;"	e	enum:__anon2
+LEVEL_ERROR	fb_uart.h	/^    LEVEL_ERROR,$/;"	e	enum:__anon2
+LEVEL_FATAL	fb_uart.h	/^    LEVEL_FATAL$/;"	e	enum:__anon2
+LEVEL_INFO	fb_uart.h	/^    LEVEL_INFO,$/;"	e	enum:__anon2
+LEVEL_WARN	fb_uart.h	/^    LEVEL_WARN,$/;"	e	enum:__anon2
+LOCK_BAT_CLOSE	fb_config.h	251;"	d
+LOCK_BAT_INIT	fb_config.h	246;"	d
+LOCK_BAT_OPEN	fb_config.h	250;"	d
+LOCK_BAT_PIN	fb_config.h	245;"	d
+LOCK_BAT_STA	fb_config.h	252;"	d
+LOCK_INFO_EN	fb_config.h	231;"	d
+LOCK_MOTOR_CLOSE	fb_config.h	241;"	d
+LOCK_MOTOR_INIT	fb_config.h	236;"	d
+LOCK_MOTOR_OPEN	fb_config.h	240;"	d
+LOCK_MOTOR_PIN	fb_config.h	235;"	d
+LOCK_MOTOR_STA	fb_config.h	242;"	d
+LOCK_TANGZE_CLOSE	fb_config.h	261;"	d
+LOCK_TANGZE_INIT	fb_config.h	256;"	d
+LOCK_TANGZE_OPEN	fb_config.h	260;"	d
+LOCK_TANGZE_PIN	fb_config.h	255;"	d
+LOCK_TANGZE_STA	fb_config.h	262;"	d
+LogLevelEnum	fb_uart.h	/^}LogLevelEnum;$/;"	t	typeref:enum:__anon2
+MUTE_PIN	fb_config.h	221;"	d
+NO_KEY	key.h	49;"	d
+NTP_UPDATE_TIME	fb_config.h	13;"	d
+PA_MUTE	fb_config.h	224;"	d
+PA_MUTE_INIT	fb_config.h	222;"	d
+PA_UNMUTE	fb_config.h	225;"	d
+PLAT_LOG	fb_config.h	5;"	d
+POWER_CHARGE_INIT	fb_config.h	76;"	d
+POWER_CHARGE_PIN	fb_config.h	75;"	d
+POWER_CHARGE_STA	fb_config.h	80;"	d
+POWER_CHARGE_UNINIT	fb_config.h	79;"	d
+POWER_KEY_INIT	fb_config.h	100;"	d
+POWER_KEY_PIN	fb_config.h	99;"	d
+POWER_KEY_STA	fb_config.h	104;"	d
+POWER_OFF	fb_config.h	34;"	d
+POWER_ON	fb_config.h	31;"	d
+POWER_PIN	fb_config.h	30;"	d
+REDLED_INIT	fb_config.h	317;"	d
+REDLED_OFF	fb_config.h	328;"	d
+REDLED_ON	fb_config.h	326;"	d
+SPI1_SDA_INIT	fb_config.h	310;"	d
+SPI1_SDA_PIN	fb_config.h	309;"	d
+SPI2_SCL_INIT	fb_config.h	306;"	d
+SPI2_SCL_PIN	fb_config.h	305;"	d
+SPI2_SDA_INIT	fb_config.h	302;"	d
+SPI2_SDA_PIN	fb_config.h	301;"	d
+TTS_BUF_MAX	fb_config.h	20;"	d
+TTS_EN	fb_config.h	18;"	d
+TTS_MAX_DATA	fb_config.h	21;"	d
+TTS_WARNING_TONE	fb_config.h	266;"	d
+TX_PIN	fb_config.h	334;"	d
+T_KEY_1	key.h	50;"	d
+T_KEY_10	key.h	60;"	d
+T_KEY_11	key.h	61;"	d
+T_KEY_12	key.h	62;"	d
+T_KEY_13	key.h	63;"	d
+T_KEY_14	key.h	64;"	d
+T_KEY_15	key.h	65;"	d
+T_KEY_16	key.h	66;"	d
+T_KEY_17	key.h	67;"	d
+T_KEY_18	key.h	68;"	d
+T_KEY_19	key.h	69;"	d
+T_KEY_2	key.h	51;"	d
+T_KEY_20	key.h	70;"	d
+T_KEY_21	key.h	71;"	d
+T_KEY_22	key.h	72;"	d
+T_KEY_23	key.h	73;"	d
+T_KEY_24	key.h	74;"	d
+T_KEY_25	key.h	75;"	d
+T_KEY_26	key.h	76;"	d
+T_KEY_27	key.h	77;"	d
+T_KEY_28	key.h	78;"	d
+T_KEY_29	key.h	79;"	d
+T_KEY_3	key.h	52;"	d
+T_KEY_30	key.h	80;"	d
+T_KEY_31	key.h	81;"	d
+T_KEY_4	key.h	53;"	d
+T_KEY_5	key.h	54;"	d
+T_KEY_6	key.h	55;"	d
+T_KEY_7	key.h	56;"	d
+T_KEY_8	key.h	57;"	d
+T_KEY_9	key.h	58;"	d
+T_KEY_9	key.h	59;"	d
+T_KEY_HOLD	key.h	46;"	d
+T_KEY_LONG	key.h	44;"	d
+T_KEY_LONG_UP	key.h	45;"	d
+T_KEY_MODE	key.h	94;"	d
+T_KEY_NUM1	key.h	88;"	d
+T_KEY_NUM2	key.h	89;"	d
+T_KEY_PLAY	key.h	93;"	d
+T_KEY_POWER	key.h	90;"	d
+T_KEY_SHORT	key.h	42;"	d
+T_KEY_SHORT_UP	key.h	43;"	d
+T_KEY_VOL_DOWN	key.h	92;"	d
+T_KEY_VOL_UP	key.h	91;"	d
+UART1	fb_uart.c	/^        UART1=0,$/;"	e	enum:__anon5	file:
+UART2	fb_uart.c	/^        UART2,$/;"	e	enum:__anon5	file:
+UART3	fb_uart.c	/^        UART3$/;"	e	enum:__anon5	file:
+UART_ENABLE_SEGMENT	fb_config.h	335;"	d
+USER_LOG_EN	fb_config.h	11;"	d
+VOICE_PLAY_EN	fb_config.h	204;"	d
+VOLUME_DEFAULT_VALUE	fb_config.h	89;"	d
+VOLUME_MAX_VALUE	fb_config.h	90;"	d
+VOLUME_MIN_VALUE	fb_config.h	91;"	d
+_FB_UART_H_	fb_uart.h	2;"	d
+_KEY_H_	key.h	2;"	d
+_LED_COLOUR	led.h	/^}_LED_COLOUR;$/;"	t	typeref:enum:__anon4
+_LED_H_	led.h	2;"	d
+_LED_STRUCT	led.h	/^} _LED_STRUCT;$/;"	t	typeref:struct:__anon3
+_UART_PORT	fb_uart.c	/^}_UART_PORT;$/;"	t	typeref:enum:__anon5	file:
+_USER_CONFIG_H_	fb_config.h	2;"	d
+blue_flag	led.h	/^    UINT8 blue_flag;   \/\/led 开关状态  1：打开  0：关闭  $/;"	m	struct:__anon3
+blue_flash_flag	led.h	/^    UINT8 blue_flash_flag;   \/\/led 开关状态  1：闪烁 0：不闪烁$/;"	m	struct:__anon3
+blue_led_cnt	led.h	/^     UINT16 blue_led_cnt;$/;"	m	struct:__anon3
+blue_off_time	led.h	/^    UINT16 blue_off_time;$/;"	m	struct:__anon3
+blue_on_time	led.h	/^    UINT16 blue_on_time;$/;"	m	struct:__anon3
+fb_key_enter	key.c	/^int fb_key_enter(void)$/;"	f
+fb_key_init	key.c	/^static void fb_key_init(void)$/;"	f	file:
+fb_key_task	key.c	/^static void fb_key_task(void *param)$/;"	f	file:
+fb_key_task_loop	key.c	/^static int fb_key_task_loop()$/;"	f	file:
+g_log_level	fb_uart.c	/^uint8_t g_log_level = 0;$/;"	v
+get_volume_level	key.c	/^uint8_t get_volume_level(uint8_t volume_vla)$/;"	f
+green_flag	led.h	/^    UINT8 green_flag;   \/\/led 开关状态  1：打开  0：关闭  $/;"	m	struct:__anon3
+green_flash_flag	led.h	/^    UINT8 green_flash_flag;   \/\/led 开关状态  1：闪烁 0：不闪烁$/;"	m	struct:__anon3
+green_led_cnt	led.h	/^    UINT16 green_led_cnt;$/;"	m	struct:__anon3
+green_off_time	led.h	/^    UINT16 green_off_time;$/;"	m	struct:__anon3
+green_on_time	led.h	/^    UINT16 green_on_time;$/;"	m	struct:__anon3
+io_key_process	key.c	/^static void io_key_process(void)$/;"	f	file:
+key_cnt	key.h	/^    UINT8 key_cnt;                 \/\/按键值持续计数$/;"	m	struct:__anon1
+key_ctl1	key.c	/^type_key_ctl key_ctl1 = {NO_KEY, NO_KEY, 0, 0};$/;"	v
+key_deal_more	key.c	/^static uint8_t key_deal_more(type_key_ctl *key_deal)$/;"	f	file:
+key_flag	key.c	/^uint8_t key_flag = 0;$/;"	v
+key_mode_ctl	key.c	/^type_key_ctl key_mode_ctl = {NO_KEY, NO_KEY, 0, 0};$/;"	v
+key_msg_count	key.c	386;"	d	file:
+key_msg_id	key.c	/^UINT32 key_msg_id = 0;  \/\/ 按键消息ID$/;"	v
+key_msg_size	key.c	387;"	d	file:
+key_play_ctl	key.c	/^type_key_ctl key_play_ctl = {NO_KEY, NO_KEY, 0, 0};$/;"	v
+key_timer_flag	key.c	/^int key_timer_flag = 0; \/\/ 按键定时器标志          1:已创建     0:未创建$/;"	v
+key_up	key.h	/^    UINT8 key_up;                  \/\/抬键计数$/;"	m	struct:__anon1
+key_val	key.h	/^    UINT8 key_val;  				 \/\/当前按键值$/;"	m	struct:__anon1
+key_vol_down_ctl	key.c	/^type_key_ctl key_vol_down_ctl = {NO_KEY, NO_KEY, 0, 0};$/;"	v
+key_vol_up_ctl	key.c	/^type_key_ctl key_vol_up_ctl = {NO_KEY, NO_KEY, 0, 0};$/;"	v
+last_key_val	key.h	/^    UINT8 last_key_val;            \/\/上一个按键值$/;"	m	struct:__anon1
+led_all_off	led.c	/^void led_all_off(void)$/;"	f
+led_all_on	led.c	/^void led_all_on(void)$/;"	f
+led_blue_off	led.c	/^void led_blue_off(void)$/;"	f
+led_blue_on	led.c	/^void led_blue_on(void)$/;"	f
+led_blue_set	led.c	/^void led_blue_set(UINT16 on_time,UINT16 off_time)$/;"	f
+led_green_off	led.c	/^void led_green_off(void)$/;"	f
+led_green_on	led.c	/^void led_green_on(void)$/;"	f
+led_green_set	led.c	/^void led_green_set(UINT16 on_time,UINT16 off_time)$/;"	f
+led_init	led.c	/^void led_init(void)$/;"	f
+led_io_all_off	led.c	/^void led_io_all_off(void)$/;"	f
+led_only_blue_off	led.c	/^void led_only_blue_off(void)$/;"	f
+led_only_blue_on	led.c	/^void led_only_blue_on(void)$/;"	f
+led_only_blue_set	led.c	/^void led_only_blue_set(UINT16 on_time,UINT16 off_time)$/;"	f
+led_only_green_off	led.c	/^void led_only_green_off(void)$/;"	f
+led_only_green_on	led.c	/^void led_only_green_on(void)$/;"	f
+led_only_green_set	led.c	/^void led_only_green_set(UINT16 on_time,UINT16 off_time)$/;"	f
+led_only_one_set	led.c	/^void led_only_one_set(_LED_COLOUR led_colour,UINT16 on_time,UINT16 off_time)  \/\/$/;"	f
+led_only_red_off	led.c	/^void led_only_red_off(void)$/;"	f
+led_only_red_on	led.c	/^void led_only_red_on(void)$/;"	f
+led_only_red_set	led.c	/^void led_only_red_set(UINT16 on_time,UINT16 off_time)$/;"	f
+led_red_off	led.c	/^void led_red_off(void)$/;"	f
+led_red_on	led.c	/^void led_red_on(void)$/;"	f
+led_red_set	led.c	/^void led_red_set(UINT16 on_time,UINT16 off_time)$/;"	f
+led_scan	led.c	/^void led_scan(void) \/\/100ms  定时器调用$/;"	f
+led_set	led.c	/^void led_set(_LED_COLOUR led_colour,UINT16 on_time,UINT16 off_time)  \/\/$/;"	f
+led_struct	led.c	/^_LED_STRUCT led_struct;$/;"	v
+led_timer_flag	led.c	/^UINT8 led_timer_flag=0;\/\/按键定时器标志          1:已创建     0:未创建$/;"	v
+log_level_string	fb_uart.c	/^const char *log_level_string[LEVEL_FATAL + 1] = {$/;"	v
+log_print	fb_uart.c	/^int log_print(LogLevelEnum level, const char * fmt, ... )$/;"	f
+log_print_t	fb_uart.c	/^int log_print_t(const char * fmt, ...)$/;"	f
+oc_gpioisrcallback	key.c	/^void oc_gpioisrcallback(void *param)$/;"	f
+power_key_ctl	key.c	/^type_key_ctl power_key_ctl = {NO_KEY, NO_KEY, 0, 0};$/;"	v
+red_flag	led.h	/^    UINT8 red_flag;   \/\/led 开关状态  1：打开  0：关闭  $/;"	m	struct:__anon3
+red_flash_flag	led.h	/^    UINT8 red_flash_flag;   \/\/led 开关状态  1：闪烁 0：不闪烁$/;"	m	struct:__anon3
+red_led_cnt	led.h	/^    UINT16 red_led_cnt;$/;"	m	struct:__anon3
+red_off_time	led.h	/^    UINT16 red_off_time;$/;"	m	struct:__anon3
+red_on_time	led.h	/^    UINT16 red_on_time;$/;"	m	struct:__anon3
+timer_100ms_callback	led.c	/^void timer_100ms_callback(void *arg)$/;"	f
+timer_100ms_id	led.c	/^UINT32 timer_100ms_id=0;\/\/按键扫描定时器ID$/;"	v
+timer_10ms_callback	key.c	/^void timer_10ms_callback(void *arg)$/;"	f
+timer_10ms_id	key.c	/^UINT32 timer_10ms_id;\/\/按键扫描定时器ID$/;"	v
+type_key_ctl	key.h	/^} type_key_ctl;$/;"	t	typeref:struct:__anon1
+uart1_init	fb_uart.c	/^int uart1_init(int baud)$/;"	f
+uart1_print	fb_uart.c	/^int uart1_print(const char * fmt, ... )$/;"	f
+uart1_recv_callback	fb_uart.c	/^static void uart1_recv_callback(hal_uart_port_t uart_port, UINT8 *data, UINT16 len, void *arg)$/;"	f	file:
+uart1_send_data	fb_uart.c	/^int uart1_send_data(char *buff, int len)$/;"	f
+uart2_init	fb_uart.c	/^int uart2_init(int baud)$/;"	f
+uart2_print	fb_uart.c	/^int uart2_print(const char * fmt, ... )$/;"	f
+uart2_recv_callback	fb_uart.c	/^static void uart2_recv_callback(hal_uart_port_t uart_port, UINT8 *data, UINT16 len, void *arg)$/;"	f	file:
+uart2_send_data	fb_uart.c	/^int uart2_send_data(char *buff, int len)$/;"	f
+uart3_init	fb_uart.c	/^INT32 uart3_init(void)$/;"	f
+uart3_print	fb_uart.c	/^int uart3_print(const char * fmt, ... )$/;"	f
+uart3_recv_callback	fb_uart.c	/^static void uart3_recv_callback(hal_uart_port_t uart_port, UINT8 *data, UINT16 len, void *arg)$/;"	f	file:
+uart3_send_data	fb_uart.c	/^INT32 uart3_send_data(void)$/;"	f
+uart_util_remove_char	fb_uart.c	/^UINT16 uart_util_remove_char(UINT8 *pdata, UINT16 len,char c)$/;"	f
+volume_list	key.c	/^uint8_t volume_list[10] = {0, 10, 20, 30, 40, 60, 70, 80, 90, 100};$/;"	v

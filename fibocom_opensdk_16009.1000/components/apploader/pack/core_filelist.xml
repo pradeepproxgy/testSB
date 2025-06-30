@@ -1,0 +1,145 @@
+<!--
+Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+All rights reserved.
+
+This software is supplied "AS IS" without any warranties.
+RDA assumes no responsibility or liability for the use of the software,
+conveys no license or title under any patent, copyright, or mask work
+right to the product. RDA reserves the right to make changes in the
+software without notification.  RDA also make no representation or
+warranty that such application will be suitable for the specified use
+without further testing or modification.
+-->
+<deliver>
+    <!-- only included for prebuilts -->
+    <group inclusive="prebuilts">
+        <file src="prebuilts/linux/bin/ninja"/>
+        <file src="prebuilts/linux/bin/clang-format"/>
+        <recursive src="prebuilts/linux/cmake"/>
+        <recursive src="prebuilts/linux/gcc-arm-none-eabi/gcc-arm-none-eabi-10.2.1" dst="prebuilts/linux/gcc-arm-none-eabi" inclusive="8850"/>
+    </group>
+
+    <!-- from TARGET_OUT -->
+    <globfile src="{TARGET_OUT}/include/*.h" dstdir="components/include"/>
+    <file src="{TARGET_OUT}/lib/core_config.cmake" dstdir="cmake"/>
+    <file src="{TARGET_OUT}/lib/core_stub.o" dstdir="components/lib"/>
+    <file src="{TARGET_OUT}/hex/norfdl.sign.img" dstdir="components/lib" inclusive="8850"/>
+    <file src="{TARGET_OUT}/hex/norfdl.img" dstdir="components/lib" inclusive="8850"/>
+    <!-- newlib, headers and lib -->
+    <recursive src="components/newlib/newlib-3.3.0/include" inclusive="8850"/>
+    <recursive src="components/newlib/newlib-3.3.0/armca5" inclusive="8850"/>
+
+    <!-- tools -->
+    <file src="tools/pacgen.py"/>
+    <file src="tools/modemgen.py"/>
+    <recursive src="tools/linux"/>
+
+
+    <!-- exported -->
+    <file src=".clang-format"/>
+    <file src=".gitignore"/>
+    <file src="cmake/toolchain-gcc.cmake"/>
+    <file src="components/kernel/include/osi_log.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_log_imp.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_api.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_compiler.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_section.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_vsmap.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_clock.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_mem.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_pipe.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_generic_list.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_event_hub.h" dstdir="components/include"/>
+
+    <!-- fibocom add -->
+    <file src="fibocom/api/basic_type.h" dstdir="components/include"/>
+    <file src="fibocom/api/fibo_opencpu.h" dstdir="components/include"/>
+    <file src="components/net/json/cJSON/cJSON.h" dstdir="components/include"/>
+    <file src="fibocom/api/fibo_opencpu_comm.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_call.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_gprs.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_nw.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_cc.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_sms.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_utility.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_event.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_errorcode.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_chset.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_dispatch.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_error_id.h" dstdir="components/include"/>
+    <file src="components/cfw/include/cfw_nb_nv_api.h" dstdir="components/include"/>
+    <file src="components/net/include/ppp_interface.h" dstdir="components/include"/>
+    <file src="components/net/lwip/include/" dstdir="components/include/lwip/"/>
+    <file src="components/net/lwip/include/lwipopts.h" dstdir="components/include/lwip/"/>
+    <file src="components/net/lwip/include/lwipports.h" dstdir="components/include/lwip/"/>
+    <file src="components/net/lwip/src/include/lwip/" dstdir="components/include"/>
+    <file src="components/net/include/sockets.h" dstdir="components/include"/>
+    <file src="components/atr/include/at_command.h" dstdir="components/include/"/>
+    <file src="components/atr/include/at_cfg.h" dstdir="components/include/"/>
+    <file src="components/atr/include/at_engine.h" dstdir="components/include/"/>
+    <file src="components/atr/include/at_param.h" dstdir="components/include/"/>
+    <file src="components/atr/include/at_response.h" dstdir="components/include/"/>
+    <!-- file src="components/ats/include/" dstdir="components/include/"/-->
+    <file src="components/ats/include/at_cfw.h" dstdir="components/include/"/>
+
+    <file src="components/nvm/include/nvm.h" dstdir="components/include"/>
+    <file src="fibocom/api/fibo_common.h" dstdir="components/include"/>
+    <!-- <file src="components/driver/include/drv_keypad.h" dstdir="components/include"/> -->
+    <file src="components/hal/include/hal_gouda.h" dstdir="components/include"/>
+    <file src="components/hal/include/hal_chip.h" dstdir="components/include"/>
+    <file src="components/hal/include/hwregs.h" dstdir="components/include"/>
+    <file src="components/hal/include/hwreg_access.h" dstdir="components/include"/>
+    <file src="components/kernel/include/osi_trace.h" dstdir="components/include"/>
+    
+    <file src="components/hal/include/8850" dstdir="components/include/"/>
+    <file src="components/hal/include/8850/hal_chip_8850.h" dstdir="components/include"/>
+    <file src="components/hal/include/hwregs/" dstdir="components/include/"/>
+    <file src="components/audio/include/audio_types.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_uart.h" dstdir="components/include"/>
+
+    <file src="fibocom/api/oc_adc.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_gnss.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_mqtt.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_heartbeat.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_mqtt_cloud.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_http.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_socket.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_ftp.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_ssl.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_ffs.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_gb2312_unicode.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_mbedtls.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_charge.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_sdc.h" dstdir="components/include"/>
+    <file src="fibocom/api/oc_mbedtls.h" dstdir="components/include"/>
+
+    <file src="components/firmwareupdate/include/fupdate.h" dstdir="components/include"/>
+
+    <file src="fibocom/fibo-framework/lib/include/ffw_socket.h" dstdir="components/include"/>
+    <file src="fibocom/fibo-framework/lib/include/ffw_types.h" dstdir="components/include"/>
+    <file src="fibocom/fibo-framework/lib/include/ffw_gpio.h" dstdir="components/include"/>
+    <file src="fibocom/fibo-framework/lib/include/ffw_adc.h" dstdir="components/include"/>
+    <file src="fibocom/fibo-framework/lib/include/ffw_pwm.h" dstdir="components/include"/>
+    <file src="fibocom/fibo-framework/lib/include/ffw_i2c.h" dstdir="components/include"/>
+    <file src="fibocom/fibo-framework/plateform/unisoc/include/ffw_plat_header.h" dstdir="components/include"/>
+    <!-- xml -->
+    <file src="components/net/libexpat/include/expat.h" dstdir="components/include"/>
+    <file src="components/net/libexpat/include/expat_external.h" dstdir="components/include"/>
+
+
+    <!-- mbedtls .h -->
+    <file src="components/net/mbedtls/include/mbedtls/" dstdir="components/include"/>
+
+    <recursive src="components/hal/config/8850/ecc" dst="components/hal/config/8850/ecc" inclusive="8850"/>
+    <recursive src="components/hal/config/8850/rsa" dst="components/hal/config/8850/rsa" inclusive="8850"/>
+    <recursive src="components/hal/config/8850/sm2" dst="components/hal/config/8850/sm2" inclusive="8850"/>
+    <!-- from apploader -->
+    <file src="components/apploader/pack/app_flashimg.ld" dstdir="ldscripts"/>
+    <file src="components/apploader/pack/app_fileimg.ld" dstdir="ldscripts"/>
+    <file src="components/apploader/pack/CMakeLists_8850.txt" dst="CMakeLists.txt" inclusive="8850"/>
+    <file src="components/apploader/pack/hello_world.c" dst="hello_world.c"/>
+    <file src="components/apploader/pack/core_launch.sh" dstdir="tools"/>
+    <file src="components/apploader/pack/core_launch.bat" dstdir="tools"/>
+    
+</deliver>

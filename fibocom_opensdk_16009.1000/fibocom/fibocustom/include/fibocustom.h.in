@@ -1,0 +1,123 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+#ifndef _FIBOCUSTOM_CONFIG_H_
+#define _FIBOCUSTOM_CONFIG_H_
+
+#include "srv_config.h"
+
+#cmakedefine CONFIG_MC669_CN_12_12
+#cmakedefine CONFIG_MC660_CN_12_12
+#cmakedefine CONFIG_MC669_CN_12_12_D59H
+#cmakedefine CONFIG_MC669_CN_22_12_P20
+#cmakedefine CONFIG_MC660_CN_19_00_QHLT
+#cmakedefine CONFIG_MC660_CN_19_00_RILI
+#cmakedefine CONFIG_MC660_CN_19_00_HAIKANG
+#cmakedefine CONFIG_MC660_CN_19_83_HAIKANG
+#cmakedefine CONFIG_MC661_CN_19_20_HAIKANG
+#cmakedefine CONFIG_MG661_EU_19_20_HAIKANG
+#cmakedefine CONFIG_MG661_LA_19_20_HAIKANG
+#cmakedefine CONFIG_MC661_CN_19_20_IPC
+#cmakedefine CONFIG_MC661_CN_19_10_IPC
+#cmakedefine CONFIG_MC661_CN_19_09_CU
+#cmakedefine CONFIG_MC661_CN_19_10_TUOKUO
+#cmakedefine CONFIG_MC661_CN_99_10_TUOKUO
+#cmakedefine CONFIG_MC661_CN_99_20_TUOKUO
+#cmakedefine CONFIG_MC661_CN_19_20_IPC_KUOTUO
+#cmakedefine CONFIG_MC661_CN_19_20_HZJICCX
+#cmakedefine CONFIG_MC661_CN_19_20_NITE
+#cmakedefine CONFIG_MC661_CN_19_70_YINGSHI
+#cmakedefine CONFIG_MC661_CN_19_70_JIEKE
+#cmakedefine CONFIG_MC661_CN_19_86_JIEKE
+#cmakedefine CONFIG_MC661_CN_19_70_CUDMP
+#cmakedefine CONFIG_MC661_CN_19_70_NIU
+#cmakedefine CONFIG_MC661_CN_19_70_AUDIO
+#cmakedefine CONFIG_MC661_CN_19_70_MEITUANZFB
+#cmakedefine CONFIG_MC661_CN_19_70_CUST01
+#cmakedefine CONFIG_MC661_CN_19_70_VODAFU
+#cmakedefine CONFIG_MC661_CN_19_80_HENGKE
+#cmakedefine CONFIG_MC661_CN_39_20_TAOMI_VOLTE
+#cmakedefine CONFIG_MC661_CN_39_20_BCLD
+#cmakedefine CONFIG_MC665_CN_16_00_WDUYD
+#cmakedefine CONFIG_MC665_CN_16_90_HENGKE
+#cmakedefine CONFIG_MC665_CN_16_90_LEYY
+#cmakedefine CONFIG_MC665_CN_16_90_RRSHENG
+#cmakedefine CONFIG_MC665_CN_19_00_LEYY
+#cmakedefine CONFIG_MG662_CN_16_10_NLD_OPEN
+#cmakedefine CONFIG_MC665_CN_19_00_JINGRUI
+#cmakedefine CONFIG_MC665_CN_19_90_SIKEERTE
+#cmakedefine CONFIG_MC665_CN_19_90_HANHUIWS
+#cmakedefine CONFIG_MC665_EU_19_90_HANHUIWS
+#cmakedefine CONFIG_MC665_CN_19_90_WANJIAAN
+#cmakedefine CONFIG_MC665_CN_16_00_SZLINGHT
+#cmakedefine CONFIG_MC665_CN_22_00_SZLINGHT
+#cmakedefine CONFIG_MC665_CN_18_80_HENGKE
+#cmakedefine CONFIG_MC665_CN_19_90_JIEKE
+#cmakedefine CONFIG_MC665_EU_19_00_QIYUE
+#cmakedefine CONFIG_MC665_EU_19_90_TY
+#cmakedefine CONFIG_MC665_EU_19_00_TUOKUO
+#cmakedefine CONFIG_MC665_CN_31_00_ZYKC
+#cmakedefine CONFIG_MC665_CN_31_00_FYKJ
+#cmakedefine CONFIG_MC665_CN_30_OPENCPU
+#cmakedefine CONFIG_MC665_CN_36_90_QDTIANYAN
+#cmakedefine CONFIG_MC665_CN_36_90_HENGKE
+#cmakedefine CONFIG_MC665_CN_36_90_VOLTE
+#cmakedefine CONFIG_MC665_CN_36_90_SITE_VOLTE
+#cmakedefine CONFIG_MC665_CN_19_00_IPC
+#cmakedefine CONFIG_MC665_CN_19_00_XPH
+#cmakedefine CONFIG_MC665_CN_19_70_HZHC
+#cmakedefine CONFIG_MC665_EU_19_90_HZHC
+#cmakedefine CONFIG_MC669_CN_13_90_AITI
+#cmakedefine CONFIG_MC669_CN_13_90_AITI_TTSEN
+#cmakedefine CONFIG_MC669_CN_25_70_AITI
+#cmakedefine CONFIG_MC669_CN_13_90_TAIBITE
+#cmakedefine CONFIG_MC669_CN_13_90_XIAOAN
+#cmakedefine CONFIG_MC669_CN_25_99_XIAOAN
+#cmakedefine CONFIG_MC669_CN_16_00_DIDI
+#cmakedefine CONFIG_MC669_CN_18_00_SDHK
+#cmakedefine CONFIG_MC669_CN_19_00_XINDALU
+#cmakedefine CONFIG_MC669_CN_19_00_HZJICCX
+#cmakedefine CONFIG_MC669_CN_19_97_XIAMENSIXIN
+#cmakedefine CONFIG_MC669_CN_19_00_TELAIDIAN
+#cmakedefine CONFIG_MC669_CN_19_02_CHUANSHENYU
+#cmakedefine CONFIG_MC669_CN_19_00_IPC
+#cmakedefine CONFIG_MC669_CN_16_00_IPC
+#cmakedefine CONFIG_MC669_CN_16_90_HUIERFENG
+#cmakedefine CONFIG_MC669_CN_16_90_AITIWEIER
+#cmakedefine CONFIG_MC669_CN_16_90_XIAOAN
+#cmakedefine CONFIG_MC669_CN_32_12_D65H
+#cmakedefine CONFIG_MC661_CN_39_70_MAOWANG
+#cmakedefine CONFIG_MC661_CN_39_70_HAIKANG
+#cmakedefine CONFIG_MC669_CN_36_00_CUWULIAN
+#cmakedefine CONFIG_FIBOCOM_HALUO_AT
+#cmakedefine CONFIG_MC669_CN_17_90_POC
+#cmakedefine CONFIG_FIBOCUS_HZJICCX_FEATURE
+#cmakedefine CONFIG_FIBOCOM_AT_QUE_FEATURE
+#cmakedefine CONFIG_FIBOCOM_AT_UNIMQTT_SUPPORT
+#cmakedefine CONFIG_FIBOCOM_UNI_MQTT_ENABLE
+#cmakedefine CONFIG_FIBOCUS_SZLINGHT_FEATURE
+#cmakedefine CONFIG_FIBOCUS_HENGKE_FEATURE
+#cmakedefine CONFIG_FIBOCUS_SIKEERTE_FEATURE
+#cmakedefine CONFIG_FIBOCUS_XIAMENSIXIN_FEATURE
+#cmakedefine CONFIG_FIBOCUS_HUAZHIRONG_FEATURE
+#cmakedefine CONFIG_FIBOCUS_DIDI_FEATURE
+#cmakedefine CONFIG_FIBOCUS_HAIKANG_FEATURE
+#cmakedefine CONFIG_FIBOCOM_XIAONIU_FEATURE
+#cmakedefine CONFIG_FIBOCUS_MEITUANZFB_FEATURE
+#cmakedefine CONFIG_FIBOCUS_XIAOAN_FEATURE
+#cmakedefine CONFIG_FIBOCUS_LEYY_FEATURE
+#cmakedefine CONFIG_FIBOCUS_JIEKE_FEATURE
+#cmakedefine CONFIG_FIBOCUS_VODAFU_FEATURE
+#cmakedefine CONFIG_FIBOCUS_TUOKUO_FEATURE
+#cmakedefine CONFIG_MC660_CN_19_00_TCOS
+#cmakedefine CONFIG_FIBOCUS_1081_FEATURE
+#endif

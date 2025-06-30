@@ -1,0 +1,106 @@
+/* Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+ * All rights reserved.
+ *
+ * This software is supplied "AS IS" without any warranties.
+ * RDA assumes no responsibility or liability for the use of the software,
+ * conveys no license or title under any patent, copyright, or mask work
+ * right to the product. RDA reserves the right to make changes in the
+ * software without notification.  RDA also make no representation or
+ * warranty that such application will be suitable for the specified use
+ * without further testing or modification.
+ */
+
+#ifndef _OPENCPU_CONFIG_H_
+#define _OPENCPU_CONFIG_H_
+
+
+// @AUTO_GENERATION_NOTICE@
+
+#cmakedefine CONFIG_OPENCPU_ENABLED
+
+/**
+ * openCPU version
+ */
+#cmakedefine CONFIG_OPENCPU_VERSION "@CONFIG_OPENCPU_VERSION@"
+
+/**
+ * openCPU main stack size
+ */
+#cmakedefine CONFIG_OPENCPU_MAIN_STACK_SIZE @CONFIG_OPENCPU_MAIN_STACK_SIZE@
+
+/**
+ * openCPU process stack size
+ */
+#cmakedefine CONFIG_OPENCPU_PROCESS_STACK_SIZE @CONFIG_OPENCPU_PROCESS_STACK_SIZE@
+
+/**
+ * openCPU sys stack size
+ */
+#cmakedefine CONFIG_OPENCPU_SYS_STACK_SIZE @CONFIG_OPENCPU_SYS_STACK_SIZE@
+
+/**
+ * openCPU irq stack size
+ */
+#cmakedefine CONFIG_OPENCPU_IRQ_STACK_SIZE @CONFIG_OPENCPU_IRQ_STACK_SIZE@
+
+/**
+ * openCPU support psram
+ */
+#cmakedefine CONFIG_OPENCPU_PSRAM_ENABLE
+
+/**
+ * openCPU share memory size
+ */
+#cmakedefine CONFIG_OPENCPU_SHARE_MEMORY_SIZE @CONFIG_OPENCPU_SHARE_MEMORY_SIZE@
+
+/**
+ * share memory use sram
+ */
+#cmakedefine CONFIG_SHARE_MEMORY_USE_SRAM
+
+/**
+ * share memory use lz4 file
+ */
+#cmakedefine CONFIG_SHARE_MEMORY_USE_LZ4_FILE
+
+/**
+ * openCPU boot from bootloader
+ */
+#cmakedefine CONFIG_OPENCPU_BOOT_FROM_BOOTLOADER
+
+/**
+ * openCPU boot from AP
+ */
+#cmakedefine CONFIG_OPENCPU_BOOT_FROM_AP
+
+/**
+ * openCPU trace default uart device
+ */
+#cmakedefine CONFIG_OPENCPU_TRACE_DEFAULT_UART @CONFIG_OPENCPU_TRACE_DEFAULT_UART@
+
+/**
+ * openCPU trace uart default baud rate
+ */
+#cmakedefine CONFIG_OPENCPU_TRACE_DEFAULT_UART_BAUD @CONFIG_OPENCPU_TRACE_DEFAULT_UART_BAUD@
+
+/**
+ * openCPU console default uart device
+ */
+#cmakedefine CONFIG_OPENCPU_CONSOLE_DEFAULT_UART @CONFIG_OPENCPU_CONSOLE_DEFAULT_UART@
+
+/**
+ * openCPU console uart default baud rate
+ */
+#cmakedefine CONFIG_OPENCPU_CONSOLE_DEFAULT_UART_BAUD @CONFIG_OPENCPU_CONSOLE_DEFAULT_UART_BAUD@
+
+/**
+ * openCPU console default prompt
+ */
+#cmakedefine CONFIG_OPENCPU_CONSOLE_DEFAULT_PROMPT "@CONFIG_OPENCPU_CONSOLE_DEFAULT_PROMPT@"
+
+/**
+ * openCPU console description
+ */
+#cmakedefine CONFIG_OPENCPU_CONSOLE_DESCRIPTION @CONFIG_OPENCPU_CONSOLE_DESCRIPTION@
+
+#endif

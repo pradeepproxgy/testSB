@@ -1,0 +1,135 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "mbedtls"
+config MBEDTLS_REDUCE_MEMORY
+    bool "MBEDTLS_REDUCE_MEMORY enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default n
+    help
+        When enabled, MBEDTLS_REDUCE_MEMORY will be defined
+config MBEDTLS_LITE_CRYPTS
+    bool "MBEDTLS_LITE_CRYPTS enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default n
+    help
+        When enabled, MBEDTLS_LITE_CRYPTS will be defined
+config MBEDTLS_SSL_TLS
+    bool "MBEDTLS_SSL_TLS enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SSL_TLS will be defined, if select more than one version ,the version must be continuous
+config MBEDTLS_SSL_VERSION_SSL3
+    bool "MBEDTLS_SSL_VERSION_SSL3 enabled"
+    depends on MBEDTLS_SSL_TLS
+    default y
+    help
+        When enabled, MBEDTLS_SSL_VERSION_SSL3 will be defined
+config MBEDTLS_SSL_VERSION_TLS1_0
+    bool "MBEDTLS_SSL_VERSION_TLS1_0 enabled"
+    depends on MBEDTLS_SSL_TLS
+    default y
+    help
+        When enabled, MBEDTLS_SSL_VERSION_TLS1_0 will be defined
+config MBEDTLS_SSL_VERSION_TLS1_1
+    bool "MBEDTLS_SSL_VERSION_TLS1_1 enabled"
+    depends on MBEDTLS_SSL_TLS
+    default y
+    help
+        When enabled, MBEDTLS_SSL_VERSION_TLS1_1 will be defined
+config MBEDTLS_SSL_VERSION_TLS1_2
+    bool "MBEDTLS_SSL_VERSION_TLS1_2 enabled"
+    depends on MBEDTLS_SSL_TLS
+    default y
+    help
+        When enabled, MBEDTLS_SSL_VERSION_TLS1_2 will be defined
+config MBEDTLS_SSL_VERSION_DTLS
+    bool "MBEDTLS_SSL_VERSION_DTLS enabled"
+    depends on MBEDTLS_SSL_TLS
+    depends on (MBEDTLS_SSL_VERSION_TLS1_1 || MBEDTLS_SSL_VERSION_TLS1_2)
+    default y
+    help
+        When enabled, MBEDTLS_SSL_VERSION_DTLS will be defined
+config MBEDTLS_SELF_TEST
+    bool "MBEDTLS_SELF_TEST enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default n
+    help
+        When enabled, MBEDTLS_SELF_TEST will be defined
+config MBEDTLS_SUPPORT_ECP
+    bool "MBEDTLS_SUPPORT_ECP enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_ECP will be defined
+config MBEDTLS_SUPPORT_SM2
+    bool "MBEDTLS_SUPPORT_SM2 enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    depends on MBEDTLS_SUPPORT_ECP
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_SM2 will be defined
+config MBEDTLS_SUPPORT_ECDSA_DETERMINISTIC
+    bool "MBEDTLS_SUPPORT_ECDSA_DETERMINISTIC enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_ECDSA_DETERMINISTIC will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_DHE_PSK
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_DHE_PSK enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_DHE_PSK will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_PSK
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_PSK enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_PSK will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_RSA_PSK
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_RSA_PSK enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_RSA_PSK will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_DHE_RSA
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_DHE_RSA enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_DHE_RSA will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_RSA
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_RSA enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_RSA will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_ECDSA
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_ECDSA enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDHE_ECDSA will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDH_ECDSA
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDH_ECDSA enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDH_ECDSA will be defined
+config MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDH_RSA
+    bool "MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDH_RSA enabled"
+    depends on MBEDTLS_LIB_SUPPORT
+    default y
+    help
+        When enabled, MBEDTLS_SUPPORT_KEY_EXCHANGE_ECDH_RSA will be defined	
+endmenu

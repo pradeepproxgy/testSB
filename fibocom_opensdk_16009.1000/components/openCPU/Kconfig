@@ -1,0 +1,135 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "openCPU"
+
+config OPENCPU_ENABLED
+    bool "openCPU enabled"
+    default n
+    help
+        When enabled, the openCPU image at the reserved flash location
+        will tried to run independently without OS
+
+if OPENCPU_ENABLED
+    config OPENCPU_VERSION
+        string "oepnCPU version"
+        default "1.0"
+        help
+            The version string format must be "x.x"
+
+    if SOC_8811
+        config OPENCPU_MAIN_STACK_SIZE
+            hex "8811 openCPU main stack size"
+            default 0x2000
+            help
+                Main stack size of openCPU.
+
+        config OPENCPU_PROCESS_STACK_SIZE
+            hex "8811 openCPU process stack size"
+            default 0x2000
+            help
+                Process stack size of openCPU.
+
+        config OPENCPU_SHARE_MEMORY_SIZE
+            hex "8811 openCPU share memory size"
+            default 0x2000
+            help
+                Share memory size of openCPU.
+    endif
+
+    if SOC_8850
+        config OPENCPU_SYS_STACK_SIZE
+            hex "8850 openCPU sys stack size"
+            default 0x2000
+            help
+                sys stack size of openCPU.
+
+        config OPENCPU_IRQ_STACK_SIZE
+            hex "8850 openCPU irq stack size"
+            default 0x1000
+            help
+                irq stack size of openCPU.
+
+        config OPENCPU_SHARE_MEMORY_SIZE
+            hex "8850 openCPU share memory size"
+            default 0x2000
+            help
+                Share memory size of openCPU.
+
+        config OPENCPU_PSRAM_ENABLE
+            bool "8850 openCPU psram enabled"
+            default y
+            help
+                openCPU support psram.
+    endif
+
+    choice
+        prompt "Share memory Transmition Method"
+        default SHARE_MEMORY_USE_SRAM if SOC_8811
+        default SHARE_MEMORY_USE_LZ4_FILE if SOC_8850
+    
+    config SHARE_MEMORY_USE_SRAM
+        bool "Use SRAM"
+    
+    config SHARE_MEMORY_USE_LZ4_FILE
+        bool "Use File"
+        
+    endchoice 
+
+    choice
+        prompt "openCPU boot mode"
+        default OPENCPU_BOOT_FROM_BOOTLOADER
+    config OPENCPU_BOOT_FROM_BOOTLOADER
+        bool "boot from bootloader"
+    config OPENCPU_BOOT_FROM_AP
+        bool "boot from AP"
+    endchoice
+
+    choice
+        prompt "Trace default UART"
+        default OPENCPU_TRACE_DEFAULT_UART3 if SOC_8811
+        default OPENCPU_TRACE_DEFAULT_UART4 if SOC_8850
+
+    config OPENCPU_TRACE_DEFAULT_UART1
+        bool "UART1"
+
+    config OPENCPU_TRACE_DEFAULT_UART2
+        bool "UART2"
+
+    config OPENCPU_TRACE_DEFAULT_UART3
+        bool "UART3"
+
+    config OPENCPU_TRACE_DEFAULT_UART4
+        bool "UART4"
+
+    config OPENCPU_TRACE_DEFAULT_UART5
+        bool "UART5"
+
+    endchoice
+
+    config OPENCPU_TRACE_DEFAULT_UART
+        string
+        default "DRV_NAME_UART1" if OPENCPU_TRACE_DEFAULT_UART1
+        default "DRV_NAME_UART2" if OPENCPU_TRACE_DEFAULT_UART2
+        default "DRV_NAME_UART3" if OPENCPU_TRACE_DEFAULT_UART3
+        default "DRV_NAME_UART4" if OPENCPU_TRACE_DEFAULT_UART4
+        default "DRV_NAME_UART5" if OPENCPU_TRACE_DEFAULT_UART5
+        default ""
+
+    config OPENCPU_TRACE_DEFAULT_UART_BAUD
+        int "Baud rate of trace default UART"
+        default 2000000
+
+    orsource "src/console/Kconfig"
+
+endif
+
+endmenu

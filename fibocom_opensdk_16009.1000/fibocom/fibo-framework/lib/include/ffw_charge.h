@@ -1,0 +1,4 @@
+#ifndef LIB_INCLUDE_FFW_CHARGE
+#define LIB_INCLUDE_FFW_CHARGE
+
+#endif

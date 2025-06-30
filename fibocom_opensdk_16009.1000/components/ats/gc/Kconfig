@@ -1,0 +1,38 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "at_gc"
+
+config AT_GC_COMMAND_SUPPORT
+    bool "AT_GC_COMMAND_SUPPORT enabled"
+    default y
+    select GC_COMMAND_SUPPORT
+    help
+        When enabled, some at command can be used, ie ATS0
+config AT_CCLK_COMMAND_STYLE_NEW
+    bool "AT_CCLK_COMMAND_STYLE_NEW enabled"
+    default n
+    select CCLK_COMMAND_STYLE_NEW
+    help
+        When enabled, CCLK return will use new style, only return the real clock after getting from the network
+config AT_PM2_DISABLE
+    bool "AT_PM2_DISABLE"
+    default n
+    select CONFIG_AT_PM2_DISABLE
+
+config SHARE_SIM_SUPPORT
+    bool "SHARE_SIM_SUPPORT enabled"
+    default n
+    help
+        Enable Share sim card feature
+
+endmenu
+

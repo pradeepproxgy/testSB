@@ -1,0 +1,1492 @@
+# Copyright (C) 2018 RDA Technologies Limited and/or its affiliates("RDA").
+# All rights reserved.
+#
+# This software is supplied "AS IS" without any warranties.
+# RDA assumes no responsibility or liability for the use of the software,
+# conveys no license or title under any patent, copyright, or mask work
+# right to the product. RDA reserves the right to make changes in the
+# software without notification.  RDA also make no representation or
+# warranty that such application will be suitable for the specified use
+# without further testing or modification.
+
+menu "fibocom"
+
+config FIBOCOM_BASE
+    bool "enable fibocom code"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_OPENCPU
+    bool "enable fibocom opencpu"
+    default n
+    help
+        Fibocom opencpu macro defination.
+
+config MC660_CN_19_00
+    bool "enable MC660_CN_19_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_12_90
+    bool "enable MC660_CN_19_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_19_90
+    bool "enable MC660_CN_19_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_20_90
+    bool "enable MC660_CN_20_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_26_90
+    bool "enable MC660_CN_26_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_29_85
+    bool "enable MC660_CN_29_85 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_29_90
+    bool "enable MC660_CN_29_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_29_00
+    bool "enable MC660_CN_29_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC667_CN_25_70_V11
+    bool "enable MC667_CN_25_70_V11 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_32_90
+    bool "enable MC660_CN_32_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC660_CN_12_81
+    bool "enable MC660_CN_12_81 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_81
+    bool "enable MC661_CN_19_81 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_09_20_V10
+    bool "enable MC661_CN_09_20_V10 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_36_00
+    bool "enable MC669_CN_36_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_36_S1
+    bool "enable MC669_CN_36_S1 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_36_90
+    bool "enable MC669_CN_36_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_16_00
+    bool "enable MC669_CN_16_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_16_90
+    bool "enable MC669_CN_16_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_17_00
+    bool "enable MC669_CN_17_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_17_90
+    bool "enable MC669_CN_17_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_17_02
+    bool "enable MC669_CN_17_02 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_18_00
+    bool "enable MC669_CN_18_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_18_90
+    bool "enable MC669_CN_18_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_19_00
+    bool "enable MC669_CN_19_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_19_27
+    bool "enable MC669_CN_19_27 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_19_90
+    bool "enable MC669_CN_19_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_19_97
+    bool "enable MC669_CN_19_97 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_13_90
+    bool "enable MC669_CN_13_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_26_00
+    bool "enable MC669_CN_26_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_36_00
+    bool "enable MC665_CN_36_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_36_90
+    bool "enable MC665_CN_36_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_16_00
+    bool "enable MC665_CN_16_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_16_20
+    bool "enable MC665_CN_16_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_16_90
+    bool "enable MC665_CN_16_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_17_00
+    bool "enable MC665_CN_17_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_17_90
+    bool "enable MC665_CN_17_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_18_00
+    bool "enable MC665_CN_17_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_09_60
+    bool "enable MC665_CN_09_60 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_18_90
+    bool "enable MC665_CN_18_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_19_00
+    bool "enable MC665_CN_19_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_19_90
+    bool "enable MC665_CN_19_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_12
+    bool "enable MC665_CN_12 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_12_90
+    bool "enable MC665_CN_12_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_12_20
+    bool "enable MC665_CN_12_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_22_00
+    bool "enable MC665_CN_22_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MG662_CN_20_00
+    bool "enable MG662_CN_20_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MG662_CN_20_10
+    bool "enable MG662_CN_20_10 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_19_97
+    bool "enable MC665_CN_19_97 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_EU_19_00
+    bool "enable MC665_EU_19_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_EU_19_90
+    bool "enable MC665_EU_19_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_31
+    bool "enable MC665_CN_31 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_31_00
+    bool "enable MC665_CN_31_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_31_OPENCPU
+    bool "enable MC665_CN_31_OPENCPU project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_72_90
+    bool "enable MC665_CN_72_90 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_20
+    bool "enable MC661_CN_19_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MG661_EU_19_20
+    bool "enable MG661_EU_19_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MG661_LA_19_20
+    bool "enable MG661_LA_19_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MG661_LA_19_20_OPENCPU
+    bool "enable MG661_LA_19_20_OPENCPU project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_10
+    bool "enable MC661_CN_19_10 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_07
+    bool "enable MC661_CN_19_07 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_73
+    bool "enable MC661_CN_19_73 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_83
+    bool "enable MC661_CN_19_83 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_70
+    bool "enable MC661_CN_19_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_39_20
+    bool "enable MC661_CN_39_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_39_70
+    bool "enable MC661_CN_39_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_17_00_HALUO
+    bool "enable MC669_CN_17_00_HALUO project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_16_00_CM_TEST
+    bool "enable MC669_CN_16_00_CM_TEST project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_16_00_CT_TEST
+    bool "enable MC669_CN_16_00_CT_TEST project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_20_CT_TEST
+    bool "enable MC661_CN_19_20_CT_TEST project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_16_00_CT_TEST
+    bool "enable MC665_CN_16_00_CT_TEST project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_19_09
+    bool "enable MC661_CN_19_09 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_29_00
+    bool "enable MC665_CN_29_00 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_29_70
+    bool "enable MC665_CN_29_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_26_70
+    bool "enable MC665_CN_26_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_16_70
+    bool "enable MC665_CN_16_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_36_20
+    bool "enable MC665_CN_36_20 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_36_70
+    bool "enable MC665_CN_36_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_36_70_VOLTE
+    bool "enable MC665_CN_36_70_VOLTE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_36_70_VOLTE
+    bool "enable MC669_CN_36_70_VOLTE project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_22_70
+    bool "enable MC665_CN_22_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_25_70
+    bool "enable MC665_CN_25_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+
+config MC669_CN_36_20
+    bool "enable MC669_CN_36_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_36_70
+    bool "enable MC669_CN_36_70 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_26_00_V11_VOLTE
+    bool "enable new project"
+    default n
+    help
+        Fibocom macro defination.
+
+
+config MC665_CN_26_70_V11_VOLTE
+    bool "enable new project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC661_CN_29_70_V11_VOLTE
+    bool "enable new project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_BM
+    bool "enable MC665_CN_BM project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_BM
+    bool "enable MC665_CN_BM project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_CM
+    bool "enable MC665_CN_CM project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC665_CN_DG
+    bool "enable MC665_CN_DG project"
+    default n
+    help
+        Fibocom macro defination.
+
+config MC669_CN_DG
+    bool "enable MC669_CN_DG project"
+    default n
+    help
+        Fibocom macro defination.
+
+
+config FIBOCOM_MC660
+    bool "enable FIBOCOM_MC660 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_MC661
+    bool "enable FIBOCOM_MC661 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_MG662
+    bool "enable FIBOCOM_MG662 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_MC665
+    bool "enable FIBOCOM_MC665 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_MC669
+    bool "enable FIBOCOM_MC669 project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_TCPIP_SUPPORT
+    bool "enable FIBOCOM_AT_TCPIP_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_HTTP_SUPPORT
+    bool "enable FIBOCOM_AT_HTTP_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_MQTT_SUPPORT
+    bool "enable FIBOCOM_AT_MQTT_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_MQTT_CLOUD_SUPPORT
+    bool "enable FIBOCOM_AT_MQTT_CLOUD_SUPPORT project"
+    default y
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_EFS_SUPPORT
+    bool "enable EFS backup and recover function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_AT_FTP_SUPPORT
+bool "enable FIBOCOM_AT_FTP_SUPPORT project"
+default n
+help
+    Fibocom macro defination.
+
+config FIBOCOM_AT_SSL_SUPPORT
+    bool "enable FIBOCOM_AT_SSL_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.    
+
+config FIBOCOM_AT_FFS_SUPPORT
+    bool "enable FIBOCOM_AT_FFS_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+config FIBOCOM_AT_ONENET_SUPPORT
+    bool "enable FIBOCOM_AT_ONENET_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.  
+
+config FIBOCOM_SWEEP_CODE
+    bool "enable sweep code for xindalu"
+    default n
+    help
+        sweep code function support
+
+config FIBOCOM_SWEEP_CODE_LIB_HUANGH
+    bool "enable sweep code that Huanghe lib"
+    default n
+    help
+        Huanghe sweep code lib support
+
+config FIBOCOM_SWEEP_CODE_LIB_PATH
+    string "FIBOCOM sweep code library file path"
+    default "sweep_code/lib/libCUDW_8910FIBO_20201225b_QR20220509c.a"
+    help
+        FIBOCOM sweep code library file path
+
+config FIBOCOM_AT_HT_SUPPORT
+    bool "enable CONFIG_FIBOCOM_AT_HT_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+config FIBOCOM_AT_E_CLOUD_SUPPORT
+    bool "enable FIBOCOM_AT_E_CLOUD_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_LBS_SUPPORT
+    bool "enable FIBOCOM_LBS_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+config FIBOCOM_AT_GNSS_SUPPORT
+    bool "enable FIBOCOM_GNSS_AT_SUPPORT project"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_MULTI_PDN
+    bool "enable FIBOCOM_MULTI_PDN function"
+    default y
+    help
+        Fibocom multiple pdn macro defination.
+
+config FIBOCOM_FLASH_4M
+    bool "enable FIBOCOM_FLASH_4M function"
+    default n
+    help
+        Fibocom 4MB FLASH defination.
+
+config FIBOCOM_FLASH_8M
+    bool "enable FIBOCOM_FLASH_8M function"
+    default n
+    help
+        Fibocom 8MB FLASH macro defination.
+
+config FIBOCOM_AEP_ENABLE
+    bool "enable FIBOCOM_AEP_ENABLE function"
+    default n
+    help
+        Fibocom aep macro defination.
+
+config FIBOCOM_DM_ENABLE
+    bool "enable FIBOCOM_DM_ENABLE function"
+    default n
+    help
+        Fibocom DM macro defination.
+
+config FIBOCOM_AUTO_MIPCALL
+    bool "enable FIBOCOM_AUTO_MIPCALL function"
+    default n
+    help
+        Fibocom auto mipcall macro defination.
+
+config FIBOCOM_AT_RNDIS_SUPPORT
+    bool "enable FIBOCOM_AT_RNDIS_SUPPORT function"
+    default y
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_FOTA_BACKUP
+    bool "enable FOTA_BACKUP function"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_POWERON_3300MV
+    bool "enable 3300MV POWERON function"
+    default y
+    help
+        Fibocom macro defination.
+
+config FIBOCOM_DRIVER_TEST_SUPPORT
+    bool "enable fibocom driver test function"
+    default n
+    help
+        Fibocom driver test macro defination.
+
+config FIBOCOM_SDMMC_SUPPORT
+    bool "fibocom support SDMMC"
+    default y
+    help
+        Whether fibocom SDMMC is supported.
+
+config FIBOCOM_CHARGE_SUPPORT
+    bool "fibocom support CHARGE"
+    default n
+    help
+        Whether fibocom CHARGE is supported.
+
+config FIBOCOM_MC66x_ADC0_TEST
+    bool "fibocom support ADC channel0"
+    default y
+    help
+        Whether fibocom ADC channel0 is supported.
+
+config FIBOCOM_RNDIS_ENABLE
+     bool "enable fibocom rndis"
+     default n
+     help
+        CONFIG_FIBOCOM_RNDIS_ENABLE
+
+config FIBOCOM_ECM_ENABLE
+     bool "enable fibocom ecm"
+     default n
+     help
+        CONFIG_FIBOCOM_ECM_ENABLE
+
+config FIBOCOM_XML_PARSE
+     bool "enable xml"
+     default n
+     help
+        CONFIG_FIBOCOM_XML_PARSE
+
+config FIBOCOM_LCD_ST7789_4LINE
+     bool "enable st7789 4line driver"
+     default n
+     help
+        Fibocom macro defination.
+
+config FIBOCOM_LCD_ST7789_240x240
+     bool "enable st7789 240x240 LCD"
+     default n
+     help
+        Fibocom macro defination.
+
+config FIBOCOM_TTS_EXT_SUPPORT
+    bool "enable CONFIG_TTS_EXT_SUPPORT"
+    default n
+    help
+        Fibocom TTS_EXT_SUPPORT.
+
+config FIBOCOM_ENABLE_SWEEP_ENCODE
+    bool "enable CONFIG_FIBOCOM_ENABLE_SWEEP_ENCODE"
+    default n
+    help
+        CONFIG_FIBOCOM_ENABLE_SWEEP_ENCODE. 
+
+config FIBOCOM_ECM_AUTO_DIAL
+    bool "enable CONFIG_ECM_AUTO_DIAL"
+    default n
+    help
+        CONFIG_FIBOCOM_ECM_AUTO_DIAL.
+
+config FIBOCOM_INTERNAL_EXTERNAL_SHARE_IP
+    bool "enable FIBOCOM_INTERNAL_EXTERNAL_SHARE_IP"
+    default n
+    help
+        FIBOCOM_INTERNAL_EXTERNAL_SHARE_IP.
+
+config FIBOCOM_ENABLE_USB_SUSPEND_URC
+    bool "enable FIBOCOM_ENABLE_USB_SUSPEND_URC"
+    default y
+    help
+        FIBOCOM_ENABLE_USB_SUSPEND_URC.
+
+config FIBOCOM_AUDIO_STREAM_ENCODER
+    bool "enable CONFIG_FIBOCOM_AUDIO_STREAM_ENCODER"
+    default n
+    help
+        CONFIG_FIBOCOM_AUDIO_STREAM_ENCODER.
+
+config FIBOCOM_HEADSET_SUPPORT
+    bool "enable CONFIG_FIBOCOM_HEADSET_SUPPORT"
+    default y
+    help
+        CONFIG_FIBOCOM_HEADSET_SUPPORT.
+
+config FIBOCOM_USB_CONNECT_LONG_TIMEOUT_FEATURE_OPEN
+    bool "enable FIBOCOM_USB_CONNECT_LONG_TIMEOUT_FEATURE_OPEN"
+    default y
+    help
+        FIBOCOM_USB_CONNECT_LONG_TIMEOUT_FEATURE_OPEN.
+
+config FIBOCOM_EXTFFS
+    bool "enable CONFIG_FIBOCOM_EXTFFS"
+    default n
+    help
+        FIBOCOM_EXTFFS.
+
+config FIBOCOM_AT_HT_XGAN_SUPPORT
+    bool "enable xinguangan heartbeat"
+    default n
+    help
+        CONFIG_FIBOCOM_AT_HT_XGAN_SUPPORT.
+        
+config FIBOCOM_EXTFLASH_FROM_LCD
+    bool "enable fibocom extflash from lcd pin"
+    default n
+    help
+        Fibocom extflash macro defination.
+
+config FIBOCOM_EXTFLASH_FROM_PCM
+    bool "enable fibocom extflash from pcm pin"
+    default n
+    help
+        Fibocom extflash macro defination.
+        
+config FIBOCOM_EXTFLASH_FROM_MMC
+    bool "enable fibocom extflash from MMC pin"
+    default n
+    help
+        Fibocom extflash macro defination.
+
+config FIBOCOM_EXTFLASH_1_8V
+    bool "enable fibocom extflash lcd/mmc 1.8v ldo"
+    default n
+    help
+        Fibocom extflash macro defination.
+
+config FIBOCOM_EXTFLASH_3_0V
+    bool "enable fibocom extflash lcd/mmc 3.0v ldo"
+    default n
+    help
+        Fibocom extflash macro defination.
+
+config SPECIAL_SPIFLASH_SUPPORT_TWO_LINE
+    bool "enable extflash CONFIG_SPECIAL_SPIFLASH_SUPPORT_TWO_LINE"
+    default n
+    help
+        Fibocom SPECIAL_SPIFLASH_SUPPORT_TWO_LINE.
+
+config FIBOCOM_EXTFLASH_FOTA
+    bool "enable extflash_fs fota"
+    default n
+    help
+        Fibocom FIBOCOM_EXTFLASH_FOTA.
+
+config FIBOCOM_EXTAPP_FOTA
+    bool "enable extflash app fota"
+    default n
+    help
+        Fibocom FIBOCOM_EXTAPP_FOTA.
+
+config FIBOCOM_SIMHOTPLUG_ENABLE
+    bool "enable sim hotplug"
+    default n
+    help
+        Fibocom FIBOCOM_SIMHOTPLUG_ENABLE.
+
+config FIBOCOM_SFILE_API
+	bool "enable SFILE_API"
+	default y
+	help
+        Fibocom FIBOCOM_SFILE_API.
+
+config FIBOCOM_EXTERNAL_GNSS_SUPPORT
+	bool "enable external gnss"
+	default n
+	help
+        Fibocom FIBOCOM_EXTERNAL_GNSS_SUPPORT.
+
+config FIBOCOM_FUPDATE_REPORT
+    bool "enable FUPDATE_REPORT"
+    default n
+    help
+        Fibocom FIBOCOM_FUPDATE_REPORT.
+
+config FIBOCOM_APN_AUTOREMOVE_CLOSE
+    bool "enable FIBOCOM_APN_AUTOREMOVE_CLOSE"
+    default n
+    help
+        Fibocom FIBOCOM_APN_AUTOREMOVE_CLOSE.
+
+config FIBOCOM_SKIP_VBAT_SENSE_ENABLE
+    bool "enable SKIP_VBAT_SENSE"
+    default n
+    help
+        Fibocom FIBOCOM_SKIP_VBAT_SENSE_ENABLE.
+
+config FIBOCOM_ECM_IP_MASK_GW_API
+    bool "enable ECM_IP_MASK_GW_API"
+    default n
+    help
+        Fibocom FIBOCOM_ECM_IP_MASK_GW_API.
+
+config FIBOCOM_AP_WAKEUP_MCU
+    bool "enable FIBOCOM_AP_WAKEUP_MCU"
+    default n
+    help
+        Fibocom FIBOCOM_AP_WAKEUP_MCU.
+
+config FIBOCOM_BLE_SUPPORT
+bool "enable FIBOCOM_BLE_SUPPORT"
+default n
+help
+    Fibocom FIBOCOM_BLE_SUPPORT.
+
+config FIBOCOM_BOARD_ID_ENABLE
+    bool "enable board ID"
+    default n
+    help
+        Fibocom FIBOCOM_BOARD_ID_ENABLE.
+
+config FIBOCOM_AT_AUDIO
+    bool "enable at command"
+    default y
+    help
+        Fibocom CONFIG_FIBOCOM_AT_AUDIO.
+
+config FIBOCOM_AT_FOTA_SUPPORT
+    bool "enable at command"
+    default y
+    help
+        Fibocom FIBOCOM_AT_FOTA.
+
+
+config FIBOCOM_MULTI_HARDWARE_ENABLE
+    bool "enable multi hardware"
+    default n
+    help
+        Fibocom CONFIG_FIBOCOM_MULTI_HARDWARE_ENABLE.
+
+config FIBOCOM_HUADA_GNSS_ENALBE
+    bool "enable huada gnss"
+    default n
+    help
+        Fibocom CONFIG_FIBOCOM_HUADA_GNSS_ENALBE.
+
+config MC665_CN_31_10_GNSS_SUPPORT
+    bool "enable MC665_CN_31_10 huada gnss"
+    default n
+    help
+        Fibocom CONFIG_MC665_CN_31_10_GNSS_SUPPORT.
+
+config FIBOCOM_USB_DMA_SIZE
+    int "set the size of usb dma rx or tx"
+    default 1024
+    help
+        Set the size of usb dma here to 1024.
+
+config FIBOCOM_ZKW_GNSS_ENABLE
+    bool "enable zhognkewei gnss"
+    default n
+    help
+        Fibocom CONFIG_FIBOCOM_ZKW_GNSS_ENABLE.
+
+config FIBOCOM_SOFTWARE_VERSION
+    string "fibocom software version"
+    default ""
+    
+config FIBOCOM_USBMODE
+    bool "enable fibocom usbmode config"
+    default y
+    help
+        Fibocom usbmode_config.
+
+config FIBOCOM_ALIPAY_SDK
+    bool "enable alipay SDK"
+    default n
+    help
+        FIBOCOM_ALIPAY_SDK defination.
+
+config MC661_CN_19_73_HK_VSIM
+    bool "enable MC661_CN_19_73_HK_VSIM project"
+    default n
+    help
+        MC661_CN_19_73_HK_VSIMdefination.
+config FIBOCOM_UNICOM_LWM2M_SUPPORT
+    bool "enable unicom lwm2m function"
+    default n
+    help
+        Fibocom FIBOCOM_UNICOM_LWM2M_SUPPORT.
+
+config FIBOCOM_XINGUODU
+    bool "enable xinguodu"
+    default n
+    help
+        fibocom for xinguodu feature.
+
+config SUPPORT_XIAOSHUI_VSIM_FUNCTION
+    bool "enable SUPPORT_XIAOSHUI_VSIM_FUNCTION"
+    default n
+    help
+        CONFIG_SUPPORT_XIAOSHUI_VSIM_FUNCTION
+
+config FIBOCOM_MHW_SELECT_BOARDINFO
+    string "mhw select boardinfo"
+    default ""
+    help
+        CONFIG_FIBOCOM_MHW_SELECT_BOARDINFO.
+
+config DOT_MATRIX_LCD_SUPPORT
+    bool "support dot Matrix LCD serial"
+    default n
+    help
+        CONFIG_DOT_MATRIX_LCD_SUPPORT.
+
+config LCD_ST7567A_SUPPORT
+    bool "support dot Matrix LCD ST7567A"
+    default n
+    help
+        CONFIG_LCD_ST7567A_SUPPORT.
+
+config FIBOCOM_AT_WEBSOCKET_SUPPORT
+    bool "enable CONFIG_FIBOCOM_AT_WEBSOCKET_SUPPORT"
+    default n
+    help
+        CONFIG_FIBOCOM_AT_WEBSOCKET_SUPPORT
+
+config FIBOCOM_APP_IN_EXTFLASH_FOTA
+    bool "enable FIBOCOM_APP_IN_EXTFLASH_FOTA"
+    default n
+    help
+        CONFIG_FIBOCOM_APP_IN_EXTFLASH_FOTA
+
+config FIBOCOM_SUPPORT_LCD_ST7789p3
+    bool "fibo support ST7789p3 panel"
+    default n
+    help
+        Support ST7789p3 LCD panel
+	
+config FIBOCOM_LOCK_MORE_BAND
+    bool "enable more band lock"
+    default n
+    help
+        CONFIG_FIBOCOM_LOCK_MORE_BAND.
+config FIBOCOM_KEYPAD_CLOSE
+    bool "enable keypad close"
+    default n
+    help
+        CONFIG_FIBOCOM_KEYPAD_CLOSE
+
+config FIBOCOM_GTLPMMODE_SAVE_NV
+    bool "enable GTLPMMODE save when poweroff"
+    default y
+    help
+        CONFIG_FIBOCOM_GTLPMMODE_SAVE_NV
+
+config FIBCOM_TTYUSB2_USE_AT
+    bool "enable ttyusb2 for at"
+    default n
+    help
+        CONFIG_FIBCOM_TTYUSB2_USE_AT
+
+config FIBOCOM_AT_TUOKUO_HT_SUPPORT
+    bool "enable customer tuokuo heartbeat"
+    default n
+    help
+        CONFIG_FIBOCOM_AT_TUOKUO_HT_SUPPORT
+
+config FIBOCOM_DNAT_ENABLE
+    bool "support TCP/UDP/ICMP DNAT"
+    default n
+    help
+        CONFIG_FIBOCOM_DNAT_ENABLE.
+
+config FIBOCOM_TECENT_CLOUD
+    bool "enable tecent cloud"
+    default n
+    help
+        FIBOCOM_TECENT_CLOUD defination.
+
+config MC665_CN_29_70_QIE
+    bool "enable qie project"
+    default n
+    help
+        Fibocom qie project
+
+config FIBOCOM_ADC_WAKEUP_HOST
+    bool "enable ADC wakeup host funciton by ri"
+    default n
+    help
+        FIBOCOM_ADC_WAKEUP_HOST defination.
+
+config FIBOCOM_PIR_WAKEUP_HOST
+    bool "enable PIR wakeup host funciton by ri"
+    default n
+    help
+        FIBOCOM_PIR_WAKEUP_HOST defination.
+
+config FIBOCOM_INNER_CODEC_SUPPORT
+    bool "enable inner codec support"
+    default n
+    help
+        FIBOCOM_INNER_CODEC_SUPPORT defination.
+
+config FIBOCOM_CODEC_INIT_DELAY
+    bool "init codec delay"
+    default n
+    help
+        FIBOCOM_CODEC_INIT_DELAY defination.
+
+config MQTT_MAX_ID_NUMS
+    int "mqtt client support max number"
+    default 2
+    help
+        MQTT_MAX_ID_NUMS defination.
+		
+config FIBOCOM_FLIGHT_MODE_POWERON
+    bool "allow  enter Airplane mode when poweron"
+    default n
+    help
+        FIBOCOM_FLIGHT_MODE_POWERON defination.
+
+config FIBOCOM_UNICOM_ESIM_ENABLE
+    bool "enable unicom esim enable"
+    default n
+    help 
+        FIBOCOM_UNICOM_ESIM_ENABLE macro defination
+
+config FIBOCOM_BOARD_ID_PA_ONLY_ENABLE
+    bool "enable board ID only use pa id"
+    default n
+    help
+        Fibocom FIBOCOM_BOARD_ID_PA_ONLY_ENABLE.
+
+config FIBOCOM_RILI_FEATURE
+    bool "enable RILI FEATURE"
+    default n
+    help
+        Fibocom FIBOCOM_RILI_FEATURE.
+
+config TTS_ENGLISH_SUPPORT
+    bool "enable CONFIG_TTS_ENGLISH_SUPPORT"
+    default n
+    help
+        Fibocom TTS_ENGLISH_SUPPORT.
+
+config FIBOCOM_ECM_EXTREME_PERFORMANCE_TIME
+    bool "enable CONFIG_FIBOCOM_ECM_EXTREME_PERFORMANCE_TIME"
+    default n
+    help
+        Fibocom FIBOCOM_ECM_EXTREME_PERFORMANCE_TIME.
+
+config FIBOCOM_EXT_G_CGMR
+    string "enable G_CMGR"
+    default ""
+    help
+        Fibocom G_CGMR.
+
+config FIBOCOM_EXT_G_CGMM
+    string "enable G_CGMM"
+    default ""
+    help
+        Fibocom G_CGMM.
+
+
+config FIBOCOM_EXT_G_CGMM_NEW
+    string "enable G_CGMM_NEW"
+    default ""
+    help
+        Fibocom G_CGMM_NEW.
+
+config FIBOCOM_EXT_G_CGMM_ABS
+    string "enable G_CGMM_ABS"
+    default ""
+    help
+        Fibocom G_CGMM_ABS.
+
+config FIBOCOM_EXT_G_CGMM_ABS_USB
+    string "enable G_CGMM_ABS_USB"
+    default ""
+    help
+        Fibocom G_CGMM_ABS_USB.
+
+
+config FIBOCOM_SIM_DEBOUNCE
+    bool "FIBOCOM_SIM_DEBOUNCE project marco"
+    default n
+    help
+        CONFIG_FIBOCOM_SIM_DEBOUNCE defination.
+
+config FIBOCOM_SUPPORT_PWM_AUDIO
+    bool "enable CONFIG_FIBOCOM_SUPPORT_PWM_AUDIO"
+    default n
+    help
+        Fibocom FIBOCOM_SUPPORT_PWM_AUDIO.
+
+config FIBOCOM_BLUESCREEN_SAVE
+    bool "enable blue screen save"
+    default n
+    help
+        Fibocom FIBOCOM_BLUESCREEN_SAVE
+
+config FIBOCOM_HALUO_AT
+    bool "enable haluo standard at commands"
+    default n
+    help
+        Fibocom macro defination.
+
+config FIBO_CUS_HZHC_FEATURE
+    bool "enable HZHC"
+    default n
+    help
+        Fibocom HZHCa
+
+config FIBOCOM_SAVE_DUMPINFO
+    bool "enable save dumpinfo"
+    default n
+    help
+        Fibocom FIBOCOM_SAVE_DUMPINFO
+
+
+
+config FIBOCOM_FOTA_APPFW_BY_PATH
+    bool "enable fota_ex"
+    default n
+    help
+        Fibocom FIBOCOM_FOTA_APPFW_BY_PATH
+
+config FIBOCOM_CLOCK_26M_DCXO
+    bool "enable clock 26M type DCXO"
+    default ""
+    help
+        Fibocom FIBOCOM_CLOCK_26M_DCXO
+
+config FIBOCOM_CLOCK_26M_TCXO
+    bool "enable clock 26M type TCXO"
+    default ""
+    help
+        Fibocom FIBOCOM_CLOCK_26M_TCXO
+
+config FIBOCOM_CLOCK_26M_TSX
+    bool "enable clock 26M type TSX"
+    default ""
+    help
+        Fibocom FIBOCOM_CLOCK_26M_TSX
+
+config FIBOCOM_ECM_MIPCALL_AUTO
+    bool "enable CONFIG_FIBOCOM_ECM_MIPCALL_AUTO"
+    default n
+    help
+        Fibocom FIBOCOM_ECM_MIPCALL_AUTO.
+
+config FIBOCOM_LONG_URL_SUPPORT
+    bool "enable FIBOCOM_LONG_URL_SUPPORT"
+    default n
+    help
+        Fibocom FIBOCOM_LONG_URL_SUPPORT.
+
+config FIBOCOM_DEV_MODEM_SOCKET
+    bool "enable CONFIG_FIBOCOM_DEV_MODEM_SOCKET"
+    default n
+    help
+        Fibocom FIBOCOM_DEV_MODEM_SOCKET.
+
+config FIBOCOM_REMOVE_AT1
+    bool "remove at engene on AT1"
+    default n
+    help
+        Fibocom FIBOCOM_REMOVE_AT1.
+
+config FIBOCOM_REDUCE_USB_BUFFER
+    bool "remove reduce usb buffer"
+    default n
+    help
+        Fibocom FIBOCOM_REDUCE_USB_BUFFER.
+
+config FIBOCOM_GMSSL
+    bool "support gmssl"
+    default n
+    help
+        Fibocom FIBOCOM_GMSSL.
+
+config FIBOCOM_USB_PROD_STR_CUST01
+    bool "usb product string set CUST01"
+    default n
+    help
+        Fibocom USB prod string CUST01
+
+config FIBOCOM_KT_FEATURE
+    bool "support KT feature Koroa"
+    default n
+    help
+        Fibocom FIBOCOM_KT_FEATURE.
+
+config FIBOCOM_USB_SERIALS_SPECIAL
+    bool "support USB_SERIALS_SPECIAL"
+    default n
+    help
+        Fibocom USB_SERIALS_SPECIAL.
+
+config FIBOCOM_EXTFS_MOUNT_SIZE_ADAPTIVE
+    bool "support external flash filesystem mount size adaptive"
+    default n
+    help
+        Fibocom FIBOCOM_EXTFS_MOUNT_SIZE_ADAPTIVE.
+
+config FIBOCOM_VBUS_PIN_ONOFF
+    bool "support VBUS_PIN_ONOFF"
+    default n
+    help
+       Fibocom VBUS_PIN_ONOFF.
+
+config FIBOCOM_LWM2M_SUPPORT
+    bool "support lwm2m"
+    default n
+    help
+       Fibocom lwm2m.
+
+config FIBOCOM_LWM2M_LIB_SUPPORT
+    bool "support lwm2m lib"
+    default n
+    help
+        Fibocom lwm2m lib.
+
+config FIBOCOM_JIO_FEATURE
+    bool "support jio feature"
+    default n
+    help
+        Fibocom lwm2m lib.
+
+config FIBOCOM_SFTP_SUPPORT
+    bool "enable FIBOCOM_SFTP_SUPPORT project"
+    default n
+    help
+        Fibocom sftp function.
+
+config FIBOCOM_AT_LWM2M_SUPPORT
+    bool "enable AT_LWM2M_SUPPORT project"
+    default n
+    help
+        Fibocom lwm2m at.
+
+config FIBOCOM_POWERON_LOGO_SUPPORT
+    bool "Support displaying LOGO during power-on."
+    default n
+    help
+        Fibocom FIBOCOM_POWERON_LOGO_SUPPORT.
+
+config FIBOCOM_FW_UPDATE_LOGO_SUPPORT
+    bool "Support displaying prompt LOGO during firmware updating."
+    default n
+    help
+        Fibocom FIBOCOM_POWERON_LOGO_SUPPORT.
+
+config FIBOCOM_HID_KEYBOARD_SUPPORT
+    bool "support USB hid keyboard"
+    default n
+    help
+        Fibocom FIBOCOM_HID_KEYBOARD_SUPPORT.
+
+config FIBOCOM_CUSTOM_BULK_DEVICE_SUPPORT
+    bool "support USB custom bulk device"
+    default n
+    help
+        Fibocom FIBOCOM_CUSTOM_BULK_DEVICE_SUPPORT.
+
+config FIBOCOM_USB_STATUS_MONITOR_SUPPORT
+    bool "support USB status monitior"
+    default n
+    help
+        Fibocom FIBOCOM_USB_STATUS_MONITOR_SUPPORT.
+
+config FIBOCOM_ENDPOINTADDR_CUSTOMIZED
+    bool "support USB endpoint addr customized"
+    default n
+    help
+        Fibocom FIBOCOM_ENDPOINTADDR_CUSTOMIZED.
+
+config FIBOCOM_USB_DEVICE_DESC_CONFIG
+    bool "support USB device desc config"
+    default n
+    help
+        Fibocom FIBOCOM_USB_DEVICE_DESC_CONFIG.
+
+config FIBOCOM_USB_POWERON_NPI_MODE_CONFIG
+    bool "config USB poweron npi mode"
+    default n
+    help
+        Fibocom FIBOCOM_USB_POWERON_NPI_MODE_CONFIG.
+		
+config FIBOCOM_UARTBUF_CONFIG
+    bool "config FIBOCOM_UARTBUF_CONFIG"
+    default n
+    help
+        Fibocom FIBOCOM_UARTBUF_CONFIG.
+
+config FIBOCOM_SMS_FEATURE
+    bool "support FIBOCOM SMS feature"
+    default y
+    help
+        Fibocom FIBOCOM_SMS_FEATURE.
+
+config FIBOCOM_CPLOG_ONOFF
+    bool "config FIBOCOM_CPLOG_ONOFF"
+    default n
+    help
+        Fibocom FIBOCOM_CPLOG_ONOFF.
+
+config FIBOCOM_SINGLE_SERIAL
+    bool "config FIBOCOM_SINGLE_SERIAL"
+    default n
+    help
+        Fibocom FIBOCOM_SINGLE_SERIAL.
+
+config FIBOCOM_XLAT_SUPPORT
+    bool "enable CONFIG_FIBOCOM_XLAT_SUPPORT"
+    default n
+    help
+        Fibocom FIBOCOM_XLAT_SUPPORT.
+
+config FIBOCOM_1030_LED_CONFIG
+    bool "config FIBOCOM_1030_LED_CONFIG"
+    default n
+    help
+        Fibocom FIBOCOM_1030_LED_CONFIG.
+
+config FIBOCOM_1030_UART_BAUD
+    bool "config FIBOCOM_1030_UART_BAUD"
+    default n
+    help
+        Fibocom FIBOCOM_1030_UART_BAUD.
+
+config FIBOCOM_SUPPORT_TWO_SPL
+    bool "support FIBOCOM SPL feature"
+    default n
+    help
+        Fibocom SUPPORT_TWO_SPL.
+
+endmenu
+
